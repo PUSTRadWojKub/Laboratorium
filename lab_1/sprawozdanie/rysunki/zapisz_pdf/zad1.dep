@@ -1,0 +1,2 @@
+zad1.pdf: ../dane/p1_u.txt
+zad1.pdf: ../dane/p1_y.txt
