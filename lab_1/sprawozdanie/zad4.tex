@@ -1,12 +1,77 @@
 \chapter{Regulacja procesu}
 
 \section{Regulator PID}
-Regulator PID skÅ‚ada siÄ™ z trzech czÅ‚onÃ³w: proporcjonalnego, caÅ‚kujÄ…cego oraz rÃ³Å¼niczkujÄ…cego. DziaÅ‚a on w pÄ™tli sprzÄ™Å¼enia zwrotnego, majÄ…c na celu zredukowanie uchybu \(rÃ³Å¼nicy miÄ™dzy wartoÅ›ciÄ… zadanÄ… a zmierzonÄ… wartoÅ›ciÄ… sygnaÅ‚u wyjÅ›ciowego procesu\) poprzez odpowiedniÄ… zmianÄ™ sygnaÅ‚u sterujÄ…cego.
-Dyskretny regulator PID ma postaÄ‡:
+Regulator PID sk³ada siê trzech cz³onów: proporcjonalnego, ca³kuj¹cego oraz ró¿niczkuj¹cego. Dzia³a on w pêtli sprzê¿enia zwrotnego, maj¹c na celu zredukowanie uchybu (ró¿nicy miêdzy wartoœci¹ zadan¹ a zmierzon¹ wartoœci¹ sygna³u wyjœciowego procesu) poprzez odpowiedni¹ zmianê sygna³u steruj¹cego. Dyskretny regulator PID ma postaæ:
 
 \begin{equation}
-u(t)=r_2*e(k-2)+r_1*e(k-1)+r_0*e(k)+u(k-1)
+u(k)=r_2*e(k-2)+r_1*e(k-1)+r_0*e(k)+u(k-1)
 \end{equation}
+gdzie:
+
+\begin{equation}
+r_2=K*T_d/T_p
+\end{equation}
+\begin{equation}
+r_1=K*(T_p/(2*T_i)-2*T_d/T_p-1)
+\end{equation}
+\begin{equation}
+r_0=K*(1+T_p/(2*T_i)+T_d/T_p)
+\end{equation}
+gdzie $K$ - wzmocnienie cz³onu proporcjonalnego, $T_i$ - czas zdwojenia cz³onu ca³kuj¹cego, $T_d$ - czas wyprzedzenia cz³onu ró¿niczkuj¹cego, $T_p$ - okres próbkowania
 
 \section{Regulator DMC}
-Hej
+Regulator DMC jest to regulator predykcyjny - dzia³a on z wyprzedzeniem, zanim nast¹pi¹ zmiany wartoœci sygna³u wyjœciowego. Wektor przyrostów sterowañ dany jest wzorem:
+
+\begin{equation}
+\triangle U(k)=K(Y^{zad}(k)-Y^0(k)=Y(k)+M^P \triangle U^P(k))
+\label{dU1}
+\end{equation}
+gdzie:
+
+\begin{equation}
+K=(M^TM+\lambda*I)^{-1}M^T
+\label{K}
+\end{equation}
+
+\begin{equation}
+\triangle\boldsymbol{U^P}(k)=\left[
+\begin{array}{c}
+\triangle u(k-1)\\
+\vdots\\
+\triangle u(k-(D-1))
+\end{array}
+\right]_{\mathrm{(D-1)x1}}
+\label{dUPm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}=\left[
+\begin{array}
+{cccc}
+s_{1} & 0 & \ldots & 0\\
+s_{2} & s_{1} & \ldots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N} & s_{N-1} & \ldots &  s_{N-N_{\mathrm{u}}+1}
+\end{array}
+\right]_{\mathrm{NxN_u}}
+\label{Mm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M^P}=\left[
+\begin{array}
+{cccc}
+s_{2}-s_{1} & s_{3}-s_{2} & \ldots & s_{D}-s_{D-1}\\
+s_{3}-s_{1} & s_{4}-s_{2} & \ldots & s_{D+1}-s_{D-1}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N+1}-s_{1} & s_{N+2}-s_{2} & \ldots &  s_{N+D-1}-S_{D-1}
+\end{array}
+\right]_{\mathrm{NxD-1}}
+\label{MPm}
+\end{equation}
+gdzie $N$ - horyzont predykcji, $N_u$ - horyzont sterowania, $D$ - horyzont dynamiki, $\lambda$ - kara za zmianê sterowania
+\bigbreak
+W tym przypadku nale¿y wyznaczyæ tylko pierwszy element macierzy $\Delta U(k)$ czyli $\Delta u(k|k)$. Aktualne sterowanie uzyskuje siê poprzez zsumowanie $\Delta u(k|k)$ z poprzednim sterowaniem.
+
+\section{Implementacja}
+Implementacja fukcji wykorzystanych do wykonania zadania zawarte s¹ w skrypcie \verb+podpunkt_4_v1.m+.

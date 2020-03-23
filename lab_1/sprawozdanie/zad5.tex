@@ -1,5 +1,39 @@
 \chapter{Dobór nastaw regulatorów}
 
 \section{Dobór nastaw cyfrowego regulatora PID}
+Nastawy regulatora PID dobrane zosta³y metod¹ eksperymentaln¹. Pocz¹tkowo w³¹czony by³ tylko cz³on proporcjonalny P - $T_i$= $\infty$ oraz $T_d$=0. Po dobraniu wzmocnienia $K$ w³¹czony zosta³ cz³on ca³kuj¹cy i dobrany zosta³ czas zdwojenia $T_i$. Ostatecznie w³¹czony zosta³ cz³on ró¿niczkuj¹cy i dobrano parametr $T_d$. WskaŸnik jakoœci regulacji dany jest wzorem:
+
+\begin{equation}
+E=\sum^{k_{konc}}_{k=1}(y^{zad}(k)-y(k))^2
+\end{equation}
+
+Na podstawie powy¿szego wskaŸnika jakoœci dobrano nastêpuj¹ce nastawy: $K$ = 0,8, $T_i$ = 7,5, $T_d$ = 4,5.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{rysunki/p1.eps}
+\caption{Regulator PID, $K$ = 0,8, $T_i$ = 7,5, $T_d$ = 4,5}
+\end{figure}
+
+Jednak¿e regulator z tymi nastawami dzia³a bardzo gwa³townie i mo¿na zaobserwowaæ przeregulowania. Z tego podowu oprócz wskaŸnika jakoœci pod uwagê wziête zosta³y równie¿ przebiegi. Na ich podstawie dobrane zosta³y nowe nastawy: $K$ = 0,6, $T_i$ = 13, $T_d$ = 3,5. Regulator jest trochê wolniejszy, lecz sterowanie jest ³agodniejsze i nie wystêpuj¹ przeregulowania.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{rysunki/p1.eps}
+\caption{Regulator PID,  $K$ = 0,6, $T_i$ = 13, $T_d$ = 3,5}
+\end{figure}
 
 \section{Dobór nastaw predykcyjnego regulatora DMC}
+Na pocz¹tkowe nastawy regulatora DMC przyjêto obliczony w punkcie 3 horyzont dynamiki  $N$ = $N_u$ = $D$ = 190, zaœ wspó³czynnik kary $\lambda$ = 1. Nastêpnie zmniejszane by³y horyzonty $N$ i $N_u$ oraz zwiêkszany wspó³czynnik $\lambda$. WskaŸnik jakoœci regulacji, podobnie jak w przypadku regulatora PID, dany jest wzorem:
+
+\begin{equation}
+E=\sum^{k_{konc}}_{k=1}(y^{zad}(k)-y(k))^2
+\end{equation}
+
+Ostatecznie dobrane nastawy: $N$ = 18, $N_u$ = 2, $D$ = 190, $\lambda$ = 1.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{rysunki/p1}
+\caption{Regulator DMC,  $N$ = 18, $N_u$ = 2, $D$ = 190, $\lambda$ = 1}
+\end{figure}

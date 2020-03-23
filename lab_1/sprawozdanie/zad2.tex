@@ -3,8 +3,29 @@
 \section{Wyznaczenie dpowiedzi skokowych}
 W celu wyznaczenia odpowiedzi skokowych obiekt pobudzony zosta³ czterema skokami sygna³u steruj¹cego w chwili k=21. Sygna³ steruj¹cy zmienia³ siê o $dU$=0,1 od $U_{min}$=0,9 do $U_{max}$=1,3.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{rysunki/p1.eps}
+\caption{Odpowiedzi skokowe}
+\end{figure}
+
 \section{Charakterystyka statyczna}
-W celu wyznaczenia charakterystyki statycznej procesu
+W celu wyznaczenia charakterystyki statycznej procesu zebrano odpowiedŸ uk³adu dla pobudzeñ ró¿nymi wartoœciami sygna³u steruj¹cego.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{rysunki/p1.eps}
+\caption{Charakterystyka statyczna}
+\end{figure}
 
 \section{Wnioski}
-Otrzymana charakterystyka statyczna procesu jest liniowa.
+Na podstawie charakterystyki statycznej mo¿na powiedzieæ, ¿e obiekt jest w przybli¿eniu liniowy. Mo¿na zatem wyznaczyæ wzmocnienie statyczne procesu na podstawie wzoru:
+
+\begin{equation}
+K_{stat} = \frac{\Delta y}{\Delta u}
+\end{equation}
+
+Dla danego procesu wzmocnienie statyczne wynosi $K$ = 3,178.
+
+\section{Implementacja}
+Implementacja fukcji wykorzystanych do wykonania zadania zawarte s¹ w skrypcie \verb+podpunkt_2_v1.m+.
