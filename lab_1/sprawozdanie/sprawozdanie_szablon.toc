@@ -17,9 +17,11 @@
 \contentsline {chapter}{\numberline {5\relax .\enspace }Dob\'or nastaw regulator\'ow}{9}%
 \contentsline {section}{\numberline {5.1\relax .\enspace }Dob\'or nastaw cyfrowego regulatora PID}{9}%
 \contentsline {section}{\numberline {5.2\relax .\enspace }Dob\'or nastaw predykcyjnego regulatora DMC}{11}%
+\contentsline {section}{\numberline {5.3\relax .\enspace }Implementacja}{12}%
 \contentsline {chapter}{\numberline {6\relax .\enspace }Optymalizacja wska\'znika jako\'sci}{13}%
 \contentsline {section}{\numberline {6.1\relax .\enspace }Algorytm optymalizacji}{13}%
 \contentsline {section}{\numberline {6.2\relax .\enspace }Dob\'or parametr\'ow optymalizacji}{13}%
 \contentsline {section}{\numberline {6.3\relax .\enspace }Optymalne nastawy regulatora PID}{13}%
 \contentsline {section}{\numberline {6.4\relax .\enspace }Optymalne nastawy regulatora DMC}{15}%
 \contentsline {section}{\numberline {6.5\relax .\enspace }Wnioski ko\'ncowe}{15}%
+\contentsline {section}{\numberline {6.6\relax .\enspace }Implementacja}{17}%

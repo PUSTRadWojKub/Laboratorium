@@ -18,10 +18,10 @@ Na pocz¹tku, przy w³¹czonym cz³onie proporcjonalnym P oraz wy³¹czonymi cz³onami 
 Na podstawie oscylacji okreœlone zosta³o wzmocnienie krytyczne $K_{\mathrm{kryt}} = \num{2.0}$ oraz okres oscylacji $T_{\mathrm{osc}} = 20$. Na podstawie tych parametrów wyznaczone zosta³y nastawy regulatora PID zgodnie ze wzorami:
 
 \begin{equation}
-K_\mathrm{p} = \num{0.6}K_{\mathrm{kryt}}
+K_\mathrm{p} = \num{0.5}K_{\mathrm{kryt}}
 \end{equation}
 \begin{equation}
-T_\mathrm{i} = \num{0,5}T_{\mathrm{osc}}
+T_\mathrm{i} = \num{0.6}T_{\mathrm{osc}}
 \end{equation}
 \begin{equation}
 T_\mathrm{d} = \frac {T_{\mathrm{osc}}}{8}
@@ -35,7 +35,7 @@ Otrzymano nastêpuj¹ce nastawy: $K = 1$, $T_\mathrm{i} = 12$, $T_\mathrm{d} = \nu
 \caption{Regulator PID, $K = 1$, $T_\mathrm{i} = 12$, $T_\mathrm{d} = \num{2.5}$}
 \end{figure}
 
-Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest do koñca zadowalajaca - wystêpuj¹ liczne przeregulowania i oscylacje. Z tego podowu eksperymentlanie dobrane zosta³y nowe nastawy, poprzez zmienianie kolejnych wpó³czynników regulatora. Celem by³a minimalizacja wskaŸnika jakoœci, danego jako b³¹d œrednokwadratowy. Oprócz wskaŸnika jakoœci pod uwagê wziête zosta³y równie¿ przebiegi. Na ich podstawie dobrane zosta³y nowe nastawy: $K = \num{0.6}$, $T_\mathrm{i} = 11$, $T_\mathrm{d} = \num{3.5}$. 
+Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest do koñca zadowalajaca - wystêpuj¹ liczne przeregulowania i oscylacje. Z tego podowu eksperymentlanie dobrane zosta³y nowe nastawy, poprzez zmienianie kolejnych wpó³czynników regulatora. Celem by³a minimalizacja wskaŸnika jakoœci, danego jako suma b³êdów kwadratowych. Oprócz wskaŸnika jakoœci pod uwagê wziête zosta³y równie¿ przebiegi. Na ich podstawie dobrane zosta³y nowe nastawy: $K = \num{0.6}$, $T_\mathrm{i} = 11$, $T_\mathrm{d} = \num{3.5}$. 
 
 \begin{figure}[h!]
 \centering
@@ -46,7 +46,7 @@ Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest do koñca zado
 Regulator jest trochê wolniejszy, lecz sterowanie jest ³agodniejsze i nie wystêpuj¹ przeregulowania ani oscylacje. Wartoœæ wskaŸnika jakoœci wynosi³a $E$ = 12,8.
 
 \section{Dobór nastaw predykcyjnego regulatora DMC}
-Na pocz¹tkowe nastawy regulatora DMC przyjêto obliczony w punkcie 3 horyzont dynamiki  $N = N_\mathrm{u} = D = 170$, zaœ wspó³czynnik kary $\lambda = 1$. Nastêpnie zmniejszane by³y horyzonty $N$ i $N_\mathrm{u}$ oraz zwiêkszany wspó³czynnik $\lambda$. WskaŸnik jakoœci regulacji, podobnie jak w przypadku regulatora PID, dany jest jako b³¹d œredniokwadratowy.
+Na pocz¹tkowe nastawy regulatora DMC przyjêto obliczony w punkcie 3 horyzont dynamiki  $N = N_\mathrm{u} = D = 170$, zaœ wspó³czynnik kary $\lambda = 1$. Nastêpnie zmniejszane by³y horyzonty $N$ i $N_\mathrm{u}$ oraz zwiêkszany wspó³czynnik $\lambda$. WskaŸnik jakoœci regulacji, podobnie jak w przypadku regulatora PID, dany jest jako suma b³êdów kwadratowych.
 
 \begin{figure}[h!]
 \centering
@@ -54,7 +54,7 @@ Na pocz¹tkowe nastawy regulatora DMC przyjêto obliczony w punkcie 3 horyzont dyn
 \caption{Regulator DMC,  $N = N_\mathrm{u} = D = 170$, $\lambda = 1$}
 \end{figure}
 
-Wartoœæ wskaŸnika jakoœci wynosi³a $E = \num{8.612}$. na podstawie przebiegów mo¿na ju¿ stwierdziæ, ¿e jakoœæ regulacji jest o wiele lepsza ni¿ w przypadku nastrojonego regulatora PID. W celu zmniejszenia wartoœci wskaŸnika jakoœci zmniejszane by³y horyzonty $N$ i $N_\mathrm{u}$ oraz zwiêkszona kara $\lambda$. Ostatecznie dobrane nastawy: $N = 18$, $N_\mathrm{u} = 2$, $D = 170$, $\lambda = 1$.
+Wartoœæ wskaŸnika jakoœci wynosi³a $E = \num{8.612}$. Na podstawie przebiegów mo¿na ju¿ stwierdziæ, ¿e jakoœæ regulacji jest o wiele lepsza ni¿ w przypadku nastrojonego regulatora PID. W celu zmniejszenia wartoœci wskaŸnika jakoœci zmniejszane by³y horyzonty $N$ i $N_\mathrm{u}$ oraz zwiêkszona kara $\lambda$. Ostatecznie dobrane nastawy: $N = 18$, $N_\mathrm{u} = 2$, $D = 170$, $\lambda = 1$.
 \newpage
 
 \begin{figure}[h!]
@@ -64,3 +64,6 @@ Wartoœæ wskaŸnika jakoœci wynosi³a $E = \num{8.612}$. na podstawie przebiegów mo
 \end{figure}
 
 Wartoœæ wskaŸnika jakoœci wynosi³a $E = \mathrm{8.609}$. Jak widaæ, jakoœæ regulacji zmieni³a siê bardzo niewiele.
+
+\section{Implementacja}
+Implementacja fukcji wykorzystanych do wykonania zadania zawarte s¹ w skrypcie \verb+podpunkt_5_v1.m+.

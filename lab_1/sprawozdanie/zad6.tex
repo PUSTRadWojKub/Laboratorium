@@ -8,7 +8,7 @@ Zadanie optymalizacji wskaŸnika jakoœci $E$ dla regulatora PID ma postaæ:
 \end{equation}
 \begin{center}
 $K$ $\geq$ 0\\
-$T_{\mathrm{i}}$ $\geq$ 0\\
+$T_{\mathrm{i}}$ $>$ 0\\
 $T_{\mathrm{d}}$ $\geq$ 0\\
 \end{center}
 
@@ -89,3 +89,7 @@ Istnieje wiele rozwi¹zañ optymalnych, które mog¹ byæ wartoœciami minimum funckji
 
 Zarówno w przypadku regulatora PID jak i DMC przy wykorzystaniu algorytmu minimalizacji wskaŸnika jakoœci uda³o siê uzyskaæ lepsze rezultaty pod wzglêdem wartoœci otrzymanego b³êdu ni¿ przy takiej analizie prowadzonej w poprzednim punkcie metod¹ eksperymentaln¹.
 
+Prawdopodobnie lepszym rozwi¹zaniem by³by wskaŸnik jakoœci w postaci b³êdu œredniokwadratowego, ze wzglêdu na oscylowanie b³êdu sygna³u wyjœciowego w zakresie czêœci dziesiêtnych (ma³y b³¹d sumaryczny w przypadku stosowanego obecnie b³êdu kwadratowego).
+
+\section{Implementacja}
+Implementacja fukcji wykorzystanych do wykonania zadania zawarte s¹ w skrypcie \verb+podpunkt_6_v1.m+.
