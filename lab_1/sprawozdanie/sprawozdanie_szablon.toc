@@ -5,7 +5,7 @@
 \contentsline {chapter}{\numberline {2\relax .\enspace }Odpowiedzi skokowe i charakterystyka statyczna}{3}%
 \contentsline {section}{\numberline {2.1\relax .\enspace }Wyznaczenie dpowiedzi skokowych}{3}%
 \contentsline {section}{\numberline {2.2\relax .\enspace }Charakterystyka statyczna}{3}%
-\contentsline {section}{\numberline {2.3\relax .\enspace }Wnioski}{4}%
+\contentsline {section}{\numberline {2.3\relax .\enspace }Wnioski}{3}%
 \contentsline {section}{\numberline {2.4\relax .\enspace }Implementacja}{4}%
 \contentsline {chapter}{\numberline {3\relax .\enspace }Odpowied\'z skokowa dla algorytmu DMC}{5}%
 \contentsline {section}{\numberline {3.1\relax .\enspace }Odpowied\'z skokowa}{5}%
@@ -16,8 +16,10 @@
 \contentsline {section}{\numberline {4.3\relax .\enspace }Implementacja}{8}%
 \contentsline {chapter}{\numberline {5\relax .\enspace }Dob\'or nastaw regulator\'ow}{9}%
 \contentsline {section}{\numberline {5.1\relax .\enspace }Dob\'or nastaw cyfrowego regulatora PID}{9}%
-\contentsline {section}{\numberline {5.2\relax .\enspace }Dob\'or nastaw predykcyjnego regulatora DMC}{9}%
-\contentsline {chapter}{\numberline {6\relax .\enspace }Optymalizacja wska\'znika jako\'sci}{11}%
-\contentsline {section}{\numberline {6.1\relax .\enspace }Algorytm optymalizacji}{11}%
-\contentsline {section}{\numberline {6.2\relax .\enspace }Optymalne nastawy regulatora PID}{11}%
-\contentsline {section}{\numberline {6.3\relax .\enspace }Optymalne nastawy regulatora DMC}{11}%
+\contentsline {section}{\numberline {5.2\relax .\enspace }Dob\'or nastaw predykcyjnego regulatora DMC}{11}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Optymalizacja wska\'znika jako\'sci}{13}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Algorytm optymalizacji}{13}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Dob\'or parametr\'ow optymalizacji}{13}%
+\contentsline {section}{\numberline {6.3\relax .\enspace }Optymalne nastawy regulatora PID}{13}%
+\contentsline {section}{\numberline {6.4\relax .\enspace }Optymalne nastawy regulatora DMC}{15}%
+\contentsline {section}{\numberline {6.5\relax .\enspace }Wnioski ko\'ncowe}{15}%

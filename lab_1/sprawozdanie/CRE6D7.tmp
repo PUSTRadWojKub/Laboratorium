@@ -1,0 +1,35 @@
+\chapter{Optymalizacja wskaŸnika jakoœci}
+
+\section{Algorytm optymalizacji}
+Zadanie optymalizacji wskaŸnika jakoœci $E$ dla regulatora PID ma postaæ:
+
+\begin{equation}
+\min_{K,T_{\mathrm{i}},T_{\mathrm{d}}} E=\sum^{k_{\mathrm{konc}}}_{k=1}(y^{\mathrm{zad}}(k)-y(k))^2
+\end{equation}
+\begin{center}
+$K$ $\geq$ 0\\
+$T_{\mathrm{i}}$ $\geq$ 0\\
+$T_{\mathrm{d}}$ $\geq$ 0\\
+\end{center}
+
+Natomiast dla regulatora DMC zadanie optymalizacji ma postaæ:
+
+\begin{equation}
+\min_{N,N_{\mathrm{u}},\lambda} E=\sum^{k_{\mathrm{konc}}}_{k=1}(y^{\mathrm{zad}}(k)-y(k))^2
+\end{equation}
+\begin{center}
+$1$ $\leq$ $N$ $\leq$ $D$ \\
+$1$ $\leq$ $N_{\mathrm{u}}$ $\leq$ $D$\\
+$\lambda$ $\leq$ $0$\\
+\end{center}
+
+Do rozwi¹zania zadania minimalizacji funkcji wykorzystano procedurê $fmincon$.
+
+\section{Dobór parametrów optymalizacji}
+Wykorzystanie procedury $fmincon$ wymaga³o zdefiniowania wartoœci pocz¹tkowych szukanych parametrów. Zaobserwowano, ¿e wybór punktu pocz¹tkowego istotnie wp³ywa³ na ostateczne rozwi¹zanie znajdowane przez algorytm. Znajdowane wartoœci rozwi¹zania optymalnego znacz¹co ró¿ni³y siê miêdzy sob¹ i dawa³y ró¿ne wartoœci wskaŸnika jakoœci. Dlatego testy dla obu regulatorów przeprowadzono kilka razy, za ka¿dym razem dla innego punktu pocz¹tkowego.
+
+
+\section{Optymalne nastawy regulatora PID}
+
+
+\section{Optymalne nastawy regulatora DMC}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  24 MAR 2020 00:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  25 MAR 2020 02:55
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -907,56 +907,17 @@ LaTeX Font Info:    External font `plex10' loaded for size
 
 ]
 Rozdzia\PlPrIeC {\l } 1.
-<rysunki/zapisz_pdf/zad1.pdf, id=14, 443.68158pt x 316.2726pt>
-File: rysunki/zapisz_pdf/zad1.pdf Graphic file (type pdf)
-<use rysunki/zapisz_pdf/zad1.pdf>
-Package pdftex.def Info: rysunki/zapisz_pdf/zad1.pdf  used on input line 8.
-(pdftex.def)             Requested size: 443.6805pt x 316.27182pt.
-) (zad2.tex [2
+(rysunki/zad1rys.tex)) (zad2.tex [2
 
- <./rysunki/zapisz_pdf/zad1.pdf>]
+]
 Rozdzia\PlPrIeC {\l } 2.
-Package epstopdf Info: Source file: <rysunki/p1.eps>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 34266 bytes
-(epstopdf)             Output file: <rysunki/p1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 2561 bytes
-(epstopdf)             Command: <epstopdf --outfile=rysunki/p1-eps-converted-to
-.pdf rysunki/p1.eps>
-(epstopdf)             \includegraphics on input line 8.
-Package epstopdf Info: Output file is already uptodate.
+(rysunki/zad2odp.tex) (rysunki/zad2char.tex)
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-pdfTeX warning: pdflatex (file ./rysunki/p1-eps-converted-to.pdf): PDF inclusio
-n: found PDF version <1.7>, but at most version <1.5> allowed
-<rysunki/p1-eps-converted-to.pdf, id=32, 421.575pt x 316.18124pt>
-File: rysunki/p1-eps-converted-to.pdf Graphic file (type pdf)
-<use rysunki/p1-eps-converted-to.pdf>
-Package pdftex.def Info: rysunki/p1-eps-converted-to.pdf  used on input line 8.
+[3
 
-(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-Package epstopdf Info: Source file: <rysunki/p1.eps>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 34266 bytes
-(epstopdf)             Output file: <rysunki/p1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 2561 bytes
-(epstopdf)             Command: <epstopdf --outfile=rysunki/p1-eps-converted-to
-.pdf rysunki/p1.eps>
-(epstopdf)             \includegraphics on input line 17.
-Package epstopdf Info: Output file is already uptodate.
-File: rysunki/p1-eps-converted-to.pdf Graphic file (type pdf)
-<use rysunki/p1-eps-converted-to.pdf>
-Package pdftex.def Info: rysunki/p1-eps-converted-to.pdf  used on input line 17
-.
-(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-
-Underfull \vbox (badness 2042) has occurred while \output is active []
-
- [3
-
- <./rysunki/p1-eps-converted-to.pdf>]) (zad3.tex
+]) (zad3.tex
 Overfull \hbox (39.45216pt too wide) in paragraph at lines 31--1
 []\OT4/cmr/m/n/10.95 Implementacja fuk-cji wy-ko-rzy-sta-nych do wy-ko-na-nia z
 a-da-nia za-war-te s¡ w skryp-cie [][]\OT4/cmtt/m/n/10.95 podpunkt_2_v1.m[]\OT4
@@ -970,13 +931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--1
 
 [4]
 Rozdzia\PlPrIeC {\l } 3.
-<rysunki/zapisz_pdf/odp_skok.pdf, id=41, 216.42958pt x 182.58112pt>
-File: rysunki/zapisz_pdf/odp_skok.pdf Graphic file (type pdf)
-<use rysunki/zapisz_pdf/odp_skok.pdf>
-Package pdftex.def Info: rysunki/zapisz_pdf/odp_skok.pdf  used on input line 14
-.
-(pdftex.def)             Requested size: 432.85806pt x 365.16132pt.
-) (zad4.tex
+(rysunki/zad3odp.tex)) (zad4.tex
 Overfull \hbox (39.45216pt too wide) in paragraph at lines 19--1
 []\OT4/cmr/m/n/10.95 Implementacja fuk-cji wy-ko-rzy-sta-nych do wy-ko-na-nia z
 a-da-nia za-war-te s¡ w skryp-cie [][]\OT4/cmtt/m/n/10.95 podpunkt_3_v1.m[]\OT4
@@ -988,9 +943,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--1
 
  []
 
-[5
 
- <./rysunki/zapisz_pdf/odp_skok.pdf>] [6]
+Underfull \vbox (badness 6910) has occurred while \output is active []
+
+ [5
+
+]
+[6]
 Rozdzia\PlPrIeC {\l } 4.
 [7
 
@@ -1008,91 +967,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--1
 
 [8]
 Rozdzia\PlPrIeC {\l } 5.
-Package epstopdf Info: Source file: <rysunki/p1.eps>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 34266 bytes
-(epstopdf)             Output file: <rysunki/p1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 2561 bytes
-(epstopdf)             Command: <epstopdf --outfile=rysunki/p1-eps-converted-to
-.pdf rysunki/p1.eps>
-(epstopdf)             \includegraphics on input line 14.
-Package epstopdf Info: Output file is already uptodate.
-File: rysunki/p1-eps-converted-to.pdf Graphic file (type pdf)
-<use rysunki/p1-eps-converted-to.pdf>
-Package pdftex.def Info: rysunki/p1-eps-converted-to.pdf  used on input line 14
-.
-(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
-Package epstopdf Info: Source file: <rysunki/p1.eps>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 34266 bytes
-(epstopdf)             Output file: <rysunki/p1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 2561 bytes
-(epstopdf)             Command: <epstopdf --outfile=rysunki/p1-eps-converted-to
-.pdf rysunki/p1.eps>
-(epstopdf)             \includegraphics on input line 22.
-Package epstopdf Info: Output file is already uptodate.
-File: rysunki/p1-eps-converted-to.pdf Graphic file (type pdf)
-<use rysunki/p1-eps-converted-to.pdf>
-Package pdftex.def Info: rysunki/p1-eps-converted-to.pdf  used on input line 22
-.
-(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+(rysunki/zad4P_oscylacje.tex) (rysunki/zad4_PID_inz.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package epstopdf Info: Source file: <rysunki/p1.eps>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 34266 bytes
-(epstopdf)             Output file: <rysunki/p1-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-03-24 00:02:26
-(epstopdf)                    size: 2561 bytes
-(epstopdf)             Command: <epstopdf --outfile=rysunki/p1-eps-converted-to
-.pdf rysunki/p1.eps>
-(epstopdf)             \includegraphics on input line 37.
-Package epstopdf Info: Output file is already uptodate.
-File: rysunki/p1-eps-converted-to.pdf Graphic file (type pdf)
-<use rysunki/p1-eps-converted-to.pdf>
-Package pdftex.def Info: rysunki/p1-eps-converted-to.pdf  used on input line 37
-.
-(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+[9
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (zad6.tex [9
-
-] [10]
+] (rysunki/zad4_PID2.tex) [10] (rysunki/zad4_DMC_1.tex) [11]
+(rysunki/zad4DMC.tex)) (zad6.tex [12]
 Rozdzia\PlPrIeC {\l } 6.
-) [11
+(rysunki/zad6_PID2.tex)
 
-] (sprawozdanie_szablon.aux) ) 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad6_PID1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad6_PID3.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13
+
+] [14] (rysunki/zad6_DMC1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad6_DMC2.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
+[17] (sprawozdanie_szablon.aux) ) 
 Here is how much of TeX's memory you used:
- 29824 strings out of 481556
- 738613 string characters out of 2930144
- 1038315 words of memory out of 3000000
- 44526 multiletter control sequences out of 15000+200000
+ 30605 strings out of 481556
+ 758410 string characters out of 2930144
+ 1668186 words of memory out of 3000000
+ 45280 multiletter control sequences out of 15000+200000
  554474 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,9n,98p,755b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{D:/Mi
-KTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc
-}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/p
-lit.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}<D:/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi9.pfb><D:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX 2.9/fonts/type1/
-public/pl/plbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX
- 2.9/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi
-6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi7.pfb><D:/MiKTeX 2.9/fonts/type1
-/public/pl/plmi8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi9.pfb><D:/MiKTeX 
-2.9/fonts/type1/public/pl/plmib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr1
-0.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX 2.9/fonts/type1/
-public/pl/plr8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr9.pfb><D:/MiKTeX 2.9
-/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pf
-b><D:/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1/pu
-blic/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (12 pages, 157765 bytes).
+ 63i,19n,98p,755b,2225s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{D:
+/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plme.
+enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/p
+l/plit.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}<D:/MiKTeX 2.9/fonts/type
+1/public/pl/plbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><D:/MiKT
+eX 2.9/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/pl
+mi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX 2.9/fonts/ty
+pe1/public/pl/plmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><D:/MiKT
+eX 2.9/fonts/type1/public/pl/plmib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/p
+lr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX 2.9/fonts/typ
+e1/public/pl/plr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX 
+2.9/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8
+.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1
+/public/pl/pltt10.pfb>
+Output written on sprawozdanie_szablon.pdf (18 pages, 375189 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

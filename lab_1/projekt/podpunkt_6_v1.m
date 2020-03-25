@@ -5,6 +5,7 @@ clear all;
 reg=1;          % regulator: 0-PID, 1-DMC
 x0=[20, 3, 1];     % [K, Ti, Td] lub [N, Nu, lambda]
 
+
 if reg==0
     lb=[0, 0, 0];   % K>=0, Ti>=0, Td>=0
     ub=[Inf, Inf, Inf];
@@ -24,5 +25,26 @@ x(1)=floor(x(1));   % N jest naturalne
 x(2)=floor(x(2));   % Nu jest naturalne
 end
 
+
 disp("Uzyskane parametry:");
 disp(x);
+
+% Rysowanie wykresow
+
+[err, U_cale, Y, Y_zad]=podpunkt_5_v1(x,reg);
+
+subplot(2,1,1);
+stairs(U_cale);
+grid on;
+title("Sygna³ wejœciowy");
+legend("Sygna³ steruj¹cy",'Location','SouthEast');
+
+subplot(2,1,2);
+plot(Y);
+hold on;
+grid on;
+stairs(Y_zad, '--');
+title("Sygna³ wyjœciowy i zadany");
+legend("Wyjœcie procesu","Wartosc zadana",'Location','SouthEast');
+
+%matlab2tikz ('zad6_DMC.tex','showInfo', false );

@@ -6,7 +6,7 @@
 % reg - typ regulatora (0-PID, 1-DMC)
 
 
-function err = podpunkt_5(x, reg)
+function [err,U_cale,Y,Y_zad] = podpunkt_5(x, reg)
     odp_skok = load('odp_skok_v1.mat');
     s = odp_skok.odp_skok;
 
@@ -107,14 +107,14 @@ function err = podpunkt_5(x, reg)
     
     % Trajektoria zmian sygnalu zadanego
 %     Test I
-    Y_zad(1:19)=Ypp;
-    Y_zad(20:T/Tp)=2.3;
+%     Y_zad(1:19)=Ypp;
+%     Y_zad(20:T/Tp)=2.3;
 
 %     Test II    
-%     Y_zad(1:99)=Ypp;
-%     Y_zad(100:299)=2.3;
-%     Y_zad(300:499)=1.8;
-%     Y_zad(500:T/Tp)=2.1;
+    Y_zad(1:99)=Ypp;
+    Y_zad(100:299)=2.3;
+    Y_zad(300:499)=1.8;
+    Y_zad(500:T/Tp)=2.1;
     
     
     
@@ -182,4 +182,5 @@ function err = podpunkt_5(x, reg)
     
     fprintf('Wskaznik jakosci regulacji dla: %d %d %d',x);
     err
+    
 end

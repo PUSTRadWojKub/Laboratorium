@@ -1,7 +1,91 @@
 \chapter{Optymalizacja wskaŸnika jakoœci}
 
 \section{Algorytm optymalizacji}
+Zadanie optymalizacji wskaŸnika jakoœci $E$ dla regulatora PID ma postaæ:
+
+\begin{equation}
+\min_{K,T_{\mathrm{i}},T_{\mathrm{d}}} E=\sum^{k_{\mathrm{konc}}}_{k=1}(y^{\mathrm{zad}}(k)-y(k))^2
+\end{equation}
+\begin{center}
+$K$ $\geq$ 0\\
+$T_{\mathrm{i}}$ $\geq$ 0\\
+$T_{\mathrm{d}}$ $\geq$ 0\\
+\end{center}
+
+Natomiast dla regulatora DMC zadanie optymalizacji ma postaæ:
+
+\begin{equation}
+\min_{N,N_{\mathrm{u}},\lambda} E=\sum^{k_{\mathrm{konc}}}_{k=1}(y^{\mathrm{zad}}(k)-y(k))^2
+\end{equation}
+\begin{center}
+$1$ $\leq$ $N$ $\leq$ $D$ \\
+$1$ $\leq$ $N_{\mathrm{u}}$ $\leq$ $D$\\
+$\lambda$ $\geq$ $0$\\
+\end{center}
+
+Do rozwi¹zania zadania minimalizacji funkcji wykorzystano procedurê $fmincon$.
+
+\section{Dobór parametrów optymalizacji}
+Wykorzystanie procedury $fmincon$ wymaga³o zdefiniowania wartoœci pocz¹tkowych szukanych parametrów. Zaobserwowano, ¿e wybór punktu pocz¹tkowego istotnie wp³ywa³ na ostateczne rozwi¹zanie znajdowane przez algorytm. Znajdowane wartoœci rozwi¹zania optymalnego znacz¹co ró¿ni³y siê miêdzy sob¹ i dawa³y ró¿ne wartoœci wskaŸnika jakoœci. Dlatego testy dla obu rodzajów regulatorów przeprowadzono kilka razy, za ka¿dym razem dla innego punktu pocz¹tkowego.
+
 
 \section{Optymalne nastawy regulatora PID}
 
+Na pocz¹tku sprawdzono dzia³anie algorytmu dla jednostkowych pocz¹tkowych wartoœci parametrów: $K=~\num{1}$, $T_{\mathrm{i}}=~\num{1}$, $T_{\mathrm{d}}=~\num{1}$. Uzyskane wyniki przedstawiono na rys.~\ref{reg_pid_2}. Otrzymany regulator jest niestabilny, sygna³ steruj¹cy czêsto osiaga wartoœci krañcowe.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad6_PID2.tex}
+\caption{Optymalny regulator PID: $K$=\num{17.21}, $T_{\mathrm{i}}$=\num{2.46}, $T_{\mathrm{d}}$=\num{3.65}; $E$=14.36}
+\label{reg_pid_2}
+\end{figure}
+
+
+Nastêpnie postanowiono wybraæ warunek pocz¹tkowy zapewniaj¹cy ³agodniejsz¹ pracê regulatora. W tym celu os³abiono dzia³anie ka¿dego z cz³onów na: $K=\num{0.1}$, $T_{\mathrm{i}}=\num{10}$, $T_{\mathrm{d}}=\num{0.1}$. Uzyskane wyniki przedstawiono na rys.~\ref{reg_pid_1}. Otrzymane przebiegi s¹ bardzo ³agodne, oscylacje maj¹ charakter gasn¹cy.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad6_PID1.tex}
+\caption{Optymalny regulator PID: $K$=\num{0.33}, $T_{\mathrm{i}}$=\num{9.76}, $T_{\mathrm{d}}$=\num{0}; $E$=12.13}
+\label{reg_pid_1}
+\end{figure}
+
+Przy kolejnym teœcie postanowiono wystartowaæ z warunków bliskich ca³kowitemu wy³¹czeniu wszystkich cz³onów regulatora: $K=\num{0}$, $T_{\mathrm{i}}=\num{100}$, $T_{\mathrm{d}}=\num{0}$. Rezultaty s¹ widoczne na rys.~\ref{reg_pid_3}. Tym razem wystêpuj¹ wiêksze oscylacje ni¿ poprzednio, ale wskaŸnik jakoœci ma jeszcze mniejsz¹ wartoœæ.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad6_PID3.tex}
+\caption{Optymalny regulator PID: $K$=\num{1.13}, $T_{\mathrm{i}}$=\num{6.89}, $T_{\mathrm{d}}$=\num{4.19}; $E$=10.13}
+\label{reg_pid_3}
+\end{figure}
+
+Testy ró¿nych warunków pocz¹tkowych wykaza³y, ¿e maj¹ one znacz¹cy wp³yw na otrzymane rozwi¹zanie. Ka¿dy punkt pocz¹tkowy doprowadza³ algorytm do innego rozwi¹zania. Okaza³o siê, ¿e najlepsze wyniki uzyskano, gdy punkt pocz¹tkowy by³ bliski stanu wy³¹czenia regulatora, czyli gdy cz³ony proporcjonlany i ró¿niczkuj¹cy by³y ca³kowicie wy³¹czone, a cz³on ca³kuj¹cy by³ prawie wy³¹czony.
+
+
 \section{Optymalne nastawy regulatora DMC}
+
+Na pocz¹tku sprawdzono dzia³anie algorytmu dla warunku pocz¹tkowego, w którym horyzonty predykcji oraz sterowania by³y równe horyzontowi dynamiki procesu: $N=170$, $N_{\mathrm{u}}=170$, $\lambda=1$. Wyniki przedstawiono na rys.~\ref{reg_dmc_1}. Otrzymany regulator jest stabilny i dzia³a bardzo dobrze.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad6_DMC1.tex}
+\caption{Optymalny regulator DMC: $N$=\num{85}, $N_{\mathrm{u}}$=\num{85}, $\lambda$=\num{0.11}; $E$=9.06}
+\label{reg_dmc_1}
+\end{figure}
+
+W kolejnym kroku postanowiono zmniejszyæ pocz¹tkowe horyzonty predykcji oraz sterowania: $N=10$, $N_{\mathrm{u}}=1$, $\lambda=1$. Rezultaty przedstawiono na rys.~\ref{reg_dmc_2}. Sygna³ steruj¹cy zmienia siê bardzo gwa³townie i~wystêpuj¹ oscylacje, ale wskaŸnik jakoœci ma mniejsz¹ wartoœæ ni¿ poprzednio.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad6_DMC2.tex}
+\caption{Optymalny regulator DMC: $N$=\num{12}, $N_{\mathrm{u}}$=\num{17}, $\lambda$=\num{0.004}; $E$=8.56}
+\label{reg_dmc_2}
+\end{figure}
+
+\section{Wnioski koñcowe}
+Na podstawie powy¿szych testów mo¿na stwierdziæ, ¿e wskaŸnik jakoœci nie jest najlepszym wyznacznikiem poprawnoœci dzia³ania regulatora. Nie bierze on pod uwagê m.in. zmian sygna³u steruj¹cego, którego zbyt gwa³towny przebieg mo¿e byæ niebezpieczny i negatywnie wp³ywaæ na dany uk³ad.
+
+Istnieje wiele rozwi¹zañ optymalnych, które mog¹ byæ wartoœciami minimum funckji celu. W zale¿noœci od wybranego punktu pocz¹tkowego zastosowany algorytm mo¿e znajdowaæ ro¿ne rozwi¹zania.
+
+Zarówno w przypadku regulatora PID jak i DMC przy wykorzystaniu algorytmu minimalizacji wskaŸnika jakoœci uda³o siê uzyskaæ lepsze rezultaty pod wzglêdem wartoœci otrzymanego b³êdu ni¿ przy takiej analizie prowadzonej w poprzednim punkcie metod¹ eksperymentaln¹.
+
