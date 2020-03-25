@@ -27,15 +27,15 @@ T_\mathrm{i} = \num{0.6}T_{\mathrm{osc}}
 T_\mathrm{d} = \frac {T_{\mathrm{osc}}}{8}
 \end{equation}
 
-Otrzymano nastêpuj¹ce nastawy: $K = 1$, $T_\mathrm{i} = 12$, $T_\mathrm{d} = \num{2.5}$. Wartoœæ wskaŸnika jakoœci wynosi³a $E = \num{11.66}$.
+Otrzymano nastêpuj¹ce nastawy: $K = 1,2$, $T_\mathrm{i} = 10$, $T_\mathrm{d} = \num{2.5}$. Wartoœæ wskaŸnika jakoœci wynosi³a $E = \num{16,14}$.
 
 \begin{figure}[h!]
 \centering
-\input{rysunki/zad4_PID_inz.tex}
-\caption{Regulator PID, $K = 1$, $T_\mathrm{i} = 12$, $T_\mathrm{d} = \num{2.5}$}
+\input{rysunki/zad4_PID_ZN.tex}
+\caption{Regulator PID, $K = 1,2$, $T_\mathrm{i} = 10$, $T_\mathrm{d} = \num{2.5}$}
 \end{figure}
 
-Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest do koñca zadowalajaca - wystêpuj¹ liczne przeregulowania i oscylacje. Z tego podowu eksperymentlanie dobrane zosta³y nowe nastawy, poprzez zmienianie kolejnych wpó³czynników regulatora. Celem by³a minimalizacja wskaŸnika jakoœci, danego jako suma b³êdów kwadratowych. Oprócz wskaŸnika jakoœci pod uwagê wziête zosta³y równie¿ przebiegi. Na ich podstawie dobrane zosta³y nowe nastawy: $K = \num{0.6}$, $T_\mathrm{i} = 11$, $T_\mathrm{d} = \num{3.5}$. 
+Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest zadowalaj¹ca - sygna³ wyjœciowy stale oscyluje wokó³ wartoœci zadanej. Z tego podowu eksperymentlanie dobrane zosta³y nowe nastawy, poprzez zmienianie kolejnych wpó³czynników regulatora. Celem by³a minimalizacja wskaŸnika jakoœci, danego jako suma b³êdów kwadratowych. Oprócz wskaŸnika jakoœci pod uwagê wziête zosta³y równie¿ przebiegi. Na ich podstawie dobrane zosta³y nowe nastawy: $K = \num{0.6}$, $T_\mathrm{i} = 11$, $T_\mathrm{d} = \num{3.5}$. 
 
 \begin{figure}[h!]
 \centering
@@ -43,7 +43,7 @@ Na podstawie przebiegów widaæ jednak, ¿e jakoœæ regulacji nie jest do koñca zado
 \caption{Regulator PID,  $K = \num{0.6}$, $T_\mathrm{i} = 11$, $T_\mathrm{d} = \num{3.5}$}
 \end{figure}
 
-Regulator jest trochê wolniejszy, lecz sterowanie jest ³agodniejsze i nie wystêpuj¹ przeregulowania ani oscylacje. Wartoœæ wskaŸnika jakoœci wynosi³a $E$ = 12,8.
+Jakoœæ regulacji jest zdecydowanie lepsza, nie wystêpuj¹ oscylacje czy przeregulowania. Wartoœæ wskaŸnika jakoœci wynosi³a $E$ = 12,8.
 
 \section{Dobór nastaw predykcyjnego regulatora DMC}
 Na pocz¹tkowe nastawy regulatora DMC przyjêto obliczony w punkcie 3 horyzont dynamiki  $N = N_\mathrm{u} = D = 170$, zaœ wspó³czynnik kary $\lambda = 1$. Nastêpnie zmniejszane by³y horyzonty $N$ i $N_\mathrm{u}$ oraz zwiêkszany wspó³czynnik $\lambda$. WskaŸnik jakoœci regulacji, podobnie jak w przypadku regulatora PID, dany jest jako suma b³êdów kwadratowych.
