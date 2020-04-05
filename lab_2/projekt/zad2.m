@@ -1,16 +1,16 @@
 %Wyznaczamy symulacyjnie odpowiedzi skokowe dla procesu, dla kilku zmian
-%sygnalu sterowania z uwzglednieniem ograniczen
+%sygnalu sterowania i sygnalu zaklocenia
 
 clear;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
 Tp = 0.5; %okres probkowania
 T = 200; %czas symulacji
-n = T/Tp;
+n = T/Tp; %liczba probek
 opoznienie = 6;
 
 %Opoznienie
@@ -37,7 +37,7 @@ Z7 = 1.5;
 Z8 = 2.0;
 
 figure;
-%Odpowiedzi skokowe dla torów sterowanie - wyjœcie
+%Odpowiedzi skokowe dla torow sterowanie - wyjscie
 for i=1:8
 for k = opoznienie+1:(T/Tp)
     switch i
@@ -68,7 +68,7 @@ hold on;
 subplot(2,1,2);
 stairs(1:T/Tp, U)
 grid on;
-title("Zaklocenia");
+title("Sygnal wejsciowy sterujacy");
 hold on;
 i=i+1;
 end
@@ -76,7 +76,7 @@ hold off;
 
 
 figure;
-%Odpowiedzi skokowe dla torów zak³ócenia - wyjœcie
+%Odpowiedzi skokowe dla torów zaklocenia - wyjscie
 for i=1:8
 for k = opoznienie+1:(T/Tp)
     switch i
@@ -107,7 +107,7 @@ hold on;
 subplot(2,1,2);
 stairs(1:T/Tp, Z)
 grid on;
-title("Sygnal wejsciowy");
+title("Sygnal wejsciowy zaklocenia");
 hold on;
 i=i+1;
 end

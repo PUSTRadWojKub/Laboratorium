@@ -8,9 +8,9 @@ odp_skokU = load('odp_skokU.mat');
 s = odp_skokU.odp_skok;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalownym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
 
 Tp = 0.5; %okres probkowania

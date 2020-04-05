@@ -12,9 +12,9 @@ s = odp_skokU.odp_skok;
 sz = odp_skokZ.odp_skok;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
 
 Tp = 0.5; %okres probkowania
@@ -63,12 +63,17 @@ for i=1:N
 end
 
 MZ = zeros(N,Dz-1);
+
+for i = 1:N
+    MZ(i,1) = sz(i);
+end
+
 for i = 1:N
        for j = 1:Dz-1
-          if i+j <= N
-             MZ(i,j) = sz(i+j)-sz(j);
+          if i+j <= Dz
+             MZ(i,j+1) = sz(i+j)-sz(j);
           else
-             MZ(i,j) = sz(Dz)-sz(j);
+             MZ(i,j+1) = sz(Dz)-sz(j);
           end
        end
 end

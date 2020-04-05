@@ -8,10 +8,6 @@ Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 Zpp = 0;
 
-%Ograniczenia wartosci sygnalu sterowania
-Umin = 0.9;
-Umax = 1.3;
-
 Tp = 0.5; %okres probkowania
 T = 200; %czas symulacji
 n = T/Tp;
@@ -39,4 +35,4 @@ plot(1:n, Y);
 title('Y')
 
 %Mozemy zauwazyc stan ustalony (wartosc wyjscia nie zmienia sie na calym
-%przebiegu
+%przebiegu)

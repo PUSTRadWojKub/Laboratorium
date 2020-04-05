@@ -1,14 +1,14 @@
 clear;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalownym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
 Us = 1.0;
 
 Tp = 0.5; %okres probkowania
-Ts = 25;
+Ts = 25; %czas w ktorym nastepuje skok sterowania
 T = 200; %czas symulacji
 n = T/Tp;
 nskok = Ts/Tp;
@@ -35,8 +35,8 @@ stairs(1:T/Tp, U/(Us-Upp)-Upp)
 grid on;
 title("Sygnal wejsciowy");
 
-%Zakladam ze odpowiedz skokowa ustabilizowala sie przy 190 probce (wartosc po
-%ustabilizowaniu 23.18)
+%Zakladam ze odpowiedz skokowa ustabilizowala sie przy 225 probce (wartosc po
+%ustabilizowaniu 1.885)
 
 odp_skok = (Y(nskok+1:225)-Ypp)/(Us-Upp);
 
@@ -45,3 +45,5 @@ figure;
 plot(nskok+1:225, odp_skok)
 grid on;
 title("Odpowiedz skokowa");
+
+save('odp_skokU.mat', 'odp_skok');
