@@ -1,0 +1,47 @@
+\chapter{Odpowiedzi skokowe dla algorytmu DMC}
+
+\section{Odpowiedü skokowa toru wejúcie-wyjúcie procesu}
+Do wyznaczania odpowiedzi skokowej toru $U-Y$ dla algorytmu DMC wybrana zosta≥a odpowiedü procesu dla jednostkowej zmiany sygna≥u sterujπcego: 
+
+\begin{equation}
+u(k)=
+\begin{cases}
+0 & \textrm{dla } k<0 \\
+1 & \textrm{dla } k\ge0
+\end{cases}
+\nonumber
+\end{equation}
+
+W trakcie symulacji sygna≥ zak≥Ûcenia mia≥ caly czas wartoúÊ zerowπ, odpowiadajπcπ wartoúci z punktu pracy. Otrzymanπ odpowiedü skokowπ przedstawiono na rys.~\ref{odptor_uy}.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_odp_uy.tex}
+\caption{Odpowiedü skokowa toru wejúcie-wyjúcie procesu dla algorytmu DMC}
+\label{odptor_uy}
+\end{figure}
+
+
+\section{Odpowiedü skokowa toru zak≥Ûcenie-wyjúcie procesu}
+Do wyznaczania odpowiedzi skokowej toru $Z-Y$ dla algorytmu DMC wybrana zosta≥a odpowiedü procesu dla jednostkowej zmiany sygna≥u zak≥Ûcenia: 
+
+\begin{equation}
+z(k)=
+\begin{cases}
+0 & \textrm{dla } k<0 \\
+1 & \textrm{dla } k\ge0
+\end{cases}
+\nonumber
+\end{equation}
+
+W trakcie symulacji sygna≥ sterujπcy mia≥ caly czas wartoúÊ zerowπ, odpowiadajπcπ wartoúci z punktu pracy. Otrzymanπ odpowiedü skokowπ przedstawiono na rys.~\ref{odptor_zy}.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_odp_zy.tex}
+\caption{Odpowiedü skokowa toru zak≥Ûcenie-wyjúcie procesu dla algorytmu DMC}
+\label{odptor_zy}
+\end{figure}
+
+\section{Implementacja}
+Implementacje fukcji wykorzystanych do wykonania zadania sπ zawarte w skryptach \verb+zad_skokU.m+ oraz \verb+zad_skokZ.m+.

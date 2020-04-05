@@ -1,0 +1,51 @@
+\chapter{Odpowiedzi skokowe i charakterystyka statyczna}
+
+\section{Wyznaczenie odpowiedzi skokowych toru wejœcie-wyjœcie procesu}
+W celu wyznaczenia odpowiedzi skokowych obiekt by³ pobudzany, w punkcie pracy, ró¿nymi skokami sygna³u steruj¹cego w chwili $k=50$. Przeprowadzono osiem testów dla ró¿nych wartoœci skoków. Uzyskane odpowiedzi skokowe wraz z odpowiadaj¹cymi im przebiegami sygna³u sterowania przedstawiono na rys.~\ref{tor_uy}.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad2_tor_u_y.tex}
+\caption{Odpowiedzi skokowe toru wejœcie-wyjœcie procesu}
+\label{tor_uy}
+\end{figure}
+
+\section{Wyznaczenie odpowiedzi skokowych toru zak³ócenie-wyjœcie procesu}
+W celu wyznaczenia odpowiedzi skokowych obiekt by³ pobudzany, w punkcie pracy, ró¿nymi skokami sygna³u zak³ócenia w chwili $k=50$. Przeprowadzono osiem testów dla ró¿nych wartoœci skoków. Uzyskane odpowiedzi skokowe wraz z odpowiadaj¹cymi im przebiegami sygna³u zak³ócenia przedstawiono na rys.~\ref{tor_zy}.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad2_tor_z_y.tex}
+\caption{Odpowiedzi skokowe toru zak³ócenie-wyjœcie procesu}
+\label{tor_zy}
+\end{figure}
+
+
+\section{Charakterystyka statyczna}
+W celu wyznaczenia charakterystyki statycznej procesu wyznaczono odpowiedŸ uk³adu w stanie ustalonym dla pobudzeñ ró¿nymi wartoœciami sygna³u steruj¹cego i zak³ócenia. Zebrane wyniki przedstawiono na rys.~\ref{char_stat}.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad2_char_stat.tex}
+\caption{Charakterystyka statyczna procesu}
+\label{char_stat}
+\end{figure}
+
+
+\section{Wzmocnienie statyczne procesu}
+Na podstawie rys.~\ref{char_stat} mo¿na powiedzieæ, ¿e obiekt jest w przybli¿eniu liniowy. Mo¿na zatem wyznaczyæ wzmocnienie statyczne obu torów procesu. Wzmocnienie statyczne toru $U-Y$ dla danego zak³ócenia $Z$ mo¿na obliczyæ na podstawie wzoru:
+
+\begin{equation}
+K_{\mathrm{stat\_{uy}}} = \frac{Y(Z,U_{\mathrm{max}})-Y(Z,U_{\mathrm{min}})}{U_{\mathrm{max}}-U_{\mathrm{min}}}
+\end{equation}
+
+Natomiast wzmocnienie statyczne toru $Z-Y$ dla danego sterowania $U$ mo¿na obliczyæ ze wzoru:
+
+\begin{equation}
+K_{\mathrm{stat\_{zy}}} = \frac{Y(Z_{\mathrm{max}},U)-Y(Z_{\mathrm{min}},U)}{Z_{\mathrm{max}}-Z_{\mathrm{min}}}
+\end{equation}
+
+Dla danego procesu wzmocnienie statyczne toru $U-Y$ wynosi $K_{\mathrm{stat\_{uy}}}=\num{1.8857}$, a wzmocnienie statyczne toru $Z-Y$ wynosi $K_{\mathrm{stat\_{zy}}}=\num{1.0906}$.
+
+\section{Implementacja}
+Implementacje fukcji wykorzystanych do wykonania zadania zawarte s¹ w skryptach \verb+zad2.m+ oraz \verb+zad2_char_stat.m+.
