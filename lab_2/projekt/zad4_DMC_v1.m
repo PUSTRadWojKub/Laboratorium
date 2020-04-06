@@ -21,7 +21,7 @@ Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 
 Tp = 0.5; %okres probkowania
-T = 60; %czas symulacji
+T = 50; %czas symulacji
 n = T/Tp; %liczba probek
 opoznienie = 6; %opoznienie obiektu
 
@@ -35,14 +35,19 @@ dZ(1:n) = 0;
 
 %Horyzonty
 D=length(s);
-N=20; %20
-Nu=3; %1
+N=150; %20
+Nu=150; %1
+strD = string(D);
+strN = string(N);
+strNu = string(Nu);
+
 if (pomiar)
     Dz = length(sz);
 end
     
 %Wspolczynnik kary za przyrosty sterowania
 lambda=1; %1
+strL = string(lambda);
 
 err = 0;
     
@@ -102,7 +107,7 @@ if(pomiar)
     t_skoku = 100;
     if(typ_zak == 1)
         Z(t_skoku:n) = 1;
-    elseif(typ_zak == 2)    %Zak³ócenia sinusoidalne
+    elseif(typ_zak == 2)    %Zaklocenia sinusoidalne
         pom = (1 : 1 : n);
         Z(t_skoku:n) = 0.5*sin(0.08*pom(t_skoku:n));
     end
@@ -153,14 +158,22 @@ subplot(2,1,1);
 stairs(U);
 grid on;
 ylim([-4 3]);
-title("Sygnal wejsciowy");
+title("Sygna? wej?ciowy sterowania");
+xlabel('$k$', 'Interpreter', 'latex');
+legend('$u(k)$', 'Interpreter', 'latex');
 
 subplot(2,1,2);
 plot(1:n, Y);
 hold on;
 grid on;
 stairs(1:T/Tp, Y_zad, '--');
-title("Sygnal wyjsciowy i zadany");
+title("Sygna? wyj?ciowy i warto?? zadana");
 ylim([-2 3]);
+xlabel('$k$', 'Interpreter', 'latex');
+legend('$y(k)$','$y^{\mathrm{zad}}(k)$', 'Interpreter', 'latex');
 hold off;
+
+strfin = strcat('zad4_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '.tex');
+matlab2tikz (char(strfin), 'showInfo', false );
+
 err

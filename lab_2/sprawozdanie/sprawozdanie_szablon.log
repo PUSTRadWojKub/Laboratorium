@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 13:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 17:34
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -1098,16 +1098,16 @@ Rozdzia\PlPrIeC {\l } 4.
 ]
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <12> on input line 99.
-) [9] (sprawozdanie_szablon.aux)
+ (rysunki/zad4_DMC_D175_N175_Nu175_L1.tex)) [9] (sprawozdanie_szablon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34703 strings out of 481292
- 871105 string characters out of 2907317
+ 34731 strings out of 481292
+ 871788 string characters out of 2907317
  2961409 words of memory out of 3000000
- 49666 multiletter control sequences out of 15000+200000
+ 49691 multiletter control sequences out of 15000+200000
  556825 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,102p,2647b,9006s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1128,14 +1128,15 @@ onts/type1/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2
 eX 2.9/fonts/type1/public/pl/plmib10.pfb><C:/Users/Nitrox/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Nitr
-ox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (10 pages, 253829 bytes).
+Programs/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><C:/Users/Nitrox/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/N
+itrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
+Output written on sprawozdanie_szablon.pdf (10 pages, 263247 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 108 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
