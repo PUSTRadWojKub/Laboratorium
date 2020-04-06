@@ -1,22 +1,29 @@
-\chapter{Odpornoœæ na b³¹d pomiaru sygna³u zak³ócenia (szum pomiarowy)}
+\chapter{Odpornoœæ algorytmu na b³¹d pomiaru sygna³u zak³ócenia (szum pomiarowy)}
 
+\section{Przeprowadzone eksperymety}
+
+Wyniki symulacji dla algorytmu uwzglêdniajacego zak³ócenia z szumem pomiarowym zmieniaj¹cym wartoœci od $-2\pi$ do $+2\pi$ przedstawiono na rys.~\ref{zad7_1}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{22.9868}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad7_DMC_D175_N10_Nu1_L1_Dz_1.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC z uwzglêdnieniem zak³óceñ z szumem pomiarowym}
+	\label{zad7_1}
 \end{figure}
 
-dla +-2pi
-
-WskaŸnik iloœciowy: 22.9868
+Wyniki symulacji dla algorytmu uwzglêdniajacego zak³ócenia z szumem pomiarowym zmieniaj¹cym wartoœci od $-\pi$ do $+\pi$ przedstawiono na rys.~\ref{zad7_2}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{23.9415}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad7_DMC_D175_N10_Nu1_L1_Dz_2.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC z uwzglêdnieniem zak³óceñ z szumem pomiarowym}
+	\label{zad7_2}
 \end{figure}
 
-dla +-1pi
 
-WskaŸnik iloœciowy: 23.9415
+\section{Wnioski}
+Wystêpowanie b³êdu pomiaru sygna³u zak³ócenia powoduje, ¿e uk³ad zachowuje sie niespokojnie i wystepuj¹ nieznaczne oscylacje na wyjœciu obiektu (sygna³ na wyjœciu nie jest idealnie stabilny). Nie wp³ywa to jednak neagtywnie na uk³ad, poniewa¿ wystêpuj¹ce oscylacje s¹ bardzo niewielkie i mieszcz¹ siê w dopuszczalnym przedziale b³êdu: $(y+\epsilon,y-\epsilon)$. Zatem regulator poprawnie realizuje swoje zadanie i utrzymuje wartoœæ zadan¹ na wyjœciu procesu.
+
+
+\section{Implementacja}
+Implementacja algorytmu DMC z uwzglêdnieniem zak³óceñ jest zawarta w skrypcie \\ \verb+zad567_DMC_pomiarZ_v1.m+.

@@ -1,19 +1,34 @@
-\chapter{Regulacja za pomoc¹ DMC z uwzglêdnieniem zak³óceñ}
+\chapter{Regulacja za pomoc¹ DMC z uwzglêdnieniem zak³óceñ zmiennych sinusoidalnie}
+
+\section{Przeprowadzone eksperymety}
+
+Tym razem zak³adamy, ¿e oprócz zmian sygna³u wartosci zadanej w chwili $k=100$, w pewnym momencie pojawia siê te¿ zak³ócenie zmienne sinusoidalnie, które bêdzie oddzia³ywa³o na obiekt. Zak³ócenie to pojawi siê w chwili $k=300$, czyli pewnien czas po osi¹gnieciu przez proces wartoœci zadanej wyjscia.
+
+Przyjmujemy parametry regulatora DMC takie jak w~(\ref{DMCfinal}).
+
+Wyniki symulacji dla algorytmu nieuwzglêdniajacego zak³óceñ przedstawiono na rys.~\ref{zad6_bz}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{21.4699}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad6_DMC_D175_N10_Nu1_L1_Dz_bz_1.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC bez uwzglêdnienia zak³óceñ sinusoidalnych}
+	\label{zad6_bz}
 \end{figure}
 
-WskaŸnik iloœciowy: 21.4699
+Wyniki symulacji dla algorytmu uwzglêdniajacego zak³ócenia przedstawiono na rys.~\ref{zad6_zz}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{10.3366}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad6_DMC_D175_N10_Nu1_L1_Dz_1.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC z uwzglêdnieniem zak³óceñ sinusoidalnych}
+	\label{zad6_zz}
 \end{figure}
 
-WskaŸnik iloœciowy: 10.3366
 
-Mo¿emy zauwa¿yæ znaczn¹ poprawê wskaŸnika iloœciowego. Nie nastêpuje szybszy powrót do wartoœci zadanej co wskazuje na to, ¿e zak³óceñ okresowych nie mo¿na w pe³ni kompensowaæ. Jednak¿e w przypadku brania pod uwagê zak³óceñ mo¿na ograniczyæ zakres wywo³anych oscylacji sygna³u wyjœciowego.
+\section{Wnioski}
+
+W drugim przypadku mo¿emy zauwa¿yæ znaczn¹ poprawê wskaŸnika iloœciowego. Nie nastêpuje szybszy powrót do wartoœci zadanej, co wskazuje na to, ¿e zak³óceñ okresowych nie mo¿na w pe³ni kompensowaæ. Jednak¿e w przypadku brania pod uwagê zak³óceñ mo¿na ograniczyæ zakres wywo³anych oscylacji sygna³u wyjœciowego.
+
+
+\section{Implementacja}
+Implementacja algorytmu DMC z uwzglêdnieniem zak³óceñ jest zawarta w skrypcie \\ \verb+zad567_DMC_pomiarZ_v1.m+.

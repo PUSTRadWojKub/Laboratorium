@@ -1,25 +1,39 @@
-\chapter{Regulacja za pomoc¹ DMC z uwzglêdnieniem zak³óceñ}
+\chapter{Regulacja za pomoc¹ DMC z uwzglêdnieniem zak³óceñ zmiennych skokowo}
 
-$D^\mathrm{z} = 50$, poniewa¿ tyle wynosi horyzont dynamiki zak³óceñ.
+\section{Przeprowadzone eksperymety}
 
-Parametry:
-$D = 175$, $D^\mathrm{z} = 50$, $N = 10$, $N_\mathrm{u} = 10$ i dla $\lambda = 1$
+Tym razem zak³adamy, ¿e oprócz zmian sygna³u wartosci zadanej w chwili $k=100$ nastêpuje te¿ skokowa zmiana sygna³u zak³ócenia z wartosci 0~do~1 (zmiana ta ma miejsce w chwili $k=300$, czyli pewnien czas po osiagnieciu przez proces wartoœci zadanej wyjscia).
+
+Przyjmujemy, ¿e $D^\mathrm{z} = 50$, poniewa¿ tyle wynosi horyzont dynamiki zak³óceñ.
+
+Przyjmujemy nastêpuj¹ce parametry regulatora DMC:
+\begin{equation}
+	D = 175, D^\mathrm{z} = 50, N = 10, N_\mathrm{u} = 10, \lambda = 1
+	\label{DMCfinal}
+\end{equation}
+
+Wyniki symulacji dla algorytmu nieuwzglêdniajacego zak³óceñ przedstawiono na rys.~\ref{zad5_bz}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{11.2706}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad5_DMC_D175_N10_Nu1_L1_Dz_bz_1.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC bez uwzglêdnienia zak³óceñ}
+	\label{zad5_bz}
 \end{figure}
 
-WskaŸnik iloœciowy: 11.2706
+Wyniki symulacji dla algorytmu uwzglêdniajacego zak³ócenia przedstawiono na rys.~\ref{zad5_zz}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{8.8851}$.
 
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad5_DMC_D175_N10_Nu1_L1_Dz_1.tex}
 	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC z uwzglêdnieniem zak³óceñ}
+	\label{zad5_zz}
 \end{figure}
 
-WskaŸnik iloœciowy: 8.8851
 
 \section{Wnioski}
-Mo¿emy zauwa¿yæ znaczn¹ poprawê wskaŸnika iloœciowego. Nastêpuje szybszy powrót do wartoœci zadanej co wskazuje na to, ¿e pomiar zak³ócenia i jego uwzglêdnienie prowadzi do lepszej regulacji ni¿ gdy brak jest tego pomiaru.
+W drugim przypadku mo¿emy zauwa¿yæ znaczn¹ poprawê wskaŸnika iloœciowego. Nastêpuje szybszy powrót do wartoœci zadanej, co wskazuje na to, ¿e pomiar zak³ócenia i jego uwzglêdnienie prowadzi do lepszej regulacji, ni¿ gdy brak jest tego pomiaru.
+
+
+\section{Implementacja}
+Implementacja algorytmu DMC z uwzglêdnieniem zak³óceñ jest zawarta w skrypcie \\ \verb+zad567_DMC_pomiarZ_v1.m+.

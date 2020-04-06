@@ -1,0 +1,218 @@
+\chapter{Implementacja algorytmu DMC w najprostszej wersji analitycznej}
+
+\section{Regulator DMC z uwzglêdnieniem zak³óceñ}
+Regulator DMC jest to regulator predykcyjny - dzia³a on z wyprzedzeniem, zanim nast¹pi¹ zmiany wartoœci sygna³u wyjœciowego. Wektor przyrostów sterowañ dany jest wzorem:
+
+\begin{align}
+\triangle U(k)&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y^0(k)]\\
+&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y(k)-\boldsymbol{M}^\mathrm{P} \triangle U^\mathrm{P}(k)-\boldsymbol{M}^{\mathrm{zP}}\triangle Z^\mathrm{P}(k)]
+\label{dU1}
+\end{align}
+gdzie:
+
+\begin{equation}
+\boldsymbol{K}=(\boldsymbol{M}^\mathrm{T}\boldsymbol{M}+\lambda I)^{-1}\boldsymbol{M}^\mathrm{T}
+\label{K}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}=\left[
+\begin{array}
+{cccc}
+s_{1} & 0 & \ldots & 0\\
+s_{2} & s_{1} & \ldots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N} & s_{N-1} & \ldots &  s_{N-N_{\mathrm{u}}+1}
+\end{array}
+\right]_{N\times N_u}
+\label{Mm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{P}=\left[
+\begin{array}
+{cccc}
+s_{2}-s_{1} & s_{3}-s_{2} & \ldots & s_{D}-s_{D-1}\\
+s_{3}-s_{1} & s_{4}-s_{2} & \ldots & s_{D+1}-s_{D-1}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N+1}-s_{1} & s_{N+2}-s_{2} & \ldots &  s_{N+D-1}-S_{D-1}
+\end{array}
+\right]_{N\times (D-1)}
+\label{MPm}
+\end{equation}
+
+\begin{equation}
+\triangle U^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle u(k-1)\\
+\vdots\\
+\triangle u(k-(D-1))
+\end{array}
+\right]_{(D-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{zP}=\left[
+\begin{array}
+{ccccc}
+s_1^\mathrm{z} & s_{2}^\mathrm{z}-s_{1}^\mathrm{z} & s_{3}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots & s_{D^\mathrm{z}}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}\\
+s_2^\mathrm{z} & s_{3}^\mathrm{z}-s_{1}^\mathrm{z} & s_{4}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots & s_{D^\mathrm{z}+1}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_N^\mathrm{z} & s_{N+1}^\mathrm{z}-s_{1}^\mathrm{z} & s_{N+2}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots &  s_{N+D^\mathrm{z}-1}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}
+\end{array}
+\right]_{N\times (D^\mathrm{z}-1)}
+\label{MPm}
+\end{equation}
+
+\begin{equation}
+\triangle Z^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle z(k-1)\\
+\vdots\\
+\triangle z(k-(D^\mathrm{z}-1))
+\end{array}
+\right]_{(D^\mathrm{z}-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+gdzie $N$ - horyzont predykcji, $N_\mathrm{u}$ - horyzont sterowania, $D$ - horyzont dynamiki, $D^\mathrm{z}$ - horyzont dynamiki zak³óceñ, $\lambda$ - kara za zmianê sterowania
+\bigbreak
+W tym przypadku nale¿y wyznaczyæ tylko pierwszy element macierzy $\Delta U(k)$ czyli $\Delta u(k|k)$. Aktualne sterowanie uzyskuje siê poprzez zsumowanie $\Delta u(k|k)$ z poprzednim sterowaniem.
+
+\begin{equation}
+\triangle u(k|k) = k_\mathrm{e}e(k) - \sum_{j=1}^{D-1}\boldsymbol{k}_j^\mathrm{u}\triangle u(k-j) -  \sum_{j=1}^{D^\mathrm{z}}\boldsymbol{k}_j^\mathrm{z}\triangle u(k-j-1)
+\end{equation}
+
+\begin{equation}
+k_\mathrm{e}=\sum_{i=1}^{N}k_{1,i}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{k}_j^\mathrm{u}=\boldsymbol{\overline{K}}_1\boldsymbol{M}_j^\mathrm{P}, \quad j=1,\ldots ,D-1
+\end{equation}
+
+\begin{equation}
+\boldsymbol{k}_j^\mathrm{z}=\boldsymbol{\overline{K}}_1\boldsymbol{M}_j^\mathrm{zP}, \quad j=1,\ldots ,D^\mathrm{z}
+\end{equation}
+
+\section{Dobieranie parametrów $D$, $N$, $N_\mathrm{u}$ i $\lambda$ algorytmu DMC}
+
+Parametry $D$, $N$, $N_\mathrm{u}$, $\lambda$ algorytmu DMC bêd¹ dobierane przy skokowej zmianie sygna³u wartoœci zadanej z 0 do 1 i zerowym zak³óceniu. Dla danego zestawu parametrów algorytm regulacji bêdzie oceniany jakoœciowo (na podstawie rysunków przebiegów sygna³ów) jak i iloœciowo za pomoc¹ poni¿szej miary:
+
+\begin{equation}
+	E = \sum^{k_\mathrm{konc}}_{k=1}(y^\mathrm{zad}(k)-y(k))^2
+\end{equation}
+
+D³ugoœæ horyzontu dynamiki obiektu wynika z d³ugoœci odpowiedzi skokowej tego obiektu i~wynosi $D=175$. Dobieranie wartoœci horyzontu predykcji oraz horyzontu sterowania rozpoczynamy od najwiêkszej mo¿liwej wartoœci, czyli od $D$. Wspó³czynnik kary za przyrosty sterowania ma wartoœæ pocz¹tkow¹ równ¹ $1$. Zatem przyjmujemy: 
+\begin{equation}
+	D = 175, N = 175, N_\mathrm{u} = 175, \lambda = 1
+	\label{test1}
+\end{equation}
+Wyniki symulacji dla parametrów~(\ref{test1}) przedstawiono na rys.~\ref{175_175_175_1}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{7.6816}$.
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N175_Nu175_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+	\label{175_175_175_1}
+\end{figure}
+
+
+Widzimy, ¿e algorytm sprawnie radzi sobie z regulacj¹, jednak kosztem du¿ych nak³adów obliczeniowych (du¿e wymiary macierzy). Zmniejszamy zatem horyzont predykcji oraz sterowania i~do~kolejnego testu bierzemy nastêpuj¹ce parametry:
+\begin{equation}
+	D = 175, N = 30, N_\mathrm{u} = 30, \lambda = 1
+	\label{test2}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N30_Nu30_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+	\label{175_30_30_1}
+\end{figure}
+
+Wyniki symulacji dla parametrów~(\ref{test2}) przedstawiono na rys.~\ref{175_30_30_1}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{7.6817}$.
+
+Kontynuujemy skracanie horyzontów predykcji oraz sterowania i przyjmujemy parametry:
+\begin{equation}
+	D = 175, N = 20, N_\mathrm{u} = 20, \lambda = 1
+	\label{test3}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N20_Nu20_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+	\label{175_20_20_1}
+\end{figure}
+
+Wyniki symulacji dla parametrów~(\ref{test3}) przedstawiono na rys.~\ref{175_20_20_1}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{7.6908}$.
+
+
+Dalej skracamy horyzonty $N$ i $N_\mathrm{u}$ i przyjmujemy parametry:
+\begin{equation}
+	D = 175, N = 10, N_\mathrm{u} = 10, \lambda = 1
+	\label{test4}
+\end{equation}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu10_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+	\label{175_10_10_1}
+\end{figure}
+
+Wyniki symulacji dla parametrów~(\ref{test4}) przedstawiono na rys.~\ref{175_10_10_1}. Otrzymana wartoœæ wskaŸnika iloœciowego wynosi: $\num{7.5941}$.
+
+Mo¿emy zauwa¿yæ zmniejszenie wartoœci wskaŸnika iloœciowego. Jeœli chodzi o jakoœæ regulacji, to nastêpuje ona wolniej, ni¿ w poprzednich przypadkach, co jest spowodowane krótszym horyzontem predykcji. Widzimy równie¿ lekkie przeregulowanie.
+
+
+
+
+
+
+Parametry:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu1_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.2156
+
+Widzimy znaczn¹ poprawê wskaŸnika iloœciowego oraz eliminacjê przeregulowania. Przyjmujemy w dalszym etapie doboru parametrów $N_\mathrm{u} = 1$
+
+Parametry:
+$D = 175$, $N = 5$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N5_Nu1_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 16.3408
+
+Widzimy ¿e dalsze skracanie horyzontu predykcji skutkuje zwiêkszeniem wskaŸnika iloœciowego oraz zwiêkszeniem czasu regulacji, przeregulowaniem. Stwierdzamy ¿e $N = 10$ jest optymalnym doborem.
+
+Parametry:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1.5$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu1_L1.5.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.6539
+
+Widzimy pogorszenie wskaŸnika iloœciowego, wystêpuje przeregulowanie. Stwierdzamy, ¿e $\lambda=1$ to optymalna wartoœæ.
+
+Ostateczne dobory algorytmu DMC:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
+
+\section{Implementacja}
+Implementacja algorytmu DMC jest zawarta w skrypcie \verb+zad4_DMC_v1.m+.

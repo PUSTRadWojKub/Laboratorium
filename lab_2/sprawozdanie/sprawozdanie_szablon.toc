@@ -15,8 +15,17 @@
 \contentsline {chapter}{\numberline {4\relax .\enspace }Implementacja algorytmu DMC w najprostszej wersji analitycznej}{8}%
 \contentsline {section}{\numberline {4.1\relax .\enspace }Regulator DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n}{8}%
 \contentsline {section}{\numberline {4.2\relax .\enspace }Dobieranie parametr\'ow $D$, $N$, $N_\mathrm {u}$ i $\lambda $ algorytmu DMC}{9}%
-\contentsline {section}{\numberline {4.3\relax .\enspace }Implementacja}{11}%
-\contentsline {chapter}{\numberline {5\relax .\enspace }Regulacja za pomoc\k a DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n}{14}%
-\contentsline {section}{\numberline {5.1\relax .\enspace }Wnioski}{14}%
-\contentsline {chapter}{\numberline {6\relax .\enspace }Regulacja za pomoc\k a DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n}{16}%
-\contentsline {chapter}{\numberline {7\relax .\enspace }}{18}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Ostateczne dobory parametr\'ow algorytmu DMC}{11}%
+\contentsline {section}{\numberline {4.4\relax .\enspace }Implementacja}{11}%
+\contentsline {chapter}{\numberline {5\relax .\enspace }Regulacja za pomoc\k a DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n zmiennych skokowo}{15}%
+\contentsline {section}{\numberline {5.1\relax .\enspace }Przeprowadzone eksperymety}{15}%
+\contentsline {section}{\numberline {5.2\relax .\enspace }Wnioski}{16}%
+\contentsline {section}{\numberline {5.3\relax .\enspace }Implementacja}{16}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Regulacja za pomoc\k a DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n zmiennych sinusoidalnie}{17}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Przeprowadzone eksperymety}{17}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Wnioski}{18}%
+\contentsline {section}{\numberline {6.3\relax .\enspace }Implementacja}{18}%
+\contentsline {chapter}{\numberline {7\relax .\enspace }Odporno\'s\'c algorytmu na b\IeC {\l }\k ad pomiaru sygna\IeC {\l }u zak\IeC {\l }\'ocenia (szum pomiarowy)}{19}%
+\contentsline {section}{\numberline {7.1\relax .\enspace }Przeprowadzone eksperymety}{19}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Wnioski}{19}%
+\contentsline {section}{\numberline {7.3\relax .\enspace }Implementacja}{20}%

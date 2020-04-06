@@ -165,10 +165,10 @@ stairs(U);
 hold on;
 grid on;
 stairs(Z);
-ylim([-4 3]);
-title("Sygna? wej?ciowy sterowania i zak?ócenia", 'FontName', 'Times New Roman CE');
+ylim([-4 4]);
+title("Sygna³ wejœciowy sterowania i zak³ócenia", 'FontName', 'Times New Roman CE');
 xlabel('$k$', 'Interpreter', 'latex');
-legend('$u(k)$', '$z(k)$', 'Interpreter', 'latex');
+legend('$u(k)$', '$z(k)$', 'Interpreter', 'latex','Location','southwest');
 hold off;
 
 subplot(2,1,2);
@@ -176,10 +176,10 @@ plot(1:n, Y);
 hold on;
 grid on;
 stairs(1:T/Tp, Y_zad, '--');
-title("Sygna? wyj?ciowy i warto?? zadana", 'FontName', 'Times New Roman CE');
+title("Sygna³ wyjœciowy i wartoœæ zadana", 'FontName', 'Times New Roman CE');
 ylim([-2 3]);
 xlabel('$k$', 'Interpreter', 'latex');
-legend('$y(k)$','$y^{\mathrm{zad}}(k)$', 'Interpreter', 'latex');
+legend('$y(k)$','$y^{\mathrm{zad}}(k)$', 'Interpreter', 'latex','Location','southwest');
 hold off;
 
 if(pomiar)
