@@ -2,8 +2,8 @@
 % 
 clear all;
 
-pomiar = 0;      % 0 - brak pomiaru zaklocen, 1 - z pomiarem zaklocen
-typ_zak = 0;     % 1 - skok jednostkowy zaklocen, 2 - zaklocenia sinusoidalne
+pomiar = 1;      % 0 - brak pomiaru zaklocen, 1 - z pomiarem zaklocen
+typ_zak = 1;     % 1 - skok jednostkowy zaklocen, 2 - zaklocenia sinusoidalne
 szum = 0;        % 0 - brak szumu, 1 - szum obecny
 
 odp_skokU = load('odp_skokU.mat');
@@ -21,7 +21,7 @@ Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 
 Tp = 0.5; %okres probkowania
-T = 50; %czas symulacji
+T = 300; %czas symulacji
 n = T/Tp; %liczba probek
 opoznienie = 6; %opoznienie obiektu
 
@@ -43,6 +43,7 @@ strNu = string(Nu);
 
 if (pomiar)
     Dz = length(sz);
+    strDz = string(Dz);
 end
     
 %Wspolczynnik kary za przyrosty sterowania
@@ -104,8 +105,10 @@ end
 ke=sum(K(1,:));
 
 % % Skok wartosci zadanej
-Y_zad(1:n) = Ypp;
-Y_zad(n/2:n) = 1;
+Y_zad(1:99)=Ypp;
+Y_zad(100:299)= Ypp; %1
+Y_zad(300:499)= 1; %2
+Y_zad(500:n)= 1; %-1
 
 % Skok zaklocen
 if(pomiar)
@@ -161,11 +164,14 @@ end
 figure;
 subplot(2,1,1);
 stairs(U);
+hold on;
 grid on;
+stairs(Z);
 ylim([-4 3]);
-title("Sygna? wej?ciowy sterowania", 'FontName', 'Times New Roman CE');
+title("Sygna? wej?ciowy sterowania i zak?ócenia", 'FontName', 'Times New Roman CE');
 xlabel('$k$', 'Interpreter', 'latex');
-legend('$u(k)$', 'Interpreter', 'latex');
+legend('$u(k)$', '$z(k)$', 'Interpreter', 'latex');
+hold off;
 
 subplot(2,1,2);
 plot(1:n, Y);
@@ -178,7 +184,7 @@ xlabel('$k$', 'Interpreter', 'latex');
 legend('$y(k)$','$y^{\mathrm{zad}}(k)$', 'Interpreter', 'latex');
 hold off;
 
-strfin = strcat('zad4_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '.tex');
+strfin = strcat('zad5_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '_Dz', strDz, '.tex');
 matlab2tikz (char(strfin), 'showInfo', false );
 
 err

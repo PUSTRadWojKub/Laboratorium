@@ -2,8 +2,8 @@
 % 
 clear all;
 
-pomiar = 1;      % 0 - brak pomiaru zak³óceñ, 1 - z pomiarem zak³óceñ
-typ_zak = 1;     % 1 - skok jednostkowy zak³óceñ, 2 - zak³ócenia sinusoidalne
+pomiar = 1;      % 0 - brak pomiaru zaklocen, 1 - z pomiarem zaklocen
+typ_zak = 1;     % 1 - skok jednostkowy zaklocen, 2 - zaklocenia sinusoidalne
 szum = 1;        % 0 - brak szumu, 1 - szum obecny
 
 odp_skokU = load('odp_skokU.mat');
