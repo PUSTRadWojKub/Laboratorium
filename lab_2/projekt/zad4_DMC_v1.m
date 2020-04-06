@@ -35,8 +35,8 @@ dZ(1:n) = 0;
 
 %Horyzonty
 D=length(s);
-N=150; %20
-Nu=150; %1
+N=10; %20
+Nu=1; %1
 strD = string(D);
 strN = string(N);
 strNu = string(Nu);
@@ -46,7 +46,7 @@ if (pomiar)
 end
     
 %Wspolczynnik kary za przyrosty sterowania
-lambda=1; %1
+lambda=1.1; %1
 strL = string(lambda);
 
 err = 0;

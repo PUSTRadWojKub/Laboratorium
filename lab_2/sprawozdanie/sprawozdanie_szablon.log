@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 20:36
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -1098,16 +1098,38 @@ Rozdzia\PlPrIeC {\l } 4.
 ]
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <12> on input line 99.
- (rysunki/zad4_DMC_D175_N175_Nu175_L1.tex)) [9] (sprawozdanie_szablon.aux)
+ (rysunki/zad4_DMC_D175_N175_Nu175_L1.tex) [9]
+(rysunki/zad4_DMC_D175_N30_Nu30_L1.tex) (rysunki/zad4_DMC_D175_N20_Nu20_L1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad4_DMC_D175_N10_Nu10_L1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad4_DMC_D175_N10_Nu1_L1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad4_DMC_D175_N5_Nu1_L1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad4_DMC_D175_N10_Nu1_L1.5.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (zad5.tex) (zad6.tex) (zad7.tex) [10] [11] [12] [13]
+(sprawozdanie_szablon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34731 strings out of 481292
- 871788 string characters out of 2907317
+ 34908 strings out of 481292
+ 876139 string characters out of 2907317
  2961409 words of memory out of 3000000
- 49691 multiletter control sequences out of 15000+200000
+ 49844 multiletter control sequences out of 15000+200000
  556825 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,102p,2647b,9006s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1134,9 +1156,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/N
 itrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (10 pages, 263247 bytes).
+Output written on sprawozdanie_szablon.pdf (14 pages, 288308 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

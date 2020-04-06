@@ -98,11 +98,101 @@ k_\mathrm{e}=\sum_{i=1}^{N}k_{1,i}
 
 \section{Dobieranie parametrów $D$, $N$, $N_\mathrm{u}$ i $\lambda$ algorytmu DMC}
 
+Parametry $D$, $N$, $N_\mathrm{u}$, $\lambda$ algorytmu DMC bêd¹ dobierane przy skokowej zmianie sygna³u wartoœci zadanej z 0 do 1 i zerowym zak³óceniu. Dla danego zestawu parametrów algorytm regulacji bêdzie oceniany jakoœciowo (na podstawie rysunków przebiegów sygna³ów) jak i iloœciowo za pomoc¹ poni¿szej miary:
+
+\begin{equation}
+	E = \sum{k_\mathrm{konc}}{k=1}(y^\mathrm{zad}(k)-y(k))^2
+\end{equation}
+
+Dobieranie rozpoczynam od najwiêkszego mo¿liwego horyzontu predykcji, czyli:
+$D = 175$, $N = 175$, $N_\mathrm{u} = 175$ i dla $\lambda = 1$
+
 \begin{figure}[h!]
 	\centering
 	\input{rysunki/zad4_DMC_D175_N175_Nu175_L1.tex}
-	\caption{OdpowiedŸ skokowa dla algorytmu DMC}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
 \end{figure}
+
+WskaŸnik iloœciowy: 7.6816
+
+Widzimy, ¿e algorytm sprawnie radzi sobie z regulacj¹, jednak kosztem du¿ych nak³adów obliczeniowych (du¿e wymiary macierzy). Zmniejszamy horyzont predykcji.
+
+Parametry:
+$D = 175$, $N = 30$, $N_\mathrm{u} = 30$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N30_Nu30_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.6817
+
+Parametry:
+$D = 175$, $N = 20$, $N_\mathrm{u} = 20$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N20_Nu20_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.6908
+
+Parametry:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 10$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu10_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.5941
+
+Mo¿emy zauwa¿yæ zmniejszenie wartoœci wskaŸnika iloœciowego. Jeœli chodzi o jakoœæ regulacji, to nastêpuje ona wolniej, ni¿ w poprzednich przypadkach co jest spowodowane krótszym horyzontem predykcji. Widzimy równie¿ lekkie przeregulowanie.
+
+Parametry:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu1_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.2156
+
+Widzimy znaczn¹ poprawê wskaŸnika iloœciowego oraz eliminacjê przeregulowania. Przyjmujemy w dalszym etapie doboru parametrów $N_\mathrm{u} = 1$
+
+Parametry:
+$D = 175$, $N = 5$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N5_Nu1_L1.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 16.3408
+
+Widzimy ¿e dalsze skracanie horyzontu predykcji skutkuje zwiêkszeniem wskaŸnika iloœciowego oraz zwiêkszeniem czasu regulacji, przeregulowaniem. Stwierdzamy ¿e $N = 10$ jest optymalnym doborem.
+
+Parametry:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1.5$
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_DMC_D175_N10_Nu1_L1.5.tex}
+	\caption{Przebiegi sygna³ów dla regulacji przy pomocy algorytmu DMC}
+\end{figure}
+
+WskaŸnik iloœciowy: 7.6539
+
+Widzimy pogorszenie wskaŸnika iloœciowego, wystêpuje przeregulowanie. Stwierdzamy ¿e $\lambda=1$ to optymalna wartoœæ.
+
+Ostateczne dobory:
+$D = 175$, $N = 10$, $N_\mathrm{u} = 1$ i dla $\lambda = 1$
 
 \section{Implementacja}
 Implementacja algorytmu DMC jest zawarta w skrypcie \verb+zad4_DMC_v1.m+.
