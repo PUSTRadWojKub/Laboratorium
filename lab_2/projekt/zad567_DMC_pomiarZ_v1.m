@@ -4,7 +4,7 @@ clear all;
 
 pomiar = 1;      % 0 - brak pomiaru zaklocen, 1 - z pomiarem zaklocen
 typ_zak = 1;     % 1 - skok jednostkowy zaklocen, 2 - zaklocenia sinusoidalne
-szum = 0;        % 0 - brak szumu, 1 - szum obecny
+szum = 1;        % 0 - brak szumu, 1 - szum obecny
 
 odp_skokU = load('odp_skokU.mat');
 s = odp_skokU.odp_skok;
@@ -35,8 +35,8 @@ dZ(1:n) = 0;
 
 %Horyzonty
 D=length(s);
-N=150; %20
-Nu=150; %1
+N=10; %20
+Nu=1; %1
 strD = string(D);
 strN = string(N);
 strNu = string(Nu);
@@ -106,23 +106,21 @@ ke=sum(K(1,:));
 
 % % Skok wartosci zadanej
 Y_zad(1:99)=Ypp;
-Y_zad(100:299)= Ypp; %1
+Y_zad(100:299)= 1; %1
 Y_zad(300:499)= 1; %2
 Y_zad(500:n)= 1; %-1
 
 % Skok zaklocen
-if(pomiar)
-    t_skoku = 100;
-    if(typ_zak == 1)
-        Z(t_skoku:n) = 1;
-    elseif(typ_zak == 2)    %Zaklocenia sinusoidalne
-        pom = (1 : 1 : n);
-        Z(t_skoku:n) = 0.5*sin(0.08*pom(t_skoku:n));
-    end
+t_skoku = 300;
+if(typ_zak == 1)
+    Z(t_skoku:n) = 1;
+elseif(typ_zak == 2)    %Zaklocenia sinusoidalne
+    pom = (1 : 1 : n);
+    Z(t_skoku:n) = 0.5*sin(0.08*pom(t_skoku:n));
 end
 
 if(szum == 1)
-    noise = linspace(-2*pi, 2*pi);
+    noise = linspace(-1*pi, 1*pi); %noise = linspace(-2*pi, 2*pi);
     for k = t_skoku:n
         Z(k) = Z(k) + sum(rand(size(noise)))/25;
     end
@@ -184,7 +182,12 @@ xlabel('$k$', 'Interpreter', 'latex');
 legend('$y(k)$','$y^{\mathrm{zad}}(k)$', 'Interpreter', 'latex');
 hold off;
 
-strfin = strcat('zad5_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '_Dz', strDz, '.tex');
+if(pomiar)
+    strfin = strcat('zad7_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '_Dz_2', '.tex');
+else
+    strfin = strcat('zad7_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '_Dz', '_bz_1', '.tex');
+end
+
 matlab2tikz (char(strfin), 'showInfo', false );
 
 err

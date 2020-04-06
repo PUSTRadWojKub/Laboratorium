@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 20:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 21:20
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -1119,17 +1119,38 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (zad5.tex) (zad6.tex) (zad7.tex) [10] [11] [12] [13]
-(sprawozdanie_szablon.aux)
+[10]) (zad5.tex [11] [12] [13]
+Rozdzia\PlPrIeC {\l } 5.
+(rysunki/zad5_DMC_D175_N10_Nu1_L1_Dz_bz_1.tex)
+(rysunki/zad5_DMC_D175_N10_Nu1_L1_Dz_1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (zad6.tex [14
+
+] [15]
+Rozdzia\PlPrIeC {\l } 6.
+(rysunki/zad6_DMC_D175_N10_Nu1_L1_Dz_bz_1.tex)
+(rysunki/zad6_DMC_D175_N10_Nu1_L1_Dz_1.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (zad7.tex [16
+
+] [17]
+Rozdzia\PlPrIeC {\l } 7.
+(rysunki/zad5_DMC_D175_N10_Nu1_L1_Dz_1.tex)) [18
+
+] (sprawozdanie_szablon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34908 strings out of 481292
- 876139 string characters out of 2907317
+ 35046 strings out of 481292
+ 879548 string characters out of 2907317
  2961409 words of memory out of 3000000
- 49844 multiletter control sequences out of 15000+200000
+ 49968 multiletter control sequences out of 15000+200000
  556825 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,102p,2647b,9006s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1156,9 +1177,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/N
 itrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (14 pages, 288308 bytes).
+Output written on sprawozdanie_szablon.pdf (19 pages, 377884 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
