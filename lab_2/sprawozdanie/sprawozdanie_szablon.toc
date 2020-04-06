@@ -14,3 +14,5 @@
 \contentsline {section}{\numberline {3.3\relax .\enspace }Implementacja}{7}%
 \contentsline {chapter}{\numberline {4\relax .\enspace }Implementacja algorytmu DMC w najprostszej wersji analitycznej}{8}%
 \contentsline {section}{\numberline {4.1\relax .\enspace }Regulator DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n}{8}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Dobieranie parametr\'ow $D$, $N$, $N_\mathrm {u}$ i $\lambda $ algorytmu DMC}{9}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Implementacja}{9}%

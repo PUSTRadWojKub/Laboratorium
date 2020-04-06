@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  6 APR 2020 13:10
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -1095,17 +1095,20 @@ a-da-nia s¡ za-war-te w skryp-tach [][]\OT4/cmtt/m/n/10.95 zad_skokU.m
 Rozdzia\PlPrIeC {\l } 4.
 [8
 
-]) [9] (sprawozdanie_szablon.aux)
+]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <12> on input line 99.
+) [9] (sprawozdanie_szablon.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 34691 strings out of 481292
- 870969 string characters out of 2907317
+ 34703 strings out of 481292
+ 871105 string characters out of 2907317
  2961409 words of memory out of 3000000
- 49658 multiletter control sequences out of 15000+200000
- 554474 words of font info for 87 fonts, out of 3000000 for 9000
+ 49666 multiletter control sequences out of 15000+200000
+ 556825 words of font info for 94 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,102p,2647b,9006s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.en
@@ -1119,19 +1122,20 @@ c}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plbx
 /plbx12.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/pl/plex10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/pl/plmi10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/pl/plmi8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/pl/plmib10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Nitrox/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (10 pages, 248629 bytes).
+type1/public/pl/plmi12.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/pl/plmi8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/pl/plmib10.pfb><C:/Users/Nitrox/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Nitr
+ox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
+Output written on sprawozdanie_szablon.pdf (10 pages, 253829 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
