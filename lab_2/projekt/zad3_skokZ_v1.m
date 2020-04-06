@@ -1,18 +1,18 @@
 clear;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
-Zs = 1.0;
+Zs = 1.0; %wartosci skoku sygnalu zaklocenia ze stanu ustalonego
 
 Tp = 0.5; %okres probkowania
-Ts = 25;
+Ts = 25; %czas w ktorym nastepuje skok
 T = 200; %czas symulacji
-n = T/Tp;
-nskok = Ts/Tp;
-opoznienie = 6;
+n = T/Tp; %liczba probek symulacji
+nskok = Ts/Tp; %probka w ktorej nastepuje skok
+opoznienie = 6; %opoznienie obiektu
 
 %Opoznienie
 U(1:n) = Upp;
@@ -46,3 +46,5 @@ xlabel('k');
 ylabel('y(k)');
 legend('y(k)','Location','southeast');
 matlab2tikz ('zad3_odp_zy.tex','showInfo', false );
+
+save('odp_skokZ.mat', 'odp_skok');

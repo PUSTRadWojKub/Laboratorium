@@ -4,7 +4,7 @@ clear;
 
 Tp = 0.5; %okres probkowania
 T = 200; %czas symulacji
-opoznienie = 6;
+opoznienie = 6; %opoznienie obiektu
 
 Umin=-10;
 Umax=10;

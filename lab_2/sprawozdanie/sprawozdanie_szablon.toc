@@ -12,3 +12,5 @@
 \contentsline {section}{\numberline {3.1\relax .\enspace }Odpowied\'z skokowa toru wej\'scie-wyj\'scie procesu}{6}%
 \contentsline {section}{\numberline {3.2\relax .\enspace }Odpowied\'z skokowa toru zak\IeC {\l }\'ocenie-wyj\'scie procesu}{6}%
 \contentsline {section}{\numberline {3.3\relax .\enspace }Implementacja}{7}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Implementacja algorytmu DMC w najprostszej wersji analitycznej}{8}%
+\contentsline {section}{\numberline {4.1\relax .\enspace }Regulator DMC z uwzgl\k ednieniem zak\IeC {\l }\'oce\'n}{8}%

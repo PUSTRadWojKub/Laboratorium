@@ -1,0 +1,97 @@
+\chapter{Implementacja algorytmu DMC w najprostszej wersji analitycznej}
+
+\section{Regulator DMC z uwzglêdnieniem zak³óceñ}
+Regulator DMC jest to regulator predykcyjny - dzia³a on z wyprzedzeniem, zanim nast¹pi¹ zmiany wartoœci sygna³u wyjœciowego. Wektor przyrostów sterowañ dany jest wzorem:
+
+\begin{align}
+\triangle U(k)&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y^0(k)]\\
+&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y(k)-\boldsymbol{M}^\mathrm{P} \triangle U^\mathrm{P}(k)-\boldsymbol{M}^{\mathrm{zP}}\triangle Z^\mathrm{P}(k)]
+\label{dU1}
+\end{align}
+gdzie:
+
+\begin{equation}
+\boldsymbol{K}=(\boldsymbol{M}^\mathrm{T}\boldsymbol{M}+\lambda I)^{-1}\boldsymbol{M}^\mathrm{T}
+\label{K}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}=\left[
+\begin{array}
+{cccc}
+s_{1} & 0 & \ldots & 0\\
+s_{2} & s_{1} & \ldots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N} & s_{N-1} & \ldots &  s_{N-N_{\mathrm{u}}+1}
+\end{array}
+\right]_{N\times N_u}
+\label{Mm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{P}=\left[
+\begin{array}
+{cccc}
+s_{2}-s_{1} & s_{3}-s_{2} & \ldots & s_{D}-s_{D-1}\\
+s_{3}-s_{1} & s_{4}-s_{2} & \ldots & s_{D+1}-s_{D-1}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N+1}-s_{1} & s_{N+2}-s_{2} & \ldots &  s_{N+D-1}-S_{D-1}
+\end{array}
+\right]_{N\times (D-1)}
+\label{MPm}
+\end{equation}
+
+\begin{equation}
+\triangle U^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle u(k-1)\\
+\vdots\\
+\triangle u(k-(D-1))
+\end{array}
+\right]_{(D-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{zP}=\left[
+\begin{array}
+{ccccc}
+s_1^\mathrm{z} & s_{2}^\mathrm{z}-s_{1}^\mathrm{z} & s_{3}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots & s_{D^\mathrm{z}}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}\\
+s_2^\mathrm{z} & s_{3}^\mathrm{z}-s_{1}^\mathrm{z} & s_{4}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots & s_{D^\mathrm{z}+1}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_N^\mathrm{z} & s_{N+1}^\mathrm{z}-s_{1}^\mathrm{z} & s_{N+2}^\mathrm{z}-s_{2}^\mathrm{z} & \ldots &  s_{N+D^\mathrm{z}-1}^\mathrm{z}-s_{D^\mathrm{z}-1}^\mathrm{z}
+\end{array}
+\right]_{N\times (D^\mathrm{z}-1)}
+\label{MPm}
+\end{equation}
+
+\begin{equation}
+\triangle Z^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle z(k-1)\\
+\vdots\\
+\triangle z(k-(D^\mathrm{z}-1))
+\end{array}
+\right]_{(D^\mathrm{z}-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+gdzie $N$ - horyzont predykcji, $N_\mathrm{u}$ - horyzont sterowania, $D$ - horyzont dynamiki, $D^\mathrm{z}$ - horyzont dynamiki zak³óceñ, $\lambda$ - kara za zmianê sterowania
+\bigbreak
+W tym przypadku nale¿y wyznaczyæ tylko pierwszy element macierzy $\Delta U(k)$ czyli $\Delta u(k|k)$. Aktualne sterowanie uzyskuje siê poprzez zsumowanie $\Delta u(k|k)$ z poprzednim sterowaniem.
+
+\begin{equation}
+\triangle u(k|k) = k_\mathrm{e}e(k) - \sum_{j=1}^{D-1}\boldsymbol{k}_j^\mathrm{u}\triangle u(k-j) -  \sum_{j=1}^{D^\mathrm{z}}\boldsymbol{k}_j^\mathrm{z}\triangle u(k-j-1)
+\end{equation}
+
+\begin{equation}
+k_\mathrm{e}=\sum_{i=1}^{N}k_{1,i}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{k}_j^\mathrm{u}=\boldsymbol{\overline{K}}_1\boldsymbol{M}_j^\mathrm{P}, \quad j=1,\ldots ,D-1
+\end{equation}
+
+\begin{equation}
+\boldsymbol{k}_j^\mathrm{z}=\boldsymbol{\overline{K}}_1\boldsymbol{M}_j^\mathrm{zP}, \quad j=1,\ldots ,D^\mathrm{z}
+\end{equation}

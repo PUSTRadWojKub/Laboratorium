@@ -1,16 +1,16 @@
 %Wyznaczamy symulacyjnie odpowiedzi skokowe dla procesu, dla kilku zmian
-%sygnalu sterowania z uwzglednieniem ograniczen
+%sygnalu sterowania i sygnalu zaklocenia
 
 clear;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
 
 Tp = 0.5; %okres probkowania
 T = 200; %czas symulacji
-n = T/Tp;
+n = T/Tp; %liczba probek
 opoznienie = 6;
 
 %Opoznienie
@@ -18,6 +18,7 @@ U(1:n) = Upp;
 Z(1:n) = Zpp;
 Y(1:opoznienie) = Ypp;
 
+%Wartosci skokow sygnalu sterowania ze stanu ustalonego
 U1 = -0.5;
 U2 = -1.0;
 U3 = -1.5;
@@ -27,6 +28,7 @@ U6 = 1.0;
 U7 = 1.5;
 U8 = 2.0;
 
+%Wartosci skokow sygnalu zaklocenia ze stanu ustalonego
 Z1 = -0.5;
 Z2 = -1.0;
 Z3 = -1.5;

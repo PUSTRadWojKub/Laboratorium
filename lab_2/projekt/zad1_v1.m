@@ -4,18 +4,14 @@
 clear;
 
 %Stan ustalony
-Upp = 0; %sygnal wejsciowy w stanie ustalonym
+Upp = 0; %sygnal wejsciowy sterowania w stanie ustalonym
+Zpp = 0; %sygnal wejsciowy zaklocenia w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
-Zpp = 0;
-
-%Ograniczenia wartosci sygnalu sterowania
-Umin = 0.9;
-Umax = 1.3;
 
 Tp = 0.5; %okres probkowania
 T = 200; %czas symulacji
-n = T/Tp;
-opoznienie = 6;
+n = T/Tp; %liczba probek
+opoznienie = 6; %opoznienie obiektu
 
 %Opoznienie
 U(1:n) = Upp;
