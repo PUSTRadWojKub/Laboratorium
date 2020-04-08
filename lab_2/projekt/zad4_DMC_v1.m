@@ -46,7 +46,7 @@ if (pomiar)
 end
     
 %Wspolczynnik kary za przyrosty sterowania
-lambda=1.1; %1
+lambda=1; %1
 strL = string(lambda);
 
 err = 0;

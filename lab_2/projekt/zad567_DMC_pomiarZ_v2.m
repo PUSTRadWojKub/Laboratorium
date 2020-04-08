@@ -190,6 +190,6 @@ else
     strfin = strcat('zad7_DMC_D',strD, '_N', strN, '_Nu', strNu, '_L', strL, '_Dz', '_bz_1', '.tex');
 end
 
-matlab2tikz (char(strfin), 'showInfo', false );
+%matlab2tikz (char(strfin), 'showInfo', false );
 
 err

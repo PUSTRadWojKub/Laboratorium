@@ -27,5 +27,5 @@
 \contentsline {section}{\numberline {6.3\relax .\enspace }Implementacja}{18}%
 \contentsline {chapter}{\numberline {7\relax .\enspace }Odporno\'s\'c algorytmu na b\IeC {\l }\k ad pomiaru sygna\IeC {\l }u zak\IeC {\l }\'ocenia (szum pomiarowy)}{19}%
 \contentsline {section}{\numberline {7.1\relax .\enspace }Przeprowadzone eksperymety}{19}%
-\contentsline {section}{\numberline {7.2\relax .\enspace }Wnioski}{19}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Wnioski}{20}%
 \contentsline {section}{\numberline {7.3\relax .\enspace }Implementacja}{20}%
