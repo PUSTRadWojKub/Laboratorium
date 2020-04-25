@@ -1,0 +1,93 @@
+\chapter{Symulacja cyfrowego algorytmu PID oraz algorytmu DMC}
+
+\section{Regulator PID}
+Regulator PID sk³ada siê trzech cz³onów: proporcjonalnego, ca³kuj¹cego oraz ró¿niczkuj¹cego. Dzia³a on w pêtli sprzê¿enia zwrotnego, maj¹c na celu zredukowanie uchybu (ró¿nicy miêdzy wartoœci¹ zadan¹ a zmierzon¹ wartoœci¹ sygna³u wyjœciowego procesu) poprzez odpowiedni¹ zmianê sygna³u steruj¹cego. Dyskretny regulator PID ma postaæ:
+
+\begin{equation}
+u(k)=r_2e(k-2)+r_1e(k-1)+r_0e(k)+u(k-1)
+\end{equation}
+gdzie:
+
+\begin{equation}
+r_2=K\frac{T_\mathrm{d}}{T_\mathrm{p}}
+\end{equation}
+\begin{equation}
+r_1=K(\frac{T_\mathrm{p}}{2T_\mathrm{i}}-\frac{2T_\mathrm{d}}{T_\mathrm{p}}-1)
+\end{equation}
+\begin{equation}
+r_0=K(1+\frac{T_\mathrm{p}}{2T_\mathrm{i}}+\frac{T_\mathrm{d}}{T_\mathrm{p}})
+\end{equation}
+gdzie $K$ - wzmocnienie cz³onu proporcjonalnego, $T_\mathrm{i}$ - czas zdwojenia cz³onu ca³kuj¹cego, $T_\mathrm{d}$ - czas wyprzedzenia cz³onu ró¿niczkuj¹cego, $T_\mathrm{p}$ - okres próbkowania
+
+\section{Regulator DMC}
+Regulator DMC jest to regulator predykcyjny - dzia³a on z wyprzedzeniem, zanim nast¹pi¹ zmiany wartoœci sygna³u wyjœciowego. Wektor przyrostów sterowañ dany jest wzorem:
+
+\begin{align}
+\triangle U(k)&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y^0(k)]\\
+&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)+Y(k)+\boldsymbol{M}^\mathrm{P} \triangle U^\mathrm{P}(k)]
+\label{dU1}
+\end{align}
+gdzie:
+
+\begin{equation}
+\boldsymbol{K}=(\boldsymbol{M}^\mathrm{T}\boldsymbol{M}+\lambda I)^{-1}\boldsymbol{M}^\mathrm{T}
+\label{K}
+\end{equation}
+
+\begin{equation}
+\triangle U^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle u(k-1)\\
+\vdots\\
+\triangle u(k-(D-1))
+\end{array}
+\right]_{(D-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}=\left[
+\begin{array}
+{cccc}
+s_{1} & 0 & \ldots & 0\\
+s_{2} & s_{1} & \ldots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N} & s_{N-1} & \ldots &  s_{N-N_{\mathrm{u}}+1}
+\end{array}
+\right]_{N\times N_u}
+\label{Mm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{P}=\left[
+\begin{array}
+{cccc}
+s_{2}-s_{1} & s_{3}-s_{2} & \ldots & s_{D}-s_{D-1}\\
+s_{3}-s_{1} & s_{4}-s_{2} & \ldots & s_{D+1}-s_{D-1}\\
+\vdots & \vdots & \ddots & \vdots\\
+s_{N+1}-s_{1} & s_{N+2}-s_{2} & \ldots &  s_{N+D-1}-S_{D-1}
+\end{array}
+\right]_{N\times (D-1)}
+\label{MPm}
+\end{equation}
+gdzie $N$ - horyzont predykcji, $N_\mathrm{u}$ - horyzont sterowania, $D$ - horyzont dynamiki, $\lambda$ - kara za zmianê sterowania
+\bigbreak
+W tym przypadku nale¿y wyznaczyæ tylko pierwszy element macierzy $\Delta U(k)$ czyli $\Delta u(k|k)$. Aktualne sterowanie uzyskuje siê poprzez zsumowanie $\Delta u(k|k)$ z poprzednim sterowaniem.
+
+\begin{equation}
+\triangle u(k|k) = k_\mathrm{e}e(k) - \sum_{j=1}^{D-1}\boldsymbol{k}_j^u\triangle u(k-j)
+\end{equation}
+
+\begin{equation}
+k_e=\sum_{i=1}^{N}k_{1,i}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{k}_j^u=\boldsymbol{\overline{K}}_1\boldsymbol{M}_j^\mathrm{P}, \quad j=1,\ldots ,D-1
+\end{equation}
+
+\section{Program}
+Aby uruchomiæ program nale¿y zapisaæ odpowiedŸ skokow¹ jako '\verb+odp_skok.mat+' w tym samym folderze co skrypt \verb+zad3.m+. Nastêpnie nale¿y ustawiæ odpowiednie wartoœci dla zmiennych o nazwach \lstinline|piddmc| (0 - pid, 1 - dmc) oraz \lstinline|ograniczenia| (0 - wy³¹czone, 1 - w³¹czone).
+
+\section{Implementacja}
+Implementacja fukcji wykorzystanych do wykonania zadania zawarte s¹ w skrypcie \verb+zad3.m+.

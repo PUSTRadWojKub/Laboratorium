@@ -1,0 +1,49 @@
+\chapter{Dobór parametrów cyfrowego algorytmu PID oraz algorytmu DMC}
+
+Skoki:
+
+$0 \rightarrow 0.5 \rightarrow 1 \rightarrow -0.1 \rightarrow 5$
+
+\section{Regulator PID}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_syg_we_pid.tex}
+	\caption{Regulator PID - sygna³ steruj¹cy}
+	\label{pid_we}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_syg_wy_pid.tex}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\label{pid_wy}
+\end{figure}
+
+K = 0.11; 
+Ti = 4.6;
+Td = 0.65;
+
+Error = 403.7229
+
+\section{Regulator DMC}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_syg_we_dmc.tex}
+	\caption{Regulator DMC - sygna³ steruj¹cy}
+	\label{dmc_we}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\input{rysunki/zad4_syg_wy_dmc.tex}
+	\caption{Regulator DMC - sygna³ wyjœciowy i zadany}
+	\label{dmc_wy}
+\end{figure}
+
+D = 53;
+N = 20; 
+Nu = 3;
+
+Error = 264.7306
