@@ -48,5 +48,8 @@ function [odp_skok] = odp_skok(Upocz, Uskok)
     plot(1:size(odp_skok, 2), odp_skok)
     grid on;
     title("Odpowiedz skokowa");
+    
+    filename = strcat('odp_skok_', string(Upocz), '_', string(Uskok), '.mat');
+    save(filename, 'odp_skok');
 end
 
