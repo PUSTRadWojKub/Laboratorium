@@ -2,8 +2,7 @@
 
 clear all;
 
-odp_skok = load('odp_skok.mat');
-s = odp_skok.odp_skok;
+s = odp_skok(0, 1);
 
 %Stan ustalony
 Upp = 0; %sygnal wejsciowy w stanie ustalonym

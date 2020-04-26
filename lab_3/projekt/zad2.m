@@ -65,7 +65,7 @@ title("Sygna³ wejœciowy");
 hold on;
 i=i+1;
 end
-matlab2tikz('../sprawozdanie/rysunki/zad2_odp_skokowe.tex', 'showInfo', false)
+% matlab2tikz('../sprawozdanie/rysunki/zad2_odp_skokowe.tex', 'showInfo', false)
 
 %Wyznaczanie charakterystki statycznej
 dU = Umin:0.01:Umax;
@@ -86,6 +86,6 @@ plot(Ustat,Ystat);
 xlabel('U');
 ylabel('Y');
 title('Charakterystyka statyczna Y(U)');
-matlab2tikz('../sprawozdanie/rysunki/zad2_char_stat.tex', 'showInfo', false)
+% matlab2tikz('../sprawozdanie/rysunki/zad2_char_stat.tex', 'showInfo', false)
 
 %Wlasciwosci statyczne i dynamiczne procesu nie s¹ liniowe

@@ -1,1 +1,0 @@
-% Tu bêdzie rozmyta regulacja dmc

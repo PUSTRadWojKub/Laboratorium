@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  25 APR 2020 23:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  26 APR 2020 23:22
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -1038,14 +1038,7 @@ File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [1
 
 {C:/Users/Nitrox/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(sprawozdanie.toc
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 1.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 1.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 1.
-)
+(sprawozdanie.toc)
 \tf@toc=\write4
 \openout4 = `sprawozdanie.toc'.
 
@@ -1069,7 +1062,12 @@ Rozdzia\PlPrIeC {\l } 3.
 
 ]) (zad4.tex [6]
 Rozdzia\PlPrIeC {\l } 4.
-(rysunki/zad4_syg_we_pid.tex) (rysunki/zad4_syg_wy_pid.tex)
+(rysunki/zad4_syg_we_pid.tex
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10> on input line 1227.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <7> on input line 1227.
+) (rysunki/zad4_syg_wy_pid.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1081,43 +1079,98 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [7
+) (zad5.tex [7
 
-] [8] [9] (sprawozdanie.aux) ) 
+] [8] [9]
+Rozdzia\PlPrIeC {\l } 5.
+(rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.tex)
+(rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_2_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_3_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_4_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.tex
+Runaway definition?
+->\pgfsyssoftpath@movetotoken {0.27228pt}{128.8559pt}\pgfsyssoftpath@linetotoke
+n \ETC.
+! TeX capacity exceeded, sorry [main memory size=3000000].
+\pgfsyssoftpath@thepath ...etotoken {257.5734\ETC.
+                                                  
+l.1227 \end{axis}
+                 
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
 Here is how much of TeX's memory you used:
- 30677 strings out of 481292
- 773272 string characters out of 2907317
- 1791078 words of memory out of 3000000
- 45641 multiletter control sequences out of 15000+200000
+ 30970 strings out of 481292
+ 781909 string characters out of 2907317
+ 3000001 words of memory out of 3000000
+ 45877 multiletter control sequences out of 15000+200000
  554474 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,19n,98p,747b,2200s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/plmi.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/plrm.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/plme.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/plms.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/plit.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/enc/dvips/pl/pltt.enc}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/pl/plbx10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Users/Nitrox/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Users/Nitrox/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Users/Nitrox/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi7.pfb><C:/Users/Nitrox/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Users/Nitrox/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmib10.pfb><C:/Users/N
-itrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Use
-rs/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/
-Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><
-C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.
-pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pl
-sy8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/p
-l/plti10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (10 pages, 208796 bytes).
-PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 63i,20n,98p,747b,2200s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

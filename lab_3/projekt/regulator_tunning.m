@@ -2,12 +2,28 @@
 
 clear all;
 
-odp_skok = load('odp_skok_0_1.mat');
-s = odp_skok.odp_skok;
+s = odp_skok(0,1);
 
 %Stan ustalony
 Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
+
+%Strojenie regulatorów lokalnych PID
+% %R1
+% Upp = -0.5;
+% Ypp = -0.1264;
+% %R2
+% Upp = 0.76;
+% Ypp = 3.225;
+%R3
+% Upp = 0.26;
+% Ypp = 0.4062;
+% %R4
+% Upp = 0.16;
+% Ypp = 0.1865;
+%R5
+% Upp = 0.4;
+% Ypp = 0.896;
 
 %Regulator: 0 - pid, 1 - dmc
 piddmc = 1;
@@ -30,9 +46,30 @@ e(1:T/Tp) = 0;
 
 %Parametry regulatora PID
 if(piddmc == 0)
+    % Nr = 1
     K = 0.11; 
     Ti = 4.6;
     Td = 0.65;
+%     %R1
+%     K = 4.9;
+%     Ti = 7.5;
+%     Td = 0.8;
+%     %R2
+%     K = 0.128;
+%     Ti = 7.8;
+%     Td = 0.42;
+%     %R3
+%     K = 0.18;
+%     Ti = 2.8;
+%     Td = 0.52;
+%     %R4
+%     K = 0.25;
+%     Ti = 2;
+%     Td = 1.1;
+%     %R5
+%     K = 0.1;
+%     Ti = 2.4;
+%     Td = 1.4;
     r0 = K*(1 + Tp/(2*Ti) + Td/Tp);
     r1 = K*(Tp/(2*Ti) - (2*Td)/Tp - 1);
     r2 = (K*Td)/Tp;
@@ -79,16 +116,47 @@ end
 
 % Skok wartosci zadanej
 % Test I
-Y_zad(1:19)=Ypp;
-Y_zad(20:T/Tp)=2;
+% Y_zad(1:19)=Ypp;
+% Y_zad(20:T/Tp)=2;
 
 % Test II    
-% Y_zad(1:99)=Ypp;
-% Y_zad(100:299)=0.5;
-% Y_zad(300:499)=1;
-% Y_zad(500:T/Tp)=-0.1;
-% Y_zad(700:T/Tp)=5;
+Y_zad(1:99)=Ypp;
+Y_zad(100:299)=0.5;
+Y_zad(300:499)=1;
+Y_zad(500:T/Tp)=-0.1;
+Y_zad(700:T/Tp)=5;
 
+%Strojenie regulatorów lokalnych PID
+% %R1
+% Y_zad(1:99)=Ypp;
+% Y_zad(100:299)=-0.15;
+% Y_zad(300:499)=-0.13;
+% Y_zad(500:T/Tp)=-0.09;
+% Y_zad(700:T/Tp)=Ypp
+% %R2
+% Y_zad(1:99)=Ypp;
+% Y_zad(100:299)=4.1;
+% Y_zad(300:499)=3.8;
+% Y_zad(500:T/Tp)=2.4;
+% Y_zad(700:T/Tp)=Ypp;
+% %R3
+% Y_zad(1:99)=Ypp;
+% Y_zad(100:299)=0.57;
+% Y_zad(300:499)=0.42;
+% Y_zad(500:T/Tp)=0.27;
+% Y_zad(700:T/Tp)=Ypp;
+% %R4
+% Y_zad(1:99)=Ypp;
+% Y_zad(100:299)=0.3;
+% Y_zad(300:499)=0.2;
+% Y_zad(500:T/Tp)=0.09;
+% Y_zad(700:T/Tp)=Ypp;
+% %R5
+% Y_zad(1:99)=Ypp;
+% Y_zad(100:299)=1.2;
+% Y_zad(300:499)=1;
+% Y_zad(500:T/Tp)=0.7;
+% Y_zad(700:T/Tp)=Ypp;
 
 
 % Wartosci poczatkowe

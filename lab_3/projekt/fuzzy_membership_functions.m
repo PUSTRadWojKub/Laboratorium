@@ -21,9 +21,9 @@ function [wy] = fuzzy_membership_functions(u_min, u_max, nr, mf)
             xcl = xc - centers_spacing;
             % Utworzenie funkcji przynale¿ci
             MFName = strcat('u_', string(k), '_mf');
-%             mfs{k} = fismf("trimf", [xcl, xc, xcr], 'Name', MFName);
+            mfs{k} = fismf("trimf", [xcl, xc, xcr], 'Name', MFName);
 %             plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
-            hold on
+%             hold on
         end
     end
     
