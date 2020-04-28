@@ -1,17 +1,16 @@
 \chapter{Regulacja za pomoc¹ rozmytych regulatorów DMC}
 
-Przetestowaliœmy dzia³anie rozmytego regulatora DMC dla ró¿nych funkcji przynale¿noœci: Gaussa, trójk¹tnych  oraz trapezoidalnych. Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}={2,3,4}$.
+Przetestowaliœmy dzia³anie rozmytego regulatora DMC dla ró¿nych funkcji przynale¿noœci: Gaussa, trójk¹tnych  oraz trapezoidalnych. Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}={2,3,4}$. Dla funkcji Gaussa sprawdziliœmy tak¿e dzia³anie uk³adu dla $n_\mathrm{r}=5$.
 
 \section{Funkcje przynale¿noœci Gaussa} 
 
-Nr = 2
-Error = 261.3388
+Na pocz¹tku sprawdziliœmy dzia³anie algorytmu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_gaussmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_2_mf_gaussmf} oraz \ref{syg_wy_dmc_nr_2_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{261.3388}$. Uk³ad dzia³a dobrze i szybko, wartoœæ zadana jest osi¹gana na wyjœciu dla ró¿nych wartoœci skoków $y^\mathrm{zad}$. Jedynie dla ostatniego skoku wartoœci zadanej do $y^\mathrm{zad}=5$ wystêpuj¹ oscylacje na wyjœciu obiektu. Maj¹ one jednak charakter gasn¹cy i nie wp³ywaj¹ na rozregulowanie procesu.
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
-	\label{funkcje_przyn_nr_2_mf_gaussmf}
+	\label{funkcje_przyn_nr_2_mf_gaussmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -28,14 +27,13 @@ Error = 261.3388
 	\label{syg_wy_dmc_nr_2_mf_gaussmf}
 \end{figure}
 
-Nr = 3
-Error = 270.7911
+Nastêpnie zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_3_mf_gaussmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_3_mf_gaussmf} oraz \ref{syg_wy_dmc_nr_3_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{270.7911}$. Na podstawie rys.~\ref{syg_wy_dmc_nr_3_mf_gaussmf} mo¿na zaobserwowaæ, ¿e zwiêkszenie liczby regulatorów spowodowa³o nieznaczne pogorszenie jakoœci regulacji. Zarówno wskaŸnik jakoœci $E$ uleg³ pogorszeniu, jak i pojawi³y siê oscylacje na wyjœciu, tym razem przy dwóch pierwszych skokach wartoœci zadanej. Oscylacje pojawi³y siê tak¿e w przebiegu sygna³u steruj¹cego widocznym na rys.~\ref{syg_we_dmc_nr_3_mf_gaussmf}.
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
-	\label{funkcje_przyn_nr_3_mf_gaussmf}
+	\label{funkcje_przyn_nr_3_mf_gaussmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -52,15 +50,14 @@ Error = 270.7911
 	\label{syg_wy_dmc_nr_3_mf_gaussmf}
 \end{figure}
 
+W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=4$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_4_mf_gaussmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_4_mf_gaussmf} oraz \ref{syg_wy_dmc_nr_4_mf_gaussmf}. Tym razem otrzymana wartoœci wskaŸnika jakoœci wynios³a $E=~\num{292.7912}$. Zatem jest to wartoœæ gorsza od tej, jak¹ uzyskano dla mniejszej liczby $n_\mathrm{r}$. Jednak tym razem w ¿adnym przypadku nie wystêpuj¹ oscylacje ani na wyjœciu obiektu, ani w przebiegu sygna³u sterujacego. Uk³ad dzia³a jeszcze szybciej ni¿ poprzednio, a przeregulowanie jest jeszcze mniejsze.
 
-Nr = 4
-Error = 292.7912
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
-	\label{funkcje_przyn_nr_4_mf_gaussmf}
+	\label{funkcje_przyn_nr_4_mf_gaussmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -77,15 +74,14 @@ Error = 292.7912
 	\label{syg_wy_dmc_nr_4_mf_gaussmf}
 \end{figure}
 
+Na koniec zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=5$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_5_mf_gaussmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_5_mf_gaussmf} oraz \ref{syg_wy_dmc_nr_5_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci wynios³a $E = \num{313.5469}$. Oznacza to, ¿e ponownie nast¹pi³o niewielkie pogorszenie jakoœci regulacji pod k¹tem oceny wskaŸnika $E$. Jednak na podstawie przebiegu sygna³y wyjœciowego widocznego na rys.~\ref{syg_wy_dmc_nr_5_mf_gaussmf} mo¿na zauwa¿yæ, ¿e dla dwóch pierwszych skoków wartoœci zadanej przeregulowanie w ogóle nie wystêpuje, a dla kolejnych dwóch jest jeszcze mniejsze ni¿ dla $n_\mathrm{r}=4$. Generowany sygna³ steruj¹cy jest stabilny, uk³ad dzia³a bardzo szybko.
 
-Nr=5
-Error=313.5469
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=5$}
-	\label{funkcje_przyn_nr_5_mf_gaussmf}
+	\label{funkcje_przyn_nr_5_mf_gaussmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -107,15 +103,13 @@ Error=313.5469
 
 \section{Funkcje przynale¿noœci trójk¹tne}
 
-
-Nr = 2
-Error = 262.6995
+Na pocz¹tku sprawdziliœmy dzia³anie algorytmu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_trimf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_2_mf_trimf} oraz \ref{syg_wy_dmc_nr_2_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{262.6995}$, czyli jest nieznacznie wiêksza ni¿ dla funkcji Gaussa zastosowanych dla tej samej liczby $n_\mathrm{r}=2$. Dla wiêkszoœci wykonywanych skoków wystêpuj¹ oscylacje, zarówno w sygnale wyjœciowym jak i wejœciowym. Maj¹ one jednak charakter gasn¹cy i ostatecznie wartoœæ zadana jest osi¹gana.
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trimf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
-	\label{funkcje_przyn_nr_2_mf_trimf}
+	\label{funkcje_przyn_nr_2_mf_trimf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -132,15 +126,14 @@ Error = 262.6995
 	\label{syg_wy_dmc_nr_2_mf_trimf}
 \end{figure}
 
+Nastêpnie zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_3_mf_trimf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_3_mf_trimf} oraz \ref{syg_wy_dmc_nr_3_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{271.5334}$, czyli uleg³a nieznacznemu pogorszeniu po zwiêkszeniu liczby zastosowanych funkcji przynale¿noœci. Oscylacje jednak s¹ du¿o s³absze ni¿ poprzednio, wartoœæ zadana jest osi¹gana szybciej.
 
-Nr = 3
-Error = 271.5334
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trimf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
-	\label{funkcje_przyn_nr_3_mf_trimf}
+	\label{funkcje_przyn_nr_3_mf_trimf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -157,15 +150,14 @@ Error = 271.5334
 	\label{syg_wy_dmc_nr_3_mf_trimf}
 \end{figure}
 
+W kolejnym kroku sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_4_mf_trimf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_4_mf_trimf} oraz \ref{syg_wy_dmc_nr_4_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{294.6215}$, czyli ponownie uleg³a pogorszeniu. Tym razem jednak oscylacje w ogóle nie wystêpuj¹, a uk³ad dzia³a bardzo sprawnie.
 
-Nr = 4
-Error = 294.6215
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trimf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
-	\label{funkcje_przyn_nr_4_mf_trimf}
+	\label{funkcje_przyn_nr_4_mf_trimf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -187,14 +179,14 @@ Error = 294.6215
 
 \section{Funkcje przynale¿noœci trapezoidalne}
 
-Nr = 2
-Error = 260.8879
+Na pocz¹tku sprawdziliœmy dzia³anie algorytmu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_trapmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_2_mf_trapmf} oraz \ref{syg_wy_dmc_nr_2_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{260.8879}$, co œwiadczy o tym, ¿e zastosowanie funkcji trapezoidalnych zapewnia najlepsz¹ jakoœæ regulacji pod k¹tem oceny wskaŸnika $E$ dla tej samej liczby $n_\mathrm{r}=2$ w porównaniu z innymi funkcjami. Uk³ad dzia³a dobrze i szybko, wartoœæ zadana jest osi¹gana na wyjœciu dla ró¿nych wartoœci skoków $y^\mathrm{zad}$. Jedynie dla ostatniego skoku wartoœci zadanej do $y^\mathrm{zad}=5$ wystêpuj¹ oscylacje na wyjœciu obiektu. Maj¹ one jednak charakter gasn¹cy i nie wp³ywaj¹ na rozregulowanie procesu.
+
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
-	\label{funkcje_przyn_nr_2_mf_trapmf}
+	\label{funkcje_przyn_nr_2_mf_trapmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -211,14 +203,13 @@ Error = 260.8879
 	\label{syg_wy_dmc_nr_2_mf_trapmf}
 \end{figure}
 
-Nr = 3
-Error = 286.2821
+Nastêpnie zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_3_mf_trapmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_3_mf_trapmf} oraz \ref{syg_wy_dmc_nr_3_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{286.2821}$, czyli uleg³a  pogorszeniu po zwiêkszeniu liczby zastosowanych funkcji przynale¿noœci. Pojawi³y siê tak¿e oscylacje zarówno w sygnale wyjœciowym jak i wejœciowym.
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
-	\label{funkcje_przyn_nr_3_mf_trapmf}
+	\label{funkcje_przyn_nr_3_mf_trapmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -235,14 +226,13 @@ Error = 286.2821
 	\label{syg_wy_dmc_nr_3_mf_trapmf}
 \end{figure}
 
-Nr = 4
-Error = 295.0414
+W kolejnym kroku sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_4_mf_trapmf_dmc}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_dmc_nr_4_mf_trapmf} oraz \ref{syg_wy_dmc_nr_4_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{295.0414}$, czyli ponownie uleg³a pogorszeniu. Tym razem jednak oscylacje w ogóle nie wystêpuj¹. Pojawiaj¹ siê jednak niewielkie przeregulowania, lecz mimo tego uk³ad dzia³a sprawnie.
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf}
 	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
-	\label{funkcje_przyn_nr_4_mf_trapmf}
+	\label{funkcje_przyn_nr_4_mf_trapmf_dmc}
 \end{figure}
 
 \begin{figure}[tb]
@@ -258,3 +248,9 @@ Error = 295.0414
 	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
 	\label{syg_wy_dmc_nr_4_mf_trapmf}
 \end{figure}
+
+
+\section{Wnioski}
+Na podstawie zebrancy przebiegów mo¿na zauwa¿yæ, ¿e zwiêkszania liczby regulatorów lokalnych $n_\mathrm{r}$ powoduje pogorszenie wskaŸnika jakoœci $E$. Jednak prawie dla wszystkich przypadków zwiêkszanie $n_\mathrm{r}$ sprawia³o, ¿e uzyskane przebiegi by³y spokojniejsze, oscylacje by³y redukowane, a wartoœæ zadana by³a szybciej osi¹gane. Na tej podstawie mo¿na stwierdziæ, ¿e warto zwiêkszyæ liczbê zastosowanych funkcji przynale¿noœci, gdy¿ w ten sposób mo¿na wyeliminowaæ niekorzystne z punktu widzenia regulacji zjawiska (takie jak wystêpowanie oscylacji).
+
+Bior¹c pod uwagê zarówno kszta³ty przebiegów jak i otrzymane wartoœci wskaŸnika $E$, mo¿na stwierdziæ, ¿e najbardziej korzystne jest wykorzystanie funkcji przynale¿noœci postaci funkcji Gaussa. Liczba regulatorów równa $n_\mathrm{r}=5$ bêdzie najlepszym kompromisem miêdzy z³o¿onoœci¹ algorytmu a uzyskiwan¹ dok³adnoœci¹ dzia³ania.

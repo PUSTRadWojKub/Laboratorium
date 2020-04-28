@@ -23,5 +23,6 @@
 \contentsline {section}{\numberline {6.4\relax .\enspace }Wnioski}{23}%
 \contentsline {chapter}{\numberline {7\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow DMC}{26}%
 \contentsline {section}{\numberline {7.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{26}%
-\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{26}%
-\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{27}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{29}%
+\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{32}%
+\contentsline {section}{\numberline {7.4\relax .\enspace }Wnioski}{40}%
