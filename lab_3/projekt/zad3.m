@@ -9,7 +9,7 @@ Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 %Regulator: 0 - pid, 1 - dmc
-piddmc = 1;
+piddmc = 0;
 %Ograniczenia: 0 - wylaczone, 1 - wlaczone
 ograniczenia = 1;
 
@@ -29,9 +29,12 @@ e(1:T/Tp) = 0;
 
 %Parametry regulatora PID
 if(piddmc == 0)
-    K = 0.11; 
-    Ti = 4.6;
-    Td = 0.65;
+%     K = 0.11; 
+%     Ti = 4.6;
+%     Td = 0.65;
+    K = 0.1; 
+    Ti = 5;
+    Td = 0;
     r0 = K*(1 + Tp/(2*Ti) + Td/Tp);
     r1 = K*(Tp/(2*Ti) - (2*Td)/Tp - 1);
     r2 = (K*Td)/Tp;
@@ -145,29 +148,40 @@ end
 
 err
 
-s1 = '../sprawozdanie/rysunki/zad4_syg_we';
-s2 = '../sprawozdanie/rysunki/zad4_syg_wy';
+% s1 = '../sprawozdanie/rysunki/zad4_syg_we';
+% s2 = '../sprawozdanie/rysunki/zad4_syg_wy';
+% 
+% if ~piddmc
+%     s1 = strcat(s1, '_pid.tex');
+%     s2 = strcat(s2, '_pid.tex');
+% else
+%     s1 = strcat(s1, '_dmc.tex');
+%     s2 = strcat(s2, '_dmc.tex');
+% end
+
+str = strcat('K_', string(K), '_Ti_', string(Ti), '_Td_', string(Td));
 
 if ~piddmc
-    s1 = strcat(s1, '_pid.tex');
-    s2 = strcat(s2, '_pid.tex');
-else
-    s1 = strcat(s1, '_dmc.tex');
-    s2 = strcat(s2, '_dmc.tex');
+    str1 = strcat(str, '_we_pid.pdf');
+    str2 = strcat(str, '_wy_pid.pdf');
 end
 
+title1 = strcat("Sygna³ wejœciowy ", ' K = ', string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
 figure;
 stairs(U_cale);
 grid on;
-title("Sygna³ wejœciowy");
+title(convertStringsToChars(title1), 'interpreter', 'latex');
 legend('$u(k)$', 'interpreter', 'latex');
 % matlab2tikz(s1, 'showInfo', false)
+print(str1,'-dpdf');
 
+title2 = strcat("Sygna³ wyjœciowy i zadany K = ", string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
 figure;
 plot(1:T/Tp, Y);
 hold on;
 grid on;
 stairs(1:T/Tp, Y_zad, '--');
-title("Sygna³ wyjœciowy i zadany");
+title(convertStringsToChars(title2), 'interpreter', 'latex');
 legend('$y(k)$', '$y^{zad}(k)$', 'interpreter', 'latex');
 % matlab2tikz(s2, 'showInfo', false)
+print(str2,'-dpdf');

@@ -10,19 +10,18 @@
 \contentsline {chapter}{\numberline {3\relax .\enspace }Symulacja cyfrowego algorytmu PID oraz algorytmu DMC}{5}%
 \contentsline {section}{\numberline {3.1\relax .\enspace }Regulator PID}{5}%
 \contentsline {section}{\numberline {3.2\relax .\enspace }Regulator DMC}{5}%
-\contentsline {section}{\numberline {3.3\relax .\enspace }Program}{6}%
-\contentsline {section}{\numberline {3.4\relax .\enspace }Implementacja}{6}%
+\contentsline {section}{\numberline {3.3\relax .\enspace }Implementacja}{6}%
 \contentsline {chapter}{\numberline {4\relax .\enspace }Dob\'or parametr\'ow cyfrowego algorytmu PID oraz algorytmu DMC}{7}%
 \contentsline {section}{\numberline {4.1\relax .\enspace }Regulator PID}{7}%
 \contentsline {section}{\numberline {4.2\relax .\enspace }Regulator DMC}{7}%
-\contentsline {chapter}{\numberline {5\relax .\enspace }Rozmyty algorytm PID oraz DMC}{10}%
-\contentsline {chapter}{\numberline {6\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow PID}{11}%
-\contentsline {section}{\numberline {6.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{11}%
-\contentsline {section}{\numberline {6.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{13}%
-\contentsline {section}{\numberline {6.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{19}%
-\contentsline {section}{\numberline {6.4\relax .\enspace }Wnioski}{23}%
-\contentsline {chapter}{\numberline {7\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow DMC}{26}%
-\contentsline {section}{\numberline {7.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{26}%
-\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{29}%
-\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{32}%
-\contentsline {section}{\numberline {7.4\relax .\enspace }Wnioski}{40}%
+\contentsline {chapter}{\numberline {5\relax .\enspace }Rozmyty algorytm PID oraz DMC}{25}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow PID}{26}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{26}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{28}%
+\contentsline {section}{\numberline {6.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{34}%
+\contentsline {section}{\numberline {6.4\relax .\enspace }Wnioski}{38}%
+\contentsline {chapter}{\numberline {7\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow DMC}{41}%
+\contentsline {section}{\numberline {7.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{41}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{44}%
+\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{47}%
+\contentsline {section}{\numberline {7.4\relax .\enspace }Wnioski}{55}%
