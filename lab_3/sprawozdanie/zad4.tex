@@ -31,143 +31,113 @@ Dobieranie nastawów regulatora PID zaczynamy ze wzmocnieniem równym 1 i wy³¹czon
 
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid1}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 9.1217e+03. Zmniejszamy wzmocnienie tak a¿eby zmniejszyæ oscylacje.}
 	\label{syg_wy_pid1}
 \end{figure}
 
-Error = 9.1217e+03.
-
-Zmniejszamy wzmocnienie tak a¿eby zmniejszyæ oscylacje.
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid2}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 7.8324e+03. B³¹d zmala³, obserwujemy uchyb ustalony oraz oscylacje. Aby wyeliminowaæ uchyb zwiêkszamy wp³yw cz³onu ca³kuj¹cego.}
 	\label{syg_wy_pid2}
 \end{figure}
 
-<<<<<<< HEAD
-Error = 7.8324e+03
-
-B³¹d zmala³, obserwujemy uchyb ustalony oraz oscylacje. Aby wyeliminowaæ uchyb zwiêkszamy wp³yw cz³onu ca³kuj¹cego.
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid3}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 7.3528e+03.}
 	\label{syg_wy_pid3}
 \end{figure}
 
-Error = 7.3528e+03
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid4}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 6.7934e+03. Mo¿emy dalej zauwa¿yæ uchyb oraz oscylacje. W celu ich usuniêcia zmniejszamy wzmocnienie oraz zwiêkszamy ca³kowanie.}
 	\label{syg_wy_pid4}
 \end{figure}
 
-Error = 6.7934e+03
-
-Mo¿emy dalej zauwa¿yæ uchyb oraz oscylacje. W celu ich usuniêcia zmniejszamy wzmocnienie oraz zwiêkszamy ca³kowanie.
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid5}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 414.1249.}
 	\label{syg_wy_pid5}
 \end{figure}
 
-Error = 414.1249
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid6}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 360.4340. Widzimy znaczn¹ poprawê zarówno jakoœciow¹ jak i wskaŸnika iloœciowego. W³¹czamy cz³on ró¿niczkuj¹cy w celu skrócenia czasu osi¹gania wartoœci zadanej.}
 	\label{syg_wy_pid6}
 \end{figure}
 
-Error = 360.4340
-
-Widzimy znaczn¹ poprawê zarówno jakoœciow¹ jak i wskaŸnika iloœciowego. W³¹czamy cz³on ró¿niczkuj¹cy w celu skrócenia czasu osi¹gania wartoœci zadanej.
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid7}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 306.9011. Mo¿emy zauwa¿yæ poprawê wskaŸnika iloœciowego jednak¿e niepoj¹ce s¹ oscylacje. W celu zniwelowania ich zmniejszymy wzmocnienie, zwiêkszymy ró¿niczkê.}
 	\label{syg_wy_pid7}
 \end{figure}
 
-Error = 306.9011
-
-Mo¿emy zauwa¿yæ poprawê wskaŸnika iloœciowego jednak¿e niepoj¹ce s¹ oscylacje. W celu zniwelowania ich zmniejszymy wzmocnienie, zwiêkszymy ró¿niczkê.
-
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid}
 	\caption{Regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid8}
 \end{figure}
 \begin{figure}[tb]
 	\centering
-	\includegraphics[scale=1]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid}
+	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 403.7229. WskaŸnik iloœciowy uleg³ pogorszeniu jednak¿e wyidzimy poprawê jakoœciow¹ - wyeliminowanie oscylacji.}
 	\label{syg_wy_pid8}
 \end{figure}
-=======
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
-
-
-WskaŸnik iloœciowy uleg³ pogorszeniu jednak¿e wyidzimy poprawê jakoœciow¹ - wyeliminowanie oscylacji.
 
 Ostateczne nastawy regulatora PID:
 
 $K = 0.11$
-$Ti = 4.6$
-$Td = 0.65$
+$T_\mathrm{i} = 4.6$
+$T_\mathrm{d} = 0.65$
 
 \section{Regulator DMC}
 Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego nieznaczne zwiêkszenie wp³ywa korzystnie na regulacjê.
