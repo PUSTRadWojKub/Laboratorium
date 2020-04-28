@@ -6,17 +6,17 @@
 
 Funkcja Gaussa jest postaci
 \begin{equation}
-\mu(k)=\mathrm{exp}\left(\frac{-(k-c)^2}{2\sigma^2}\right)
+\mu(k)=exp\left(\frac{-(k-c)^2}{2\sigma^2}\right)
 \end{equation}
 
 W regulacji rozmytej na podstawie wartoœci sygna³u wybierajacego regulatory lokalne (np. dla sygna³u $u(k-1)$), oblicza siê wspó³czynniki przynale¿noœci dla poszczególnych zbiorów, zale¿ne od aktualnego punktu pracy
 
 \begin{equation}
-w^1(k)=\mu(u(k-1))=\mathrm{exp}\left(\frac{-(u(k-1)-c^1)^2}{2(\sigma^1)^2}\right)
+w^1(k)=\mu(u(k-1))=exp\left(\frac{-(u(k-1)-c^1)^2}{2(\sigma^1)^2}\right)
 \end{equation}
 \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \vdots
 \begin{equation}
-w^\mathrm{n_r}(k)=\mu(u(k-1))=\mathrm{exp}\left(\frac{-(u(k-1)-c^\mathrm{n_r})^2}{2(\sigma^\mathrm{n_r})^2}\right)
+w^\mathrm{n_r}(k)=\mu(u(k-1))=exp\left(\frac{-(u(k-1)-c^\mathrm{n_r})^2}{2(\sigma^\mathrm{n_r})^2}\right)
 \end{equation}
 gdzie $c^1,...,c^\mathrm{n_r}$ oznaczaj¹ centra poszczególnych zbiorów rozmytych, natomiast $\sigma^1,...,\sigma^\mathrm{n_r}$ decyduj¹ o nachyleniu poszczególnych funkcji Gaussa.
 
@@ -64,17 +64,17 @@ gdzie $a^1,...,a^\mathrm{n_r}$ oraz $c^1,...,c^\mathrm{n_r}$ okreœlaj¹ pocz¹tki 
 Funkcja trapezoidalna jest postaci
 
 \begin{equation}
-\mu(k)=\mathrm{max}\left(\mathrm{min}\left(\frac{k-\mathrm{a}}{\mathrm{b}-\mathrm{a}},1,\frac{\mathrm{d}-k}{\mathrm{d}-\mathrm{c}}\right),0\right)
+\mu(k)=max\left(min\left(\frac{k-\mathrm{a}}{\mathrm{b}-\mathrm{a}},1,\frac{\mathrm{d}-k}{\mathrm{d}-\mathrm{c}}\right),0\right)
 \end{equation}
 
 W regulacji rozmytej na podstawie wartoœci sygna³u wybierajacego regulatory lokalne (np. dla sygna³u $u(k-1)$), oblicza siê wspó³czynniki przynale¿noœci dla poszczególnych zbiorów, zale¿ne od aktualnego punktu pracy
 
 \begin{equation}
-w^1(k)=\mu(u(k-1))=\mathrm{max}\left(\mathrm{min}\left(\frac{u(k-1)-\mathrm{a^1}}{\mathrm{b^1}-\mathrm{a^1}},1,\frac{\mathrm{d^1}-u(k-1)}{\mathrm{d^1}-\mathrm{c^1}}\right),0\right)
+w^1(k)=\mu(u(k-1))=max\left(min\left(\frac{u(k-1)-\mathrm{a^1}}{\mathrm{b^1}-\mathrm{a^1}},1,\frac{\mathrm{d^1}-u(k-1)}{\mathrm{d^1}-\mathrm{c^1}}\right),0\right)
 \end{equation}
 \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \vdots
 \begin{equation}
-w^\mathrm{n_r}(k)=\mu(u(k-1))=\mathrm{max}\left(\mathrm{min}\left(\frac{u(k-1)-\mathrm{a^\mathrm{n_r}}}{\mathrm{b^\mathrm{n_r}}-\mathrm{a^\mathrm{n_r}}},1,\frac{\mathrm{d^\mathrm{n_r}}-u(k-1)}{\mathrm{d^\mathrm{n_r}}-\mathrm{c^\mathrm{n_r}}}\right),0\right)
+w^\mathrm{n_r}(k)=\mu(u(k-1))=max\left(min\left(\frac{u(k-1)-\mathrm{a^\mathrm{n_r}}}{\mathrm{b^\mathrm{n_r}}-\mathrm{a^\mathrm{n_r}}},1,\frac{\mathrm{d^\mathrm{n_r}}-u(k-1)}{\mathrm{d^\mathrm{n_r}}-\mathrm{c^\mathrm{n_r}}}\right),0\right)
 \end{equation}
 gdzie $a^1,...,a^\mathrm{n_r}$ oraz $d^1,...,d^\mathrm{n_r}$ oznaczaj¹ pocz¹tki oraz koñce poszczególnych zbiorów rozmytych a  $b^1,...,b^\mathrm{n_r}$ oraz $c^1,...,c^\mathrm{n_r}$ decyduj¹ o nachyleniu ramion funkcji przynale¿noœci.
  
@@ -85,13 +85,13 @@ gdzie $a^1,...,a^\mathrm{n_r}$ oraz $d^1,...,d^\mathrm{n_r}$ oznaczaj¹ pocz¹tki 
 Baza regu³ rozmytego regulatora PID ma postaæ
 
 \begin{equation}
-\textrm{Regu³a }1: \textrm{je¿eli } u(k-1) \in U^1, \textrm{to } u^1(k)=r^1_0e(k)+r^1_1e(k-1)+r^1_2e(k-2)+u(k-1)
+\textrm{Regu³a }1: \textrm{je¿eli } u(k-1) \in U^1(k-1), \textrm{to } u^1(k)=r^1_0e(k)+r^1_1e(k-1)+r^1_2e(k-2)+u(k-1)
 \end{equation}
 \quad \vdots
 \begin{equation}
-\textrm{Regu³a }\mathrm{n_r}: \textrm{je¿eli } u(k-1) \in U^\mathrm{n_r}, \textrm{to } u^\mathrm{n_r}(k)=r^\mathrm{n_r}_0e(k)+r^\mathrm{n_r}_1e(k-1)+r^\mathrm{n_r}_2e(k-2)+u(k-1)
+\textrm{Regu³a }\mathrm{n_r}: \textrm{je¿eli } u(k-1) \in U^\mathrm{n_r}(k-1), \textrm{to } u^\mathrm{n_r}(k)=r^\mathrm{n_r}_0e(k)+r^\mathrm{n_r}_1e(k-1)+r^\mathrm{n_r}_2e(k-2)+u(k-1)
 \end{equation}
-gdzie $r^1_0$, $r^1_1$, $r^1_2$ to parametry pierwszego regulatora lokalnego, $r^\mathrm{n_r}_0$, $r^\mathrm{n_r}_1$, $r^\mathrm{n_r}_2$ to parametry ostatniego regulatora lokalnego, a $U^1,...,U^\mathrm{n_r}$ oznaczaj¹ zbiory rozmyte.
+gdzie $r^1_0$, $r^1_1$, $r^1_2$ to parametry pierwszego regulatora lokalnego, $r^\mathrm{n_r}_0$, $r^\mathrm{n_r}_1$, $r^\mathrm{n_r}_2$ to parametry ostatniego regulatora lokalnego, a $U^1(k-1),...,U^\mathrm{n_r}(k-1)$ oznaczaj¹ zbiory rozmyte.
 
 Ca³kowity sygna³ sterujacy procesu jest sum¹ warzon¹ sygna³ów wszystkich regulatorów lokalnych
 
@@ -112,15 +112,15 @@ u(k)=\frac{w^1(k)u^1(k)+...+w^\mathrm{n_r}(k)u^\mathrm{n_r}(k)}{w^1(k)+...+w^\ma
 Baza regu³ rozmytego regulatora DMC ma postaæ
 
 \begin{align}
-\textrm{Regu³a }1: \textrm{je¿eli } u(k-1) \in U^1, \textrm{to } u^1(k)&=K^{\mathrm{e},1}\left(y^\mathrm{zad}(k)-y(k)\right)\nonumber\\
-&\quad -\sum_{i=1}^{\mathrm{D}-1} K_i^{\mathrm{u},1} \Delta u(k-i)+u(k-1)
+\textrm{Regu³a }1: \textrm{je¿eli } u(k-1) \in U^1(k-1), \textrm{to } u^1(k)&=\mathrm{K^{\mathrm{e},1}\left(y^\mathrm{zad}(k)-y(k)\right)\nonumber\\
+&\quad -sum_i=1^{\mathrm{D}-1}K_i^{\mathrm{u},1}\Delta u(k-i)+u(k-1)
 \end{align}
-\quad \quad \quad \quad \quad \quad \quad \vdots
+\quad \vdots
 \begin{align}
-\textrm{Regu³a }\mathrm{n_r}: \textrm{je¿eli } u(k-1) \in U^\mathrm{n_r}, \textrm{to } u^\mathrm{n_r}(k)&=K^{\mathrm{e},\mathrm{n_r}}\left(y^\mathrm{zad}(k)-y(k)\right)\nonumber\\
-&\quad -\sum_{i=1}^{\mathrm{D}-1} K_i^{\mathrm{u},\mathrm{n_r}} \Delta u(k-i)+u(k-1)
+\textrm{Regu³a }\mathrm{n_r}: \textrm{je¿eli } u(k-1) \in U^\mathrm{n_r}(k-1), \textrm{to } u^\mathrm{n_r}(k)&=\mathrm{K^{\mathrm{e},\mathrm{n_r}}\left(y^\mathrm{zad}(k)-y(k)\right)\nonumber\\
+&\quad -sum_i=1^{\mathrm{D}-1}K_i^{\mathrm{u},\mathrm{n_r}}\Delta u(k-i)+u(k-1)
 \end{align}
-gdzie $K^{\mathrm{e},1}$ i $K_i^{\mathrm{u},1}$ to parametry pierwszego regulatora lokalnego (dla $i=1,...,\mathrm{D}-1$), $K^{\mathrm{e},\mathrm{n_r}}$ i~$K_i^{\mathrm{u},\mathrm{n_r}}$ to parametry ostatniego regulatora lokalnego (dla $i=1,...,\mathrm{D}-1$), a $U^1,...,U^\mathrm{n_r}$ oznaczaj¹ zbiory rozmyte.
+gdzie $\mathrm{K^{\mathrm{e},1}}$ i $\mathrm{K_i^{\mathrm{u},1}}$ to parametry pierwszego regulatora lokalnego (dla $i=1,...,\mathrm{D}-1$), a $\mathrm{K^{\mathrm{e},\mathrm{n_r}}}$ i $\mathrm{K_i^{\mathrm{u},\mathrm{n_r}}}$ to parametry ostatniego regulatora lokalnego (dla $i=1,...,\mathrm{D}-1$).
 
 Ca³kowity sygna³ sterujacy procesu jest sum¹ warzon¹ sygna³ów wszystkich regulatorów lokalnych
 
@@ -133,9 +133,3 @@ W sytuacji jeœli funkcje przynale¿noœci nie sumuj¹ siê do 1 (dla dowolnej wartos
 \begin{equation}
 u(k)=\frac{w^1(k)u^1(k)+...+w^\mathrm{n_r}(k)u^\mathrm{n_r}(k)}{w^1(k)+...+w^\mathrm{n_r}(k)}
 \end{equation}
-
-
-\section{Implementacja}
-Program do symulacji rozmytych algorytmów PID oraz DMC znajduje siê w skrypcie\\ \verb+fuzzy_regulation.m+. Korzysta on z dwóch zaimplementowanych przez nas funkcji:\\ \verb+fuzzy_membership_function.m+ oraz \verb+fuzzy_weights.m+. Pierwsza z nich wyznacza funkcje przynale¿noœci dla danego przedzia³u, liczby regulatorów lokalnych oraz wybranego typu funkcji przynale¿noœci. Druga funkcja s³u¿y do wyznaczania wartoœci wspó³czynników wag dla lokalnych regulatorów dla wybranego sygna³u prze³¹czaj¹cego oraz danego zestawu funkcji przynale¿noœci.
-
-
