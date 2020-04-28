@@ -1,18 +1,13 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  28 APR 2020 23:06
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  28 APR 2020 23:07
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  28 APR 2020 23:33
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-03>
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mwcls\mwrep.cls"
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> ("D:\MiKTeX 2.9\tex/latex/mwcls\mwrep.cls"
 Document Class: mwrep 2017/05/13 v0.75 A LaTeX document class (MW)
 *** Beta version. Formatting may change
 *** in future versions of this class.
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mwcls\mw11.clo"
+("D:\MiKTeX 2.9\tex/latex/mwcls\mw11.clo"
 File: mw11.clo 2017/05/13 v0.75 A document class size option (MW)
 )
 \@parindent=\dimen134
@@ -29,21 +24,17 @@ File: mw11.clo 2017/05/13 v0.75 A document class size option (MW)
 \belowcaptionskip=\skip48
 \bibindent=\dimen135
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
-.sty"
+("D:\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
-ty"
+("D:\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.st
-y"
+("D:\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
-"
+("D:\MiKTeX 2.9\tex/generic/iftex\iftex.sty"
 Package: iftex 2019/11/07 v1.0c TeX engine tests
 ))
 \Gm@cnth=\count176
@@ -57,26 +48,25 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layoutheight=\dimen141
 \Gm@layouthoffset=\dimen142
 \Gm@layoutvoffset=\dimen143
-\Gm@dimlist=\toks16
+\Gm@dimlist=\toks15
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
-.cfg"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+("D:\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("D:\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\polski.sty
-"
+("D:\MiKTeX 2.9\tex/latex/polski\polski.sty"
 Package: polski 2017/05/04 v1.3.4 Polish language package
 
    Switching to Polish text encoding and Polish maths fonts.
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ot4enc.def"
+("D:\MiKTeX 2.9\tex/latex/base\ot4enc.def"
 File: ot4enc.def 2020/02/11 v2.0o Standard LaTeX file
 Now handling font encoding OT4 ...
 ... no UTF-8 mapping file for font encoding OT4
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmr on input line 3
 60.
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\ot4cmr.fd"
+
+("D:\MiKTeX 2.9\tex/latex/polski\ot4cmr.fd"
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
@@ -111,30 +101,24 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
-ty"
+("D:\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
-ty"
+("D:\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
-y"
+("D:\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
+\@emptytoks=\toks16
 \ex@=\dimen144
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
-y"
+("D:\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen145
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
-y"
+("D:\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count179
@@ -157,26 +141,25 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \dotsspace@=\muskip16
 \c@parentequation=\count186
 \dspbrk@lvl=\count187
-\tag@help=\toks18
+\tag@help=\toks17
 \row@=\count188
 \column@=\count189
 \maxfields@=\count190
-\andhelp@=\toks19
+\andhelp@=\toks18
 \eqnshift@=\dimen147
 \alignsep@=\dimen148
 \tagshift@=\dimen149
 \tagwidth@=\dimen150
 \totwidth@=\dimen151
 \lineht@=\dimen152
-\@envbody=\toks20
+\@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
-\mathdisplay@stack=\toks21
+\mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts
-.sty"
+("D:\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -184,84 +167,65 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.
-sty"
+("D:\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
-.sty"
+("D:\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
-.sty"
+("D:\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
-"
+("D:\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
-hics.cfg"
+("D:\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
-ex.def"
+("D:\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen153
 \Gin@req@width=\dimen154
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+("D:\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/frontendlayer
-\tikz.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
-f.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
-rcs.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfutil-common.tex"
-\pgfutil@everybye=\toks22
+("D:\MiKTeX 2.9\tex/latex/pgf/frontendlayer\tikz.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.sty"
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common.tex"
+\pgfutil@everybye=\toks21
 \pgfutil@tempdima=\dimen155
 \pgfutil@tempdimb=\dimen156
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfutil-common-lists.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfutil-latex.def"
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-common-lists.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfutil-latex.def"
 \pgfutil@abb=\box47
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+("D:\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfrcs.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revisio
-n.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrcs.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf\pgf.revision.tex")
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pg
-fcore.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\p
-gfsys.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgfsys.code.tex"
+("D:\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcore.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsys.sty"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys.code.tex"
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfkeys.code.tex"
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfkeysfiltered.code.tex"
-\pgfkeys@tmptoks=\toks25
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks24
 ))
 \pgf@x=\dimen157
 \pgf@y=\dimen158
@@ -279,41 +243,34 @@ gfkeysfiltered.code.tex"
 \c@pgf@countb=\count192
 \c@pgf@countc=\count193
 \c@pgf@countd=\count194
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
 \pgf@sys@id@count=\count195
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgf.cfg"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf.cfg"
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgfsys-pdftex.def"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-pdftex.def"
 File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgfsys-common-pdf.def"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def"
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgfsyssoftpath.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex"
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfsyssoftpath@smallbuffer@items=\count196
 \pgfsyssoftpath@bigbuffer@items=\count197
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer
-\pgfsysprotocol.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex"
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
-"
+("D:\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
-r.cfg"
+("D:\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -327,51 +284,34 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcore.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcore.code.tex"
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-h.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hcalc.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hutil.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hparser.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcalc.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathutil.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathparser.code.tex"
 \pgfmath@dimen=\dimen167
 \pgfmath@count=\count198
 \pgfmath@box=\box48
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.basic.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.trigonometric.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.random.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.comparison.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.base.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.round.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.misc.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfunctions.integerarithmetics.code.tex")))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-hfloat.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.random.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.base.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.round.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.t
+ex"))) ("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfloat.code.tex"
 \c@pgfmathroundto@lastzeros=\count199
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint
-.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorepoints.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfint.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex"
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen168
 \pgf@picmaxx=\dimen169
@@ -388,133 +328,104 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@zx=\dimen180
 \pgf@zy=\dimen181
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorepathconstruct.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex"
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen182
 \pgf@path@lasty=\dimen183
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorepathusage.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex"
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen184
 \pgf@shorten@start@additional=\dimen185
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorescopes.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex"
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box49
 \pgf@hbox=\box50
 \pgf@layerbox@main=\box51
 \pgf@picture@serial@count=\count266
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoregraphicstate.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex"
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen186
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoretransformations.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex"
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen187
 \pgf@pt@y=\dimen188
 \pgf@pt@temp=\dimen189
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorequick.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorequick.code.tex"
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoreobjects.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex"
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorepathprocessing.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex"
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorearrows.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex"
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen190
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoreshade.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex"
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen191
 \pgf@sys@shading@range@num=\count267
 \pgf@shadingcount=\count268
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoreimage.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex"
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoreexternal.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex"
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box52
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorelayers.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex"
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcoretransparency.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex"
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorepatterns.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex"
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\
-pgfcorerdf.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex"
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
-moduleshapes.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleshapes.code.tex"
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box53
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
-moduleplot.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduleplot.code.tex"
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
-\pgfcomp-version-0-65.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty"
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen192
 \pgf@nodesepend=\dimen193
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility
-\pgfcomp-version-1-18.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty"
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
-for.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgf
-keys.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gfkeys.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.
-sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-h.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\p
-gffor.code.tex"
+("D:\MiKTeX 2.9\tex/latex/pgf/utilities\pgffor.sty"
+("D:\MiKTeX 2.9\tex/latex/pgf/utilities\pgfkeys.sty"
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgfkeys.code.tex"))
+("D:\MiKTeX 2.9\tex/latex/pgf/math\pgfmath.sty"
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgf/utilities\pgffor.code.tex"
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmat
-h.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.code.tex")
 \pgffor@iter=\dimen194
 \pgffor@skip=\dimen195
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz\tikz.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex"
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
-gflibraryplothandlers.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex"
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@plot@mark@count=\count269
 \pgfplotmarksize=\dimen196
@@ -536,8 +447,7 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikznumberofcurrentchild=\count272
 \tikz@fig@count=\count273
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
-modulematrix.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodulematrix.code.tex"
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfmatrixcurrentrow=\count274
 \pgfmatrixcurrentcolumn=\count275
@@ -545,29 +455,26 @@ File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 \tikz@expandcount=\count277
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarytopaths.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths
+.code.tex"
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibraryarrows.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarrows.
+code.tex"
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
-gflibraryarrows.code.tex"
+ ("D:\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen261
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarycalc.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.co
+de.tex"
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarydecorations.markings.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarydecorations.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgf
-moduledecorations.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.markings.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/modules\pgfmoduledecorations.code.tex"
 \pgfdecoratedcompleteddistance=\dimen262
 \pgfdecoratedremainingdistance=\dimen263
 \pgfdecoratedinputsegmentcompleteddistance=\dimen264
@@ -579,43 +486,39 @@ moduledecorations.code.tex"
 )
 \tikz@lib@dec@box=\box58
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/d
-ecorations\pgflibrarydecorations.markings.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarymath.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibraryfpu.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
-gflibraryfpu.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.mar
+kings.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarymath.co
+de.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.cod
+e.tex" ("D:\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryfpu.code.tex"))
 \tikz@math@for@depth=\count279
 \tikz@math@dimen=\dimen269
-\tikz@math@toks=\toks34
+\tikz@math@toks=\toks33
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
-gflibraryarrows.meta.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex"
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowinset=\dimen270
 \pgfarrowlength=\dimen271
 \pgfarrowwidth=\dimen272
 \pgfarrowlinewidth=\dimen273
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\rotating
-.sty"
+("D:\MiKTeX 2.9\tex/latex/graphics\rotating.sty"
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+("D:\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count280
 \rotFPtop=\skip52
 \rotFPbot=\skip53
 \rot@float@box=\box59
-\rot@mess@toks=\toks35
+\rot@mess@toks=\toks34
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/overpic\overpic.s
-ty"
+("D:\MiKTeX 2.9\tex/latex/overpic\overpic.sty"
 Package: overpic 2020/02/22 1.3 picture overlays (RN)
- ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epic\epic.sty"
+
+("D:\MiKTeX 2.9\tex/latex/epic\epic.sty"
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count281
 \d@lta=\count282
@@ -635,101 +538,73 @@ Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@datafile=\read3
 )
 \OVP@box=\box61
-)
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
-"
+) ("D:\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks36
-\inpenc@posthook=\toks37
- ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\cp1250.def"
+\inpenc@prehook=\toks35
+\inpenc@posthook=\toks36
+
+("D:\MiKTeX 2.9\tex/latex/base\cp1250.def"
 File: cp1250.def 2018/08/11 v1.3c Input encoding file
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgfplots\pgfplots
-.sty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.revision.tex")
-Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
+("D:\MiKTeX 2.9\tex/latex/pgfplots\pgfplots.sty"
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tscore.code.tex"
-\t@pgfplots@toka=\toks38
-\t@pgfplots@tokb=\toks39
-\t@pgfplots@tokc=\toks40
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotscore.code.tex"
+\t@pgfplots@toka=\toks37
+\t@pgfplots@tokb=\toks38
+\t@pgfplots@tokc=\toks39
 \pgfplots@tmpa=\dimen280
 \c@pgfplots@coordindex=\count289
 \c@pgfplots@scanlineindex=\count290
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/sys\pg
-fplotssysgeneric.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/libs\p
-gfplotslibrary.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/oldpgf
-compatib\pgfplotsoldpgfsupp_loader.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotsutil.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/listst
-ructure\pgfplotsliststructure.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/listst
-ructure\pgfplotsliststructureext.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/listst
-ructure\pgfplotsarray.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.c
+ode.tex") ("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotsutil.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.t
+ex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.cod
+e.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex"
 \c@pgfplotsarray@tmp=\count291
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/listst
-ructure\pgfplotsmatrix.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/numtab
-le\pgfplotstableshared.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex"
 \c@pgfplotstable@counta=\count292
-\t@pgfplotstable@a=\toks41
+\t@pgfplotstable@a=\toks40
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/listst
-ructure\pgfplotsdeque.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotsbinary.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotsbinary.data.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotsutil.verb.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/libs\p
-gflibrarypgfplots.surfshading.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotsbinary.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.t
+ex"
 \c@pgfplotslibrarysurf@no=\count293
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/sys\pg
-flibrarypgfplots.surfshading.pgfsys-pdftex.def")))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotscolormap.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/util\p
-gfplotscolor.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tsstackedplots.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tsplothandlers.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tsmeshplothandler.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tsmeshplotimage.code.tex")))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.scaling.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tscoordprocessing.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.errorbars.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.markers.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-tsticks.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots\pgfplo
-ts.paths.code.tex")
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/d
-ecorations\pgflibrarydecorations.pathmorphing.code.tex"))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries/d
-ecorations\pgflibrarydecorations.pathreplacing.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-
+pdftex.def")))
+("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotscolormap.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/util\pgfplotscolor.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotsstackedplots.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotsplothandlers.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex")))
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.scaling.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.errorbars.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.markers.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplotsticks.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgfplots\pgfplots.paths.code.tex")
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.pathmorphing.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pat
+hmorphing.code.tex"))
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorat
+ions.pathreplacing.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pat
+hreplacing.code.tex"))
 \pgfplots@numplots=\count294
 \pgfplots@xmin@reg=\dimen281
 \pgfplots@xmax@reg=\dimen282
@@ -738,25 +613,22 @@ ecorations\pgflibrarydecorations.pathreplacing.code.tex"))
 \pgfplots@zmin@reg=\dimen285
 \pgfplots@zmax@reg=\dimen286
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/frontendlay
-er/tikz/libraries\tikzlibraryplotmarks.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmar
+ks.code.tex"
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/libraries\p
-gflibraryplotmarks.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex"
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplots/libs\t
-ikzlibrarypgfplots.groupplots.code.tex"
+("D:\MiKTeX 2.9\tex/generic/pgfplots/libs\tikzlibrarypgfplots.groupplots.code.t
+ex"
 \pgfplots@group@current@plot=\count295
 \pgfplots@group@current@row=\count296
 \pgfplots@group@current@column=\count297
-)
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
-.sty"
+) ("D:\MiKTeX 2.9\tex/latex/listings\listings.sty"
 \lst@mode=\count298
 \lst@gtempboxa=\box62
-\lst@token=\toks42
+\lst@token=\toks41
 \lst@length=\count299
 \lst@currlwidth=\dimen287
 \lst@column=\count300
@@ -767,26 +639,22 @@ ikzlibrarypgfplots.groupplots.code.tex"
 \lst@lineno=\count303
 \lst@maxwidth=\dimen290
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.
-sty"
+("D:\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 \c@lstnumber=\count304
 \lst@skipnumbers=\count305
 \lst@framebox=\box63
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
-.cfg"
+("D:\MiKTeX 2.9\tex/latex/listings\listings.cfg"
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/matlab-prettifier
-\matlab-prettifier.sty"
+("D:\MiKTeX 2.9\tex/latex/matlab-prettifier\matlab-prettifier.sty"
 Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab 
 source code
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty
-"
+("D:\MiKTeX 2.9\tex/latex/base\textcomp.sty"
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
 \netBracketCount@mlpr=\count306
@@ -795,33 +663,28 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 \emHeight@mlpr=\skip54
 \jayDepth@mlpr=\skip55
 \sectionRuleOffset@mlpr=\skip56
-\toks@mlpr=\toks43
+\toks@mlpr=\toks42
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem
-.sty"
+("D:\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip57
 \enit@outerparindent=\dimen291
-\enit@toks=\toks44
+\enit@toks=\toks43
 \enit@inbox=\box64
 \enit@count@id=\count309
 \enitdp@description=\count310
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx.s
-ty"
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.st
-y"
-Package: expl3 2020-03-03 L3 programming layer (loader) 
+("D:\MiKTeX 2.9\tex/latex/siunitx\siunitx.sty"
+("D:\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"
+Package: expl3 2020-02-14 L3 programming layer (loader) 
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
-nd-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+("D:\MiKTeX 2.9\tex/latex/l3backend\l3backend-pdfmode.def"
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count311
 \l__pdf_internal_box=\box65
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
-\xparse.sty"
-Package: xparse 2020-03-03 L3 Experimental document command parser
+("D:\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty"
+Package: xparse 2020-02-14 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count312
 \g__xparse_grabber_int=\count313
 \l__xparse_m_args_int=\count314
@@ -829,19 +692,18 @@ Package: xparse 2020-03-03 L3 Experimental document command parser
 )
 Package: siunitx 2020/02/25 v2.8b A comprehensive (SI) units package
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.sty"
+("D:\MiKTeX 2.9\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen292
 \ar@mcellbox=\box66
 \extrarowheight=\dimen293
-\NC@list=\toks45
+\NC@list=\toks44
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box67
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/l3keys
-2e\l3keys2e.sty"
-Package: l3keys2e 2020-03-03 LaTeX2e option processing using LaTeX3 keys
+("D:\MiKTeX 2.9\tex/latex/l3packages/l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box68
 \l__siunitx_tmp_dim=\dimen294
@@ -884,35 +746,20 @@ Package: l3keys2e 2020-03-03 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_number_align_skip=\skip62
 \l__siunitx_table_text_align_skip=\skip63
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transl
-ator.sty"
+("D:\MiKTeX 2.9\tex/latex/translator\translator.sty"
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ))
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.st
-y"
+("D:\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks46
-\verbatim@line=\toks47
+\every@verbatim=\toks45
+\verbatim@line=\toks46
 \verbatim@in@stream=\read4
 )
 
 LaTeX Warning: Unused global option(s):
     [twosides].
 
-(sprawozdanie.aux
-
-LaTeX Warning: Label `syg_wy_pid_nr_2_mf_gaussmf' multiply defined.
-
-
-LaTeX Warning: Label `syg_wy_pid_nr_2_mf_gaussmf' multiply defined.
-
-
-LaTeX Warning: Label `syg_wy_pid_nr_2_mf_gaussmf' multiply defined.
-
-
-LaTeX Warning: Label `syg_wy_pid_nr_2_mf_gaussmf' multiply defined.
-
-)
+(sprawozdanie.aux)
 \openout1 = `sprawozdanie.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
@@ -966,66 +813,56 @@ LaTeX Font Info:    ... okay on input line 86.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
-pdf.mkii"
+("D:\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
 \scratchdimen=\dimen306
 \scratchbox=\box75
 \nofMPsegments=\count334
 \nofMParguments=\count335
-\everyMPshowfont=\toks48
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count336
 \MPscratchDim=\dimen307
 \MPnumerator=\count337
 \makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks49
-)
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epst
-opdf-base.sty"
+\everyMPtoPDFconversion=\toks48
+) ("D:\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
-) ABD: EveryShipout initializing macros
+)
+ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
-ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
  on input line 86.
 
 \c@lstlisting=\count339
-
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transl
-ator-basic-dictionary-English.dict"
+("D:\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
-)
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-a
-bbreviations.cfg"
+) ("D:\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/siunitx\siunitx-b
-inary.cfg"
+("D:\MiKTeX 2.9\tex/latex/siunitx\siunitx-binary.cfg"
 File: siunitx-binary.cfg 2017/11/26 v2.7k siunitx: Binary units
 )
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 8
 6.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omlplm.fd"
+("D:\MiKTeX 2.9\tex/latex/polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
 86.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omsplsy.fd
-"
+("D:\MiKTeX 2.9\tex/latex/polski\omsplsy.fd"
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
 86.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omxplex.fd
-"
+("D:\MiKTeX 2.9\tex/latex/polski\omxplex.fd"
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -1037,32 +874,30 @@ LaTeX Font Info:    External font `plex10' loaded for size
 LaTeX Font Info:    Trying to load font information for U+msa on input line 86.
 
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+("D:\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 86.
 
- ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
-"
+
+("D:\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmss on input line 
 86.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\ot4cmss.fd
-"
+("D:\MiKTeX 2.9\tex/latex/polski\ot4cmss.fd"
 File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
 86.
 
-("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\ot4cmtt.fd
-"
+("D:\MiKTeX 2.9\tex/latex/polski\ot4cmtt.fd"
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [1
 
-{C:/Users/Nitrox/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(sprawozdanie.toc
+{C:/Users/Radek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (sprawozdan
+ie.toc
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <10> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -1093,22 +928,27 @@ Rozdzia\PlPrIeC {\l } 3.
 
 ]) (zad4.tex [6]
 Rozdzia\PlPrIeC {\l } 4.
-<<<<<<< HEAD
+
+LaTeX Warning: Reference `pid_we' on page 7 undefined on input line 28.
+
+
+LaTeX Warning: Reference `pid_wy' on page 7 undefined on input line 28.
+
 <rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf, id=41, 597.23125pt x 845.1
 575pt>
 File: rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf Graphic file (type pdf
 )
 <use rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf  us
-ed on input line 20.
+ed on input line 34.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 20--21
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 34--35
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 23.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 37.
 
 <rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf, id=42, 597.23125pt x 845.1
 575pt>
@@ -1116,15 +956,15 @@ File: rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf Graphic file (type pdf
 )
 <use rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf  us
-ed on input line 26.
+ed on input line 40.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 26--27
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 29.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 43.
 
 <rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf, id=43, 597.23125pt x 845
 .1575pt>
@@ -1132,15 +972,15 @@ File: rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf Graphic file (type p
 df)
 <use rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf  
-used on input line 37.
+used on input line 51.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 37--38
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 51--52
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 40.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 54.
 
 <rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid.pdf, id=44, 597.23125pt x 845
 .1575pt>
@@ -1148,15 +988,15 @@ File: rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid.pdf Graphic file (type p
 df)
 <use rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid.pdf  
-used on input line 43.
+used on input line 57.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 43--44
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 57--58
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 46.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 60.
 
 <rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.pdf, id=45, 597.23125pt x 845.15
 75pt>
@@ -1164,15 +1004,15 @@ File: rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.pdf Graphic file (type pdf)
 
 <use rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.pdf  use
-d on input line 54.
+d on input line 69.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 54--55
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 57.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 72.
 
 <rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf, id=46, 597.23125pt x 845.15
 75pt>
@@ -1180,45 +1020,6 @@ File: rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf Graphic file (type pdf)
 
 <use rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf  use
-d on input line 60.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 60--61
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 169.91682pt on input line 63.
-
-<rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf, id=47, 597.23125pt x 845.15
-75pt>
-File: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf Graphic file (type pdf)
-
-<use rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf>
-Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf  use
-d on input line 69.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 69--70
- [][] 
- []
-=======
-(rysunki/zad4_syg_we_pid.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(rysunki/zad4_syg_wy_pid.tex)
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
-
-
-LaTeX Warning: Float too large for page by 169.91682pt on input line 72.
-
-<rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf, id=48, 597.23125pt x 845.15
-75pt>
-File: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf Graphic file (type pdf)
-
-<use rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf>
-Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf  use
 d on input line 75.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
@@ -1229,44 +1030,45 @@ Overfull \hbox (141.9857pt too wide) in paragraph at lines 75--76
 
 LaTeX Warning: Float too large for page by 169.91682pt on input line 78.
 
+<rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf, id=47, 597.23125pt x 845.15
+75pt>
+File: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf Graphic file (type pdf)
+
+<use rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf>
+Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf  use
+d on input line 84.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 84--85
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 169.91682pt on input line 87.
+
+<rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf, id=48, 597.23125pt x 845.15
+75pt>
+File: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf Graphic file (type pdf)
+
+<use rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf>
+Package pdftex.def Info: rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid.pdf  use
+d on input line 90.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 90--91
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 169.91682pt on input line 93.
+
 <rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.pdf, id=49, 597.23125pt x 845.15
 75pt>
 File: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.pdf Graphic file (type pdf)
 
 <use rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.pdf  use
-d on input line 86.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 86--87
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 169.91682pt on input line 89.
-
-<rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf, id=50, 597.23125pt x 845.15
-75pt>
-File: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf Graphic file (type pdf)
-
-<use rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf>
-Package pdftex.def Info: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf  use
-d on input line 92.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 92--93
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 169.91682pt on input line 95.
-
-<rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf, id=51, 597.23125pt x 845.157
-5pt>
-File: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf Graphic file (type pdf)
-<use rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf>
-Package pdftex.def Info: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf  used
- on input line 101.
+d on input line 101.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 Overfull \hbox (141.9857pt too wide) in paragraph at lines 101--102
@@ -1276,12 +1078,13 @@ Overfull \hbox (141.9857pt too wide) in paragraph at lines 101--102
 
 LaTeX Warning: Float too large for page by 169.91682pt on input line 104.
 
-<rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf, id=52, 597.23125pt x 845.157
-5pt>
-File: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf Graphic file (type pdf)
-<use rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf>
-Package pdftex.def Info: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf  used
- on input line 107.
+<rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf, id=50, 597.23125pt x 845.15
+75pt>
+File: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf Graphic file (type pdf)
+
+<use rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf>
+Package pdftex.def Info: rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf  use
+d on input line 107.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
 Overfull \hbox (141.9857pt too wide) in paragraph at lines 107--108
@@ -1291,21 +1094,51 @@ Overfull \hbox (141.9857pt too wide) in paragraph at lines 107--108
 
 LaTeX Warning: Float too large for page by 169.91682pt on input line 110.
 
+<rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf, id=51, 597.23125pt x 845.157
+5pt>
+File: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf Graphic file (type pdf)
+<use rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf>
+Package pdftex.def Info: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf  used
+ on input line 116.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 116--117
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 169.91682pt on input line 119.
+
+<rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf, id=52, 597.23125pt x 845.157
+5pt>
+File: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf Graphic file (type pdf)
+<use rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf>
+Package pdftex.def Info: rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid.pdf  used
+ on input line 122.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 122--123
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 169.91682pt on input line 125.
+
 <rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.pdf, id=53, 597.23125pt x 84
 5.1575pt>
 File: rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.pdf Graphic file (type 
 pdf)
 <use rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.pdf 
- used on input line 118.
+ used on input line 133.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 118--119
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 121.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 136.
 
 <rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf, id=54, 597.23125pt x 84
 5.1575pt>
@@ -1313,15 +1146,15 @@ File: rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf Graphic file (type
 pdf)
 <use rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf 
- used on input line 124.
+ used on input line 139.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 124--125
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 139--140
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 127.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 142.
 
 <rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf, id=55, 597.23125pt x 8
 45.1575pt>
@@ -1329,15 +1162,15 @@ File: rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf Graphic file (type
  pdf)
 <use rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf
-  used on input line 135.
+  used on input line 150.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 135--136
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 150--151
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 138.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 153.
 
 <rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf, id=56, 597.23125pt x 8
 45.1575pt>
@@ -1345,17 +1178,19 @@ File: rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf Graphic file (type
  pdf)
 <use rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf>
 Package pdftex.def Info: rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf
-  used on input line 141.
+  used on input line 156.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-Overfull \hbox (141.9857pt too wide) in paragraph at lines 141--142
+Overfull \hbox (141.9857pt too wide) in paragraph at lines 156--157
  [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 169.91682pt on input line 144.
+LaTeX Warning: Float too large for page by 169.91682pt on input line 159.
 
-(rysunki/zad4_syg_we_dmc.tex)
+[7
+
+] (rysunki/zad4_syg_we_dmc.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1363,185 +1198,113 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7
-
-<<<<<<< HEAD
-] [8 <./rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf>]
-[9 <./rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf>] [10 <./rysunki/stroj
-enie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf>] [11 <./rysunki/strojenie_pid/K_0.5_Ti
-_10000_Td_0_wy_pid.pdf>] [12 <./rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.p
-df>] [13 <./rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf>] [14 <./rysunki/
-strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf>] [15 <./rysunki/strojenie_pid/K_0.5_
-Ti_20_Td_0_wy_pid.pdf>] [16 <./rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.pd
-f>] [17 <./rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf>] [18 <./rysunki/s
-trojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf>] [19 <./rysunki/strojenie_pid/K_0.1_Ti
-_5_Td_0_wy_pid.pdf>] [20 <./rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.p
-df>] [21 <./rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf>] [22 <./rysu
-nki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf>] [23 <./rysunki/strojenie_p
-id/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf>] [24]
+) (zad5.tex [8] [9 <./rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid.pdf>]
+[10 <./rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid.pdf>] [11 <./rysunki/stro
+jenie_pid/K_0.5_Ti_10000_Td_0_we_pid.pdf>] [12 <./rysunki/strojenie_pid/K_0.5_T
+i_10000_Td_0_wy_pid.pdf>] [13 <./rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid.
+pdf>] [14 <./rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid.pdf>] [15 <./rysunki
+/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid.pdf>] [16 <./rysunki/strojenie_pid/K_0.5
+_Ti_20_Td_0_wy_pid.pdf>] [17 <./rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid.p
+df>] [18 <./rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid.pdf>] [19 <./rysunki/
+strojenie_pid/K_0.1_Ti_5_Td_0_we_pid.pdf>] [20 <./rysunki/strojenie_pid/K_0.1_T
+i_5_Td_0_wy_pid.pdf>] [21 <./rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid.
+pdf>] [22 <./rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid.pdf>] [23 <./rys
+unki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid.pdf>] [24 <./rysunki/strojenie_
+pid/K_0.11_Ti_4.6_Td_0.65_wy_pid.pdf>] [25]
 Rozdzia\PlPrIeC {\l } 5.
-) (zad6.tex [25
-=======
-] [8]) (zad5.tex [9] [10]
-Rozdzia\PlPrIeC {\l } 5.
-[11
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+[26
 
-] [12]) (zad6.tex [13]
+] [27]) (zad6.tex [28]
 Rozdzia\PlPrIeC {\l } 6.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf, id=380, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf, id=389, 359.3425pt x 289.08pt>
 
-=======
-<rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf, id=64, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf  used o
 n input line 11.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf, id=381, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf, id=390, 375.4025pt x 286.06876pt>
 
-=======
-<rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf, id=65, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf  used on i
 nput line 18.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf, id=382, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf, id=66, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf, id=391, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf  used on i
 nput line 25.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf, id=383, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf, id=392, 359.3425pt x 289.08pt>
 
-=======
-<rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf, id=67, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf  used o
 n input line 35.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf, id=384, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf, id=393, 375.4025pt x 286.06876pt>
 
-=======
-<rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf, id=68, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf.pdf  used on i
 nput line 42.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf, id=385, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf, id=69, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf, id=394, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf  used on i
 nput line 49.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf, id=386, 359.3425pt x 289.08pt>
-=======
-[14
+[29
 
  <./rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf, id=134, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf, id=459, 359.3425pt x 289.08pt>
 
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf  used o
 n input line 58.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-[26
-
- <./rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf, id=451, 375.4025pt x 286.06876pt>
-=======
-<rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf, id=135, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf, id=460, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf  used on i
 nput line 65.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf, id=452, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf, id=136, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf, id=461, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf  used on i
 nput line 72.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf, id=453, 359.3425pt x 289.08pt>
-=======
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf, id=137, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf, id=462, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf  used on 
 input line 87.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [27 <./rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
-=======
- [15 <./rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [30 <./rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
 _nr_2_mf_gaussmf.pdf>]
 Overfull \vbox (17.38235pt too high) has occurred while \output is active []
 
 
-<<<<<<< HEAD
-[28 <./rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_we_p
+[31 <./rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_we_p
 id_nr_3_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf, id=631, 375.4025pt x 286.06876pt>
-=======
-[16 <./rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_we_p
-id_nr_3_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf, id=315, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf, id=641, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf  used on inp
 ut line 94.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf, id=632, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf, id=316, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf, id=642, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf  used on inp
 ut line 101.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf, id=633, 359.3425pt x 289.08pt>
-=======
-<rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf, id=317, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf, id=643, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf  used on 
@@ -1550,41 +1313,24 @@ input line 110.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< HEAD
- [29 <./rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
+ [32 <./rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
 zyn_nr_4_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf, id=732, 375.4025pt x 286.06876pt>
-=======
- [17 <./rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
-zyn_nr_4_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf, id=416, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf, id=742, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf  used on inp
 ut line 117.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf, id=733, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf, id=417, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf, id=743, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
- [30 <./rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
-_nr_4_mf_gaussmf.pdf>] [31 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf> <./
+ [33 <./rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
+_nr_4_mf_gaussmf.pdf>] [34 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf> <./
 rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf, id=911, 359.3425pt x 289.08pt>
-=======
- [18 <./rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
-_nr_4_mf_gaussmf.pdf>] [19 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf> <./
-rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf, id=595, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf, id=920, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf  used on 
@@ -1593,36 +1339,22 @@ input line 133.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< HEAD
- [32 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
+ [35 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
 n_nr_3_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf, id=1009, 375.4025pt x 286.06876pt>
-=======
- [20 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
-n_nr_3_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf, id=693, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf, id=1018, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf  used on inp
 ut line 140.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf, id=1010, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf, id=694, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf, id=1019, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf  used on inp
 ut line 147.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf, id=1011, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf, id=1020, 359.3425pt x 289.08pt>
 
-=======
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf, id=695, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
@@ -1631,46 +1363,28 @@ Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
-<<<<<<< HEAD
- [33 <./rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_pid_n
-=======
- [21 <./rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_pid_n
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [36 <./rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_pid_n
 r_3_mf_trimf.pdf>]
 Overfull \vbox (17.38235pt too high) has occurred while \output is active []
 
 
-<<<<<<< HEAD
-[34 <./rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf> <./rysunki/zad5_syg_we_pid
+[37 <./rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf> <./rysunki/zad5_syg_we_pid
 _nr_4_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf, id=1189, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf, id=1199, 375.4025pt x 286.06876pt>
 
-=======
-[22 <./rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf> <./rysunki/zad5_syg_we_pid
-_nr_4_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf, id=873, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf  used on in
 put line 167.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf, id=1190, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf, id=874, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf, id=1200, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf  used on in
 put line 174.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf, id=1191, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf, id=1201, 359.3425pt x 289.08pt>
 
-=======
-<rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf, id=875, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
@@ -1679,110 +1393,67 @@ Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<<<<<<< HEAD
- [35 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
+ [38 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
 n_nr_2_mf_trapmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf, id=1290, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf, id=1300, 375.4025pt x 286.06876pt>
 
-=======
- [23 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
-n_nr_2_mf_trapmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf, id=974, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf  used on in
 put line 190.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf, id=1291, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf, id=975, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf, id=1301, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf  used on in
 put line 197.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
- [36 <./rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_pid_
-nr_2_mf_trapmf.pdf>] [37 <./rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf> <./r
+ [39 <./rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_pid_
+nr_2_mf_trapmf.pdf>] [40 <./rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf> <./r
 ysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf, id=1469, 359.3425pt x 289.08pt>
-=======
- [24 <./rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_pid_
-nr_2_mf_trapmf.pdf>] [25 <./rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf> <./r
-ysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf, id=1153, 359.3425pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf, id=1478, 359.3425pt x 289.08pt>
 
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf  used on
  input line 206.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf, id=1470, 375.4025pt x 286.06876pt>
-=======
-<rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf, id=1154, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf, id=1479, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf  used on in
 put line 213.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf, id=1471, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf, id=1155, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf, id=1480, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf  used on in
 put line 220.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-) (zad7.tex [38 <./rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>] [39 <./rysunki/
+) (zad7.tex [41 <./rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>] [42 <./rysunki/
 zad5_funkcje_przyn_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_we_pid_nr_4_mf_trapm
-f.pdf>] [40 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>]
-=======
-) (zad7.tex [26 <./rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>] [27 <./rysunki/
-zad5_funkcje_przyn_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_we_pid_nr_4_mf_trapm
-f.pdf>] [28 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+f.pdf>] [43 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>]
 Rozdzia\PlPrIeC {\l } 7.
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf  used o
 n input line 11.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf, id=1647, 375.4025pt x 286.06876pt
-=======
-<rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf, id=1331, 375.4025pt x 286.06876pt
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf, id=1657, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf  used on i
 nput line 18.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf, id=1648, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf, id=1332, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf, id=1658, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf.pdf  used on i
 nput line 25.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-[41
-=======
-[29
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+[44
 
 ]
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
@@ -1790,91 +1461,58 @@ File: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf  used o
 n input line 34.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf, id=1652, 375.4025pt x 286.06876pt
-=======
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [30 <./rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
+ [45 <./rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
 _nr_2_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf, id=1413, 375.4025pt x 286.06876pt
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf, id=1738, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf  used on i
 nput line 41.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf, id=1653, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf, id=1414, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf, id=1739, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf  used on i
 nput line 48.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
- [42 <./rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
-_nr_2_mf_gaussmf.pdf>] [43 <./rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf>]
-=======
- [31 <./rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [46 <./rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf  used o
 n input line 58.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf, id=1772, 375.4025pt x 286.06876pt
-=======
-<rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf, id=1456, 375.4025pt x 286.06876pt
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf, id=1781, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf  used on i
 nput line 65.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf, id=1773, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf, id=1457, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf, id=1782, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf  used on i
 nput line 72.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf, id=1774, 359.3425pt x 289.08pt
-=======
-<rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf, id=1458, 359.3425pt x 289.08pt
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf, id=1783, 359.3425pt x 289.08pt
 >
 File: rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf  used o
 n input line 82.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf, id=1775, 375.4025pt x 286.06876pt
-=======
-<rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf, id=1459, 375.4025pt x 286.06876pt
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf, id=1784, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf  used on i
 nput line 89.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf, id=1776, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf, id=1460, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf, id=1785, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf  used on i
@@ -1885,21 +1523,13 @@ File: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf  used on 
 input line 110.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf, id=1777, 375.4025pt x 286.06876pt>
-=======
-<rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf, id=1461, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf, id=1786, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf  used on inp
 ut line 117.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf, id=1778, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf, id=1462, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf, id=1787, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf  used on inp
@@ -1910,58 +1540,37 @@ File: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf  used on 
 input line 134.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf, id=1779, 375.4025pt x 286.06876pt>
-=======
- [32 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf, id=1501, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [47 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf>]
+<rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf, id=1826, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf  used on inp
 ut line 141.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf, id=1780, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf, id=1502, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf, id=1827, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf  used on inp
 ut line 148.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-[44 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf>]
-=======
- [33 <./rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [48 <./rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf  used on 
 input line 158.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
- [45 <./rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf, id=1860, 375.4025pt x 286.06876pt>
-=======
 
 Underfull \vbox (badness 1968) has occurred while \output is active []
 
- [34 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
+ [49 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
 zyn_nr_5_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf, id=1642, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf, id=1968, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf  used on inp
 ut line 165.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf, id=1861, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf, id=1643, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf, id=1969, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf  used on inp
@@ -1970,25 +1579,15 @@ ut line 172.
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
-<<<<<<< HEAD
- [46 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
-zyn_nr_5_mf_gaussmf.pdf>]
-Overfull \vbox (3.78235pt too high) has occurred while \output is active []
-
-
-[47 <./rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc_
-nr_5_mf_gaussmf.pdf>] [48 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>]
-=======
- [35 <./rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
+ [50 <./rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
 _nr_5_mf_gaussmf.pdf>]
 Overfull \vbox (3.78235pt too high) has occurred while \output is active []
 
 
-[36 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>]
+[51 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>]
 Underfull \vbox (badness 1968) has occurred while \output is active []
 
- [37 <./rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [52 <./rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
@@ -1997,36 +1596,22 @@ Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
-<<<<<<< HEAD
- [49 <./rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf, id=2116, 375.4025pt x 286.06876pt>
-=======
- [38 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_dmc_n
+ [53 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_dmc_n
 r_3_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf, id=1876, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf, id=2201, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf  used on in
 put line 194.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf, id=2117, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf, id=1877, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf, id=2202, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf  used on in
 put line 201.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
- [50 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_dmc_n
-r_3_mf_trimf.pdf>]
-=======
- [39 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [54 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
@@ -2035,157 +1620,84 @@ Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
 
 Underfull \vbox (badness 1968) has occurred while \output is active []
 
-<<<<<<< HEAD
- [51 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf, id=2235, 375.4025pt x 286.06876pt>
-=======
- [40 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf, id=1957, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [55 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>]
+<rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf, id=2283, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf  used on in
 put line 217.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf, id=2236, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf, id=1958, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf, id=2284, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf  used on in
 put line 224.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<<<<<<< HEAD
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [52 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>]
-=======
- [41 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_
+ [56 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_
 nr_2_mf_trapmf.pdf>]
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf  used on
  input line 233.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<<<<<<< HEAD
- [53 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_
-nr_2_mf_trapmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf, id=2351, 375.4025pt x 286.06876pt>
-=======
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [42 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf, id=2077, 375.4025pt x 286.06876pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ [57 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf>]
+<rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf, id=2402, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf  used on in
 put line 240.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<<<<<<< HEAD
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf, id=2352, 368.37625pt x 289.08pt>
-=======
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf, id=2078, 368.37625pt x 289.08pt>
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+<rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf, id=2403, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf.pdf  used on in
 put line 247.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
 
-<<<<<<< HEAD
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [54 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf>]
-Overfull \vbox (6.79358pt too high) has occurred while \output is active []
-=======
 Underfull \vbox (badness 1968) has occurred while \output is active []
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 
- [43 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf>]
+ [58 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf>]
 Overfull \vbox (3.78235pt too high) has occurred while \output is active []
 
-<<<<<<< HEAD
-[55 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf.pdf>]
-Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [56 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_
-nr_4_mf_trapmf.pdf>]) [57] (sprawozdanie.aux)
+[59 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_n
+r_4_mf_trapmf.pdf>]) [60] (sprawozdanie.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 31220 strings out of 481292
- 797224 string characters out of 2907317
- 1642731 words of memory out of 3000000
- 46100 multiletter control sequences out of 15000+200000
- 554474 words of font info for 87 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 63i,19n,98p,939b,2202s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.en
-c}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.en
-c}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plme.en
-c}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plms.en
-c}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plit.en
-c}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.en
-c}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plbx
-10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl
-/plbx12.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/pl/plex10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/pl/plmi10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/pl/plmi7.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/pl/plmi8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/pl/plmib10.pfb><C:/Users/Nitrox/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><C:/Users/Nitrox/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Ni
-trox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (58 pages, 1957706 bytes).
-PDF statistics:
- 2570 PDF objects out of 2984 (max. 8388607)
-=======
-
-[44 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_dmc_n
-r_4_mf_trapmf.pdf>]) [45] (sprawozdanie.aux) ) 
-Here is how much of TeX's memory you used:
- 31025 strings out of 481556
- 774245 string characters out of 2930144
- 1791688 words of memory out of 3000000
- 45669 multiletter control sequences out of 15000+200000
+ 31138 strings out of 481556
+ 779817 string characters out of 2930144
+ 1638480 words of memory out of 3000000
+ 45754 multiletter control sequences out of 15000+200000
  554474 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,98p,939b,2200s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/pl
-/plrm.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{D:/MiKTeX 2.9/fonts/enc/d
-vips/pl/plme.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX 2.9/font
-s/enc/dvips/pl/plit.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}<D:/MiKTeX 2
-.9/fonts/type1/public/pl/plbx10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx12
-.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><D:/MiKTeX 2.9/fonts/type1
-/public/pl/plmi10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX
- 2.9/fonts/type1/public/pl/plmi7.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi8
-.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmib10.pfb><D:/MiKTeX 2.9/fonts/type
-1/public/pl/plr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><D:/MiKTeX 
-2.9/fonts/type1/public/pl/plr7.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr8.pf
-b><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX 2.9/fonts/type1/pu
-blic/pl/plsy8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><D:/MiKTeX 2.
-9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (46 pages, 1409253 bytes).
+{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/
+plmi.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{D:/MiKTeX 2.9/fonts/enc/dv
+ips/pl/plms.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}{D:/MiKTeX 2.9/fonts
+/enc/dvips/pl/pltt.enc}<D:/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><D:/MiKT
+eX 2.9/fonts/type1/public/pl/plbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/pl
+ex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX 2.9/fonts/t
+ype1/public/pl/plmi6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi7.pfb><D:/MiK
+TeX 2.9/fonts/type1/public/pl/plmi8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/pl
+mib10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX 2.9/fonts/t
+ype1/public/pl/plr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><D:/MiKTe
+X 2.9/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy1
+0.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><D:/MiKTeX 2.9/fonts/type1
+/public/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
+Output written on sprawozdanie.pdf (61 pages, 1983439 bytes).
 PDF statistics:
- 2254 PDF objects out of 2487 (max. 8388607)
->>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
+ 2580 PDF objects out of 2984 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  333 words of extra memory for PDF output out of 10000 (max. 10000000)
 
