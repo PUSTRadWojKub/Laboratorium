@@ -1,6 +1,6 @@
 \chapter{Regulacja za pomoc¹ rozmytych regulatorów PID}
 
-Przetestowaliœmy dzia³anie rozmytego regulatora PID dla ró¿nych funkcji przynale¿noœci: Gaussa, trójk¹tnych  oraz trapezoidalnych. Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}={2,3,4}$. Lokalne regulatory PID stroiliœmy metod¹ in¿yniersk¹ poprzez stopniowe dostrajanie odpowiednich cz³onów.
+Przetestowaliœmy dzia³anie rozmytego regulatora PID dla ró¿nych funkcji przynale¿noœci: Gaussa, trójk¹tnych  oraz trapezoidalnych. Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}={2,3,4}$. Lokalne regulatory PID stroiliœmy metod¹ in¿yniersk¹ poprzez stopniowe dostrajanie odpowiednich cz³onów. Za sygna³ prze³¹czaj¹cy regulatory lokalne przyjêliœmy $u(k-1)$.
 
 \section{Funkcje przynale¿noœci Gaussa} 
 
@@ -51,7 +51,7 @@ W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$.
 	\label{syg_wy_pid_nr_3_mf_gaussmf}
 \end{figure}
 
-Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_gaussmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_gaussmf} oraz \ref{syg_wy_pid_nr_4_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{355.1969}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych nie wp³ynê³o w istotny sposób na jakoœæ regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszych wartoœci by³o ono bardzo niewielkie.
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_gaussmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_gaussmf} oraz \ref{syg_wy_pid_nr_4_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{355.1969}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych z $n_\mathrm{r}=3$ na $n_\mathrm{r}=4$ nie wp³ynê³o w istotny sposób na jakoœæ regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszej wartoœci $n_\mathrm{r}$ by³o ono bardzo niewielkie.
 
 \begin{figure}[tb]
 	\centering
@@ -126,7 +126,7 @@ W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$.
 	\label{syg_wy_pid_nr_3_mf_trimf}
 \end{figure}
 
-Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trimf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trimf} oraz \ref{syg_wy_pid_nr_4_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{339.2637}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych wp³ynê³o na nieznaczne pogorszenie jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy i nie wystêpuje przeregulowanie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trimf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trimf} oraz \ref{syg_wy_pid_nr_4_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{339.2637}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych z $n_\mathrm{r}=3$ na $n_\mathrm{r}=4$ wp³ynê³o na nieznaczne pogorszenie jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy i nie wystêpuje przeregulowanie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
 
 \begin{figure}[tb]
 	\centering
@@ -199,7 +199,7 @@ W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$.
 	\label{syg_wy_pid_nr_3_mf_trapmf}
 \end{figure}
 
-Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trapmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trapmf} oraz \ref{syg_wy_pid_nr_4_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{368.7729}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych wp³ynê³o na poprawê jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszych wartoœci by³o ono bardzo niewielkie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trapmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trapmf} oraz \ref{syg_wy_pid_nr_4_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{368.7729}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych z $n_\mathrm{r}=3$ na $n_\mathrm{r}=4$ wp³ynê³o na poprawê jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszej wartoœci by³o ono bardzo niewielkie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
 
 \begin{figure}[tb]
 	\centering

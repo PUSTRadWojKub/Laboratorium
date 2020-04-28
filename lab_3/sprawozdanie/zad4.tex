@@ -1,17 +1,31 @@
-
 \chapter{Dobór parametrów cyfrowego algorytmu PID oraz algorytmu DMC}
 
+Podczas strojenia regulatorów przyjêliœmy nastêpuj¹c¹ trajektoriê zadan¹
+\begin{equation}
+y^{\mathrm{zad}}(k)=
+\begin{cases}
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 99\\
+0.5 \quad \textrm{ dla } \quad 100 \le k \le 299\\
+1 \quad \quad \textrm{ dla } \quad 300 \le k \le 499\\
+-0.1 \quad \textrm{ dla } \quad 500 \le k \le 699\\
+5 \quad \quad \textrm{ dla } \quad 700 \le k \le 1200
+\end{cases}
+\end{equation}
+
+Jakoœæ regulacji ocenialiœmy na podstawie wykresów oraz na podstawie poni¿szego wskaŸnika jakoœci
+\begin{equation}
+	E = \sum^{k_\mathrm{konc}}_{k=1}(y^\mathrm{zad}(k)-y(k))^2
+\end{equation}
 
 
-TODO: Wstawiæ przebiegi z strojenia PIDA i DMC.
-
-
-
-Skoki:
-
-$0 \rightarrow 0.5 \rightarrow 1 \rightarrow -0.1 \rightarrow 5$
 
 \section{Regulator PID}
+Regulator PID stroiliœmy metod¹ in¿yniersk¹. W pierwszej kolejnoœci dobraliœmy wartoœæ wzmocnienia. W kolejnych krokach dostrajaliœmy kolejno cz³ony ca³kuj¹cy i ró¿niczkuj¹cy.
+Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora PID
+\begin {equation}
+	K = 0.11, T_\mathrm{i} = 4.6, T_\mathrm{d} = 0.65
+\end{equation}
+Przebiegi uzyskane dla tych wartoœci przedstawiono na rysunkach \ref{pid_we} oraz \ref{pid_wy}. Uzyskana wartoœæ wskaŸnika jakoœci $E=403.7229$.
 
 Dobieranie nastawów regulatora PID zaczynamy ze wzmocnieniem równym 1 i wy³¹czonym cz³onem ca³kuj¹cym oraz ró¿niczkuj¹cym.
 
@@ -45,6 +59,7 @@ Zmniejszamy wzmocnienie tak a¿eby zmniejszyæ oscylacje.
 	\label{syg_wy_pid2}
 \end{figure}
 
+<<<<<<< HEAD
 Error = 7.8324e+03
 
 B³¹d zmala³, obserwujemy uchyb ustalony oraz oscylacje. Aby wyeliminowaæ uchyb zwiêkszamy wp³yw cz³onu ca³kuj¹cego.
@@ -142,8 +157,9 @@ Mo¿emy zauwa¿yæ poprawê wskaŸnika iloœciowego jednak¿e niepoj¹ce s¹ oscylacje. W
 	\caption{Regulator PID - sygna³ wyjœciowy i zadany}
 	\label{syg_wy_pid8}
 \end{figure}
+=======
+>>>>>>> e3f2c42f5fd537b8bd4860ed079302fa27cd6b09
 
-Error = 403.7229
 
 WskaŸnik iloœciowy uleg³ pogorszeniu jednak¿e wyidzimy poprawê jakoœciow¹ - wyeliminowanie oscylacji.
 
@@ -154,6 +170,12 @@ $Ti = 4.6$
 $Td = 0.65$
 
 \section{Regulator DMC}
+Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego nieznaczne zwiêkszenie wp³ywa korzystnie na regulacjê.
+Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora DMC
+\begin{equation}
+	D = 53, N = 20, N_\mathrm{u} = 3, \lambda=2
+\end{equation}
+Przebiegi uzyskane dla takiego strojenia regulatora DMC przedstawiono na rysunkach \ref{dmc_we} oraz \ref{dmc_wy}. Uzyskana wartoœæ wskaŸnika jakoœci wynosi $E=264.7306$.
 
 \begin{figure}[h!]
 	\centering
@@ -169,8 +191,10 @@ $Td = 0.65$
 	\label{dmc_wy}
 \end{figure}
 
-D = 53;
-N = 20; 
-Nu = 3;
 
-Error = 264.7306
+
+\section{Wnioski}
+Porównuj¹c najlepszy uzyskany regulator PID z najlepszym uzyskanym regulatorem DMC mo¿na stwierdziæ, ¿e regulator PID pozwoli³ zapewniæ spokojniejsze dzia³anie uk³adu bez wystêpowanie oscylacji oraz przeregulowania. Oscylacji jak i przeregulowania nie uda³o siê unikn¹æ w algorytmie DMC. Regulator DMC dzia³a³ jednak szybciej od PID. Pod wzglêdem wskaŸnika jakoœci $E$ regulator DMC równie¿ wypad³ korzystniej od PID. Zatem ciê¿ko jest jednoznacznie wskazaæ, który regulator jest lepszy. Z racji tego, ¿e badany obiekt jest nieliniowy, mo¿na poprawiæ jakoœæ regulacji dla obu algorytmów przez zastosowanie regulatorów rozmytych. 
+
+\section{Implementacja}
+Do strojenia regulatorów PID oraz DMC wykorzystaliœmy program zawarty w skrypcie \verb+regulator_tunning.m+.
