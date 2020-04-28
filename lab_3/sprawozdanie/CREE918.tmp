@@ -1,0 +1,495 @@
+\chapter{Kalibracja rozmytych algorytmów PID oraz DMC}
+
+\section{Regulator rozmyty PID}
+
+\subsection{Funkcje przynale¿noœci Gaussa} 
+
+Nr = 2
+Error = 1.4152e+03
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_gaussmf}
+\end{figure}
+
+Nr = 3
+Error = 354.5834
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_gaussmf}
+\end{figure}
+
+Nr = 4
+Error = 355.1969
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_gaussmf}
+\end{figure}
+
+
+
+
+
+\subsection{Funkcje przynale¿noœci trójk¹tne} 
+
+Nr = 2
+Error = 6.2368e+03
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_trimf}
+\end{figure}
+
+Nr = 3
+Error = 330.9839
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_trimf}
+\end{figure}
+
+Nr = 4
+Error = 339.2637
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_trimf}
+\end{figure}
+
+
+
+\subsection{Funkcje przynale¿noœci trapezoidalne}
+
+Nr = 2
+Error = 2.0152e+03
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_trapmf}
+\end{figure}
+
+Nr = 3
+Error = 385.6358
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_trapmf}
+\end{figure}
+
+Nr = 4
+Error = 368.7729
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_trapmf}
+\end{figure}
+
+
+
+
+
+
+\section{Regulator rozmyty DMC}
+
+\subsection{Funkcje przynale¿noœci Gaussa} 
+
+Nr = 2
+Error = 261.3388
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_2_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_2_mf_gaussmf}
+\end{figure}
+
+Nr = 3
+Error = 270.7911
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_3_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_3_mf_gaussmf}
+\end{figure}
+
+
+Nr = 4
+Error = 292.7912
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_4_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_4_mf_gaussmf}
+\end{figure}
+
+
+Nr=5
+Error=313.5469
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=5$}
+	\label{funkcje_przyn_nr_5_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=5$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_5_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=5$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_5_mf_gaussmf}
+\end{figure}
+
+
+
+
+\subsection{Funkcje przynale¿noœci trójk¹tne}
+
+
+Nr = 2
+Error = 262.6995
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_2_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_2_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_2_mf_trimf}
+\end{figure}
+
+
+Nr = 3
+Error = 271.5334
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_3_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_3_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_3_mf_trimf}
+\end{figure}
+
+
+Nr = 4
+Error = 294.6215
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_4_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_4_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_4_mf_trimf}
+\end{figure}
+
+
+
+
+\subsection{Funkcje przynale¿noœci trapezoidalne}
+
+Nr = 2
+Error = 260.8879
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_2_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_2_mf_trapmf}
+\end{figure}
+
+Nr = 3
+Error = 286.2821
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_3_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_3_mf_trapmf}
+\end{figure}
+
+Nr = 4
+Error = 295.0414
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_dmc_nr_4_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_dmc_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty DMC dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_dmc_nr_4_mf_trapmf}
+\end{figure}

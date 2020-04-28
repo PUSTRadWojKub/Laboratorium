@@ -1,0 +1,228 @@
+\chapter{Regulacja za pomoc¹ rozmytych regulatorów PID}
+
+Przetestowaliœmy dzia³anie rozmytego regulatora PID dla ró¿nych funkcji przynale¿noœci: Gaussa, trójk¹tnych  oraz trapezoidalnych. Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}={2,3,4}$. Lokalne regulatory PID stroiliœmy metod¹ in¿yniersk¹ poprzez stopniowe dostrajanie odpowiednich cz³onów.
+
+\section{Funkcje przynale¿noœci Gaussa} 
+
+Na pocz¹tku sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_gaussmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_2_mf_gaussmf} oraz \ref{syg_wy_pid_nr_2_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{1.4152e+03}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_gaussmf}
+\end{figure}
+
+W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_3_mf_gaussmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_3_mf_gaussmf} oraz \ref{syg_wy_pid_nr_3_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{354.5834}$.
+
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_gaussmf}
+\end{figure}
+
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_gaussmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_gaussmf} oraz \ref{syg_wy_pid_nr_4_mf_gaussmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{355.1969}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych nie wp³ynê³o w istotny sposób na jakoœæ regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszych wartoœci by³o ono bardzo niewielkie.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_gaussmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_gaussmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_gaussmf}
+\end{figure}
+
+
+
+
+
+\section{Funkcje przynale¿noœci trójk¹tne} 
+
+Na pocz¹tku sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_trimf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_2_mf_trimf} oraz \ref{syg_wy_pid_nr_2_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{6.2368e+033}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_trimf}
+\end{figure}
+
+W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_3_mf_trimf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_3_mf_trimf} oraz \ref{syg_wy_pid_nr_3_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{330.9839}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_trimf}
+\end{figure}
+
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trimf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trimf} oraz \ref{syg_wy_pid_nr_4_mf_trimf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{339.2637}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych wp³ynê³o na nieznaczne pogorszenie jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy i nie wystêpuje przeregulowanie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trimf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trimf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_trimf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_trimf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_trimf}
+\end{figure}
+
+
+
+\section{Funkcje przynale¿noœci trapezoidalne}
+
+Na pocz¹tku sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=2$. Odpowiadaj¹ce tej sytuacji funkcje przynale¿noœci przedstawiono na rys.~\ref{funkcje_przyn_nr_2_mf_trapmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_2_mf_trapmf} oraz \ref{syg_wy_pid_nr_2_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{2.0152e+03}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=2$}
+	\label{funkcje_przyn_nr_2_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_2_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=2$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_2_mf_trapmf}
+\end{figure}
+
+W kolejnym kroku zwiêkszyliœmy liczbê regulatorów lokalnych do $n_\mathrm{r}=3$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_3_mf_trapmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_3_mf_trapmf} oraz \ref{syg_wy_pid_nr_3_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{385.6358}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=3$}
+	\label{funkcje_przyn_nr_3_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_3_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=3$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_3_mf_trapmf}
+\end{figure}
+
+Nastêpnie sprawdziliœmy dzia³anie uk³adu dla $n_\mathrm{r}=4$. Funkcje przynale¿noœci s¹ widoczne na rys.~\ref{funkcje_przyn_nr_4_mf_trapmf_pid}. Wyniki symulacji s¹ przedstawione na rysunkach ~\ref{syg_we_pid_nr_4_mf_trapmf} oraz \ref{syg_wy_pid_nr_4_mf_trapmf}. Otrzymana wartoœæ wskaŸnika jakoœci regulacji wynosi $E = \num{368.7729}$. Porównuj¹c wartoœci wskaŸnika $E$ mo¿na zauwa¿yæ, ¿e zwiêkszenie liczby regulatorów lokalnych wp³ynê³o na poprawê jakoœci regulacji. W obu przypadkach wartoœæ zadana jest osi¹gana dla ró¿nych punktów pracy. Zwiêkszenie $n_\mathrm{r}$ do wartoœci $4$ pozwoli³o na ca³kowit¹ eliminacjê przeregulowania, ale nawet dla mniejszych wartoœci by³o ono bardzo niewielkie. Mo¿na tak¿e zaobserwowaæ, ¿e wiêksza wartoœæ $n_\mathrm{r}$ powoduje szybsze dzia³anie ca³ego systemu.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf}
+	\caption{Zastosowane funkcje przynale¿noœci dla $n_\mathrm{r}=4$}
+	\label{funkcje_przyn_nr_4_mf_trapmf_pid}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_we_pid_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ steruj¹cy}
+	\label{syg_we_pid_nr_4_mf_trapmf}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1]{rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf}
+	\caption{Regulator rozmyty PID dla $n_\mathrm{r}=4$ - sygna³ wyjœciowy i zadany}
+	\label{syg_wy_pid_nr_4_mf_trapmf}
+\end{figure}
+
+
+
+\section{Wnioski}
+Pod wzglêdem wskaŸnika jakoœci najlepsz¹ regulacjê zapewni³y regulatory, dla których funkcje przynale¿noœci mia³y kszta³ty trójk¹tne. Porównuj¹c regulatory na podstawie samych tylko przebiegów sygna³u sterujacego oraz wyjœciowego, ciê¿ko by³o by jednoznacznie wskazaæ, które rozwi¹zanie jest najlepsze. Po odpowiednim dostrojeniu regulatorów lokalnych wszystkie uk³ady dzia³a³y satysfakcjonuj¹co - wartoœci zadane by³y osi¹gane, przeregulowanie, jeœli wystêpowa³o, by³o niewielkie i uk³ad dzia³a³ szybko. Najwiêkszym problemem przy implementacji rozmytych regulatorów PID jest koniecznoœæ dostrojenia ka¿dego regulatora lokalnego. Wraz ze wzrostem liczby u¿ywanych funkcji przynale¿noœci, wzrasta równie¿ liczba regulatorów PID, które trzeba skalibrowaæ. Dlatego czêsto stosuje siê rozmyte regulatory DMC, których w zasadzie nie trzeba stroiæ, a jedynie wystarczy zebraæ lokalne odpowiedzi skokowe.

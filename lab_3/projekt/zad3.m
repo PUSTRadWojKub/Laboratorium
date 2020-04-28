@@ -161,7 +161,7 @@ stairs(U_cale);
 grid on;
 title("Sygna³ wejœciowy");
 legend('$u(k)$', 'interpreter', 'latex');
-matlab2tikz(s1, 'showInfo', false)
+% matlab2tikz(s1, 'showInfo', false)
 
 figure;
 plot(1:T/Tp, Y);
@@ -170,4 +170,4 @@ grid on;
 stairs(1:T/Tp, Y_zad, '--');
 title("Sygna³ wyjœciowy i zadany");
 legend('$y(k)$', '$y^{zad}(k)$', 'interpreter', 'latex');
-matlab2tikz(s2, 'showInfo', false)
+% matlab2tikz(s2, 'showInfo', false)

@@ -7,11 +7,11 @@ Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 %Regulator: 0 - pid, 1 - dmc
-piddmc = 1;
+piddmc = 0;
 %Liczba lokalnych regulatorow
-nr = 2;
-%Typ funkcji przynale¿noœci
-mf = "gaussmf";
+nr = 3;
+%Typ funkcji przynale¿noœci: trimf, trapmf, gaussmf
+mf = "trimf";
 %Parametr do odpowiedzi skokowych do DMC (o ile skacze)
 dUskok = 0.12;
 %Ograniczenia: 0 - wylaczone, 1 - wlaczone
@@ -195,11 +195,11 @@ s1 = '../sprawozdanie/rysunki/zad5_syg_we';
 s2 = '../sprawozdanie/rysunki/zad5_syg_wy';
 
 if ~piddmc
-    s1 = strcat(s1, '_pid_nr_', string(nr), '_mf_', mf, '.tex');
-    s2 = strcat(s2, '_pid_nr_', string(nr), '_mf_', mf, '.tex');
+    s1 = strcat(s1, '_pid_nr_', string(nr), '_mf_', mf, '.pdf');
+    s2 = strcat(s2, '_pid_nr_', string(nr), '_mf_', mf, '.pdf');
 else
-    s1 = strcat(s1, '_dmc_nr_', string(nr), '_mf_', mf, '.tex');
-    s2 = strcat(s2, '_dmc_nr_', string(nr), '_mf_', mf, '.tex');
+    s1 = strcat(s1, '_dmc_nr_', string(nr), '_mf_', mf, '.pdf');
+    s2 = strcat(s2, '_dmc_nr_', string(nr), '_mf_', mf, '.pdf');
 end
 
 s1 = convertStringsToChars(s1);
@@ -208,15 +208,22 @@ s2 = convertStringsToChars(s2);
 figure;
 stairs(U_cale);
 grid on;
-title("Sygna³ wejœciowy");
-legend('$u(k)$', 'interpreter', 'latex');
-matlab2tikz(s1, 'showInfo', false)
+% title('Sygna³ wejœciowy','interpreter', 'latex');
+legend('$u(k)$', 'interpreter', 'latex','location','southeast');
+ylim([-1.05,1.05]);
+xlabel('$k$','interpreter', 'latex');
+ylabel('$u(k)$', 'interpreter', 'latex');
+% print(s1,'-dpdf');
+% matlab2tikz(s1, 'showInfo', false)
 
 figure;
 plot(1:T/Tp, Y);
 hold on;
 grid on;
 stairs(1:T/Tp, Y_zad, '--');
-title("Sygna³ wyjœciowy i zadany");
-legend('$y(k)$', '$y^{zad}(k)$', 'interpreter', 'latex');
-matlab2tikz(s2, 'showInfo', false)
+% title('Sygna³ wyjœciowy i zadany','interpreter', 'latex');
+legend('$y(k)$', '$y^{zad}(k)$', 'interpreter', 'latex','location','southeast');
+xlabel('$k$','interpreter', 'latex');
+ylabel('$y(k)$, $y^{zad}(k)$', 'interpreter', 'latex');
+% print(s2,'-dpdf');
+% matlab2tikz(s2, 'showInfo', false)

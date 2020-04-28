@@ -41,6 +41,6 @@ title('U')
 subplot(2,1,2);
 plot(1:T/Tp, Y);
 title('Y')
-matlab2tikz('../sprawozdanie/rysunki/zad1_punkt_pracy.tex', 'showInfo', false)
+% matlab2tikz('../sprawozdanie/rysunki/zad1_punkt_pracy.tex', 'showInfo', false)
 
 %Mozemy zauwazyc stan ustalony (wartosc wyjscia nie zmienia sie na calym przebiegu)

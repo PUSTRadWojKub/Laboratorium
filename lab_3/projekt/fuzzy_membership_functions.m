@@ -22,8 +22,12 @@ function [wy] = fuzzy_membership_functions(u_min, u_max, nr, mf)
             % Utworzenie funkcji przynale¿ci
             MFName = strcat('u_', string(k), '_mf');
             mfs{k} = fismf("trimf", [xcl, xc, xcr], 'Name', MFName);
-%             plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
-%             hold on
+            plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
+            ylim([-0.05,1.05]);
+            xlabel('$u(k-1)$','interpreter', 'latex');
+            ylabel('$\mu$', 'interpreter', 'latex');
+            grid on;
+            hold on
         end
     end
     
@@ -42,8 +46,12 @@ function [wy] = fuzzy_membership_functions(u_min, u_max, nr, mf)
             % Utworzenie funkcji przynale¿ci
             MFName = strcat('u_', string(k), '_mf');
             mfs{k} = fismf("trapmf", [xcll, xcl, xcr, xcrr], 'Name', MFName);
-%             plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
-%             hold on
+            plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
+            ylim([-0.05,1.05]);
+            xlabel('$u(k-1)$','interpreter', 'latex');
+            ylabel('$\mu$', 'interpreter', 'latex');
+            grid on;
+            hold on
         end
     end
     
@@ -60,8 +68,12 @@ function [wy] = fuzzy_membership_functions(u_min, u_max, nr, mf)
             % Utworzenie funkcji przynale¿ci
             MFName = strcat('u_', string(k), '_mf');
             mfs{k} = fismf("gauss2mf", [xccr, xcl, xccr, xcr], 'Name', MFName);
-%             plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
-%             hold on
+            plot(u_min:0.01:u_max, evalmf(mfs{k}, u_min:0.01:u_max)); 
+            ylim([-0.05,1.05]);
+            xlabel('$u(k-1)$','interpreter', 'latex');
+            ylabel('$\mu$', 'interpreter', 'latex');
+            grid on;
+            hold on;
         end
     end
     
