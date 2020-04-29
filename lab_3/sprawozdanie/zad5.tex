@@ -138,4 +138,6 @@ u(k)=\frac{w^1(k)u^1(k)+...+w^\mathrm{n_r}(k)u^\mathrm{n_r}(k)}{w^1(k)+...+w^\ma
 \section{Implementacja}
 Program do symulacji rozmytych algorytmów PID oraz DMC znajduje siê w skrypcie\\ \verb+fuzzy_regulation.m+. Korzysta on z dwóch zaimplementowanych przez nas funkcji:\\ \verb+fuzzy_membership_function.m+ oraz \verb+fuzzy_weights.m+. Pierwsza z nich wyznacza funkcje przynale¿noœci dla danego przedzia³u, liczby regulatorów lokalnych oraz wybranego typu funkcji przynale¿noœci. Druga funkcja s³u¿y do wyznaczania wartoœci wspó³czynników wag dla lokalnych regulatorów dla wybranego sygna³u prze³¹czaj¹cego oraz danego zestawu funkcji przynale¿noœci.
 
+Do strojenia lokalnych regulatorów wykorzystaliœmy skrypt \verb+regulator_tunning.m+.
+
 

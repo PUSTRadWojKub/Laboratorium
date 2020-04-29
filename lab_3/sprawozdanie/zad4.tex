@@ -20,124 +20,122 @@ Jakoœæ regulacji ocenialiœmy na podstawie wykresów oraz na podstawie poni¿szego 
 
 
 \section{Regulator PID}
-Regulator PID stroiliœmy metod¹ in¿yniersk¹. W pierwszej kolejnoœci dobraliœmy wartoœæ wzmocnienia. W kolejnych krokach dostrajaliœmy kolejno cz³ony ca³kuj¹cy i ró¿niczkuj¹cy.
+Regulator PID stroiliœmy metod¹ in¿yniersk¹. W pierwszej kolejnoœci dobraliœmy wartoœæ wzmocnienia. W kolejnych krokach dostrajaliœmy kolejno cz³ony ca³kuj¹cy i ró¿niczkuj¹cy. Kolejne etapy strojenia regulatora zosta³y zilustrowane na rys.~\ref{syg_we_pid1}~$-$~\ref{syg_wy_pid8}.
+
 Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora PID
 \begin {equation}
 	K = 0.11, T_\mathrm{i} = 4.6, T_\mathrm{d} = 0.65
 \end{equation}
-Przebiegi uzyskane dla tych wartoœci przedstawiono na rysunkach \ref{pid_we} oraz \ref{pid_wy}. Uzyskana wartoœæ wskaŸnika jakoœci $E=403.7229$.
+Przebiegi uzyskane dla tych wartoœci przedstawiono na rysunkach \ref{syg_we_pid8} oraz \ref{syg_wy_pid8}. Uzyskana wartoœæ wskaŸnika jakoœci $E=403.7229$.
 
-Dobieranie nastawów regulatora PID zaczynamy ze wzmocnieniem równym 1 i wy³¹czonym cz³onem ca³kuj¹cym oraz ró¿niczkuj¹cym.
+
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 1) - sygna³ steruj¹cy}
 	\label{syg_we_pid1}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_1_Ti_10000_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 9.1217e+03. Zmniejszamy wzmocnienie tak a¿eby zmniejszyæ oscylacje.}
+	\caption{Kalibracja regulatora PID (krok 1) - sygna³ wyjœciowy i zadany. $E = 9.1217e+03$. Dobieranie nastaw regulatora PID zaczêliœmy ze wzmocnieniem równym 1 i wy³¹czonym cz³onem ca³kuj¹cym oraz ró¿niczkuj¹cym. W nastêpnym kroku zmniejszymy wzmocnienie tak, a¿eby zmniejszyæ oscylacje.}
 	\label{syg_wy_pid1}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 2) - sygna³ steruj¹cy}
 	\label{syg_we_pid2}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_10000_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 7.8324e+03. B³¹d zmala³, obserwujemy uchyb ustalony oraz oscylacje. Aby wyeliminowaæ uchyb zwiêkszamy wp³yw cz³onu ca³kuj¹cego.}
+	\caption{Kalibracja regulatora PID (krok 2) - sygna³ wyjœciowy i zadany. $E = 7.8324e+03$. B³¹d zmala³, obserwujemy uchyb ustalony oraz oscylacje. Aby wyeliminowaæ uchyb zwiêkszamy wp³yw cz³onu ca³kuj¹cego.}
 	\label{syg_wy_pid2}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 3) - sygna³ steruj¹cy}
 	\label{syg_we_pid3}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_50_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 7.3528e+03.}
+	\caption{Kalibracja regulatora PID (krok 3) - sygna³ wyjœciowy i zadany. $E = 7.3528e+03$.}
 	\label{syg_wy_pid3}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 4) - sygna³ steruj¹cy}
 	\label{syg_we_pid4}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.5_Ti_20_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 6.7934e+03. Mo¿emy dalej zauwa¿yæ uchyb oraz oscylacje. W celu ich usuniêcia zmniejszamy wzmocnienie oraz zwiêkszamy ca³kowanie.}
+	\caption{Kalibracja regulatora PID (krok 4) - sygna³ wyjœciowy i zadany. $E = 6.7934e+03$. Mo¿emy dalej zauwa¿yæ uchyb oraz oscylacje. W celu ich usuniêcia zmniejszamy wzmocnienie oraz zwiêkszamy ca³kowanie.}
 	\label{syg_wy_pid4}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 5) - sygna³ steruj¹cy}
 	\label{syg_we_pid5}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.2_Ti_10_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 414.1249.}
+	\caption{Kalibracja regulatora PID (krok 5)- sygna³ wyjœciowy i zadany. $E = 414.1249$.}
 	\label{syg_wy_pid5}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 6) - sygna³ steruj¹cy}
 	\label{syg_we_pid6}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.1_Ti_5_Td_0_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 360.4340. Widzimy znaczn¹ poprawê zarówno jakoœciow¹ jak i wskaŸnika iloœciowego. W³¹czamy cz³on ró¿niczkuj¹cy w celu skrócenia czasu osi¹gania wartoœci zadanej.}
+	\caption{Kalibracja regulatora PID (krok 6) - sygna³ wyjœciowy i zadany. $E = 360.4340$. Widzimy znaczn¹ poprawê zarówno jakoœciow¹ jak i wskaŸnika iloœciowego. W³¹czamy cz³on ró¿niczkuj¹cy w celu skrócenia czasu osi¹gania wartoœci zadanej.}
 	\label{syg_wy_pid6}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Kalibracja regulatora PID (krok 7) - sygna³ steruj¹cy}
 	\label{syg_we_pid7}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.12_Ti_4.5_Td_0.2_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 306.9011. Mo¿emy zauwa¿yæ poprawê wskaŸnika iloœciowego jednak¿e niepoj¹ce s¹ oscylacje. W celu zniwelowania ich zmniejszymy wzmocnienie, zwiêkszymy ró¿niczkê.}
+	\caption{Kalibracja regulatora PID (krok 7) - sygna³ wyjœciowy i zadany. $E = 306.9011$. Mo¿emy zauwa¿yæ poprawê wskaŸnika iloœciowego jednak¿e niepoj¹ce s¹ oscylacje. W celu zniwelowania ich zmniejszymy wzmocnienie, zwiêkszymy ró¿niczkê.}
 	\label{syg_wy_pid7}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_we_pid}
-	\caption{Regulator PID - sygna³ steruj¹cy}
+	\caption{Ostateczny regulator PID - sygna³ steruj¹cy}
 	\label{syg_we_pid8}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_pid/K_0.11_Ti_4.6_Td_0.65_wy_pid}
-	\caption{Regulator PID - sygna³ wyjœciowy i zadany. Error = 403.7229. WskaŸnik iloœciowy uleg³ pogorszeniu jednak¿e wyidzimy poprawê jakoœciow¹ - wyeliminowanie oscylacji.}
+	\caption{Ostateczny regulator PID - sygna³ wyjœciowy i zadany. $E = 403.7229$. WskaŸnik iloœciowy uleg³ pogorszeniu jednak¿e widzimy poprawê jakoœciow¹ - wyeliminowanie oscylacji.}
 	\label{syg_wy_pid8}
 \end{figure}
 
-Ostateczne nastawy regulatora PID:
 
-$K = 0.11$
-$T_\mathrm{i} = 4.6$
-$T_\mathrm{d} = 0.65$
+
 
 \section{Regulator DMC}
 Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego nieznaczne zwiêkszenie wp³ywa korzystnie na regulacjê.
@@ -167,4 +165,4 @@ Przebiegi uzyskane dla takiego strojenia regulatora DMC przedstawiono na rysunka
 Porównuj¹c najlepszy uzyskany regulator PID z najlepszym uzyskanym regulatorem DMC mo¿na stwierdziæ, ¿e regulator PID pozwoli³ zapewniæ spokojniejsze dzia³anie uk³adu bez wystêpowanie oscylacji oraz przeregulowania. Oscylacji jak i przeregulowania nie uda³o siê unikn¹æ w algorytmie DMC. Regulator DMC dzia³a³ jednak szybciej od PID. Pod wzglêdem wskaŸnika jakoœci $E$ regulator DMC równie¿ wypad³ korzystniej od PID. Zatem ciê¿ko jest jednoznacznie wskazaæ, który regulator jest lepszy. Z racji tego, ¿e badany obiekt jest nieliniowy, mo¿na poprawiæ jakoœæ regulacji dla obu algorytmów przez zastosowanie regulatorów rozmytych. 
 
 \section{Implementacja}
-Do strojenia regulatorów PID oraz DMC wykorzystaliœmy program zawarty w skrypcie \verb+regulator_tunning.m+.
+Do strojenia regulatorów PID oraz DMC wykorzystaliœmy program zawarty w skrypcie \verb+zad3.m+.
