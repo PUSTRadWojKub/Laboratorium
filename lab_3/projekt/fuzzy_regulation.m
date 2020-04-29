@@ -7,11 +7,11 @@ Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 %Regulator: 0 - pid, 1 - dmc
-piddmc = 0;
+piddmc = 1;
 %Liczba lokalnych regulatorow
-nr = 3;
+nr =4;
 %Typ funkcji przynale¿noœci: trimf, trapmf, gaussmf
-mf = "trimf";
+mf = "gaussmf";
 %Parametr do odpowiedzi skokowych do DMC (o ile skacze)
 dUskok = 0.12;
 %Ograniczenia: 0 - wylaczone, 1 - wlaczone
@@ -71,6 +71,8 @@ if(piddmc == 1)
     K = cell(1,nr);
     ku = cell(1,nr);
     ke = cell(1,nr);
+    lambda = [0.5 0.6 0.1 10];  %[0.3 0.8 0.1 10]; cztery lokalne
+%     lambda = [1 1 1 1];
     for k = 1:nr
         Upocz = ((Umax-Umin)/(nr+1)*k)-1;
         s = odp_skok(Upocz, Upocz+dUskok);
@@ -78,9 +80,6 @@ if(piddmc == 1)
         D=length(s);
         N=20; 
         Nu=3; 
-
-        %Wspolczynnik kary za przyrosty sterowania
-        lambda=1; %1
 
         %Generacja macierzy
         M{k}=zeros(N,Nu);
@@ -104,7 +103,7 @@ if(piddmc == 1)
         end
 
         I=eye(Nu);
-        K{k}=((M{k}'*M{k}+lambda*I)^-1)*M{k}';
+        K{k}=((M{k}'*M{k}+lambda(k)*I)^-1)*M{k}';
         ku{k}=K{k}(1,:)*MP{k};
         ke{k}=sum(K{k}(1,:));
     end
