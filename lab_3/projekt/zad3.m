@@ -2,14 +2,14 @@
 
 clear all;
 
-s = odp_skok(0, 1);
+s = odp_skok(0.6, 1);
 
 %Stan ustalony
 Upp = 0; %sygnal wejsciowy w stanie ustalonym
 Ypp = 0; %sygnal wyjsciowy w stanie ustalonym
 
 %Regulator: 0 - pid, 1 - dmc
-piddmc = 0;
+piddmc = 1;
 %Ograniczenia: 0 - wylaczone, 1 - wlaczone
 ograniczenia = 1;
 
@@ -45,11 +45,11 @@ end
 if(piddmc == 1)
     %Horyzonty
     D=length(s);
-    N=20; 
-    Nu=3; 
+    N=10;
+    Nu=2; 
     
     %Wspolczynnik kary za przyrosty sterowania
-    lambda=2; %1
+    lambda=2; 
     
     %Generacja macierzy
     M=zeros(N,Nu);
@@ -148,25 +148,20 @@ end
 
 err
 
-% s1 = '../sprawozdanie/rysunki/zad4_syg_we';
-% s2 = '../sprawozdanie/rysunki/zad4_syg_wy';
-% 
-% if ~piddmc
-%     s1 = strcat(s1, '_pid.tex');
-%     s2 = strcat(s2, '_pid.tex');
-% else
-%     s1 = strcat(s1, '_dmc.tex');
-%     s2 = strcat(s2, '_dmc.tex');
-% end
-
-str = strcat('K_', string(K), '_Ti_', string(Ti), '_Td_', string(Td));
-
 if ~piddmc
+    str = strcat('K_', string(K), '_Ti_', string(Ti), '_Td_', string(Td));
     str1 = strcat(str, '_we_pid.pdf');
     str2 = strcat(str, '_wy_pid.pdf');
+    title1 = strcat("Sygna³ wejœciowy ", ' K = ', string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
+    title2 = strcat("Sygna³ wyjœciowy i zadany K = ", string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
+else
+    str = strcat('N_', string(N), '_Nu_', string(Nu), '_L_', string(lambda));
+    str1 = strcat(str, '_we_dmc.pdf');
+    str2 = strcat(str, '_wy_dmc.pdf');
+    title1 = strcat("Sygna³ wejœciowy ", ' N = ', string(N), ', Nu = ', string(Nu), ', Lambda = ', string(lambda));
+    title2 = strcat("Sygna³ wyjœciowy i zadany N = ", string(N), ', Nu = ', string(Nu), ', Lambda = ', string(lambda));
 end
 
-title1 = strcat("Sygna³ wejœciowy ", ' K = ', string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
 figure;
 stairs(U_cale);
 grid on;
@@ -175,7 +170,6 @@ legend('$u(k)$', 'interpreter', 'latex');
 % matlab2tikz(s1, 'showInfo', false)
 print(str1,'-dpdf');
 
-title2 = strcat("Sygna³ wyjœciowy i zadany K = ", string(K), ', Ti = ', string(Ti), ', Td = ', string(Td));
 figure;
 plot(1:T/Tp, Y);
 hold on;
