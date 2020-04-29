@@ -26,11 +26,11 @@
 \contentsline {section}{\numberline {5.4\relax .\enspace }Implementacja}{27}%
 \contentsline {chapter}{\numberline {6\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow PID}{28}%
 \contentsline {section}{\numberline {6.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{28}%
-\contentsline {section}{\numberline {6.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{30}%
-\contentsline {section}{\numberline {6.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{36}%
-\contentsline {section}{\numberline {6.4\relax .\enspace }Wnioski}{40}%
+\contentsline {section}{\numberline {6.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{32}%
+\contentsline {section}{\numberline {6.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{37}%
+\contentsline {section}{\numberline {6.4\relax .\enspace }Wnioski}{37}%
 \contentsline {chapter}{\numberline {7\relax .\enspace }Regulacja za pomoc\k a rozmytych regulator\'ow DMC}{43}%
 \contentsline {section}{\numberline {7.1\relax .\enspace }Funkcje przynale\.zno\'sci Gaussa}{43}%
-\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{46}%
-\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{50}%
+\contentsline {section}{\numberline {7.2\relax .\enspace }Funkcje przynale\.zno\'sci tr\'ojk\k atne}{45}%
+\contentsline {section}{\numberline {7.3\relax .\enspace }Funkcje przynale\.zno\'sci trapezoidalne}{51}%
 \contentsline {section}{\numberline {7.4\relax .\enspace }Wnioski}{58}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  29 APR 2020 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  29 APR 2020 16:26
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -1243,104 +1243,111 @@ File: rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf  used on i
 nput line 49.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-[28
 
- <./rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf, id=704, 359.3425pt x 289.08pt>
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
+ [28
+
+ <./rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>] [29 <./rysunki/zad5_syg_we
+_pid_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid_nr_2_mf_gaussmf.pdf>]
+<rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf, id=780, 359.3425pt x 289.08pt>
 
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf  used o
 n input line 58.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf, id=705, 375.4025pt x 286.06876pt>
+
+Underfull \vbox (badness 4108) has occurred while \output is active []
+
+ [30 <./rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_we_
+pid_nr_3_mf_gaussmf.pdf>]
+<rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf, id=883, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf  used on i
 nput line 65.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf, id=706, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf, id=884, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_gaussmf.pdf  used on i
 nput line 72.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf, id=707, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf, id=885, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf  used on 
 input line 87.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
- [29 <./rysunki/zad5_syg_we_pid_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
-_nr_2_mf_gaussmf.pdf>]
+
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+ [31 <./rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
+zyn_nr_4_mf_gaussmf.pdf>]
 Overfull \vbox (17.38235pt too high) has occurred while \output is active []
 
 
-[30 <./rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_we_p
-id_nr_3_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf, id=886, 375.4025pt x 286.06876pt>
+[32 <./rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid_
+nr_4_mf_gaussmf.pdf>]
+<rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf, id=1059, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf  used on inp
 ut line 94.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf, id=887, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf, id=1060, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf  used on inp
 ut line 101.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf, id=888, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf, id=1061, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf  used on 
 input line 110.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <./rysunki/zad5_syg_wy_pid_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
-zyn_nr_4_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf, id=987, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf, id=1062, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf  used on inp
 ut line 117.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf, id=988, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf, id=1063, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_trimf.pdf  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
- [32 <./rysunki/zad5_syg_we_pid_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_pid
-_nr_4_mf_gaussmf.pdf>] [33 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf> <./
-rysunki/zad5_syg_we_pid_nr_2_mf_trimf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf, id=1165, 359.3425pt x 289.08pt>
+ [33 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf> <./rysunki/zad5_syg_we_pi
+d_nr_2_mf_trimf.pdf>]
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+ [34 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
+n_nr_3_mf_trimf.pdf>]
+<rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf, id=1262, 359.3425pt x 289.08pt>
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf  used on 
 input line 133.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
-n_nr_3_mf_trimf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf, id=1263, 375.4025pt x 286.06876pt>
+ [35 <./rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_pid_n
+r_3_mf_trimf.pdf>]
+<rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf, id=1339, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_trimf.pdf  used on inp
 ut line 140.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf, id=1264, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf, id=1340, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf  used on inp
 ut line 147.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf, id=1265, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf, id=1341, 359.3425pt x 289.08pt>
 
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf>
@@ -1350,13 +1357,8 @@ Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [35 <./rysunki/zad5_syg_we_pid_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_pid_n
-r_3_mf_trimf.pdf>]
-Overfull \vbox (17.38235pt too high) has occurred while \output is active []
-
-
-[36 <./rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf> <./rysunki/zad5_syg_we_pid
-_nr_4_mf_trimf.pdf>]
+ [36 <./rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf> <./rysunki/zad5_syg_we_pi
+d_nr_4_mf_trimf.pdf>]
 <rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf, id=1444, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf Graphic file (type pdf)
@@ -1377,50 +1379,46 @@ File: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
  input line 183.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf> <./rysunki/zad5_funkcje_przy
-n_nr_2_mf_trapmf.pdf>]
-<rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf, id=1545, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf, id=1447, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf  used on in
 put line 190.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf, id=1546, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf, id=1448, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf  used on in
 put line 197.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
- [38 <./rysunki/zad5_syg_we_pid_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_pid_
-nr_2_mf_trapmf.pdf>] [39 <./rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf> <./r
-ysunki/zad5_syg_we_pid_nr_3_mf_trapmf.pdf>]
-<rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf, id=1723, 359.3425pt x 289.08pt>
+<rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf, id=1449, 359.3425pt x 289.08pt>
 
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf  used on
  input line 206.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf, id=1724, 375.4025pt x 286.06876pt>
+<rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf, id=1450, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_pid_nr_4_mf_trapmf.pdf  used on in
 put line 213.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf, id=1725, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf, id=1451, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf  used on in
 put line 220.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-) (zad7.tex [40 <./rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>] [41 <./rysunki/
-zad5_funkcje_przyn_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_we_pid_nr_4_mf_trapm
-f.pdf>] [42 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>]
+) (zad7.tex [37 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trimf.pdf>]
+[38 <./rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf> <./rysunki/zad5_syg_we_pi
+d_nr_2_mf_trapmf.pdf>] [39 <./rysunki/zad5_syg_wy_pid_nr_2_mf_trapmf.pdf> <./ry
+sunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf>] [40 <./rysunki/zad5_syg_we_pid_nr
+_3_mf_trapmf.pdf> <./rysunki/zad5_syg_wy_pid_nr_3_mf_trapmf.pdf>] [41 <./rysunk
+i/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf> <./rysunki/zad5_syg_we_pid_nr_4_mf_tra
+pmf.pdf>] [42 <./rysunki/zad5_syg_wy_pid_nr_4_mf_trapmf.pdf>]
 Rozdzia\PlPrIeC {\l } 7.
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_gaussmf.pdf>
@@ -1442,17 +1440,13 @@ nput line 25.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
 [43
 
-]
+] [44 <./rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dm
+c_nr_2_mf_gaussmf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_gaussmf.pdf  used o
 n input line 34.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [44 <./rysunki/zad5_syg_we_dmc_nr_2_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
-_nr_2_mf_gaussmf.pdf>]
 <rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf, id=1983, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
@@ -1466,40 +1460,39 @@ File: rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf  used on i
 nput line 48.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
- [45 <./rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_gaussmf.pdf  used o
 n input line 58.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf, id=2026, 375.4025pt x 286.06876pt
+<rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf, id=1985, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf  used on i
 nput line 65.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf, id=2027, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf, id=1986, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf  used on i
 nput line 72.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
-<rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf, id=2028, 359.3425pt x 289.08pt
+<rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf, id=1987, 359.3425pt x 289.08pt
 >
 File: rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_5_mf_gaussmf.pdf  used o
 n input line 82.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf, id=2029, 375.4025pt x 286.06876pt
+<rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf, id=1988, 375.4025pt x 286.06876pt
 >
 File: rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf  used on i
 nput line 89.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf, id=2030, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf, id=1989, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_5_mf_gaussmf.pdf  used on i
@@ -1510,54 +1503,61 @@ File: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trimf.pdf  used on 
 input line 110.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-<rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf, id=2031, 375.4025pt x 286.06876pt>
+ [45]
+<rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf, id=1993, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf  used on inp
 ut line 117.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf, id=2032, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf, id=1994, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf  used on inp
 ut line 124.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
+ [46 <./rysunki/zad5_syg_we_dmc_nr_3_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
+_nr_3_mf_gaussmf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trimf.pdf  used on 
 input line 134.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
- [46 <./rysunki/zad5_syg_wy_dmc_nr_3_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf, id=2071, 375.4025pt x 286.06876pt>
+
+Underfull \vbox (badness 4108) has occurred while \output is active []
+
+ [47 <./rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>]
+<rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf, id=2112, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf  used on inp
 ut line 141.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf, id=2072, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf, id=2113, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf  used on inp
 ut line 148.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
- [47 <./rysunki/zad5_syg_we_dmc_nr_4_mf_gaussmf.pdf>]
-File: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf Graphic file (type pdf)
-<use rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf>
-Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf  used on 
-input line 158.
-(pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
 
 Underfull \vbox (badness 1968) has occurred while \output is active []
 
  [48 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_gaussmf.pdf> <./rysunki/zad5_funkcje_pr
 zyn_nr_5_mf_gaussmf.pdf>]
-<rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf, id=2213, 375.4025pt x 286.06876pt>
+File: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf Graphic file (type pdf)
+<use rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf>
+Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trimf.pdf  used on 
+input line 158.
+(pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
+ [49 <./rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
+_nr_5_mf_gaussmf.pdf>]
+<rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf, id=2289, 375.4025pt x 286.06876pt>
 File: rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf  used on inp
 ut line 165.
 (pdftex.def)             Requested size: 375.40158pt x 286.06805pt.
-<rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf, id=2214, 368.37625pt x 289.08pt>
+<rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf, id=2290, 368.37625pt x 289.08pt>
 File: rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf Graphic file (type pdf)
 <use rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>
 Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf  used on inp
@@ -1566,25 +1566,17 @@ ut line 172.
 
 Underfull \vbox (badness 4108) has occurred while \output is active []
 
- [49 <./rysunki/zad5_syg_we_dmc_nr_5_mf_gaussmf.pdf> <./rysunki/zad5_syg_wy_dmc
-_nr_5_mf_gaussmf.pdf>]
-Overfull \vbox (3.78235pt too high) has occurred while \output is active []
+ [50 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>]
+Overfull \vbox (6.79358pt too high) has occurred while \output is active []
 
 
-[50 <./rysunki/zad5_syg_we_dmc_nr_2_mf_trimf.pdf>]
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [51 <./rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>]
+[51 <./rysunki/zad5_syg_wy_dmc_nr_2_mf_trimf.pdf>] [52 <./rysunki/zad5_syg_we_d
+mc_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_dmc_nr_3_mf_trimf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_2_mf_trapmf.pdf  used on
  input line 187.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
- [52 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trimf.pdf> <./rysunki/zad5_syg_wy_dmc_n
-r_3_mf_trimf.pdf>]
 <rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf, id=2446, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_dmc_nr_2_mf_trapmf.pdf Graphic file (type pdf)
@@ -1599,15 +1591,14 @@ Package pdftex.def Info: rysunki/zad5_syg_wy_dmc_nr_2_mf_trapmf.pdf  used on in
 put line 201.
 (pdftex.def)             Requested size: 368.37534pt x 289.07928pt.
  [53 <./rysunki/zad5_syg_we_dmc_nr_4_mf_trimf.pdf>]
+Underfull \vbox (badness 1968) has occurred while \output is active []
+
+ [54 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>]
 File: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf Graphic file (type pdf)
 <use rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf>
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_3_mf_trapmf.pdf  used on
  input line 210.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [54 <./rysunki/zad5_syg_wy_dmc_nr_4_mf_trimf.pdf>]
 <rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf, id=2528, 375.4025pt x 286.06876pt>
 
 File: rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf Graphic file (type pdf)
@@ -1628,9 +1619,6 @@ File: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf Graphic file (type pdf)
 Package pdftex.def Info: rysunki/zad5_funkcje_przyn_nr_4_mf_trapmf.pdf  used on
  input line 233.
 (pdftex.def)             Requested size: 359.34161pt x 289.07928pt.
-
-Underfull \vbox (badness 4108) has occurred while \output is active []
-
  [56 <./rysunki/zad5_syg_we_dmc_nr_3_mf_trapmf.pdf>]
 <rysunki/zad5_syg_we_dmc_nr_4_mf_trapmf.pdf, id=2647, 375.4025pt x 286.06876pt>
 
@@ -1675,7 +1663,7 @@ s/enc/dvips/pl/plit.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}<D:/MiKTeX 2
 .9/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy10.p
 fb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><D:/MiKTeX 2.9/fonts/type1/pu
 blic/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (60 pages, 2465527 bytes).
+Output written on sprawozdanie.pdf (60 pages, 2465984 bytes).
 PDF statistics:
  2821 PDF objects out of 2984 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
