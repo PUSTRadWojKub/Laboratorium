@@ -139,7 +139,8 @@ Przebiegi uzyskane dla tych wartoœci przedstawiono na rysunkach \ref{syg_we_pid8
 
 \section{Regulator DMC}
 Wa¿nym elementem strojenia pojedynczego regulatora DMC by³ dobór odpowiedzi skokowej. Najlepiej wypada³a odpowiedŸ skokowa w punkcie pracy dla $u = \num{0.6}$, ze skokiem do $u = \num{1.0}$, dla zadanej trajektorii sygna³u wyjœciowego. 
-Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego zwiêkszanie wp³ywa niekorzystnie na regulacjê, wiêc pozostawiliœmy wspó³czynnik niezmieniony.
+Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego zwiêkszanie wp³ywa niekorzystnie na regulacjê, wiêc pozostawiliœmy wspó³czynnik niezmieniony. Kolejne etapy strojenia regulatora zosta³y zilustrowane na rys.~\ref{syg_we_dmc1}~$-$~\ref{syg_wy_dmc7}.
+
 Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora DMC
 \begin{equation}
 	D = 53,\quad N = 10,\quad N_\mathrm{u} = 2,\quad \lambda=1
@@ -149,91 +150,91 @@ Przebiegi uzyskane dla takiego strojenia regulatora DMC przedstawiono na rysunka
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_53_Nu_53_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 1) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 1) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc1}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_53_Nu_53_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 1) - sygna³ wyjœciowy i zadany. $E = \num{294.2837}$. Dobieranie nastawów regulatora DMC zaczêliœmy od maksymalnego horyzontu predykcji i horyzontu sterowania przy wspó³czynniku $\lambda = 1$. W celu zmniejszenia iloœci obliczeñ, zmniejszamy horyzont predykcji i horyzont sterowania.}
+	\caption{Kalibracja regulatora DMC (krok 1) - sygna³ wyjœciowy i zadany. $E = \num{294.2837}$. Dobieranie nastawów regulatora DMC zaczêliœmy od maksymalnego horyzontu predykcji i horyzontu sterowania przy wspó³czynniku $\lambda = 1$. W celu zmniejszenia iloœci obliczeñ, zmniejszamy horyzont predykcji i horyzont sterowania.}
 	\label{syg_wy_dmc1}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_20_Nu_20_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 2) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 2) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc2}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_20_Nu_20_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 2) - sygna³ wyjœciowy i zadany. $E = \num{294.2833}$.}
+	\caption{Kalibracja regulatora DMC (krok 2) - sygna³ wyjœciowy i zadany. $E = \num{294.2833}$.}
 	\label{syg_wy_dmc2}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_10_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 3) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 3) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc3}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_10_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 3) - sygna³ wyjœciowy i zadany. $E = \num{293.6470}$.}
+	\caption{Kalibracja regulatora DMC (krok 3) - sygna³ wyjœciowy i zadany. $E = \num{293.6470}$.}
 	\label{syg_wy_dmc3}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_5_Nu_5_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 4) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 4) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc4}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_5_Nu_5_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 4) - sygna³ wyjœciowy i zadany. $E = \num{489.0684}$. Widzimy znaczne pogorszenie wskaŸnika iloœciowego jak i jakoœciowego. Zostawiamy horyzont predykcji $N = 10$ i zaczynamy zmniejszaæ horyzont sterowania.}
+	\caption{Kalibracja regulatora DMC (krok 4) - sygna³ wyjœciowy i zadany. $E = \num{489.0684}$. Widzimy znaczne pogorszenie wskaŸnika iloœciowego jak i jakoœciowego. Zostawiamy horyzont predykcji $N = 10$ i zaczynamy zmniejszaæ horyzont sterowania.}
 	\label{syg_wy_dmc4}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_5_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 5) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 5) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc5}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_5_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 5) - sygna³ wyjœciowy i zadany. $E = \num{293.6485}$.}
+	\caption{Kalibracja regulatora DMC (krok 5) - sygna³ wyjœciowy i zadany. $E = \num{293.6485}$.}
 	\label{syg_wy_dmc5}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_2_L_1_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 6) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 6) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc6}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_2_L_1_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 6) - sygna³ wyjœciowy i zadany. $E = \num{295.0224}$. Jakoœæ regulacji jest satysfakcjonuj¹ca. Spróbujemy zwiêkszyæ wspó³czynnik kary $\lambda$.}
+	\caption{Kalibracja regulatora DMC (krok 6) - sygna³ wyjœciowy i zadany. $E = \num{295.0224}$. Jakoœæ regulacji jest satysfakcjonuj¹ca. Spróbujemy zwiêkszyæ wspó³czynnik kary $\lambda$.}
 	\label{syg_wy_dmc6}
 \end{figure}
 
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_2_L_2_we_dmc}
-	\caption{Kalibracja regulatora PID (krok 7) - sygna³ steruj¹cy.}
+	\caption{Kalibracja regulatora DMC (krok 7) - sygna³ steruj¹cy.}
 	\label{syg_we_dmc7}
 \end{figure}
 \begin{figure}[tb]
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/strojenie_dmc/N_10_Nu_2_L_2_wy_dmc}
-	\caption{Kalibracja regulatora PID (krok 7) - sygna³ wyjœciowy i zadany. $E = \num{300.1283}$. Mo¿emy zauwa¿yæ pogorszenie wskailoœciowego. Dalsze zwiêkszanie wspó³czynnika kary $\lambda$ powoduje dalsze zwiêkszanie siê b³êdu.}
+	\caption{Kalibracja regulatora DMC (krok 7) - sygna³ wyjœciowy i zadany. $E = \num{300.1283}$. Mo¿emy zauwa¿yæ pogorszenie wskailoœciowego. Dalsze zwiêkszanie wspó³czynnika kary $\lambda$ powoduje dalsze zwiêkszanie siê b³êdu.}
 	\label{syg_wy_dmc7}
 \end{figure}
 
