@@ -1,4 +1,4 @@
-function MinimalWorkingExample()
+function zad1_2()
     %addpath('F:\SerialCommunication'); % add a path to the functions
     initSerialControl COM3 % initialise com port
     Y = [];
@@ -13,21 +13,22 @@ function MinimalWorkingExample()
         disp(measurements); % process measurements
 %         
 %         %% sending new values of control signals
-        if(    k <  10)
-            controls = [ 100,   0];
-        elseif(k <  50)
-            controls = [ 100, 100];
-        elseif(k < 100)
-            controls = [  20,  20];
-        else
-            controls = [  25,  15];
-        end
+        controls = [18,   23];
+        
         sendControls([5,6]    ,... send for these elements
                      controls);  % new corresponding control values
         k = k+1;
         
-        Y = [Y; measurements]; subplot(2,1,1); plot(Y);                   drawnow
-        U = [U; controls];     subplot(2,1,2); stairs(U); ylim([-5,105]); drawnow
+        %legends ...
+        
+        Y = [Y; measurements]; subplot(2,1,1); plot(Y);
+        title("Wyjścia obiektu (czujniki temperatury)"); legend("$T1$", "$T3$", "interpreter", "latex");
+        xlabel("$k$", "interpreter", "latex"); ylabel("$^{\circ}C$", "interpreter", "latex");
+        drawnow
+        U = [U; controls];     subplot(2,1,2); stairs(U); ylim([-5,105]);
+        title("Wejścia obiektu - sterowanie (grzałki)"); legend("$G1$", "$G2$", "interpreter", "latex");
+        xlabel("$k$", "interpreter", "latex"); ylabel("$\%$", "interpreter", "latex");
+        drawnow
         
         %% synchronising with the control process
         waitForNewIteration(); % wait for new batch of measurements to be ready

@@ -1,0 +1,8 @@
+\contentsline {chapter}{\numberline {1\relax .\enspace }Sprawdzenie mo\.zliwo\'s\'c sterowania i pomiaru oraz wyznaczenie punktu pracy}{2}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Przyk\IeC {\l }adowe sterowanie wraz z odczytem pomiar\'ow}{2}%
+\contentsline {subsection}{\numberline {1.1.1\relax .\enspace }Implementacja}{2}%
+\contentsline {section}{\numberline {1.2\relax .\enspace }Punkt pracy}{3}%
+\contentsline {subsection}{\numberline {1.2.1\relax .\enspace }Implementacja}{3}%
+\contentsline {chapter}{\numberline {2\relax .\enspace }Wyznaczenie odpowiedzi skokowych oraz badanie w\IeC {\l }a\'sciwo\'sci obiektu}{4}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Odpowiedzi skokowe}{4}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }W\IeC {\l }a\'sciwo\'sci statyczne obiektu}{4}%

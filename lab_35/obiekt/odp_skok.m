@@ -2,6 +2,8 @@ clear;
 
 load('odpSkok.mat');
 
+% Wartości zadane utrzymywać w granicach 20 - 60 st C
+
 S = [];
 
 s_1 = s1(201:300,:);
