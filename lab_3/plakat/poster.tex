@@ -1,0 +1,283 @@
+\documentclass[a0paper,portrait,fontscale=0.4]{baposter} %0.292
+
+
+\usepackage{wrapfig}
+\usepackage{lmodern}
+
+%\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[OT1]{fontenc}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,decorations.markings,math,arrows.meta}
+\usepackage{rotating}
+\usepackage[percent]{overpic}
+\usepackage[cp1250]{inputenc}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usetikzlibrary{pgfplots.groupplots}
+\usepackage{listings}
+\usepackage{matlab-prettifier}
+\usepackage{enumitem,amssymb}
+\definecolor{szary}{rgb}{0.95,0.95,0.95}
+\usepackage{siunitx}
+\sisetup{detect-weight,exponent-product=\cdot,output-decimal-marker={,},per-mode=symbol,binary-units=true,range-phrase={-},range-units=single}
+\SendSettingsToPgf
+
+
+%ustawienia pakietu pgfplots
+\pgfplotsset{
+tick label style={font=\scriptsize},
+label style={font=\small},
+legend style={font=\small},
+title style={font=\small}
+}
+
+\def\figurename{Rys.}
+\def\tablename{Tab.}
+
+
+
+
+
+\selectcolormodel{cmyk}
+
+\graphicspath{{rysunki/}} % Directory in which figures are stored
+
+
+\newcommand{\compresslist}{%
+\setlength{\itemsep}{0pt}%
+\setlength{\parskip}{1pt}%
+\setlength{\parsep}{0pt}%
+}
+
+\newenvironment{boenumerate}
+  {\begin{enumerate}\renewcommand\labelenumi{\textbf\theenumi.}}
+  {\end{enumerate}}
+
+
+
+
+
+\begin{document}
+
+
+\definecolor{darkgreen}{cmyk}{0.8,0,0.8,0.45}
+\definecolor{lightgreen}{cmyk}{0.8,0,0.8,0.25}
+\definecolor{red}{cmyk}{0.0, 1.0, 1.0}
+
+\begin{poster}
+{
+columns=4,
+grid=false,
+headerborder=open, % Adds a border around the header of content boxes
+colspacing=1em, % Column spacing
+bgColorOne=white, % Background color for the gradient on the left side of the poster
+bgColorTwo=white, % Background color for the gradient on the right side of the poster
+borderColor=darkgreen, % Border color
+headerColorOne=lightgreen, % Background color for the header in the content boxes (left side)
+headerColorTwo=lightgreen, % Background color for the header in the content boxes (right side)
+headerFontColor=white, % Text color for the header text in the content boxes
+boxColorOne=white, % Background color of the content boxes
+textborder=rounded, %rectangle, % Format of the border around content boxes, can be: none, bars, coils, triangles, rectangle, rounded, roundedsmall, roundedright or faded
+eyecatcher=false, % Set to false for ignoring the left logo in the title and move the title left
+headerheight=0.11\textheight, % Height of the header
+headershape=rounded, % Specify the rounded corner in the content box headers, can be: rectangle, small-rounded, roundedright, roundedleft or rounded
+headershade=plain,
+headerfont=\Large\textsf, % Large, bold and sans serif font in the headers of content boxes
+%textfont={\setlength{\parindent}{1.5em}}, % Uncomment for paragraph indentation
+linewidth=2pt % Width of the border lines around content boxes
+}
+{}
+%
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR NAME
+%----------------------------------------------------------------------------------------
+%
+{
+\textsf %Sans Serif
+{Rozmyta regulacja PID oraz DMC dla obiektu nieliniowego}
+} % Poster title
+% 
+% 
+{
+\sf\vspace{0.5em}\\
+Rados³aw Pietkun, Wojciech Rokicki, Jakub Gruszecki
+\vspace{0.1em}\\
+\small{Wydzia³ Elektroniki i Technik Informacyjnych, Politechnika Warszawska}
+}
+
+
+\headerbox{1. Wprowadzenie}{name=wprowadzenie,column=0,row=0, span=4}{
+
+Liniowe algorytmy PID oraz DMC dzia³aj¹ bardzo dobrze w przypadku obiektów liniowych. Natomiast w sytuacji, gdy mamy do czynienia z obiektem nieliniowym jakoœæ regulacji przy pomocy takich algorytmów mo¿e ulec znacznemu pogorszeniu dla niektórych punktów pracy. Rozwi¹zaniem w takiej sytuacji mo¿e byæ zastosowanie regulatorów rozmytych. Idea ich dzia³ania polega na wykorzystaniu kilku lokalnych regulatorów liniowych zamiast pojedynczego regulatora linowego. Ka¿dy taki regulator lokalny jest dostosowany do dzia³ania w wybranym punkcie pracy. Regulacja rozmyta polega na odpowiednim prze³¹czaniu tych regulatorów w zale¿noœci od aktualnego punktu pracy obiektu. W taki sposób mo¿na zapewniæ satysfakcjonuj¹c¹ jakoœæ regulacji dla badanego procesu nieliniowego.
+
+Celem naszego projektu by³o zaimplementowanie  i skalibrowanie zarówno tradycyjnych cyfrowych algorytmów PID i DMC, jak i rozmytych regulatorów PID i DMC, a tak¿e porównanie jakoœci regulacji nieliniowego obiektu przy zastosowaniu ró¿nych podejœæ w zakresie regulacji.
+
+}
+
+
+\headerbox{2. Charakterystyka statyczna}{name=char,column=0,below=wprowadzenie,span=1}{
+
+Badany proces pobudzaliœmy ró¿nymi wartoœciami sygna³u steruj¹cego i mierzyliœmy odpowiedzi uk³adu w stanie ustalonym. W ten sposób wyznaczyliœmy charakterystykê statyczn¹ obiektu. 
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{char_stat}
+\end{center}
+
+Na podstawie wykresu mo¿na stwierdziæ, ¿e w³aœciwoœci statyczne i dynamiczne procesu s¹ nieliniowe.
+
+}
+
+
+\headerbox{3. Kryteria oceny regulacji}{name=kryt,column=0,below=char,span=1}{
+
+Jakoœæ regulacji ocenialiœmy jakoœciowo na podstawie otrzymywanych przebiegów sygna³ów sterowania i wyjœcia oraz iloœciowo na podstawie poni¿szego wskaŸnika jakoœci
+\begin{equation}
+	E = \sum^{k_\mathrm{konc}}_{k=1}(y^\mathrm{zad}(k)-y(k))^2
+\end{equation}
+
+}
+
+
+
+\headerbox{4. Pojedynczy regulator PID}{name=pid,column=0,below=kryt,span=1}{
+
+Regulator PID stroiliœmy metod¹ in¿yniersk¹ ze wzglêdu na zawodnoœæ metody Zieglera-Nicholsa. W pierwszej kolejnoœci dobraliœmy wartoœæ wzmocnienia. W kolejnych krokach dostrajaliœmy kolejno cz³ony ca³kujacy i ró¿niczkujacy. Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora PID
+\begin{equation}
+	\label{pid1}
+	K = \num{0.11},\quad T_\mathrm{i} = \num{4.6},\quad T_\mathrm{d} = \num{0.65}
+\end{equation} 
+Uzyskaliœmy wartoœæ wskaŸnika jakoœci $E = 403,722$. Poni¿ej przedstawiono przebiegi sygna³ów sterowania oraz wyjœcia i wartoœci zadanej dla nastaw (\ref{pid1}) regulatora.
+
+\begin{center}
+    \includegraphics[width=\linewidth, trim={2.6cm 9.5cm 2.6cm 9.5cm}, clip]{K_0.11_Ti_4.6_Td_0.65_we_pid}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth, trim={2.6cm 9.5cm 2.6cm 9.5cm}, clip]{K_0.11_Ti_4.6_Td_0.65_wy_pid}
+\end{center}
+
+}
+
+
+\headerbox{5. Pojedynczy regulator DMC}{name=dmc,column=1,below=wprowadzenie,span=1}{
+
+Wa¿nym elementem strojenia pojedynczego regulatora DMC by³ dobór odpowiedzi skokowej. Eksperymentalnie wybraliœmy odpowiedŸ skokow¹ w punkcie pracy dla $u = \num{0.6}$, ze skokiem do $u = \num{1.0}$.
+Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=53$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zauwa¿yliœmy, ¿e jego zwiêkszanie wp³ywa niekorzystnie na regulacjê, wiêc pozostawiliœmy wspó³czynnik niezmieniony. Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora DMC
+\begin{equation}
+	\label{dmc1}
+	D = 53,\quad N = 10,\quad N_\mathrm{u} = 2,\quad \lambda=1
+\end{equation}
+Uzyskaliœmy wartoœæ wskaŸnika jakoœci $E=\num{264.7306}$. Poni¿ej przedstawiono przebiegi sygna³ów sterowania oraz wyjœcia i wartoœci zadanej dla nastaw (\ref{dmc1}) regulatora.
+
+\begin{center}
+    \includegraphics[width=\linewidth, trim={2.6cm 9.5cm 2.6cm 9.5cm}, clip]{N_10_Nu_2_L_1_we_dmc}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=\linewidth, trim={2.6cm 9.5cm 2.6cm 9.5cm}, clip]{N_10_Nu_2_L_1_wy_dmc}
+\end{center}
+
+}
+
+
+
+\headerbox{6. Za³o¿enia dot. eksperymentów}{name=zal_rozm,column=1,below=dmc,span=1}{
+
+Przetestowaliœmy dzia³anie rozmytych regulatorów PID i DMC dla ró¿nych funkcji przynale¿noœci: Gaussa (gaussmf), trójk¹tnych (trimf) oraz trapezoidalnych (trapmf). Ponadto dla ka¿dej z tych grup funkcji przeprowadziliœmy eksperymenty dla ró¿nej liczby regulatorów lokalnych $n_\mathrm{r}\in\{2,3,4\}$. Za sygna³ prze³¹czaj¹cy regulatory lokalne przyjêliœmy $u(k-1)$. Ustaliliœmy, ¿e funkcje przynale¿noœci bêd¹ symetryczne. Zauwa¿yliœmy, ¿e nie by³o potrzeby innego dopasowywania ich do nieliniowoœci obiektu, a symetryczny kszta³t tych funkcji pozwala³ na osi¹gniêcie satysfakcjonuj¹cych wyników.
+
+}
+
+
+\headerbox{7. Rozmyty regulator PID}{name=pid_rozm,column=2,below=wprowadzenie,span=1}{
+
+Skalibrowaliœmy i zasymulowaliœmy nasz uk³ad regulacji z³o¿ony z lokalnych regulatorów PID. W poni¿szej tabeli przedstawiono otrzymane wartoœci wskaŸnika jakoœci dla ró¿nej liczby $n_\mathrm{r}$ oraz ró¿nych kszta³tów funkcji przynale¿noœci.
+
+\begin{center}
+\begin{tabular}{ | c | c | c | c | } \hline
+$n_\mathrm{r}$ & $E_\mathrm{gaussmf}$ & $E_\mathrm{trimf}$ & $E_\mathrm{trapmf}$\\ \hline
+		2       &  \num{1415.2} & \num{6.24e33}  & \num{2015.2} \\
+		3       &  \num{354.58} & \num{330.98}  & \num{385.64}  \\
+		4       &  \num{355.20} & {\color{red}\num{339.26}}  & \num{368.77}  \\ \hline
+\end{tabular} 
+\end{center}
+
+Pod wzglêdem wskaŸnika jakoœci $E$ najlepsz¹ regulacjê zapewni³y regulatory, dla których funkcje przynale¿noœci mia³y kszta³ty trójk¹tne. Porównuj¹c regulatory na podstawie samych tylko przebiegów sygna³u sterujacego oraz wyjœciowego, ciê¿ko by³o jednoznacznie wskazaæ, które rozwi¹zanie jest najlepsze. Po odpowiednim dostrojeniu regulatorów lokalnych wszystkie uk³ady dzia³a³y satysfakcjonuj¹co - wartoœci zadane by³y osi¹gane, przeregulowanie, jeœli wystêpowa³o, by³o niewielkie i uk³ad dzia³a³ szybko. Liczba regulatorów równa $n_\mathrm{r}=4$ okaza³a siê najlepszym kompromisem miêdzy z³o¿onoœci¹ algorytmu a uzyskiwan¹ dok³adnoœci¹ dzia³ania. Ostatecznie wybrane funkcje przynale¿noœci przedstawiono poni¿ej.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_funkcje_przyn_nr_4_mf_trimf}
+\end{center}
+
+A tak prezentowa³y siê otrzymane przebiegi sygna³ów sterowania oraz wyjœcia i wartoœci zadanej:
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_syg_we_pid_nr_4_mf_trimf}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_syg_wy_pid_nr_4_mf_trimf}
+\end{center}
+
+
+}
+
+\headerbox{8. Rozmyty regulator DMC}{name=dmc_rozm,column=3,below=wprowadzenie,span=1}{
+
+Zebraliœmy lokalne odpowiedzi skokowe i zasymulowaliœmy nasz uk³ad regulacji z³o¿ony z lokalnych regulatorów DMC. W poni¿szej tabeli przedstawiono otrzymane wartoœci wskaŸnika jakoœci dla ró¿nej liczby $n_\mathrm{r}$ oraz ró¿nych kszta³tów funkcji przynale¿noœci.
+
+\begin{center}
+\begin{tabular}{ | c | c | c | c | } \hline
+$n_\mathrm{r}$ & $E_\mathrm{gaussmf}$ & $E_\mathrm{trimf}$ & $E_\mathrm{trapmf}$\\ \hline
+		2       &  \num{261.34} & \num{262.70}  & \num{260.89} \\
+		3       &  \num{270.79} & \num{271.53}  & \num{286.28}  \\
+		4       &  {\color{red}\num{292.79}} & \num{294.62}  & \num{295.04}  \\ \hline
+\end{tabular} 
+\end{center}
+
+Na podstawie zebranych przebiegów mo¿na zauwa¿yæ, ¿e zwiêkszania liczby regulatorów lokalnych $n_\mathrm{r}$ powoduje pogorszenie wskaŸnika jakoœci $E$. Jednak prawie dla wszystkich przypadków zwiêkszanie $n_\mathrm{r}$ sprawia³o, ¿e uzyskane przebiegi by³y spokojniejsze, oscylacje by³y redukowane, a wartoœæ zadana by³a szybciej osi¹gane.
+
+Bior¹c pod uwagê zarówno kszta³ty przebiegów jak i otrzymane wartoœci wskaŸnika $E$, stwierdziliœmy, ¿e najbardziej korzystne jest wykorzystanie funkcji przynale¿noœci postaci funkcji Gaussa dla $n_\mathrm{r}=4$. Poni¿ej przedstawiono ostatecznie wybrane funkcje przynale¿noœci.
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_funkcje_przyn_nr_4_mf_gaussmf}
+\end{center}
+
+A tak prezentowa³y siê otrzymane przebiegi sygna³ów sterowania oraz wyjœcia i wartoœci zadanej:
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_syg_we_dmc_nr_4_mf_gaussmf}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\linewidth]{zad5_syg_wy_dmc_nr_4_mf_gaussmf}
+\end{center}
+
+Zbadaliœmy tak¿e wp³yw parametru $\lambda$ na jakoœæ regulacji dla $n_\mathrm{r}\in\{2,3,4\}$ i z funkcjami przynale¿noœci postaci funkcji Gaussa.
+Dobranie ró¿nych wartoœci parametru $\lambda$ dla ka¿dego regulatora lokalnego sprawi³o, ¿e jakoœæ regulacji ulega³a nieznacznej poprawie.
+Ostatecznie przyjêliœmy parametry regulatorów: $\lambda^{1} = \num{0.2},\quad \lambda^{2} = \num{0.6},\quad \lambda^{3} = \num{0.1},\quad \lambda^{4} = 10$.
+
+}
+
+
+
+\headerbox{9. Podsumowanie i wnioski}{name=pods,column=0,below=pid,span=4}{
+
+W przypadku pojedynczych regulatorów uk³ad dzia³a³ w sposób zadowalaj¹cy tylko w niektórych punktach pracy. Tymczasem po zastosowaniu regulatorów rozmytych ogólna jakoœæ regulacji uleg³a poprawie. Uda³o siê zapewniæ szybsze dzia³anie uk³adu, a tak¿e wyeliminowaæ wszelkie oscylacje. Dla regulacji PID uda³o siê uzyskaæ lepsze wartoœci wspó³cznnika $E$ dla regulacji rozmytej w porównaniu do regulacji tradycyjnej z pojedynczym regulatorem. W przypadku DMC ten wskaŸnik wprawdzie siê pogorszy³ po wprowadzeniu regulacji rozmytej, jednak poprawi³a siê szybkoœæ i dok³adnoœæ osi¹gania wartoœci zadanej.
+
+Przeprowadzone przez nas ekperymenty pokaza³y jak wa¿ne jest odpowiednie dobranie liczby regulatorów lokalnych. Zwiêkszenie $n_\mathrm{r}$ przyczyni siê do ogólnej poprawy jakoœci regulacji, jednak kosztem z³o¿onoœci obliczeniowej algorytmu. Dla badanego obiektu wartoœæ $n_\mathrm{r}=4$ okaza³a siê satysfakcjonuj¹ca zarówno dla regulatora PID jak i DMC.
+
+Wa¿nym zagadnieniem by³o tak¿e wybranie kszta³tu funkcji przynale¿noœci. Okaza³o siê, ¿e ich wybór jest zale¿ny od rodzaju algorytmu. Dla PID najlepsze dzia³anie zapewni³y funkcje trójk¹tne, a dla DMC funkcje Gaussa.
+
+}
+
+
+
+\end{poster}
+
+\end{document}
+
