@@ -1,6 +1,6 @@
 clear;
 
-load('odpSkokNowe.mat');
+load('odpSkok.mat');
 
 S = [];
 
@@ -86,13 +86,15 @@ for i = 1 : N*2
     Yzad = [Yzad; yzad'];
 end
 
+initSerialControl COM3 % initialise com port
+
 Yplot = [];
 Uplot = [];
 
 figure;
 for k = 0 : n
-    measurements = readMeasurements([1,3]); 
-    disp(measurements); 
+    measurements = readMeasurements([1,3]);
+    disp(measurements);
     Yk = [];
     for i = 1 : N*2
         Yk = [Yk; measurements'];
@@ -121,8 +123,14 @@ for k = 0 : n
    
     sendControls([5,6], controls);
 
-    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot);                   drawnow
-    Uplot = [Uplot; controls];     subplot(2,1,2); stairs(Uplot); ylim([-5,105]); drawnow
+    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot);
+    title("Wyjścia obiektu (czujniki temperatury)"); legend("$T1$", "$T3$", "interpreter", "latex");
+    xlabel("$k$", "interpreter", "latex"); ylabel("$^{\circ}C$", "interpreter", "latex");
+    drawnow
+    Uplot = [Uplot; controls];subplot(2,1,2); stairs(Uplot); ylim([-5,105]);
+    title("Wejścia obiektu - sterowanie (grzałki)"); legend("$G1$", "$G2$", "interpreter", "latex");
+    xlabel("$k$", "interpreter", "latex"); ylabel("$\%$", "interpreter", "latex");
+    drawnow
         
     waitForNewIteration(); 
 end
