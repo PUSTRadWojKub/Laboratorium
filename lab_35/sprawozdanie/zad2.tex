@@ -66,4 +66,48 @@ Poni¿ej zosta³y przedstawione wykresy odpowiedzi skokowych dla ró¿nych zmian, wa
 
 \section{W³aœciwoœci statyczne obiektu}
 
-Mo¿emy zauwa¿yæ ¿e w³aœciwoœci statyczne obiektu s¹ nieliniowe.
+Mo¿emy zauwa¿yæ ¿e w³aœciwoœci statyczne obiektu s¹ w przybli¿eniu liniowe dla wartoœci sterowania w przedzia³ach $G1 \in <0, 35>$, $G2 \in <0, 50>$.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/char_stat_t1}
+	\caption{Charakterystyka statyczna obiektu dla wyjœcia $T3$}
+	\label{char_stat_t1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/char_stat_t3}
+	\caption{Charakterystyka statyczna obiektu dla wyjœcia $T3$}
+	\label{char_stat_t3}
+\end{figure}
+
+\section{Wzmocnienia statyczne}
+
+Wzmocnienie statyczne $G1$ dla $T1$
+
+\begin{equation}
+K_{G1}^{T1} = \frac{T1(G1^{\textrm{max}}, g_2) - T1(G1^{\textrm{min}}, g_2)}{G1^{\textrm{max}} - G1^{\textrm{min}}} = \frac{\num{103.6224} - \num{0.2797}}{\num{35} - \num{0}} = \num{2.9527} 
+\end{equation}
+
+Wzmocnienie statyczne $G2$ dla $T1$
+
+\begin{equation}
+K_{G2}^{T1} = \frac{T1(g_1, G2^{\textrm{max}}) - T1(g_1, G2^{\textrm{min}})}{G2^{\textrm{max}} - G2^{\textrm{min}}} = \frac{\num{47.0235} - \num{0.2685}}{\num{50} - \num{0}} = \num{0.9351} 
+\end{equation}
+
+Wzmocnienie statyczne $G1$ dla $T3$
+
+\begin{equation}
+K_{G1}^{T3} = \frac{T3(G1^{\textrm{max}}, g_2) - T3(G1^{\text{min}}, g_2)}{G1^{\textrm{max}} - G1^{\textrm{min}}} = \frac{\num{33.1517} - \num{0.2797}}{\num{35} - \num{0}} = \num{0.9392} 
+\end{equation}
+
+Wzmocnienie statyczne $G2$ dla $T3$
+
+\begin{equation}
+K_{G2}^{T3} = \frac{T3(g_1, G2^{\textrm{max}}) - T_3(g_1, G2^{\textrm{min}})}{G2^{\textrm{max}} - G2^{\textrm{min}}} = \frac{\num{146.9235} - \num{0.2685}}{\num{50} - \num{0}} = \num{2.9331} 
+\end{equation}
+
+\section{Implementacja}
+
+Do zrealizowania zadania u¿yte zosta³y skrypty \verb+zad2.m+(skrypt wyznaczaj¹cy odpowiedzi skokowe oraz wyliczaj¹cy charakterystykê statyczn¹) i \verb+extractingDataFromFig.m+(skrypt pozyskuj¹cy ).
