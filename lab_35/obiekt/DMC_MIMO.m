@@ -18,8 +18,8 @@ s_2(:,2) = (s_2(:,2) - s_2(1,2))/20;
 
 
 D = length(s_1);
-N = 20;
-Nu = 3;
+N = 20; %20
+Nu = 3; %3
 
 % S = cell(2,2);
 % 
@@ -63,7 +63,7 @@ for i=1:N*2
     end
 end
 
-lambda = eye(Nu*2*2)*1;
+lambda = eye(Nu*2*2)*10;
 psi = eye(N*2*2)*1;
 % 
 Mt = M';
@@ -82,21 +82,58 @@ duk = 0;
 dUp = zeros((D-1)*2*2,1);
 Yk = [];
 
-%TODO: Trajektoria zadana!!!
 
-yzad = [40 50];
-Yzad = [];
-for i = 1 : N*2
-    Yzad = [Yzad; yzad'];
+n = 600; % czas trwania symulacji
+% yzad = [20 60];
+% Yzad = [];
+yzad=zeros(n,2);
+Yzad=zeros(N*2*2,n);
+
+% wartosc zadana dla T1
+for i = 1 : 199
+   yzad(i,1) = 30;
+end
+
+for i = 200 : 399
+   yzad(i,1) = 50;
+end
+
+for i = 400 : n
+   yzad(i,1) = 20;
+end
+
+% wartosc zadana dla T3
+for i = 1 : 149
+   yzad(i,2) = 50;
+end
+
+for i = 150 : 299
+   yzad(i,2) = 25;
+end
+
+for i = 300 : 399
+   yzad(i,2) = 40;
+end
+
+for i = 400 : n
+   yzad(i,2) = 55;
+end
+
+
+for i = 1 : n
+    for j = 1 : N*2
+        Yzad(2*j-1,i) = yzad(i,1);
+        Yzad(2*j,i) = yzad(i,2);
+    end
 end
 
 Yplot = [];
 Uplot = [];
+Yzadplot = [];
 
 figure;
 
-n = 2000;
-for k = 0 : n
+for k = 1 : n
     measurements = readMeasurements([1,3]); 
     disp(measurements); 
     Yk = [];
@@ -104,7 +141,7 @@ for k = 0 : n
         Yk = [Yk; measurements'];
     end
     
-    duk = K1*(Yzad - Yk - MP*dUp);
+    duk = K1*(Yzad(:,k) - Yk - MP*dUp);
     
     controls = [U(1)+duk(1), U(2)+duk(2)];
     
@@ -127,8 +164,11 @@ for k = 0 : n
    
     sendControls([5,6], controls);
 
-    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot);
-    title("Wyjścia obiektu (czujniki temperatury)"); legend("$T1$", "$T3$", "interpreter", "latex");
+    Yzadplot = [Yzadplot; yzad(k,:)];
+    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot(:,1),'-b'); 
+    hold on; plot(Yplot(:,2),'-r');
+    hold on; stairs(Yzadplot(:,1),'--k'); hold on; stairs(Yzadplot(:,2),'--m');
+    title("Wyjścia obiektu (czujniki temperatury)"); legend("$T1$", "$T3$", "$T1^{zad}$", "$T3^{zad}$", "interpreter", "latex");
     xlabel("$k$", "interpreter", "latex"); ylabel("$^{\circ}C$", "interpreter", "latex");
     drawnow
     

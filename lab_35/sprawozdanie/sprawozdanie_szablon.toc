@@ -15,5 +15,5 @@
 \contentsline {subsection}{\numberline {3.2.1\relax .\enspace }Implementacja}{14}%
 \contentsline {chapter}{\numberline {4\relax .\enspace }Regulator DMC MIMO}{16}%
 \contentsline {section}{\numberline {4.1\relax .\enspace }Implementacja DMC}{16}%
-\contentsline {section}{\numberline {4.2\relax .\enspace }Strojenie DMC}{16}%
-\contentsline {section}{\numberline {4.3\relax .\enspace }Regulacja DMC}{16}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Strojenie i regulacja DMC}{16}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Implementacja}{17}%

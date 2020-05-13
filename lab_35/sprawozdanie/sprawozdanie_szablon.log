@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  13 MAY 2020 17:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.23)  13 MAY 2020 23:42
 entering extended mode
 **./sprawozdanie_szablon.tex
 (sprawozdanie_szablon.tex
@@ -1025,33 +1025,45 @@ Package pdftex.def Info: rysunki/odp_skok_g2_aproksym.pdf  used on input line 7
 [14] [15 <./rysunki/odp_skok_g1_aproksym.pdf> <./rysunki/odp_skok_g2_aproksym.p
 df>]
 Rozdzia\PlPrIeC {\l } 4.
-) [16
+[16
 
-] (sprawozdanie_szablon.aux) ) 
+]
+<rysunki/dmc_lambda1.pdf, id=198, 597.23125pt x 845.1575pt>
+File: rysunki/dmc_lambda1.pdf Graphic file (type pdf)
+<use rysunki/dmc_lambda1.pdf>
+Package pdftex.def Info: rysunki/dmc_lambda1.pdf  used on input line 101.
+(pdftex.def)             Requested size: 410.90916pt x 307.24301pt.
+<rysunki/dmc_lambda10.pdf, id=199, 597.23125pt x 845.1575pt>
+File: rysunki/dmc_lambda10.pdf Graphic file (type pdf)
+<use rysunki/dmc_lambda10.pdf>
+Package pdftex.def Info: rysunki/dmc_lambda10.pdf  used on input line 109.
+(pdftex.def)             Requested size: 410.90916pt x 307.24301pt.
+) [17 <./rysunki/dmc_lambda1.pdf>] [18 <./rysunki/dmc_lambda10.pdf>]
+(sprawozdanie_szablon.aux) ) 
 Here is how much of TeX's memory you used:
- 29878 strings out of 481556
- 741501 string characters out of 2930144
- 1037433 words of memory out of 3000000
- 44590 multiletter control sequences out of 15000+200000
+ 29895 strings out of 481556
+ 741930 string characters out of 2930144
+ 1040467 words of memory out of 3000000
+ 44605 multiletter control sequences out of 15000+200000
  550806 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,11n,98p,755b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{D:/Mi
-KTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc
-}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/p
-ltt.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}<D:/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msam10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx10.p
-fb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><D:/MiKTeX 2.9/fonts/type1/p
-ublic/pl/plex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX 
-2.9/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi8.
-pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX 2.9/fonts/type1/p
-ublic/pl/plr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX 2.9/
-fonts/type1/public/pl/plsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb
-><D:/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1/pub
-lic/pl/pltt10.pfb>
-Output written on sprawozdanie_szablon.pdf (17 pages, 739369 bytes).
+{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{D:/MiKT
+eX 2.9/fonts/enc/dvips/pl/plmi.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{
+D:/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plt
+t.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}<D:/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb
+><D:/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><D:/MiKTeX 2.9/fonts/type1/pub
+lic/pl/plex10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><D:/MiKTeX 2.
+9/fonts/type1/public/pl/plmi6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pf
+b><D:/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><D:/MiKTeX 2.9/fonts/type1/pub
+lic/pl/plr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><D:/MiKTeX 2.9/fo
+nts/type1/public/pl/plsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><
+D:/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><D:/MiKTeX 2.9/fonts/type1/publi
+c/pl/pltt10.pfb>
+Output written on sprawozdanie_szablon.pdf (19 pages, 856896 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
+ 299 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

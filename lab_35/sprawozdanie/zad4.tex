@@ -69,6 +69,57 @@ Dla regulatora DMC $2 \times 2$ równania algorytmu przyjm¹ nastêpuj¹c¹ postaæ:
 	\Delta U(k) = K( Y^{\textrm{zad}}(k) - Y^\textrm{0}(k) )
 \end{equation}
 
-\section{Strojenie DMC}
+\section{Strojenie i regulacja DMC}
 
-\section{Regulacja DMC}
+Zdefiniowaliœmy nastêpuj¹c¹ trajektoriê zadan¹ $y^{\mathrm{zad}}_1(k)$ dla $T1$ oraz $y^{\mathrm{zad}}_2(k)$ dla $T3$
+
+\begin{equation}
+y^{\mathrm{zad}}_1(k)=
+\begin{cases}
+30 \quad \quad \textrm{ dla } \quad 1 \le k \le 199\\
+50 \quad \quad \textrm{ dla } \quad 200 \le k \le 399\\
+20 \quad \quad \textrm{ dla } \quad 400 \le k \le 600
+\end{cases}
+\end{equation}
+
+\begin{equation}
+y^{\mathrm{zad}}_2(k)=
+\begin{cases}
+50 \quad \quad \textrm{ dla } \quad 1 \le k \le 149\\
+25 \quad \quad \textrm{ dla } \quad 150 \le k \le 299\\
+40 \quad \quad \textrm{ dla } \quad 300 \le k \le 399\\
+55 \quad \quad \textrm{ dla } \quad 400 \le k \le 600
+\end{cases}
+\end{equation}
+
+Regulator DMC stroiliœmy pocz¹wszy od najwiêkszych mo¿liwych wartoœci horyzontów predykcji oraz sterowania, wynikaj¹cyh z d³ugoœci zebranej odpowiedzi skokowej $D=100$. Nastêpnie stopniowo zmniejszaliœmy horyzonty $N$ oraz $N_\mathrm{u}$ tak, by z jednej strony zmniejszyæ z³o¿onoœæ obliczeniow¹ algorytmu, a z drugiej utrzymaæ dobr¹ jakoœæ regulacji. Na koñcu manipulowaliœmy wpó³czynnikiem kar za przyrosty sterowania i zbadaliœmy jego wp³yw na jakoœæ regulacji.
+
+Wyniki symulacji dla $\lambda=1$ przedstawiono na rys.~\ref{dmc_lambda1}. Widzimy, ¿e jakoœæ regulacji nie jest satysfakcjonuj¹ca, wystêpuj¹ oscylacje, wartoœæ zadana nie jest osi¹gana. Po zwiêkszeniu wartoœci $\lambda$ na $10$ uzyskaliœmy przebiegi widoczne na rys.~\ref{dmc_lambda10}. Tym razem jakoœæ regulacji jest dobra, wartoœæ zadana jest osi¹gana, uk³ad dzia³a szybko. Zatem wspó³czynnik $\lambda$ okaza³ siê kluczowym parametrem przy strojeniu regulatora.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/dmc_lambda1}
+	\caption{Symulacja procesu dla $\lambda=1$}
+	\label{dmc_lambda1}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/dmc_lambda10}
+	\caption{Symulacja procesu dla $\lambda=10$}
+	\label{dmc_lambda10}
+\end{figure}
+
+Ostatecznie przyjêliœmy nastêpuj¹ce nastawy regulatora DMC
+
+\begin{equation}
+\label{dmc_final}
+N=20, N_\mathrm{u}=3, \lambda=10
+\end{equation}
+
+Parametry te zapewni³y poprawn¹ pracê regulatora. 
+
+
+\section{Implementacja}
+Do kalibracji oraz symulacji algorytmu DMC wykorzystaliœmy skrypt \verb+DMC_MIMO.m+
