@@ -2,7 +2,7 @@
 
 \section{Odpowiedzi skokowe}
 
-W celu uzyskania odpowiedzi skokowych zosta³y przeprowadzone symulacje dla ró¿nych skoków wartoœci sterowania $G1$ i $G2$ z punktu pracy. Wymaga³o to doprowadzenia obiektu do punktu pracy po czym zmiany wartoœci jedego z wejœæ.
+W celu uzyskania odpowiedzi skokowych zosta³y przeprowadzone symulacje dla ró¿nych skoków wartoœci sterowania $G1$ i $G2$ z punktu pracy. Wymaga³o to doprowadzenia obiektu do punktu pracy po czym zmiany wartoœci jedego z wejœæ. Wyniki testów dla trzech ró¿nych zmian sterowania $G1$ przedstawiono na rys.~\ref{skok_g1_8_g2_23} - \ref{skok_g1_38_g2_23}. Kolejne trzy testy dla grza³ki $G2$ zaprezentowano na rys.~\ref{skok_g1_18_g2_13} - \ref{skok_g1_18_g2_43}.
 
 \begin{figure}
 	\centering
@@ -15,38 +15,39 @@ W celu uzyskania odpowiedzi skokowych zosta³y przeprowadzone symulacje dla ró¿ny
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/skok_g1_28_g2_23}
 	\caption{Skok sygna³u sterowania $G1$ z $\num{18}$ na $\num{28}$  z punktu pracy}
-	\label{skok_g1_8_g2_23}
+	\label{skok_g1_28_g2_23}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/skok_g1_38_g2_23}
 	\caption{Skok sygna³u sterowania $G1$ z $\num{18}$ na $\num{38}$  z punktu pracy}
-	\label{skok_g1_8_g2_23}
+	\label{skok_g1_38_g2_23}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/skok_g1_18_g2_13}
 	\caption{Skok sygna³u sterowania $G2$ z $\num{23}$ na $\num{13}$  z punktu pracy}
-	\label{skok_g1_8_g2_23}
+	\label{skok_g1_18_g2_13}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/skok_g1_18_g2_33}
 	\caption{Skok sygna³u sterowania $G2$ z $\num{23}$ na $\num{33}$  z punktu pracy}
-	\label{skok_g1_8_g2_23}
+	\label{skok_g1_18_g2_33}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/skok_g1_18_g2_43}
 	\caption{Skok sygna³u sterowania $G2$ z $\num{23}$ na $\num{43}$  z punktu pracy}
-	\label{skok_g1_8_g2_23}
+	\label{skok_g1_18_g2_43}
 \end{figure}
 
-Poni¿ej zosta³y przedstawione wykresy odpowiedzi skokowych dla ró¿nych zmian, wartoœci sterowania $G1$ i $G2$.
+
+Na rys.~\ref{odp_skok_t1} przedstawiono zebrane na jednym rysunku odpowiedzi skokowe dla wyjœcia $T1$, a na rys.~\ref{odp_skok_t3} dla wyjœcia $T3$. Dane do tych wykresów zebrano dla trzech ró¿nych skoków wartoœci sterowania $G1$ oraz trzech ró¿nych skoków wartoœci sterowania $G2$, takich samych jak tych przedstawionych na rys.~\ref{skok_g1_8_g2_23} - \ref{skok_g1_18_g2_43}.
 
 \begin{figure}
 	\centering
@@ -59,19 +60,19 @@ Poni¿ej zosta³y przedstawione wykresy odpowiedzi skokowych dla ró¿nych zmian, wa
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_t3}
 	\caption{Odpowiedzi skokowe obiektu dla wyjœcia $T3$}
-	\label{odp_skok_t1}
+	\label{odp_skok_t3}
 \end{figure}
 
 
 
 \section{W³aœciwoœci statyczne obiektu}
 
-Po wyznaczeniu charakterystyki statycznej obiektu mo¿emy zauwa¿yæ ¿e w³aœciwoœci s¹ w przybli¿eniu liniowe dla wartoœci sterowania w przedzia³ach $G1 \in <0, 35>$, $G2 \in <0, 50>$. Równie¿ mo¿emy zauwa¿yæ symetriê wykresów charakterystyk dla $T1$ i $T2$.
+Na rys.~\ref{char_stat_t1} i \ref{char_stat_t3} przedstawiono charakterystyki statyczne procesu, odpowiednio $T1(G1,G2)$ oraz $T3(G1,G2)$. Po wyznaczeniu charakterystyki statycznej obiektu mo¿emy zauwa¿yæ, ¿e w³aœciwoœci s¹ w przybli¿eniu liniowe dla wartoœci sterowania w przedzia³ach $G1 \in \langle 0, 35 \rangle$, $G2 \in \langle 0, 50 \rangle$. Równie¿ mo¿emy zauwa¿yæ symetriê wykresów charakterystyk dla $T1$ i $T3$.
 
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/char_stat_t1}
-	\caption{Charakterystyka statyczna obiektu dla wyjœcia $T3$}
+	\caption{Charakterystyka statyczna obiektu dla wyjœcia $T1$}
 	\label{char_stat_t1}
 \end{figure}
 
@@ -84,25 +85,27 @@ Po wyznaczeniu charakterystyki statycznej obiektu mo¿emy zauwa¿yæ ¿e w³aœciwoœci
 
 \section{Wzmocnienia statyczne}
 
-Wzmocnienie statyczne $G1$ dla $T1$
+Wyznaczyliœmy wzmocnienie statyczne dla ka¿dego z czterech torów z uwzglêdnieniem tylko tych przedzia³ów $G1$ i $G2$, dla których w³aœciwoœci statyczne obiektu s¹ w przybli¿eniu liniowe. 
+
+Wzmocnienie statyczne $G1$ dla $T1$:
 
 \begin{equation}
 K_{G1}^{T1} = \frac{T1(G1^{\textrm{max}}, g_2) - T1(G1^{\textrm{min}}, g_2)}{G1^{\textrm{max}} - G1^{\textrm{min}}} = \frac{\num{103.6224} - \num{0.2797}}{\num{35} - \num{0}} = \num{2.9527} 
 \end{equation}
 
-Wzmocnienie statyczne $G2$ dla $T1$
+Wzmocnienie statyczne $G2$ dla $T1$:
 
 \begin{equation}
 K_{G2}^{T1} = \frac{T1(g_1, G2^{\textrm{max}}) - T1(g_1, G2^{\textrm{min}})}{G2^{\textrm{max}} - G2^{\textrm{min}}} = \frac{\num{47.0235} - \num{0.2685}}{\num{50} - \num{0}} = \num{0.9351} 
 \end{equation}
 
-Wzmocnienie statyczne $G1$ dla $T3$
+Wzmocnienie statyczne $G1$ dla $T3$:
 
 \begin{equation}
 K_{G1}^{T3} = \frac{T3(G1^{\textrm{max}}, g_2) - T3(G1^{\text{min}}, g_2)}{G1^{\textrm{max}} - G1^{\textrm{min}}} = \frac{\num{33.1517} - \num{0.2797}}{\num{35} - \num{0}} = \num{0.9392} 
 \end{equation}
 
-Wzmocnienie statyczne $G2$ dla $T3$
+Wzmocnienie statyczne $G2$ dla $T3$:
 
 \begin{equation}
 K_{G2}^{T3} = \frac{T3(g_1, G2^{\textrm{max}}) - T_3(g_1, G2^{\textrm{min}})}{G2^{\textrm{max}} - G2^{\textrm{min}}} = \frac{\num{146.9235} - \num{0.2685}}{\num{50} - \num{0}} = \num{2.9331} 
@@ -110,4 +113,4 @@ K_{G2}^{T3} = \frac{T3(g_1, G2^{\textrm{max}}) - T_3(g_1, G2^{\textrm{min}})}{G2
 
 \section{Implementacja}
 
-Do zrealizowania zadania u¿yte zosta³y skrypty \verb+zad2.m+(skrypt wyznaczaj¹cy odpowiedzi skokowe oraz wyliczaj¹cy charakterystykê statyczn¹) i \verb+extractingDataFromFig.m+(skrypt pozyskuj¹cy ).
+Do zrealizowania zadania u¿yte zosta³y skrypty \verb+zad2.m+ (skrypt wyznaczaj¹cy odpowiedzi skokowe oraz wyliczaj¹cy charakterystykê statyczn¹) i \verb+extractingDataFromFig.m+ (skrypt pozyskuj¹cy).
