@@ -13,11 +13,17 @@ s_1(:,1) = (s_1(:,1) - s_1(1,1))/20;
 s_1(:,2) = (s_1(:,2) - s_1(1,2))/20;
 figure;
 plot(s_1);
+title("Odpowiedź skokowa"); legend("$s^{T1}$", "$s^{T2}$", "interpreter", "latex");
+xlabel("$i$", "interpreter", "latex"); ylabel("$s_i$", "interpreter", "latex");
+print("odp_skok_g1.pdf",'-dpdf');
 
 s_2(:,1) = (s_2(:,1) - s_2(1,1))/20;
 s_2(:,2) = (s_2(:,2) - s_2(1,2))/20;
 figure;
 plot(s_2);
+title("Odpowiedź skokowa"); legend("$s^{T1}$", "$s^{T2}$", "interpreter", "latex");
+xlabel("$i$", "interpreter", "latex"); ylabel("$s_i$", "interpreter", "latex");
+print("odp_skok_g2.pdf",'-dpdf');
 
 D = length(s_1);
 

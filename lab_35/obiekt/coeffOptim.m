@@ -17,7 +17,7 @@ u2 = zeros(100, 2);
 u1(:,1) = 1;
 u2(:,2) = 1;
 
-odpSkok = load('OdpSkokNowe.mat');
+odpSkok = load('OdpSkok.mat');
 
 s1 = odpSkok.s1;
 s2 = odpSkok.s2;

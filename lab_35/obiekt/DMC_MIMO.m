@@ -82,6 +82,8 @@ duk = 0;
 dUp = zeros((D-1)*2*2,1);
 Yk = [];
 
+%TODO: Trajektoria zadana!!!
+
 yzad = [40 50];
 Yzad = [];
 for i = 1 : N*2
@@ -93,7 +95,7 @@ Uplot = [];
 
 figure;
 
-n = 500;
+n = 2000;
 for k = 0 : n
     measurements = readMeasurements([1,3]); 
     disp(measurements); 
@@ -125,8 +127,15 @@ for k = 0 : n
    
     sendControls([5,6], controls);
 
-    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot);                   drawnow
-    Uplot = [Uplot; controls];     subplot(2,1,2); stairs(Uplot); ylim([-5,105]); drawnow
-        
+    Yplot = [Yplot; measurements]; subplot(2,1,1); plot(Yplot);
+    title("Wyjścia obiektu (czujniki temperatury)"); legend("$T1$", "$T3$", "interpreter", "latex");
+    xlabel("$k$", "interpreter", "latex"); ylabel("$^{\circ}C$", "interpreter", "latex");
+    drawnow
+    
+    Uplot = [Uplot; controls];     subplot(2,1,2); stairs(Uplot); ylim([-5,105]); 
+    title("Wejścia obiektu - sterowanie (grzałki)"); legend("$G1$", "$G2$", "interpreter", "latex");
+    xlabel("$k$", "interpreter", "latex"); ylabel("$\%$", "interpreter", "latex");
+    drawnow
+    
     waitForNewIteration(); 
 end

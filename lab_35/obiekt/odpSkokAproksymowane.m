@@ -19,7 +19,7 @@ u2 = zeros(100, 2);
 u1(:,1) = 1;
 u2(:,2) = 1;
 
-odpSkok = load('OdpSkokNowe.mat');
+odpSkok = load('OdpSkok.mat');
 
 s1 = odpSkok.s1;
 s2 = odpSkok.s2;
@@ -65,11 +65,17 @@ figure;
 plot(y1);
 hold on;
 plot(s_1);
+title("Aproksymacja odpowiedzi skokowej"); legend("$\widehat{s}^{T1}$", "$\widehat{s}^{T2}$", "$s^{T1}$", "$s^{T2}$", "interpreter", "latex");
+xlabel("$i$", "interpreter", "latex"); ylabel("$s_i$", "interpreter", "latex");
+print("odp_skok_g1_aproksym.pdf",'-dpdf');
 
 figure;
 plot(y2);
 hold on;
 plot(s_2);
+title("Aproksymacja odpowiedzi skokowej"); legend("$\widehat{s}^{T2}$", "$\widehat{s}^{T1}$", "$s^{T1}$", "$s^{T2}$", "interpreter", "latex");
+xlabel("$i$", "interpreter", "latex"); ylabel("$s_i$", "interpreter", "latex");
+print("odp_skok_g2_aproksym.pdf",'-dpdf');
 
 % G = tf(K,[T1*T2, (T2+T1),1], 'OutputDelay',Td); 
 % Gz = c2d(G,1);

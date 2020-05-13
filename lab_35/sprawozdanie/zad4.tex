@@ -1,0 +1,72 @@
+\chapter{Regulator DMC MIMO}
+
+\section{Implementacja DMC}
+
+\begin{equation}
+	y(k) = 
+	\begin{bmatrix}
+		y_{1}(\textrm{k}) \\
+		y_{2}(\textrm{k}) \\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	y^{\text{\textrm{zad}}}(k) = 
+	\begin{bmatrix}
+		y_{1}^{\textrm{zad}}(\textrm{k}) \\
+		y_{2}^{\textrm{zad}}(\textrm{k}) \\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	u(k) = 
+	\begin{bmatrix}
+		u_{1}(\textrm{k}) \\
+		u_{2}(\textrm{k}) \\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	S_l = 
+	\begin{bmatrix}
+		s_{l}^{\textrm{11}} & s_{l}^{\textrm{12}} \\
+		s_{l}^{\textrm{21}} & s_{l}^{\textrm{22}} \\
+	\end{bmatrix}
+	,l = 1...D
+\end{equation}
+
+\begin{equation}
+	M = 
+	\begin{bmatrix}
+		S_1 & 0 & \hdots & 0 \\
+		S_2 & S_1 & \hdots & 0 \\
+		\vdots & \vdots &\ddots & \vdots \\
+		S_N & S_{N-1} & \hdots & S_{N-N_{\text{u}}+1} \\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	M^{\text{P}} = 
+	\begin{bmatrix}
+		S_2-S_1 & S_3-S_2 & \hdots & S_D-S_{D-1} \\
+		S_3-S_1 & S_4-S_2 & \hdots & S_{D+1}-S_{D-1} \\
+		\vdots & \vdots & \ddots & \vdots \\
+		S_{N+1}-S_1 & S_{N+2}-S_2 & \hdots & S_{N+D-1}-S_{D-1} \\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	K = (M^{\textrm{T}}M+\lambda I)^{-1}M^{\textrm{T}} 
+\end{equation}
+
+\begin{equation}
+	Y^\textrm{0}(k) = Y(k)+M^{\textrm{P}} \Delta U^{\textrm{P}}(k)
+\end{equation}
+
+\begin{equation}
+	\Delta U(k) = K( Y^{\textrm{zad}}(k) - Y^\textrm{0}(k) )
+\end{equation}
+
+\section{Strojenie DMC}
+
+\section{Regulacja DMC}

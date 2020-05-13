@@ -1,0 +1,82 @@
+\chapter{Przygotowanie odpowiedzi skokowych do regulatora DMC oraz ich aproksymacja}
+
+\section{Odpowiedzi skokowe}
+
+Jako parametry regulatora DMC zosta³y wybrane odpowiedzi skokowe dla dwóch oddzielnych zmian wartoœci sterowania $G1$ z \num{18} na \num{38} i $G2$ \num{23} na \num{43} z punktu pracy.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_g1}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G1$ z $\num{18}$ na $\num{38}$  z punktu pracy}
+	\label{odp_skok_g1}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_g2}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G2$ z $\num{23}$ na $\num{43}$  z punktu pracy}
+	\label{odp_skok_g2}
+\end{figure}
+
+\subsection{Implementacja}
+
+Do zrealizowania zadania zosta³y u¿yte skrypty \verb+zad2.m+ oraz \verb+odp_skok.m+.
+
+\section{Aproksymacja odpowiedzi skokowych}
+
+Do zaaproksymowania odpowiedzi skokowych zosta³ u¿yty cz³on inercyjny drugiego rzêdu z opóŸnieniem o nastêpuj¹cej postaci:
+
+\begin{equation}
+	G(s) = \frac{K}{(sT_1+1)(sT_2+1)}e^{-T_\textrm{d}s}
+\end{equation}
+
+czyli po zastosowaniu transformaty $Z$
+
+\begin{equation}
+G(z) = \frac{b_1z^{-1}+b_2z^{-2}}{1+a_1z^{-1}+a_2z^{-2}}z^{-T_\mathrm{d}}
+\end{equation}
+
+gdzie
+
+\begin{align*} 
+a_1 =& -\alpha_1-\alpha_2 \\ 
+a_2 =& \alpha_1\alpha_2 \\
+\alpha_1 =& e^{-\frac{1}{T_1}} \\
+\alpha_2 =& e^{-\frac{1}{T_2}} \\
+b_1 =& \frac{K}{T_1-T_2}[T_1(1-\alpha_1)-T_2(1-\alpha_2)] \\ 
+b_2 =& \frac{K}{T_1-T_2}[\alpha_1T_2(1-\alpha_2)-\alpha_2T_1(1-\alpha_1)]
+\end{align*}
+
+co przek³ada siê na równianie ró¿nicowe o postaci:
+
+\begin{equation}
+	y(k) = b_1u(k-T_\mathrm{D}-1) + b_2u(k-T_\mathrm{D}-2) - a_1y(k-1) - a_2y(k-2)
+\end{equation}
+
+Bior¹c pod uwagê ograniczenie co do dziedziny parametru $T_\mathrm{d}$ (liczba ca³kowita) zdecydowaliœmy siê u¿yæ algorytmu genetycznego w celu dobrania parametrów $T_1$, $T_2$, $K$, $T_\mathrm{d}$ cz³onu aproksymuj¹cego odpowiedŸ skokow¹. WskaŸnikiem iloœciowym wykorzystanym do optymalizacji zosta³a funkcja sumy kwadratów ró¿nicy. 
+
+\begin{equation}
+E = \sum^{\mathrm{D}}_{i=1}(s_i-\widehat{s}_i)^2
+\end{equation}
+
+,gdzie $\widehat{s}$ jest aproksymacj¹.
+
+Do obliczenia optymalnych parametrów u¿yliœmy funkcji \texttt{ga} (Algorytm Genetyczny) z pakietu \texttt{Global Optimization Toolbox}.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_g1_aproksym}
+	\caption{Aproksymacja odpowiedzi skokowej dla zmiany sygna³u sterowania $G1$ z $\num{18}$ na $\num{38}$  z punktu pracy}
+	\label{odp_skok_g1_aproksym}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_g2_aproksym}
+	\caption{Aproksymacja odpowiedzi skokowej dla zmiany sygna³u sterowania $G2$ z $\num{23}$ na $\num{43}$  z punktu pracy}
+	\label{odp_skok_g2_aproksym}
+\end{figure}
+
+\subsection{Implementacja}
+
+Do zrealizowania zadania zosta³y u¿yte skrypty \verb+odpSkokAproksymowane.m+ (g³ówny skrypt wyliczaj¹cy odpowiedzi apkroksymowane oraz rysuj¹cy wykresy) oraz \verb+coeffOptim.m+ (funkcja celu do zminimalizowania).

@@ -8,3 +8,12 @@
 \contentsline {section}{\numberline {2.2\relax .\enspace }W\IeC {\l }a\'sciwo\'sci statyczne obiektu}{4}%
 \contentsline {section}{\numberline {2.3\relax .\enspace }Wzmocnienia statyczne}{10}%
 \contentsline {section}{\numberline {2.4\relax .\enspace }Implementacja}{10}%
+\contentsline {chapter}{\numberline {3\relax .\enspace }Przygotowanie odpowiedzi skokowych do regulatora DMC oraz ich aproksymacja}{11}%
+\contentsline {section}{\numberline {3.1\relax .\enspace }Odpowiedzi skokowe}{11}%
+\contentsline {subsection}{\numberline {3.1.1\relax .\enspace }Implementacja}{11}%
+\contentsline {section}{\numberline {3.2\relax .\enspace }Aproksymacja odpowiedzi skokowych}{11}%
+\contentsline {subsection}{\numberline {3.2.1\relax .\enspace }Implementacja}{13}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Regulator DMC MIMO}{15}%
+\contentsline {section}{\numberline {4.1\relax .\enspace }Implementacja DMC}{15}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Strojenie DMC}{15}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Regulacja DMC}{15}%

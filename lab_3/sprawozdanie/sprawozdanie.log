@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.5)  11 MAY 2020 20:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  13 MAY 2020 13:22
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-03-03>
+L3 programming layer <2020-05-11>
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/mwcls\mwrep.cls"
 Document Class: mwrep 2017/05/13 v0.75 A LaTeX document class (MW)
 *** Beta version. Formatting may change
@@ -40,7 +40,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
 "
-Package: iftex 2019/11/07 v1.0c TeX engine tests
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
 \Gm@cnth=\count176
 \Gm@cntv=\count177
@@ -765,16 +765,16 @@ ikzlibrarypgfplots.groupplots.code.tex"
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc.
 sty"
-File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count304
 \lst@skipnumbers=\count305
 \lst@framebox=\box63
 )
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listings
 .cfg"
-File: listings.cfg 2019/09/10 1.8c listings configuration
+File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package: listings 2019/09/10 1.8c (Carsten Heinz)
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/matlab-prettifier
 \matlab-prettifier.sty"
@@ -807,17 +807,17 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 ty"
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.st
 y"
-Package: expl3 2020-03-03 L3 programming layer (loader) 
+Package: expl3 2020-05-11 L3 programming layer (loader) 
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
 nd-pdfmode.def"
-File: l3backend-pdfmode.def 2020-02-23 L3 backend support: PDF mode
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count311
 \l__pdf_internal_box=\box65
 ))
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
 \xparse.sty"
-Package: xparse 2020-03-03 L3 Experimental document command parser
+Package: xparse 2020-03-06 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count312
 \g__xparse_grabber_int=\count313
 \l__xparse_m_args_int=\count314
@@ -837,7 +837,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 )
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/l3keys
 2e\l3keys2e.sty"
-Package: l3keys2e 2020-03-03 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box68
 \l__siunitx_tmp_dim=\dimen294
@@ -1804,10 +1804,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] (rysunki/zad7/zad7_n=4.tex)) [61] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 31372 strings out of 481292
- 803027 string characters out of 2907317
- 1671102 words of memory out of 3000000
- 46225 multiletter control sequences out of 15000+200000
+ 31367 strings out of 480811
+ 803089 string characters out of 2895696
+ 1672475 words of memory out of 3000000
+ 46703 multiletter control sequences out of 15000+200000
  558680 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,19n,98p,939b,2233s stack positions out of 5000i,500n,10000p,200000b,50000s
