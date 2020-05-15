@@ -1,0 +1,11 @@
+\contentsline {chapter}{\numberline {1\relax .\enspace }Sprawdzenie mo\.zliwo\'s\'c sterowania i pomiaru oraz wyznaczenie punktu pracy}{2}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Przyk\IeC {\l }adowe sterowanie wraz z odczytem pomiar\'ow}{2}%
+\contentsline {subsection}{\numberline {1.1.1\relax .\enspace }Implementacja}{2}%
+\contentsline {section}{\numberline {1.2\relax .\enspace }Punkt pracy}{2}%
+\contentsline {subsection}{\numberline {1.2.1\relax .\enspace }Implementacja}{2}%
+\contentsline {chapter}{\numberline {2\relax .\enspace }Mechanizm zabezpieczaj\k acy przed uszkodzeniem stanowiska}{3}%
+\contentsline {chapter}{\numberline {3\relax .\enspace }Implementacja regulatora DMC MIMO oraz przygotowanie odpowiedzi skokowych}{4}%
+\contentsline {section}{\numberline {3.1\relax .\enspace }Implementacja DMC}{4}%
+\contentsline {section}{\numberline {3.2\relax .\enspace }Odpowiedzi skokowe}{4}%
+\contentsline {subsection}{\numberline {3.2.1\relax .\enspace }Implementacja}{4}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Panel operatora}{5}%

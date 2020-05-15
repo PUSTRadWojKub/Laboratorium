@@ -1,0 +1,4 @@
+\contentsline {chapter}{\numberline {1\relax .\enspace }Sprawdzenie poprawno\'sci punktu pracy}{2}%
+\contentsline {chapter}{\numberline {2\relax .\enspace }Odpowiedzi skokowe tor\'ow procesu}{3}%
+\contentsline {chapter}{\numberline {3\relax .\enspace }Implementacja symulacji cyfrowego algorytmu PID oraz DMC}{4}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Dob\'or nastaw regulatora PID i parametr\'ow algorytmu DMC metod\k a eksperymentaln\k a}{5}%
