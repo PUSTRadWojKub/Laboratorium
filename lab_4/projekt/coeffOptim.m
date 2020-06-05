@@ -1,6 +1,6 @@
 function e = coeffOptim(x)
 
-T = 500;
+T = 10000;
 Tp = 0.5;
 opoznienie = 4;
 
@@ -32,6 +32,12 @@ e2 = 0;
 e3 = 0;
 
 yzad = [1 2 0.5];
+yzad1(1:50) = 0;
+yzad1(51:T/Tp) = yzad(1);
+yzad2(1:50) = 0;
+yzad2(51:T/Tp) = yzad(2);
+yzad3(1:50) = 0;
+yzad3(51:T/Tp) = yzad(3);
 
 % Regulator 1
 K1 = x(1);
@@ -80,11 +86,11 @@ for k = opoznienie + 1 : T/Tp
                                         y2(k-1),y2(k-2),y2(k-3),y2(k-4),...
                                         y3(k-1),y3(k-2),y3(k-3),y3(k-4));
     
-    e = e + (yzad(1)-y1(k))^2 + (yzad(2)-y2(k))^2 + (yzad(3)-y3(k))^2;
+    e = e + (yzad1(k)-y1(k))^2 + (yzad2(k)-y2(k))^2 + (yzad3(k)-y3(k))^2;
     
-    e1(k) = yzad(1)-y1(k);
-    e2(k) = yzad(2)-y2(k);  
-    e3(k) = yzad(3)-y3(k);  
+    e1(k) = yzad1(k)-y1(k);
+    e2(k) = yzad2(k)-y2(k);  
+    e3(k) = yzad3(k)-y3(k);  
     
     dU1 = r21*e1(k-2) + r11*e1(k-1) + r01*e1(k);
     dU2 = r22*e2(k-2) + r12*e2(k-1) + r02*e2(k);
@@ -99,20 +105,24 @@ for k = opoznienie + 1 : T/Tp
             u1(k) = U(1,1)+dU1;
             u2(k) = U(1,2)+dU2;
             u3(k) = 0;
-            u4(k) = U(1,3)+dU3;
+            u4(k) = U(1,4)+dU3;
         case 3
             u1(k) = 0;
-            u2(k) = U(1,1)+dU1;
-            u3(k) = U(1,2)+dU2;
-            u4(k) = U(1,3)+dU3;
+            u2(k) = U(1,2)+dU1;
+            u3(k) = U(1,3)+dU2;
+            u4(k) = U(1,4)+dU3;
         case 4
             u1(k) = U(1,1)+dU1;
             u2(k) = 0;
-            u3(k) = U(1,2)+dU2;
-            u4(k) = U(1,3)+dU3;
+            u3(k) = U(1,3)+dU2;
+            u4(k) = U(1,4)+dU3;
     end
     
-    U = [[u1(k), u2(k), u3(k), u4(k)]; U];       
+    U = [[u1(k), u2(k), u3(k), u4(k)]; U];
+    
+    Yplot = [Yplot; [y1(k),y2(k),y3(k)]];
+    Uplot = [Uplot; [u1(k), u2(k), u3(k), u4(k)]];
+        
 end
 
 

@@ -38,8 +38,44 @@ for k = opoznienie+1 : T/Tp
 end
 
 figure;
+% figure('units','normalized','outerposition',[0 0 1 1])
+subplot(4,1,1);
+plot(1:T/Tp, u1);
+hold on;
+ylabel('U1');
+xlabel('k');
+subplot(4,1,2);
+plot(1:T/Tp, u2);
+hold on;
+ylabel('U2');
+xlabel('k');
+subplot(4,1,3);
+plot(1:T/Tp, u3);
+hold on;
+ylabel('U3');
+xlabel('k');
+subplot(4,1,4);
+plot(1:T/Tp, u4);
+hold on;
+ylabel('U4');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad1_punkt_pracyU.tex', 'showInfo', false)
+
+% figure('units','normalized','outerposition',[0 0 1 1])
+figure;
+subplot(3,1,1);
 plot(1:T/Tp, y1);
-figure;
+hold on;
+ylabel('Y1');
+xlabel('k');
+subplot(3,1,2);
 plot(1:T/Tp, y2);
-figure;
+hold on;
+ylabel('Y2');
+xlabel('k');
+subplot(3,1,3);
 plot(1:T/Tp, y3);
+hold on;
+ylabel('Y3');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad1_punkt_pracyY.tex', 'showInfo', false)

@@ -120,6 +120,8 @@ for k = opoznienie+1 : T/Tp
                                         y2(k-1),y2(k-2),y2(k-3),y2(k-4),...
                                         y3(k-1),y3(k-2),y3(k-3),y3(k-4));
                                     
+
+
 end
 
 s14 = y1;
@@ -128,35 +130,77 @@ s34 = y3;
 
 
 figure;
+subplot(3,1,1)
 plot(1:T/Tp, s11);
 hold on;
-plot(1:T/Tp, s21);
-plot(1:T/Tp, s31);
-legend('Y1','Y2','Y3');
 ylim([0 2]);
+ylabel('s11');
+subplot(3,1,2)
+plot(1:T/Tp, s21);
+hold on;
+ylim([0 2]);
+ylabel('s21');
+subplot(3,1,3)
+plot(1:T/Tp, s31);
+hold on;
+ylim([0 2]);
+ylabel('s31');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad2_skokU1.tex', 'showInfo', false)
 
 figure;
+subplot(3,1,1)
 plot(1:T/Tp, s12);
 hold on;
-plot(1:T/Tp, s22);
-plot(1:T/Tp, s32);
-legend('Y1','Y2','Y3');
 ylim([0 2]);
-
+ylabel('s12');
+subplot(3,1,2)
+plot(1:T/Tp, s22);
+hold on;
+ylim([0 2]);
+ylabel('s22');
+subplot(3,1,3)
+plot(1:T/Tp, s32);
+hold on;
+ylim([0 2]);
+ylabel('s32');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad2_skokU2.tex', 'showInfo', false)
 
 figure;
+subplot(3,1,1)
 plot(1:T/Tp, s13);
 hold on;
-plot(1:T/Tp, s23);
-plot(1:T/Tp, s33);
-legend('Y1','Y2','Y3');
 ylim([0 2]);
-
+ylabel('s13');
+subplot(3,1,2)
+plot(1:T/Tp, s23);
+hold on;
+ylim([0 2]);
+ylabel('s23');
+subplot(3,1,3)
+plot(1:T/Tp, s33);
+hold on;
+ylim([0 2]);
+ylabel('s33');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad2_skokU3.tex', 'showInfo', false)
 
 figure;
+subplot(3,1,1)
 plot(1:T/Tp, s14);
 hold on;
-plot(1:T/Tp, s24);
-plot(1:T/Tp, s34);
-legend('Y1','Y2','Y3');
 ylim([0 2]);
+ylabel('s14');
+subplot(3,1,2)
+plot(1:T/Tp, s24);
+hold on;
+ylim([0 2]);
+ylabel('s24');
+subplot(3,1,3)
+plot(1:T/Tp, s34);
+hold on;
+ylim([0 2]);
+ylabel('s34');
+xlabel('k');
+% matlab2tikz('..\sprawozdanie\rysunki\zad2_skokU4.tex', 'showInfo', false)

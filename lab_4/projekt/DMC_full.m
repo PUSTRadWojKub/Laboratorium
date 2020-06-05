@@ -1,5 +1,4 @@
 clear;
-close all;
 
 T = 500;
 Tp = 0.5;
@@ -36,12 +35,10 @@ s_14 = odpSkok.s14(5:150);
 s_24 = odpSkok.s24(5:150);
 s_34 = odpSkok.s34(5:150);
 
-nu = 4;
-ny = 3;
 
 D = length(s_11);
-N = 29;     %29
-Nu = 20;    %20
+N = 40;
+Nu = 40;
 
 for i = 1 : D
     S(1,1,i) = s_11(i);
@@ -92,19 +89,17 @@ end
 psi1 = 1;
 psi2 = 1;
 psi3 = 1;
-% p = [2.004772235800591e+02,65.361398686084290,-33.915426416600420];
-p = [0.5 0.3 0.6];
+p = [2.004772235800591e+02,65.361398686084290,-33.915426416600420];
 
 lambda1 = 5;
 lambda2 = 5;
 lambda3 = 5;
 lambda4 = 5;
-% l = [5.930139941157276,-4.761515964590753,-2.474090598864295e+02,0.306555758792898];
-l = [4 0.6 0.1 0.6];
+l = [5.930139941157276,-4.761515964590753,-2.474090598864295e+02,0.306555758792898];
 
-lambda = cell(nu,nu);
-for i = 1 : nu
-    for j = 1 : nu
+lambda = cell(4,4);
+for i = 1 : 4
+    for j = 1 : 4
         if i == j
             lambda{i,j} = eye(Nu)*l(i);
         else
@@ -113,9 +108,9 @@ for i = 1 : nu
     end
 end
 
-psi = cell(ny,ny);
-for i = 1 : ny
-    for j = 1 : ny
+psi = cell(3,3);
+for i = 1 : 3
+    for j = 1 : 3
         if i == j
             psi{i,j} = eye(N)*p(i);
         else
@@ -135,7 +130,7 @@ Mt = M';
 M = cell2mat(M);
 MP = cell2mat(MP);
 K = (M'*psi*M+lambda)^(-1)*M'*psi;
-K1 = K(1:nu,:);
+K1 = K(1:4,:);
 
 Yplot = [];
 Uplot = [];
@@ -143,22 +138,16 @@ Uplot = [];
 
 
 duk = 0;
-dUp = zeros((D-1)*nu,1);
+dUp = zeros((D-1)*4,1);
 Yk = [];
 
-% yzad = [3 5 0.5];
+yzad = [3 5 0.5];
 yzad1(1:50) = 0;
+yzad1(51:T/Tp) = yzad(1);
 yzad2(1:50) = 0;
+yzad2(51:T/Tp) = yzad(2);
 yzad3(1:50) = 0;
-yzad1(51:250) = 3;
-yzad2(51:250) = 5;
-yzad3(51:250) = 0.5;
-yzad1(251:450) = 1;
-yzad2(251:450) = 0.5;
-yzad3(251:450) = 5;
-yzad1(451:T/Tp) = 6;
-yzad2(451:T/Tp) = 2;
-yzad3(451:T/Tp) = 10;
+yzad3(51:T/Tp) = yzad(3);
 Yzad2 = [];
 
 Yplot = [];
@@ -172,6 +161,7 @@ u3 = U(:,3);
 u4 = U(:,4);
 e = 0;
 
+dUp = zeros((D-1)*4,1);
 
 for k = opoznienie + 1 : T/Tp
     [y1(k),y2(k),y3(k)]=symulacja_obiektu3(u1(k-1),u1(k-2),u1(k-3),u1(k-4),...
@@ -181,11 +171,12 @@ for k = opoznienie + 1 : T/Tp
                                         y1(k-1),y1(k-2),y1(k-3),y1(k-4),...
                                         y2(k-1),y2(k-2),y2(k-3),y2(k-4),...
                                         y3(k-1),y3(k-2),y3(k-3),y3(k-4));
+    
     Yzad = [];
     for i = 1 : N
         Yzad = [Yzad; [yzad1(k) yzad2(k) yzad3(k)]'];
     end
-    
+                                    
     e = e + (Yzad(1)-y1(k))^2 + (Yzad(2)-y2(k))^2 + (Yzad(3)-y3(k))^2;  
     
     Yk = [];
@@ -193,7 +184,21 @@ for k = opoznienie + 1 : T/Tp
         Yk = [Yk; [y1(k) y2(k) y3(k)]'];
     end
 
-    duk = K1*(Yzad - Yk - MP*dUp);
+    dY0 = MP * dUp;
+    Y0 = Yk + dY0;
+    dU = K*(Yzad - Y0);
+    duk = dU(1:4);
+    
+    for j = 1 : 4
+        for i =(D-1)*4 : -1 : 2
+            dUp(i) = dUp(i-1);
+        end
+    end
+
+    dUp(1) = duk(1);
+    dUp(2) = duk(2);
+    dUp(3) = duk(3);
+    dUp(4) = duk(4);
     
     u1(k) = U(1,1)+duk(1);
     u2(k) = U(1,2)+duk(2);
@@ -201,9 +206,15 @@ for k = opoznienie + 1 : T/Tp
     u4(k) = U(1,4)+duk(4);
     
     U = [[u1(k), u2(k), u3(k), u4(k)]; U];
+%     U = U(1 : 4*N,:);
+    
+%     u1 = U(:,1);
+%     u2 = U(:,2);
+%     u3 = U(:,3);
+%     u4 = U(:,4);
     
     dUp = [duk; dUp];
-    dUp = dUp(1 : nu*(D-1));
+    dUp = dUp(1 : 4*(D-1));
   
     Yplot = [Yplot; [y1(k),y2(k),y3(k)]]; %subplot(2,1,1); plot(Yplot);                   drawnow
     Uplot = [Uplot; [u1(k), u2(k), u3(k), u4(k)]];     %subplot(2,1,2); stairs(Uplot);  drawnow
@@ -211,25 +222,10 @@ for k = opoznienie + 1 : T/Tp
 end
 e
 figure;
-subplot(2,1,1)
-plot(Yplot(:,1));
+subplot(2,1,1); 
+plot(Yplot);
 hold on;
 plot(yzad1);
-subplot(2,1,2);
-stairs(Uplot(:,1));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,2));
-hold on;
 plot(yzad2);
-subplot(2,1,2);
-stairs(Uplot(:,2));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,3));
-hold on;
 plot(yzad3);
-subplot(2,1,2);
-stairs(Uplot(:,3));
+subplot(2,1,2); stairs(Uplot);
