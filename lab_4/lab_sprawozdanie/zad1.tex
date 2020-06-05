@@ -1,46 +1,27 @@
-\chapter{Sprawdzenie mo¿liwoœæ sterowania i pomiaru oraz wyznaczenie punktu pracy}
+\chapter{Sprawdzenie poprawnoœci punktu pracy}
 
-\section{Przyk³adowe sterowanie wraz z odczytem pomiarów}
+\section{Poprawnoœæ sygna³ów w punkcie pracy}
 
-\begin{comment}
-Podczas testu bêdziemy zmieniaæ sygna³y steruj¹ce w nastêpuj¹cy sposób:
+W celu sprawdzenia poprawnoœci sygna³ów wejœciowych i wyjœciowych w punkcie pracy obiekt zosta³ pobudzony sygna³ami o wartoœci $U^1_{\mathrm{pp}} = \num{0}$, $U^2_{\mathrm{pp}} = \num{0}$, $U^3_{\mathrm{pp}} = \num{0}$, $U^4_{\mathrm{pp}} = \num{0}$. Wartoœci sygna³ów w punkcie pracy bêd¹ poprawne, jeœli sygna³y wyjœciowe bêd¹ wynosi³y $Y^1_{\mathrm{pp}} = \num{0}$, $Y^2_{\mathrm{pp}} = \num{0}$, $Y^3_{\mathrm{pp}} = \num{0}$.
 
-\begin{align*} 
-G1 = 100 \land G2 = 0 & \textrm{, dla } k \in <0, 10) \\ 
-G1 = 100 \land G2 = 100 & \textrm{, dla } k \in <10, 50) \\
-G1 = 20 \land G2 = 20 & \textrm{, dla } k \in <50, 100) \\
-G1 = 25 \land G2 = 15 & \textrm{, dla } k \geqslant 100
-\end{align*}
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/test}
-	\caption{Sprawdzenie mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem}
-	\label{test}
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad1_punkt_pracyU.tex}
+\caption{Przebiegi sygna³ów wejœciowych w punkcie pracy}
+\label{punkt_pracyU}
 \end{figure}
 
-Na rys. \ref{test} przedstawiono wyniki przeprowadzonej symulacji. Jak widzimy, zmiany mocy grza³ek $G1$ i $G2$ wp³ywaj¹ na zmianê mierzonych temperatur $T1$ i $T3$. Oznacza to, mamy mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem.
-\end{comment}
-
-\subsection{Implementacja}
-
-Do przetestowania mo¿liwoœci sterowania i pomiaru w komunikacji ze stanowiskiem u¿yto skryptu \verb+zad1_1.m+.
-
-\section{Punkt pracy}
-
-\begin{comment}
-Jako punkt pracy wybraliœmy: $G1 = \num{18}$, $G2 = \num{23}$. Wyniki symulacji dla tego punktu pracy przedstawiono na rys.~\ref{punkt_pracy}.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/punkt_pracy}
-	\caption{Punkt pracy}
-	\label{punkt_pracy}
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad1_punkt_pracyY.tex}
+\caption{Przebiegi sygna³ów wyjœciowych w punkcie pracy}
+\label{punkt_pracyY}
 \end{figure}
 
-Dla powy¿szego punktu pracy pomiary z czujników wynosz¹: $T1 = \num{75.43}$, $T3 = \num{84.64}$.
-\end{comment}
+\section{Wnioski}
 
-\subsection{Implementacja}
+Na podstawie rysunku \ref{punkt_pracyY} widaæ, ¿e dla sta³ej wartoœci sygna³ów steruj¹cych, widocznych na rysunku \ref{punkt_pracyU} sygna³y wyjœciowe przyjmuj¹ sta³¹ wartoœæ, równ¹ $Y^1_{\mathrm{pp}} = \num{0}$, $Y^2_{\mathrm{pp}} = \num{0}$, $Y^3_{\mathrm{pp}} = \num{0}$. Jest to dowód na to, ¿e podane wartoœci s¹ poprawne.
 
-Do wyznaczenia wartoœci temperatury, odczytanej z czujnika, wykorzystano skrypt \verb+zad1_2.m+.
+\section{Implementacja}
+
+Do przeprowadzenia eksperymentów wykorzystany zosta³ skrypt \verb+zad1.m+.
