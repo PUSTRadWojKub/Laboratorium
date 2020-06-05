@@ -2,39 +2,6 @@
 
 \section{Wielowymiarowy regulator PID}
 
-Rozwa¿amy proces o czterech wejœciach ($n_\mathrm{u}=4$) oraz trzech wyjœciach ($n_\mathrm{y}=3$). Mo¿emy zatem wyznaczyæ trzy uchyby:
-
-\begin{equation}
-e_\mathrm{1}(k)=y^\mathrm{zad}_\mathrm{1}(k)-y_\mathrm{1}(k)
-\end{equation}
-\begin{equation}
-e_\mathrm{2}(k)=y^\mathrm{zad}_\mathrm{2}(k)-y_\mathrm{2}(k)
-\end{equation}
-\begin{equation}
-e_\mathrm{3}(k)=y^\mathrm{zad}_\mathrm{3}(k)-y_\mathrm{3}(k)
-\end{equation}
-
-i dla ka¿dego z nich dobraæ pojedynczy regulator PID. Ka¿dy regulator bêdzie mia³ w³asny zestaw parametrów
-
-\begin{equation}
-r_2=K\frac{T_\mathrm{d}}{T_\mathrm{p}}
-\end{equation}
-\begin{equation}
-r_1=K(\frac{T_\mathrm{p}}{2T_\mathrm{i}}-\frac{2T_\mathrm{d}}{T_\mathrm{p}}-1)
-\end{equation}
-\begin{equation}
-r_0=K(1+\frac{T_\mathrm{p}}{2T_\mathrm{i}}+\frac{T_\mathrm{d}}{T_\mathrm{p}})
-\end{equation}
-gdzie $K$ - wzmocnienie cz³onu proporcjonalnego, $T_\mathrm{i}$ - czas zdwojenia cz³onu ca³kuj¹cego, $T_\mathrm{d}$ - czas wyprzedzenia cz³onu ró¿niczkuj¹cego, $T_\mathrm{p}$ - okres próbkowania.
-
-W oparciu o te parametry ka¿dy z regulatorów PID bêdzie wyznacza³ sterowanie wed³ug zale¿noœci
-\begin{equation}
-u(k)=r_2e(k-2)+r_1e(k-1)+r_0e(k)+u(k-1)
-\end{equation}
-
-Ze wzglêdu na to, ¿e liczba wejœæ jest wiêksza od liczby wyjœæ, to zawsze jedno wejœcie bêdzie niesterowane.
-
-
 \section{Wielowymiarowy regulator DMC}
 
 Regulator DMC jest regulatorem predykcyjnym - w oparciu o model procesu regulowanego wyznacza wartoœci przysz³ych sterowañ. Podobnie jak w regulatorze jednowymiarowym, wektor przyrostów sterowañ ma postaæ:
@@ -52,7 +19,7 @@ gdzie K jest macierz¹ o wymiarach $(N_\mathrm{u}*n_\mathrm{u}) \times (N*n_\math
 \label{K}
 \end{equation}
 
-Macierz $\mathrm{M}$ o wymiarach $(N*n_\mathrm{y}) \times (N_\mathrm{u} * n_\mathrm{u})$ i macierz $M^\mathrm{P}$ o wymiarach $(N*n_\mathrm{y}) \times ((D-1)*n_\mathrm{u})$ maj¹ postaæ:
+Macierz $\mathrm{M}$ o wymiarach $(N*n_\mathrm{y}) \times (N_\mathrm{u} * n_\mathrm{u})}$ i macierz $M^\mathrm{p}$ o wymiarach $(N*n_\mathrm{y}) \times ((D-1)*n_\mathrm{u})$ maj¹ postaæ:
 
 \begin{equation}
 \boldsymbol{M}=\left[
@@ -111,7 +78,7 @@ gdzie
 \vdots\\
 \overline{K}_{N_u}
 \end{array}
-\right] = \left[
+\right] = \left[}
 \begin{array}
 {cccc}
 k_{1,1} & k_{1,2} & \ldots & k_{1,N}\\
@@ -123,8 +90,4 @@ k_{N_u,1} & k_{N_u,2} & \ldots &  k_{N_u,N}
 \label{Mm}
 \end{equation}
 
-Macierz $K$ ma wymiary $(N_\mathrm{u}*n_\mathrm{u}) \times (N * n_\mathrm{y})$.
-
-
-\section{Implementacja}
-Skrypty do symulacji algorymów PID oraz DMC zawarte s¹ w plikach \verb+PID.m+ i \verb+DMC_full.m+.
+Macierz $K$ ma wymiary $\mathrm{(Nu*n_u) \times (N * n_y)}$.

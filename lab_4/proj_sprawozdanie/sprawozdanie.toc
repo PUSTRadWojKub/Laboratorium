@@ -1,4 +1,14 @@
 \contentsline {chapter}{\numberline {1\relax .\enspace }Sprawdzenie poprawno\'sci punktu pracy}{2}%
-\contentsline {chapter}{\numberline {2\relax .\enspace }Odpowiedzi skokowe tor\'ow procesu}{3}%
-\contentsline {chapter}{\numberline {3\relax .\enspace }Implementacja symulacji cyfrowego algorytmu PID oraz DMC}{4}%
-\contentsline {chapter}{\numberline {4\relax .\enspace }Dob\'or nastaw regulatora PID i parametr\'ow algorytmu DMC metod\k a eksperymentaln\k a}{5}%
+\contentsline {section}{\numberline {1.1\relax .\enspace }Poprawno\'s\'c sygna\IeC {\l }\'ow w punkcie pracy}{2}%
+\contentsline {section}{\numberline {1.2\relax .\enspace }Wnioski}{2}%
+\contentsline {section}{\numberline {1.3\relax .\enspace }Implementacja}{2}%
+\contentsline {chapter}{\numberline {2\relax .\enspace }Odpowiedzi skokowe}{4}%
+\contentsline {section}{\numberline {2.1\relax .\enspace }Otrzymywanie odpowiedzi skokowych}{4}%
+\contentsline {section}{\numberline {2.2\relax .\enspace }Implementacja}{4}%
+\contentsline {chapter}{\numberline {3\relax .\enspace }Symulacja cyfrowego, wielowymiarowego regulatora PID i DMC}{7}%
+\contentsline {section}{\numberline {3.1\relax .\enspace }Wielowymiarowy regulator PID}{7}%
+\contentsline {section}{\numberline {3.2\relax .\enspace }Wielowymiarowy regulator DMC}{7}%
+\contentsline {section}{\numberline {3.3\relax .\enspace }Implementacja}{8}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Strojenie regulator\'ow PID oraz DMC}{9}%
+\contentsline {section}{\numberline {4.1\relax .\enspace }Strojenie PID}{9}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Strojenie DMC}{9}%
