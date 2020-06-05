@@ -1,2 +1,93 @@
-\chapter{Implementacja symulacji cyfrowego algorytmu PID oraz DMC}
+\chapter{Symulacja cyfrowego, wielowymiarowego regulatora PID i DMC}
 
+\section{Wielowymiarowy regulator PID}
+
+\section{Wielowymiarowy regulator DMC}
+
+Regulator DMC jest regulatorem predykcyjnym - w oparciu o model procesu regulowanego wyznacza wartoœci przysz³ych sterowañ. Podobnie jak w regulatorze jednowymiarowym, wektor przyrostów sterowañ ma postaæ:
+
+\begin{align}
+\triangle U(k)&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y^0(k)]\\
+&=\boldsymbol{K}[Y^{\mathrm{zad}}(k)-Y(k)-\boldsymbol{M}^\mathrm{P} \triangle U^\mathrm{P}(k)]
+\label{dU1}
+\end{align}
+
+gdzie K jest macierz¹ o wymiarach $\mathrm{(N_u * n_u) \times (N * n_y)}$:
+
+\begin{equation}
+\boldsymbol{K}=(\boldsymbol{M}^\mathrm{T}\Psi\boldsymbol{M}+\Lambda)^{-1}\boldsymbol{M}^\mathrm{T}\Psi
+\label{K}
+\end{equation}
+
+Macierz $\mathrm{M}$ o wymiarach $\mathrm{(N * n_y) \times (N_u * n_u)}$ i macierz $\mathrm{Mp}$ o wymiarach $\mathrm{(N * n_y) \times ((D - 1) * n_u)}$ maj¹ postaæ:
+
+\begin{equation}
+\boldsymbol{M}=\left[
+\begin{array}
+{cccc}
+S_{1} & 0 & \ldots & 0\\
+S_{2} & S_{1} & \ldots & 0\\
+\vdots & \vdots & \ddots & \vdots\\
+S_{N} & S_{N-1} & \ldots &  S_{N-N_{\mathrm{u}}+1}
+\end{array}
+\right]_{N\times N_u}
+\label{Mm}
+\end{equation}
+
+\begin{equation}
+\boldsymbol{M}^\mathrm{P}=\left[
+\begin{array}
+{cccc}
+S_{2}-S_{1} & S_{3}-S_{2} & \ldots & S_{D}-S_{D-1}\\
+S_{3}-S_{1} & S_{4}-S_{2} & \ldots & S_{D+1}-S_{D-1}\\
+\vdots & \vdots & \ddots & \vdots\\
+S_{N+1}-S_{1} & S_{N+2}-S_{2} & \ldots &  S_{N+D-1}-S_{D-1}
+\end{array}
+\right]_{N\times (D-1)}
+\label{MPm}
+\end{equation}
+
+Wektor $\delta\mathrm{U^P(k)}$ (\ref{dUPm}) zawiera wektory pionowe przesz³ych przyrostów sterowañ d³ugoœci $\mathrm{n_u}$. Z tego powodu wektor $\delta\mathrm{U^P(k)}$ jest d³ugoœci $\mathrm{(D - 1) * n_u}$.
+
+\begin{equation}
+\triangle U^\mathrm{P}(k)=\left[
+\begin{array}{c}
+\triangle u(k-1)\\
+\vdots\\
+\triangle u(k-(D-1))
+\end{array}
+\right]_{(D-1)\times 1}
+\label{dUPm}
+\end{equation}
+
+Do procesu aplikowany jest wy³¹cznie pierwszy element wektora przyrostów sterowañ. Z tego powodu prawo regulacji mo¿na zapisaæ jako
+
+\begin{align}
+\triangle U(k)&=\boldsymbol{\overline{K}_1}[Y^{\mathrm{zad}}(k)-Y^0(k)]\\
+&=\boldsymbol{\overline{K}_1}[Y^{\mathrm{zad}}(k)-Y(k)-\boldsymbol{M}^\mathrm{P} \triangle U^\mathrm{P}(k)]
+\label{dU1}
+\end{align}
+
+gdzie
+
+\begin{equation}
+\boldsymbol{K}=\left[
+\begin{array}{c}
+\overline{K}_1\\
+\overline{K}_2\\
+\vdots\\
+\overline{K}_{N_u}
+\end{array}
+\right] = \left[}
+\begin{array}
+{cccc}
+k_{1,1} & k_{1,2} & \ldots & k_{1,N}\\
+k_{2,1} & s_{2,2} & \ldots & k_{2,N}\\
+\vdots & \vdots & \ddots & \vdots\\
+k_{N_u,1} & k_{N_u,2} & \ldots &  k_{N_u,N}
+\end{array}
+\right]_{N\times N_u}
+\label{Mm}
+\end{equation}
+
+Macierz $K$ ma wymiary $\mathrm{n_u \times (N * n_y)}$
