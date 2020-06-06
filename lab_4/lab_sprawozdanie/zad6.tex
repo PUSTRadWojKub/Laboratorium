@@ -1,0 +1,19 @@
+\chapter{Mechanizm zabezpieczaj¹cy przed uszkodzeniem stanowiska}
+
+W celu zabezpieczenia stanowiska przed przepe³nieniem zbiorników (tj. $H1$ lub $H2$ lub $H3$ osi¹gnie wartoœæ $\num{20}$) zaimplementowano poni¿ej przedstawiony (rys. \ref{safety_mechanism_code_t}) mechanizm zabezpieczaj¹cy.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/SAFETY_MECHANISM_CODE_T.png}
+	\caption{Kod zabezpieczaj¹cy przed uszkodzeniem stanowiska ze zbiornikami}
+	\label{safety_mechanism_code_t}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/SAFETY_MECHANISM_FIGURE_T.png}
+	\caption{Wykres prezentuj¹cy dzia³anie mechanizmu zabezpieczaj¹cego przed uszkodzeniem stanowiska ze zbiornikami na górze $H2$, na dole sterowanie $U2$}
+	\label{safety_mechanism_figure_t}
+\end{figure}
+
+Jak widzimy na powy¿szym rysunku (rys. \ref{safety_mechanism_figure_t}), gdy wysokoœæ cieczy któregoœ z wyjœæ $H1$ lub $H2$ lub $H3$ jest równa $\num{20}$ to odpowiednio otwierane s¹ zawory $U1$ dla osi¹gniêcia wysokoœci przez $H1$, $U2$ dla osi¹gniêcia wysokoœci przez $H2$ i $U3$ dla osi¹gniêcia wysokoœci przez $H3$. Dziêki temu zawór odpowiedniego zbiornika, który osi¹ga niebezpieczny poziom cieczy zostanie otworzony.

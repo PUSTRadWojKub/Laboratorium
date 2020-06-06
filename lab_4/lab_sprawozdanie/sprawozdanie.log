@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  6 JUN 2020 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  6 JUN 2020 22:15
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -1198,43 +1198,85 @@ Package pdftex.def Info: rysunki/regulacja2.png  used on input line 163.
 [13 <./rysunki/error.png>] [14 <./rysunki/regulacja1.png>] [15 <./rysunki/regul
 acja2.png>]
 Rozdzia\PlPrIeC {\l } 4.
-) [16
+<rysunki/HMI.png, id=113, 291.489pt x 211.992pt>
+File: rysunki/HMI.png Graphic file (type png)
+<use rysunki/HMI.png>
+Package pdftex.def Info: rysunki/HMI.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24408pt x 331.10727pt.
+) (zad6.tex [16
 
-] (sprawozdanie.aux) ) 
+ <./rysunki/HMI.png>]
+Rozdzia\PlPrIeC {\l } 5.
+<rysunki/SAFETY_MECHANISM_CODE_T.png, id=118, 350.05782pt x 167.87718pt>
+File: rysunki/SAFETY_MECHANISM_CODE_T.png Graphic file (type png)
+<use rysunki/SAFETY_MECHANISM_CODE_T.png>
+Package pdftex.def Info: rysunki/SAFETY_MECHANISM_CODE_T.png  used on input lin
+e 7.
+(pdftex.def)             Requested size: 455.24408pt x 218.33508pt.
+<rysunki/SAFETY_MECHANISM_FIGURE_T.png, id=119, 1118.67938pt x 356.0803pt>
+File: rysunki/SAFETY_MECHANISM_FIGURE_T.png Graphic file (type png)
+<use rysunki/SAFETY_MECHANISM_FIGURE_T.png>
+Package pdftex.def Info: rysunki/SAFETY_MECHANISM_FIGURE_T.png  used on input l
+ine 14.
+(pdftex.def)             Requested size: 455.24408pt x 144.9072pt.
+) (zad8.tex [17
+
+ <./rysunki/SAFETY_MECHANISM_CODE_T.png> <./rysunki/SAFETY_MECHANISM_FIGURE_T.p
+ng>]
+Rozdzia\PlPrIeC {\l } 6.
+<rysunki/STROJENIE_PID_1.png, id=125, 1936.23375pt x 1007.26312pt>
+File: rysunki/STROJENIE_PID_1.png Graphic file (type png)
+<use rysunki/STROJENIE_PID_1.png>
+Package pdftex.def Info: rysunki/STROJENIE_PID_1.png  used on input line 7.
+(pdftex.def)             Requested size: 455.24408pt x 331.27588pt.
+<rysunki/STROJENIE_PID_2.png, id=127, 1936.23375pt x 1007.26312pt>
+File: rysunki/STROJENIE_PID_2.png Graphic file (type png)
+<use rysunki/STROJENIE_PID_2.png>
+Package pdftex.def Info: rysunki/STROJENIE_PID_2.png  used on input line 16.
+(pdftex.def)             Requested size: 455.24408pt x 328.89359pt.
+<rysunki/STROJENIE_PID_3.png, id=129, 1936.23375pt x 1007.26312pt>
+File: rysunki/STROJENIE_PID_3.png Graphic file (type png)
+<use rysunki/STROJENIE_PID_3.png>
+Package pdftex.def Info: rysunki/STROJENIE_PID_3.png  used on input line 25.
+(pdftex.def)             Requested size: 455.24408pt x 397.59561pt.
+) [18
+
+ <./rysunki/STROJENIE_PID_1.png>] [19 <./rysunki/STROJENIE_PID_2.png>]
+[20 <./rysunki/STROJENIE_PID_3.png>] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 30974 strings out of 480811
- 775488 string characters out of 2895696
- 1064942 words of memory out of 3000000
- 46393 multiletter control sequences out of 15000+200000
+ 31022 strings out of 480811
+ 776890 string characters out of 2895696
+ 1065008 words of memory out of 3000000
+ 46431 multiletter control sequences out of 15000+200000
  555010 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,15n,98p,747b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/pltt.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plmi.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plrm.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plme.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plms.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plit.enc}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nitrox/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Users/Nitrox/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Users/Nitrox/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Users/Nitrox/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Users/Nitrox/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:/Users/Nitr
-ox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Users/
-Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmib10.pfb><C:/
-Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb>
-<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr6.p
-fb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr
-8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/
-plsy10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/pl/plsy8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/pl/plti10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (17 pages, 857097 bytes).
+{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plmi.enc}{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plme.enc}{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plit.enc}<C:/Users/Nitrox/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:
+/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pf
+b><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plbx
+12.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl
+/plex10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/pl/plmi10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/pl/plmi6.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/pl/plmi8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/pl/plmib10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Nitrox/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
+Output written on sprawozdanie.pdf (21 pages, 1243904 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
+ 200 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 words of extra memory for PDF output out of 10000 (max. 10000000)
 

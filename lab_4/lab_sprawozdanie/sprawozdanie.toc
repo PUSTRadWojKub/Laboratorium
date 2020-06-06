@@ -7,3 +7,6 @@
 \contentsline {section}{\numberline {3.2\relax .\enspace }Odpowiedzi skokowe}{9}%
 \contentsline {section}{\numberline {3.3\relax .\enspace }Strojenie DMC}{9}%
 \contentsline {chapter}{\numberline {4\relax .\enspace }Panel operatora}{16}%
+\contentsline {chapter}{\numberline {5\relax .\enspace }Mechanizm zabezpieczaj\k acy przed uszkodzeniem stanowiska}{17}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Implementacja wielop\k etlowego regulatora PID}{18}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Dobieranie nastaw PID}{18}%
