@@ -1,5 +1,7 @@
 \chapter{Implementacja regulatora DMC MIMO oraz przygotowanie odpowiedzi skokowych}
 
+Dziêki przeprowadzeniu eksperymentów z poprzedniego podpunktu byliœmy w stanie wyznaczyæ optymalne ograniczenia wartoœci sterowania tzn. $<0, 1000>$ dla tych wartoœci wyjœcia obiektu oscylowa³y w granicach ok. $(0, 300) ^{\circ}C$.
+
 \section{Implementacja DMC}
 
 Dla regulatora DMC $2 \times 2$ równania algorytmu przyjm¹ nastêpuj¹c¹ postaæ:
@@ -29,7 +31,7 @@ u_{2}(\textrm{k}) \\
 \end{equation}
 
 \begin{equation}
-S_l = 
+\boldsymbol{S}_l = 
 \begin{bmatrix}
 s_{l}^{\textrm{11}} & s_{l}^{\textrm{12}} \\
 s_{l}^{\textrm{21}} & s_{l}^{\textrm{22}} \\
@@ -40,50 +42,136 @@ s_{l}^{\textrm{21}} & s_{l}^{\textrm{22}} \\
 \begin{equation}
 M = 
 \begin{bmatrix}
-S_1 & 0 & \hdots & 0 \\
-S_2 & S_1 & \hdots & 0 \\
+\boldsymbol{S}_1 & 0 & \hdots & 0 \\
+\boldsymbol{S}_2 & \boldsymbol{S}_1 & \hdots & 0 \\
 \vdots & \vdots &\ddots & \vdots \\
-S_N & S_{N-1} & \hdots & S_{N-N_{\text{u}}+1} \\
+\boldsymbol{S}_N & \boldsymbol{S}_{N-1} & \hdots & \boldsymbol{S}_{N-N_{\text{u}}+1} \\
 \end{bmatrix}
 \end{equation}
 
 \begin{equation}
 M^{\text{P}} = 
 \begin{bmatrix}
-S_2-S_1 & S_3-S_2 & \hdots & S_D-S_{D-1} \\
-S_3-S_1 & S_4-S_2 & \hdots & S_{D+1}-S_{D-1} \\
+\boldsymbol{S}_2-\boldsymbol{S}_1 & \boldsymbol{S}_3-\boldsymbol{S}_2 & \hdots & \boldsymbol{S}_D-\boldsymbol{S}_{D-1} \\
+\boldsymbol{S}_3-\boldsymbol{S}_1 & \boldsymbol{S}_4-\boldsymbol{S}_2 & \hdots & \boldsymbol{S}_{D+1}-\boldsymbol{S}_{D-1} \\
 \vdots & \vdots & \ddots & \vdots \\
-S_{N+1}-S_1 & S_{N+2}-S_2 & \hdots & S_{N+D-1}-S_{D-1} \\
+\boldsymbol{S}_{N+1}-\boldsymbol{S}_1 & \boldsymbol{S}_{N+2}-\boldsymbol{S}_2 & \hdots & \boldsymbol{S}_{N+D-1}-\boldsymbol{S}_{D-1} \\
 \end{bmatrix}
 \end{equation}
 
 \begin{equation}
-K = (M^{\textrm{T}}M+\lambda I)^{-1}M^{\textrm{T}} 
+\boldsymbol{K} = (\boldsymbol{M}^{\textrm{T}}\boldsymbol{M}+\lambda \boldsymbol{I})^{-1}\boldsymbol{M}^{\textrm{T}} 
 \end{equation}
 
 \begin{equation}
-Y^\textrm{0}(k) = Y(k)+M^{\textrm{P}} \Delta U^{\textrm{P}}(k)
+Y^\textrm{0}(k) = Y(k)+\boldsymbol{M^{\textrm{P}}} \Delta U^{\textrm{P}}(k)
 \end{equation}
 
 \begin{equation}
-\Delta U(k) = K( Y^{\textrm{zad}}(k) - Y^\textrm{0}(k) )
+\Delta U(k) = \boldsymbol{K}( Y^{\textrm{zad}}(k) - Y^\textrm{0}(k) )
 \end{equation}
+
+Prawo regulacji dla regulatora oszczêdnego:
+
+\begin{align}
+\Delta u(k|k) &= \overline{\boldsymbol{K}}_1( Y^{\textrm{zad}}(k) - Y(k)-\boldsymbol{M^{\textrm{P}}} \Delta U^{\textrm{P}}(k) ) \\
+			&= \overline{\boldsymbol{K}}_1( Y^{\textrm{zad}}(k) - Y(k))-\overline{\boldsymbol{K}}_1\boldsymbol{M^{\textrm{P}}} \Delta U^{\textrm{P}}(k) \\
+			&= \sum_{i=1}^{N\cdot n_y}\overline{\boldsymbol{K}}_{1,j}( Y^{\textrm{zad}}(k) - Y(k))-\overline{\boldsymbol{K}}_1\boldsymbol{M^{\textrm{P}}} \Delta U^{\textrm{P}}(k)
+\end{align}
+
+\begin{equation}
+\Delta u(k|k) = \boldsymbol{K}_eE(k) - \boldsymbol{K}_u\Delta U^{\textrm{P}}(k)
+\end{equation}
+
+,gdzie
+
+\begin{equation}
+	E(k) = Y^{\textrm{zad}}(k) - Y(k)
+\end{equation}
+
+\begin{equation}
+	\boldsymbol{K}_e = \sum_{i=1}^{N\cdot n_y}K_{1,i}
+\end{equation}
+
+\begin{equation}
+	\boldsymbol{K}_u = \overline{\boldsymbol{K}}_1\boldsymbol{M^{\textrm{P}}}
+\end{equation}
+
 
 \section{Odpowiedzi skokowe}
 
-\begin{comment}
-Jako parametry regulatora DMC zosta³y wybrane odpowiedzi skokowe dla dwóch oddzielnych zmian wartoœci sterowania $G1$ z \num{18} na \num{38} i $G2$ z \num{23} na \num{43} z punktu pracy. Odpowiedzi skokowe obu wyjœæ $T1$ i $T3$ dla skoku $G1$ przedstawiono na rys.~\ref{odp_skok_g1}, a dla skoku $G2$ na rys.~\ref{odp_skok_g2}.
 
-\begin{figure}
+Jako parametry regulatora DMC zosta³y wybrane odpowiedzi skokowe dla dwóch oddzielnych zmian wartoœci sterowania $G1$ z \num{0} na \num{800} i $G2$ z \num{0} na \num{800}. Odpowiedzi skokowe obu wyjœæ $T1$ i $T3$ dla skoku $G1$ przedstawiono na rys.~\ref{odp_skok_g1}, a dla skoku $G2$ na rys.~\ref{odp_skok_g2}.
+
+\begin{figure}[h!b]
 	\centering
-	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/odp_skok_g1}
-	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G1$ z $\num{18}$ na $\num{38}$  z punktu pracy}
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/odp_skok_g1}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G1$ z $\num{0}$ na $\num{800}$}
 	\label{odp_skok_g1}
 \end{figure}
-\end{comment}
 
-%Aproksymacja?
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/odp_skok_g2}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G2$ z $\num{0}$ na $\num{800}$}
+	\label{odp_skok_g2}
+\end{figure}
 
-\subsection{Implementacja}
+Po otrzymaniu powy¿szych odpowiedzi skokowych w programie \verb+LogViewer+ i zapisaniu ich w pliku textowym, a nastêpnie poddaniu obróbce w excelu, w celu wybrania interesuj¹cych nas wartoœci, otrzymaliœmy nastêpuj¹ce odpowiedzi skokowe - rys. \ref{odp_skok_g1_mat} i rys. \ref{odp_skok_g2_mat} (dalej wykorzystane do wyznaczenia paramtrów regulatora DMC).
 
-Do zrealizowania zadania zosta³y u¿yte skrypty \verb+zad2.m+ oraz \verb+odp_skok.m+.
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, width=\textwidth, trim = 2 240 2 240, center]{rysunki/odp_skok_g1_mat}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G1$ z $\num{0}$ na $\num{800}$}
+	\label{odp_skok_g1_mat}
+\end{figure}
+
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, width=\textwidth, trim = 2 240 2 240, center]{rysunki/odp_skok_g2_mat}
+	\caption{OdpowiedŸ skokowa dla zmiany sygna³u sterowania $G2$ z $\num{0}$ na $\num{800}$}
+	\label{odp_skok_g2_mat}
+\end{figure}
+
+\section{Strojenie DMC}
+
+Przy strojeniu DMC kluczow¹ rolê odgrywa³a optymalizacja rozmiaru horyzontu dynamiki pod k¹tem zajêtoœci rejestrów oraz czasu wykonania obliczeñ do regulacji DMC na sterowniku PLC. Wielokrotnie trzeba by³o skracaæ horyzont dynamiki aby rozmiar wektora pozwala³ na zakoñczenie pracy programu \verb+HC_REGULATION+ (w trybie \textit{fixed scan} z przerwaniem $1000\textrm{ms}$) w zadanym czasie. Dla zbyt d³ugiego horyzontu obliczenia na wektorach zajmowa³y zbyt du¿o czaso co skutkowa³o b³êdem przedstawionym na rys.\ref{error}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/error}
+	\caption{B³¹d przekroczenia czasu wykonania programu}
+	\label{error}
+\end{figure}
+
+
+Najd³u¿szy horyzont dynamiki, który uda³o nam siê u¿yæ to $\textrm{D} = 90$. Dla takiego horyzontu dynamiki przyjêliœmy najd³u¿sze mo¿liwe horyzonty predykcji i sterowania ($\textrm{N} = 90$, $\textrm{Nu} = 90$), poniewa¿ nie wp³ywa³o to na spowolnienie dzia³ania symulacji oszczêdnego regulatora DMC w œrodowisku \verb+GxWorks+.
+
+W programie \verb+INIT+ nastêpuje inicjalizacja, potrzebnych do regulacji DMC, parametrów (wygenerowanych w programie \verb+MATLAB+ - skrypt \verb+matlab/DMC_CALC.m+), po czym nastêpuje regulacja obiektu w programie \verb+HC_REGULATION+.
+
+Dla przyjêtych pocz¹tkowych wartoœci $\lambda = 1$ regulacja by³a satysfakcjonuj¹ca (rys.\ref{regulacja1}), jednak dla $\lambda = 10$ kosztem szybkoœci regulacji byliœmy w stanie otrzymaæ ³agodniejsze sterowanie oraz mniejsze przeregulowanie (rys.\ref{regulacja2}). Przy wiêkszych wartoœciach wspó³czynnika kary $\lambda$ regulator by³ zbyt powolny.
+
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/regulacja1}
+	\caption{Regulacja dla DMC z parametrami $\textrm{D} = 90$, $\textrm{N} = 90$, $\textrm{Nu} = 90$, $\lambda = 1$}
+	\label{regulacja1}
+\end{figure}
+
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/regulacja2}
+	\caption{Regulacja dla DMC z parametrami $\textrm{D} = 90$, $\textrm{N} = 90$, $\textrm{Nu} = 90$, $\lambda = 10$}
+	\label{regulacja2}
+\end{figure}
+
+Tor wartoœci zadanych dla rysunków przedstawiaj¹cych proces regulacji:
+
+\begin{align*} 
+T1 = 0 \land T3 = 0 & \textrm{, dla } k \in <0, 10) \\ 
+T1 = \num{11.42} \land T3 = \num{12.48} & \textrm{, dla } k \in <10, 120) \\ 
+T1 = 54 \land T3 = 20 & \textrm{, dla } k \in <120, 240) \\ 
+T1 = 150 \land T3 = 170 & \textrm{, dla } k \in <240, 480) \\ 
+T1 = 22 \land T3 = 30 & \textrm{, dla } k \geqslant 480
+\end{align*}
+

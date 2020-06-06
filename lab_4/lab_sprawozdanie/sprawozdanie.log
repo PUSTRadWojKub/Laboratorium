@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  5 JUN 2020 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  6 JUN 2020 15:39
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -888,6 +888,70 @@ Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ty"
 \CommentStream=\write4
  Excluding comment 'comment')
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjustb
+ox.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
+ty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
+.tex"
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
+s.tex"
+\XKV@toks=\toks46
+\XKV@tempa@toks=\toks47
+)
+\XKV@depth=\count333
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjcalc
+.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\trimcli
+p.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbox\collec
+tbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box75
+)
+\tc@llx=\dimen306
+\tc@lly=\dimen307
+\tc@urx=\dimen308
+\tc@ury=\dimen309
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\tc-pdft
+ex.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen310
+\adjbox@Height=\dimen311
+\adjbox@Depth=\dimen312
+\adjbox@Totalheight=\dimen313
+\adjbox@pwidth=\dimen314
+\adjbox@pheight=\dimen315
+\adjbox@pdepth=\dimen316
+\adjbox@ptotalheight=\dimen317
+
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpa
+ge.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count334
+)
+("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidth
+.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box76
+\sift@deathcycles=\count335
+\@vwid@loff=\dimen318
+\@vwid@roff=\dimen319
+))
 
 LaTeX Warning: Unused global option(s):
     [twosides].
@@ -895,22 +959,22 @@ LaTeX Warning: Unused global option(s):
 (sprawozdanie.aux)
 \openout1 = `sprawozdanie.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -950,17 +1014,17 @@ LaTeX Font Info:    ... okay on input line 88.
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-
 pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen306
-\scratchbox=\box75
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen307
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count336
+\scratchdimen=\dimen320
+\scratchbox=\box77
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen321
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks49
 )
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epst
 opdf-base.sty"
@@ -972,9 +1036,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 88.
+ on input line 89.
 
-\c@lstlisting=\count339
+\c@lstlisting=\count342
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transl
 ator-basic-dictionary-English.dict"
@@ -989,52 +1053,52 @@ inary.cfg"
 File: siunitx-binary.cfg 2017/11/26 v2.7k siunitx: Binary units
 )
 LaTeX Font Info:    Trying to load font information for OML+plm on input line 8
-8.
+9.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omlplm.fd"
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMS+plsy on input line 
-88.
+89.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omsplsy.fd
 "
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OMX+plex on input line 
-88.
+89.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\omxplex.fd
 "
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 88.
+(Font)              <10.95> on input line 89.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 88.
+(Font)              <8> on input line 89.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 88.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
+(Font)              <6> on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
 
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
 
  ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
 "
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmss on input line 
-88.
+89.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\ot4cmss.fd
 "
 File: ot4cmss.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Trying to load font information for OT4+cmtt on input line 
-88.
+89.
 
 ("C:\Users\Nitrox\AppData\Local\Programs\MiKTeX 2.9\tex/latex/polski\ot4cmtt.fd
 "
@@ -1042,76 +1106,135 @@ File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [1
 
 {C:/Users/Nitrox/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(sprawozdanie.toc
+Excluding 'comment' comment. [1] (sprawozdanie.toc
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <10> on input line 1.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <7> on input line 1.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `sprawozdanie.toc'.
 
- (zad1.tex [1
+ (zad1.tex [2
 
 ]
 Rozdzia\PlPrIeC {\l } 1.
-Excluding 'comment' comment. Excluding 'comment' comment.) (zad2.tex
-Overfull \hbox (0.33931pt too wide) in paragraph at lines 46--1
-[]\OT4/cmr/m/n/10.95 Do wy-zna-cze-nia war-to-±ci tem-pe-ra-tu-ry, od-czy-ta-ne
-j z czuj-ni-ka, wy-ko-rzy-sta-no skrypt [][]\OT4/cmtt/m/n/10.95 zad1_2.m[]\OT4/
-cmr/m/n/10.95 .
- []
+<rysunki/COMMUNICATION_CHECK.png, id=19, 1936.23375pt x 1007.26312pt>
+File: rysunki/COMMUNICATION_CHECK.png Graphic file (type png)
+<use rysunki/COMMUNICATION_CHECK.png>
+Package pdftex.def Info: rysunki/COMMUNICATION_CHECK.png  used on input line 16
+.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+<rysunki/PUNKT_PRACY.png, id=22, 1936.23375pt x 1007.26312pt>
+File: rysunki/PUNKT_PRACY.png Graphic file (type png)
+<use rysunki/PUNKT_PRACY.png>
+Package pdftex.def Info: rysunki/PUNKT_PRACY.png  used on input line 28.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+) (zad2.tex [3
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--1
-
- []
-
-[2
-
-]
+] [4 <./rysunki/COMMUNICATION_CHECK.png>] [5 <./rysunki/PUNKT_PRACY.png>]
 Rozdzia\PlPrIeC {\l } 2.
-) (zad3.tex [3
+<rysunki/SAFETY_MECHANISM_CODE.png, id=39, 949.5475pt x 472.76625pt>
+File: rysunki/SAFETY_MECHANISM_CODE.png Graphic file (type png)
+<use rysunki/SAFETY_MECHANISM_CODE.png>
+Package pdftex.def Info: rysunki/SAFETY_MECHANISM_CODE.png  used on input line 
+7.
+(pdftex.def)             Requested size: 455.24408pt x 226.65831pt.
+<rysunki/SAFETY_MECHANISM_FIGURE.png, id=40, 1936.23375pt x 1007.26312pt>
+File: rysunki/SAFETY_MECHANISM_FIGURE.png Graphic file (type png)
+<use rysunki/SAFETY_MECHANISM_FIGURE.png>
+Package pdftex.def Info: rysunki/SAFETY_MECHANISM_FIGURE.png  used on input lin
+e 14.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+) (zad3.tex [6
 
-]
+ <./rysunki/SAFETY_MECHANISM_CODE.png>] [7 <./rysunki/SAFETY_MECHANISM_FIGURE.p
+ng>]
 Rozdzia\PlPrIeC {\l } 3.
-Excluding 'comment' comment.) (zad4.tex [4
+[8
 
 ]
+<rysunki/odp_skok_g1.png, id=62, 1936.23375pt x 1007.26312pt>
+File: rysunki/odp_skok_g1.png Graphic file (type png)
+<use rysunki/odp_skok_g1.png>
+Package pdftex.def Info: rysunki/odp_skok_g1.png  used on input line 108.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+<rysunki/odp_skok_g2.png, id=64, 1936.23375pt x 1007.26312pt>
+File: rysunki/odp_skok_g2.png Graphic file (type png)
+<use rysunki/odp_skok_g2.png>
+Package pdftex.def Info: rysunki/odp_skok_g2.png  used on input line 115.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+<rysunki/odp_skok_g1_mat.pdf, id=66, 597.23125pt x 845.1575pt>
+File: rysunki/odp_skok_g1_mat.pdf Graphic file (type pdf)
+<use rysunki/odp_skok_g1_mat.pdf>
+Package pdftex.def Info: rysunki/odp_skok_g1_mat.pdf  used on input line 124.
+(pdftex.def)             Requested size: 455.24408pt x 278.85379pt.
+<rysunki/odp_skok_g2_mat.pdf, id=68, 597.23125pt x 845.1575pt>
+File: rysunki/odp_skok_g2_mat.pdf Graphic file (type pdf)
+<use rysunki/odp_skok_g2_mat.pdf>
+Package pdftex.def Info: rysunki/odp_skok_g2_mat.pdf  used on input line 131.
+(pdftex.def)             Requested size: 455.24408pt x 278.85379pt.
+<rysunki/error.png, id=70, 1066.7353pt x 756.57657pt>
+File: rysunki/error.png Graphic file (type png)
+<use rysunki/error.png>
+Package pdftex.def Info: rysunki/error.png  used on input line 142.
+(pdftex.def)             Requested size: 455.24408pt x 322.87416pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/regulacja1.png, id=71, 1936.23375pt x 1007.26312pt>
+File: rysunki/regulacja1.png Graphic file (type png)
+<use rysunki/regulacja1.png>
+Package pdftex.def Info: rysunki/regulacja1.png  used on input line 156.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+<rysunki/regulacja2.png, id=73, 1936.23375pt x 1007.26312pt>
+File: rysunki/regulacja2.png Graphic file (type png)
+<use rysunki/regulacja2.png>
+Package pdftex.def Info: rysunki/regulacja2.png  used on input line 163.
+(pdftex.def)             Requested size: 455.24408pt x 466.63576pt.
+) (zad4.tex [9] [10 <./rysunki/odp_skok_g1.png>] [11 <./rysunki/odp_skok_g2.png
+>] [12 <./rysunki/odp_skok_g1_mat.pdf> <./rysunki/odp_skok_g2_mat.pdf>]
+[13 <./rysunki/error.png>] [14 <./rysunki/regulacja1.png>] [15 <./rysunki/regul
+acja2.png>]
 Rozdzia\PlPrIeC {\l } 4.
-) [5
+) [16
 
 ] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 29865 strings out of 480811
- 756057 string characters out of 2895696
- 1043611 words of memory out of 3000000
- 45338 multiletter control sequences out of 15000+200000
- 550270 words of font info for 75 fonts, out of 3000000 for 9000
+ 30974 strings out of 480811
+ 775488 string characters out of 2895696
+ 1064942 words of memory out of 3000000
+ 46393 multiletter control sequences out of 15000+200000
+ 555010 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,98p,747b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,15n,98p,747b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plrm.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/plms.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/pl/pltt.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
 enc/dvips/pl/plmi.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/pl/plrm.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
 enc/dvips/pl/plme.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-enc/dvips/pl/pltt.enc}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/pl/plbx10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/pl/plbx12.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/pl/plex10.pfb><C:/Users/Nitrox/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Users/Nitrox/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Users/Nitrox/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb><C:/Users/Nitrox/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/Nitrox/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr8.pfb><C:/Users/Nitrox/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitr
-ox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (6 pages, 77136 bytes).
+enc/dvips/pl/plms.enc}{C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/pl/plit.enc}<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Nitrox/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C:/Users/Nitrox/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Users/Nitrox/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/pl/plex10.pfb><C:/Users/Nitrox/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi10.pfb><C:/Users/Nitrox/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi6.pfb><C:/Users/Nitr
+ox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmi8.pfb><C:/Users/
+Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plmib10.pfb><C:/
+Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr10.pfb>
+<C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr6.p
+fb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr
+8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/
+plsy10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/pl/plsy8.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/pl/plti10.pfb><C:/Users/Nitrox/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/pl/pltt10.pfb>
+Output written on sprawozdanie.pdf (17 pages, 857097 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 169 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

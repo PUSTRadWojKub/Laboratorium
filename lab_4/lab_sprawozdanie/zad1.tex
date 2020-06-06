@@ -2,45 +2,32 @@
 
 \section{Przyk³adowe sterowanie wraz z odczytem pomiarów}
 
-\begin{comment}
 Podczas testu bêdziemy zmieniaæ sygna³y steruj¹ce w nastêpuj¹cy sposób:
 
 \begin{align*} 
-G1 = 100 \land G2 = 0 & \textrm{, dla } k \in <0, 10) \\ 
-G1 = 100 \land G2 = 100 & \textrm{, dla } k \in <10, 50) \\
-G1 = 20 \land G2 = 20 & \textrm{, dla } k \in <50, 100) \\
-G1 = 25 \land G2 = 15 & \textrm{, dla } k \geqslant 100
+G1 = 0 \land G2 = 0 & \textrm{, dla } k \in <0, 10) \\ 
+G1 = 30 \land G2 = 0 & \textrm{, dla } k \in <10, 30) \\
+G1 = 0 \land G2 = 0 & \textrm{, dla } k \in <30, 50) \\
+G1 = 0 \land G2 = 40 & \textrm{, dla } k \in <50, 70) \\
+G1 = 40 \land G2 = 40 & \textrm{, dla } k \geqslant 70
 \end{align*}
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/test}
-	\caption{Sprawdzenie mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem}
-	\label{test}
+\begin{figure}[h!b]
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/COMMUNICATION_CHECK.png}
+	\caption{Sprawdzenie mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem - Sygna³y od góry: $G1$, $T1$, $G2$, $T3$}
+	\label{communication_check}
 \end{figure}
 
-Na rys. \ref{test} przedstawiono wyniki przeprowadzonej symulacji. Jak widzimy, zmiany mocy grza³ek $G1$ i $G2$ wp³ywaj¹ na zmianê mierzonych temperatur $T1$ i $T3$. Oznacza to, mamy mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem.
-\end{comment}
-
-\subsection{Implementacja}
-
-Do przetestowania mo¿liwoœci sterowania i pomiaru w komunikacji ze stanowiskiem u¿yto skryptu \verb+zad1_1.m+.
+Na rys. \ref{communication_check} przedstawiono wyniki przeprowadzonej symulacji. Jak widzimy, zmiany mocy grza³ek $G1$ i $G2$ wp³ywaj¹ na zmianê mierzonych temperatur $T1$ i $T3$. Oznacza to, mamy mo¿liwoœæ sterowania i pomiaru w komunikacji ze stanowiskiem.
 
 \section{Punkt pracy}
 
-\begin{comment}
-Jako punkt pracy wybraliœmy: $G1 = \num{18}$, $G2 = \num{23}$. Wyniki symulacji dla tego punktu pracy przedstawiono na rys.~\ref{punkt_pracy}.
+Zadany punkt pracy: $G1 = \num{28}$, $G2 = \num{33}$. Wyniki symulacji dla tego punktu pracy przedstawiono na rys.~\ref{punkt_pracy}.
 
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.85, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/punkt_pracy}
-	\caption{Punkt pracy}
+\begin{figure}[h!b]
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/PUNKT_PRACY.png}
+	\caption{Punkt pracy - Sygna³y od góry: $G1$, $T1$, $G2$, $T3$}
 	\label{punkt_pracy}
 \end{figure}
 
-Dla powy¿szego punktu pracy pomiary z czujników wynosz¹: $T1 = \num{75.43}$, $T3 = \num{84.64}$.
-\end{comment}
-
-\subsection{Implementacja}
-
-Do wyznaczenia wartoœci temperatury, odczytanej z czujnika, wykorzystano skrypt \verb+zad1_2.m+.
+Dla powy¿szego punktu pracy pomiary z czujników wynosz¹: $T1 = \num{11.4205}$, $T3 = \num{12.48204}$.

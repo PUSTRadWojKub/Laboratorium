@@ -14,25 +14,25 @@ s_2(:,1) = s2_t1(14:103)/800;
 s2_t3 = table2array(ODPSKOKG2(:,4));
 s_2(:,2) = s2_t3(14:103)/800;
 
-% figure;
-% plot(s_1(:,1));
-% hold on;
-% plot(s_1(:,2));
-% title('Odp. skokowa dla zmiany sterowania $G1$ z $0$ na $800$', 'interpreter', 'latex')
-% legend('$T1$', '$T3$', 'interpreter', 'latex');
-% xlabel('$i$', 'interpreter', 'latex');
-% ylabel('$s_i$', 'interpreter', 'latex');
-% hold off;
-% 
-% figure;
-% plot(s_2(:,1));
-% hold on;
-% plot(s_2(:,2));
-% title('Odp. skokowa dla zmiany sterowania $G2$ z $0$ na $800$', 'interpreter', 'latex')
-% legend('$T1$', '$T3$', 'interpreter', 'latex');
-% xlabel('$i$', 'interpreter', 'latex');
-% ylabel('$s_i$', 'interpreter', 'latex');
-% hold off;
+figure;
+plot(s_1(:,1));
+hold on;
+plot(s_1(:,2));
+title('Odpowiedź skokowa dla zmiany sterowania $G1$ z $0$ na $800$', 'interpreter', 'latex')
+legend('$T1$', '$T3$', 'interpreter', 'latex');
+xlabel('$i$', 'interpreter', 'latex');
+ylabel('$s_i$', 'interpreter', 'latex');
+hold off;
+
+figure;
+plot(s_2(:,1));
+hold on;
+plot(s_2(:,2));
+title('Odpowiedź skokowa dla zmiany sterowania $G1$ z $0$ na $800$', 'interpreter', 'latex')
+legend('$T1$', '$T3$', 'interpreter', 'latex');
+xlabel('$i$', 'interpreter', 'latex');
+ylabel('$s_i$', 'interpreter', 'latex');
+hold off;
 
 D = length(s_1);
 N = 90;
@@ -73,7 +73,7 @@ for i=1:N
     end
 end
 
-lambda = eye(Nu*2)*10;
+lambda = eye(Nu*2)*1;
 psi = eye(N*2)*1;
 Mt = M';
 

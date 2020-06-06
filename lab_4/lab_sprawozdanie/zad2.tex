@@ -1,1 +1,19 @@
 \chapter{Mechanizm zabezpieczaj¹cy przed uszkodzeniem stanowiska}
+
+W celu zabezpieczenia stanowiska w wypadku uszkodzenia czujnika (tj. $T1$ lub $T3$ przekroczy $250^{\circ}C$) zaimplementowano poni¿ej przedstawiony (rys. \ref{safety_mechanism_code}) mechanizm zabezpieczaj¹cy.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/SAFETY_MECHANISM_CODE.png}
+	\caption{Kod zabezpieczaj¹cy przed uszkodzeniem stanowiska grzej¹co-ch³odz¹cego}
+	\label{safety_mechanism_code}
+\end{figure}
+
+\begin{figure}[h!b]
+	\centering
+	\includegraphics[clip, trim = 0 0 950 0, width=\textwidth, center]{rysunki/SAFETY_MECHANISM_FIGURE.png}
+	\caption{Wykres prezentuj¹cy dzia³anie mechanizmu zabezpieczaj¹cego przed uszkodzeniem stanowiska grzej¹co-ch³odz¹cego}
+	\label{safety_mechanism_figure}
+\end{figure}
+
+Jak widzimy na powy¿szym rysunku (rys. \ref{safety_mechanism_figure}), gdy temperatura któregoœ z wyjœæ $T1$ lub $T3$ zaczyna przekraczaæ temperaturê $250^{\circ}C$ to odpowiednio wy³¹czane s¹ grza³ki $G1$ dla przekroczenia temperatury przez $T1$ i $G2$ dla przekroczenia temperatury przez $T3$. Dziêki temu grza³ka s¹siaduj¹ca z czujnikiem, który zmierzy³ niebezpieczn¹ temperaturê zostanie wy³¹czona.
