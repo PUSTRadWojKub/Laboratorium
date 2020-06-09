@@ -22,32 +22,32 @@ y3(1:opoznienie) = 0;
 % 3 - y1 - U4
 %     y2 - U2
 %     y3 - U1
-regulator = 3;
+regulator = 2;
 
 % x = [K1, Ti1, Td1, K2, Ti2, Td2, K3, Ti3, Td3]
 
 switch regulator
     case 1
-        x = [7.278652197505372,9.682504943608706,0.028805729080709,2.348042537703474,0.419147202061216,0.027493772598440,1.250000000000000,6.237554608944860,1.263322612764187];
+%         x = [7.278652197505372,9.682504943608706,0.028805729080709,2.348042537703474,0.419147202061216,0.027493772598440,1.250000000000000,6.237554608944860,1.263322612764187];
 %         x = [1, 1000, 0.001, 1, 1000, 0.001, 1, 1000, 0.001];  % 1 krok - inicjalizacja
 %         x = [6, 10, 0.01, 1, 1000, 0.001, 1, 1000, 0.001];     % 2 krok - dobieranie wspó³czynników dla 1 regulatora
 %         x = [6, 10, 0.01, 3, 1, 0.01, 1, 1000, 0.001];         % 3 krok - dobieranie wspó³czynników dla 2 regulatora
 %         x = [6, 10, 0.01, 3, 1, 0.01, 1, 10, 0.01];            % 2 krok - dobieranie wspó³czynników dla 3 regulatora
-%         x = [6, 5, 0.01, 3, 1, 0.01, 1, 8, 1];   %najlepsze rêczne
+        x = [6, 5, 0.01, 3, 1, 0.01, 1, 8, 1];   %najlepsze rêczne
     case 2
-        x = [4.322822413135649,13.963120973863298,0.010074920585211,2.777905755042830,20.973596348557400,0,0.790546695184308,4.061007884579925,0.514548021669644];
+%         x = [4.322822413135649,13.963120973863298,0.010074920585211,2.777905755042830,20.973596348557400,0,0.790546695184308,4.061007884579925,0.514548021669644];
 %         x = [1, 1000, 0.001, 1, 1000, 0.001, 1, 1000, 0.001];  % 1 krok - inicjalizacja
 %         x = [5, 10, 0.01, 1, 1000, 0.001, 1, 1000, 0.001];     % 2 krok - dobieranie wspó³czynników dla 1 regulatora
 %         x = [5, 10, 0.01, 3, 10, 0.01, 1, 1000, 0.001];         % 3 krok - dobieranie wspó³czynników dla 2 regulatora
 %         x = [5, 10, 0.01, 3, 10, 0.01, 1, 5, 0.1];            % 2 krok - dobieranie wspó³czynników dla 3 regulatora
-%         x = [5, 12, 0.01, 3, 20, 0.01, 0.5, 5, 0.5];   %najlepsze rêczne
+        x = [5, 12, 0.01, 3, 20, 0.01, 0.5, 5, 0.5];   %najlepsze rêczne
     case 3
-        x = [1.321834400767867,0.333803132207827,7.682610724402128e-05,6.820754823225034,13.234375000000000,0.025682335608536,0.812500000000000,12.639480291624530,0.406250000000000];
+%         x = [1.321834400767867,0.333803132207827,7.682610724402128e-05,6.820754823225034,13.234375000000000,0.025682335608536,0.812500000000000,12.639480291624530,0.406250000000000];
 %         x = [1, 1000, 0.001, 1, 1000, 0.001, 1, 1000, 0.001];  % 1 krok - inicjalizacja
 %         x = [1, 1, 0.01, 1, 1000, 0.001, 1, 1000, 0.001];     % 2 krok - dobieranie wspó³czynników dla 1 regulatora
 %         x = [1, 1, 0.01, 5, 10, 0.01, 1, 1000, 0.001];         % 3 krok - dobieranie wspó³czynników dla 2 regulatora
 %         x = [1, 1, 0.01, 5, 10, 0.01, 1, 10, 0.1];            % 2 krok - dobieranie wspó³czynników dla 3 regulatora
-%         x = [1, 1, 0.01, 5, 10, 0.01, 0.5, 5, 0.5];   %najlepsze rêczne
+        x = [1, 1, 0.01, 5, 10, 0.01, 0.5, 5, 0.5];   %najlepsze rêczne
 end
 
 U = [0 0 0 0;...
@@ -155,26 +155,55 @@ for k = opoznienie + 1 : T/Tp
     Uplot = [Uplot; [u1(k), u2(k), u3(k), u4(k)]];
 end
 e
+
 figure;
-subplot(2,1,1)
-plot(Yplot(:,1));
-hold on;
-plot(yzad1);
-subplot(2,1,2);
+subplot(4,2,1);
 stairs(Uplot(:,1));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,2));
+ylabel('$u_\mathrm{1}(k)$','interpreter','latex');
+% xlabel('$k$','interpreter','latex');
+grid on;
+subplot(4,2,2);
+plot(yzad1);
 hold on;
-plot(yzad2);
-subplot(2,1,2);
+plot(Yplot(:,1));
+% xlabel('$k$','interpreter','latex');
+ylabel('$y_\mathrm{1}(k)$, $y_\mathrm{1}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,3);
 stairs(Uplot(:,2));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,3));
+% xlabel('$k$','interpreter','latex');
+ylabel('$u_\mathrm{2}(k)$','interpreter','latex');
+grid on;
+subplot(4,2,4);
+plot(yzad2);
 hold on;
-plot(yzad3);
-subplot(2,1,2);
+plot(Yplot(:,2));
+% xlabel('$k$','interpreter','latex');
+ylabel('$y_\mathrm{2}(k)$, $y_\mathrm{2}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,5);
 stairs(Uplot(:,3));
+% xlabel('$k$','interpreter','latex');
+ylabel('$u_\mathrm{3}(k)$','interpreter','latex');
+grid on;
+subplot(4,2,6);
+plot(yzad3);
+hold on;
+plot(Yplot(:,3));
+xlabel('$k$','interpreter','latex');
+ylabel('$y_\mathrm{3}(k)$, $y_\mathrm{3}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,7);
+stairs(Uplot(:,4));
+xlabel('$k$','interpreter','latex');
+ylabel('$u_\mathrm{4}(k)$','interpreter','latex');
+grid on;
+
+% matlab2tikz('..\proj_sprawozdanie\rysunki\zad4_PID_v3_ga.tex', 'showInfo', false)
+
+
+% print('..\proj_sprawozdanie\rysunki\zad4_PID_v2_recznie5','-dpdf');
+

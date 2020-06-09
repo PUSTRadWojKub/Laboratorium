@@ -1,0 +1,34 @@
+\chapter{Algorytm DMC w wersji klasycznej}
+
+Zaimplementowaliœmy równie¿ algorytm DMC w wersji klasycznej (tj. wyznaczaj¹cy trajektoriê sterowania na ca³ym horyzoncie sterowania). Sprawdziliœmy jego dzia³anie dla zestawu tych parametrów, które otrzymalœmy w wyniku rozwi¹zania zadania optymalizacji w poprzednim punkcie:
+
+\begin{center}
+\begin{tabular}{ | c | c | } \hline
+$D$ & 150 \\ \hline 
+$N$ & 25 \\ \hline 
+$N_\mathrm{u}$ & 10 \\ \hline 
+\psi_\mathrm{1}     &  \num{-85.49} \\ \hline    
+\psi_\mathrm{2}     &  \num{8.47} \\ \hline  
+\psi_\mathrm{3}     &  \num{8.72} \\ \hline  
+\lambda_\mathrm{1}  &  \num{-3.21} \\ \hline  
+\lambda_\mathrm{2}  &  \num{-9.05} \\ \hline  
+\lambda_\mathrm{3}  &  \num{-0.26}\\ \hline  
+\lambda_\mathrm{4}  &  \num{4.33} \\ \hline  
+\label{dmcparam2}
+\end{tabular} 
+\end{center}
+
+Wyniki symulacji s¹ widoczne na rys.~\ref{DMCfull}. Wartoœæ wskaŸnika jakoœci $E=\num{510.1986}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad5_DMC_full}
+	\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{510.1986}$ }
+	\label{DMCfull}
+\end{figure}
+
+Otrzymane wyniki symulacji dla zestawu parametrów \ref{dmcparam2} s¹ takie same zarówno dla wersji pe³nej algorytmu DMC jak i dla wersji oszczêdnej algorytmu DMC. Oznacza to, ¿e wypracowane przez nas rozwi¹zanie jest poprawne.
+
+
+\section{Implementacje}
+Pe³ny algorytm DMC zaimplementowaliœmy w skrypcie \verb+DMC_full.m+.

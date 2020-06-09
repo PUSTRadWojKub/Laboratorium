@@ -1,100 +1,284 @@
-\chapter{Strojenie regulatorów PID oraz DMC}
+\chapter{Strojenie regulatora PID metod¹ eksperymentaln¹}
 
-Oba regulatory stroiliœmy metod¹ eksperymentaln¹. Jakoœæ regulacji ocenialiœmy na podstawie wykresów oraz na podstawie poni¿szego wskaŸnika jakoœci
+Regulatory PID stroiliœmy metod¹ eksperymentaln¹. Jakoœæ regulacji ocenialiœmy na podstawie wykresów oraz na podstawie poni¿szego wskaŸnika jakoœci
 \begin{equation}
 	E = \sum^{k_\mathrm{konc}}_{k=1}\sum^{3}_{m=1}(y^\mathrm{zad}(k)-y(k))^2
 \end{equation}
 
 
-\section{Strojenie PID}
-
-
-
-\section{Strojenie DMC}
-
 Podczas strojenia przyjêliœmy nastêpuj¹c¹ trajektoriê zadan¹
+
 \begin{equation}
 y^{\mathrm{zad}}_\mathrm{1}(k)=
 \begin{cases}
-0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
-3 \quad \quad \textrm{ dla } \quad 50 \le k \le 149\\
--1 \quad \quad \textrm{ dla } \quad 150 \le k \le 600
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 200\\
+3 \quad \quad \textrm{ dla } \quad 201 \le k \le 400\\
+1 \quad \quad \textrm{ dla } \quad 401 \le k \le 600\\
+6 \quad \quad \textrm{ dla } \quad 601 \le k \le 900\\
+\num{0.5} \quad \quad \textrm{ dla } \quad 901 \le k \le 1000
 \end{cases}
 \end{equation}
 
 \begin{equation}
 y^{\mathrm{zad}}_\mathrm{2}(k)=
 \begin{cases}
-0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
-5 \quad \quad \textrm{ dla } \quad 50 \le k \le 249\\
-1 \quad \quad \textrm{ dla } \quad 250 \le k \le 600
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 200\\
+5 \quad \quad \textrm{ dla } \quad 201 \le k \le 400\\
+\num{0.5} \quad \quad \textrm{ dla } \quad 401 \le k \le 600\\
+2 \quad \quad \textrm{ dla } \quad 601 \le k \le 900\\
+8 \quad \quad \textrm{ dla } \quad 901 \le k \le 1000
 \end{cases}
 \end{equation}
 
 \begin{equation}
 y^{\mathrm{zad}}_\mathrm{3}(k)=
 \begin{cases}
-0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
-\num{0.5} \quad \textrm{ dla } \quad 50 \le k \le 349\\
-6 \quad \quad \textrm{ dla } \quad 350 \le k \le 600
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 200\\
+\num{0.5} \quad \quad \textrm{ dla } \quad 201 \le k \le 400\\
+5 \quad \quad \textrm{ dla } \quad 401 \le k \le 600\\
+10 \quad \quad \textrm{ dla } \quad 601 \le k \le 900\\
+3 \quad \quad \textrm{ dla } \quad 901 \le k \le 1000
 \end{cases}
 \end{equation}
 
-Bior¹c pod uwagê najwolniejsz¹ odpowiedŸ skokow¹ $s^\mathrm{3,3}$ przyjêliœmy horyzont dynamiki $D=150$.
-Strojenie regulatora DMC zaczynamy od najwiêkszych mo¿liwych d³ugoœci horyzontów predykcji oraz sterowania. Wspó³cznniki wagowe s¹ jednostkowe.
+
+Zbadaliœmy kilka ró¿nych konfiguracji regulatora:
+\begin{enumerate}
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{4}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{2}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{1}$, $u_\mathrm{3}$ nie jest sterowane
+
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{3}$, $u_\mathrm{4}$ nie jest sterowane
+
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{4}$, $u_\mathrm{3}$ nie jest sterowane
+\end{enumerate}
+
+
+Przyjêliœmy takie parametry pocz¹tkowe dla kalibracji regulatora PID, by wzmocnienie by³o jednostkowe, a cz³ony ca³kuj¹cy i ró¿niczkuj¹cy by³y wy³¹czone (du¿y wspó³czynnik $T_\mathrm{i}$ oraz ma³y wspó³cznnik  $T_\mathrm{d}$). Zatem
 \begin{equation}
-	D = 150,\quad N = 150,\quad N_\mathrm{u} = 150,\quad \lambda=[1, 1, 1, 1]
+K=1, \quad T_\mathrm{i}=1000, \quad T_\mathrm{d}=\num{0.001}
+\label{jeden}
 \end{equation}
-Uzyskane przebiegi przedstawiono na rys.~\ref{DMC0}. Uzyskana wartoœæ wskaŸnika regulacji $E=\num{434.6277}$.
-\begin{figure}[h!]
-\centering
-\input{rysunki/zad3_DMC.tex}
-\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{434.6277}$}
-\label{DMC0}
-\end{figure}
-Widzimy, ¿e regulator DMC dzia³a dobrze, wartoœci zadane s¹ osi¹gane. Uk³ad dzia³a szybko. Wystêpuje jednak niestety przeregulowanie. Mo¿na te¿ zauwa¿yæ, ¿e zmiana wartoœci zadanej dla jednego wyjœcia oddzia³uje na wszystkie trzy sygna³y wyjœciowe i powoduje wyst¹pienie przeregulowania.
+ 
+Kalibracjê zaczynaliœmy od regulatora pierwszego. Najpierw manipulowaliœmy jego wzmocnieniem ($K^\mathrm{1}$), by polepszyæ jakoœæ regulacji. Nastêpnie dobieraliœmy kolejno odpowiednie nastawy cz³onów ca³kuj¹cego ($T_\mathrm{i}^\mathrm{1}$) i ró¿niczkuj¹cego ($T_\mathrm{d}^\mathrm{1}$). Po skalibrowaniu pierwszego regulatora tak¹ sam¹ procedurê strojenia zastosowaliœmy dla regulatora drugiego (dobranie parametrów $K^\mathrm{2}$, $T_\mathrm{i}^\mathrm{2}$, $T_\mathrm{d}^\mathrm{2}$) a poŸniej tak¿e dla trzeciego (dobranie parametrów $K^\mathrm{3}$, $T_\mathrm{i}^\mathrm{3}$, $T_\mathrm{d}^\mathrm{3}$). W wyniku otrzymaliœmy nastrojony system regulatorów PID z dobranymi wszystkimi dziewiêcioma wspó³czynnikami.
 
 
-Nastêpnie zmniejszamy stopniowo horyzonty $N$ oraz $N_\mathrm{u}$. Nie zauwa¿amy jednak znacz¹cych zmian w kszta³cie przebiegów. Zaobserwowaliœmy, ¿e mo¿emy zmniejszyæ horyzonty do wartoœci $N=N_\mathrm{u}=20$, nie powoduj¹c pogorszenia wskaŸnika jakoœci $E$. Przebiegi dla nastaw (\ref{test1}) przedstawiono na rys.~\ref{DMC1}. Otrzymana wartoœæ wskaŸnika jakoœci $E=\num{434.5532}$.
-\begin{equation}
-	D = 150,\quad N = 20,\quad N_\mathrm{u} = 20,\quad \lambda=[1, 1, 1, 1]
-	\label{test1}
-\end{equation}
 
-\begin{figure}[h!]
-\centering
-\input{rysunki/zad3_DMC1.tex}
-\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{434.5532}$}
-\label{DMC1}
-\end{figure}
 
-Teraz zmniejszamy horyzont sterowania. Obserwujemy, ¿e zmiany wartoœci $N_\mathrm{u}$ nie wp³ywaj¹ istotnie na kszta³ty otrzymywanych przebiegów. Przy wyborze parametru $N_\mathrm{u}$ kierujemy siê zatem g³ównie ocen¹ na podstawie wskaŸnika jakoœci. Dla $N_\mathrm{u}=8$ otrzymaliœmy $E=\num{430.6439}$, czyli uda³o siê nam nieznacznie polepszyæ ten wskaŸnik. Dla mniejszych wartoœci $N_\mathrm{u}$, wartoœci $E$ zaczynaj¹ rosn¹æ, dlatego przyjmujemy nastawy (\ref{test2}). Wyniki symulacji dla tych nastaw s¹ na rys.~\ref{DMC2}.
-\begin{equation}
-	D = 150,\quad N = 20,\quad N_\mathrm{u} = 8,\quad \lambda=[1, 1, 1, 1]
-	\label{test2}
-\end{equation}
+\section{Pierwsza konfiguracja regulatora}
+W pierwszej konfiguracji  uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{4}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{2}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{1}$, a $u_\mathrm{3}$ nie jest sterowane.
 
-\begin{figure}[h!]
-\centering
-\input{rysunki/zad3_DMC2.tex}
-\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{430.6439}$}
-\label{DMC2}
+Najpierw przeprowadziliœmy symulacjê dla parametrów (\ref{jeden}). Uzyskane wyniki s¹ widoczna na rys.~\ref{PIDrecznie1}. Otrzymaliœmy wartoœæ wskaŸnika jakoœci $E=\num{1.0997e+04}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_recznie1}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{1.0997e+04}$ }
+	\label{PIDrecznie1}
 \end{figure}
 
-
-W nastêpnym kroku manipulujemy wspó³czynnikiem $\lambda$. Zwiêkszenie jego wartoœci prowadzi³o za ka¿dym razem do pogorszenia wartoœci wskaŸnika $E$. Jednak dziêki zwiêkszeniu kar za przyrosty sterowania uda³o siê nieco zmniejszyæ wystepuj¹ce przeregulowania. Ostatecznie przyjêliœmy
+Widzimy, ¿e regulator ma du¿e problemy z osi¹gniêciem wartoœci zadanej. Przystêpujemy zatem do kalibracji regulatora odpowiedzialnego za sygna³ $u_\mathrm{4}$. Zwiêkszamy wp³yw cz³onu ca³kuj¹cego oraz cz³onu ró¿niczkuj¹cego. Zauwa¿yliœmy, ¿e nastawy
 \begin{equation}
-	D = 150,\quad N = 20,\quad N_\mathrm{u} = 8,\quad \lambda=[10, 10, 10, 10]
-	\label{test3}
+K^\mathrm{1}=1, \quad T_\mathrm{i}^\mathrm{1}=1, \quad T_\mathrm{d}^\mathrm{1}=\num{0.01}
+\label{dwa}
 \end{equation}
-Otrzymaliœmy przebiegi widoczne na rys.~\ref{DMC3}. Wartoœæ wskaŸnika jakoœci $E=\num{620.0785}$.
-
-\begin{figure}[h!]
-\centering
-\input{rysunki/zad3_DMC3.tex}
-\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{620.0785}$}
-\label{DMC3}
+pozwoli³y poprawiæ jakoœæ regulacji: wyjœcie $y_\mathrm{1}$ nad¹¿a za wartoœci¹ zadan¹ $y_{\mathrm{1}}^{\mathrm{zad}}$. Wyniki symulacji dla nastaw~(\ref{dwa}) s¹ zebrane na rys.~\ref{PIDrecznie2}. Widzimy, ¿e wskaŸnik jakoœci poprawi³ siê prawie dwukrotnie i teraz wynosi $E=\num{5.5770e+03}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_recznie2}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{5.5770e+03}$ }
+	\label{PIDrecznie2}
 \end{figure}
+
+Nastêpnie kalibrujemy regulator drugi. Zwiêkszamy jego wzmocnienie oraz w³¹czamy cz³ony ca³kuj¹cy oraz ró¿niczkuj¹cy. Przyjmujemy nastawy 
+\begin{equation}
+K^\mathrm{2}=5, \quad T_\mathrm{i}^\mathrm{2}=10, \quad T_\mathrm{d}^\mathrm{2}=\num{0.01}
+\label{trzy}
+\end{equation}
+Wyniki symulacji s¹ przedstawione na rys.~\ref{PIDrecznie3}. WskaŸnika jakoœci ponownie siê poprawi³ i wynosic teraz $E=\num{2.6135e+03}$. Wyjœcie $y_\mathrm{2}$ nad¹¿a za wartoœci¹ zadan¹ $y_{\mathrm{2}}^{\mathrm{zad}}$. Mo¿emy tak¿e zaobserwowaæ nieznaczne pogorszenie regulacji dla wyjœcia $y_\mathrm{1}$ - pojawi³y siê przeregulowania. Z kolei przebieg $y_\mathrm{3}$ znacz¹co siê poprawi³. Mo¿emy zatem wznioskowaæ, ¿e sygna³ $u_\mathrm{2}$ wp³ywa znacz¹co tak¿e na $y_\mathrm{3}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_recznie3}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{2.6135e+03}$ }
+	\label{PIDrecznie3}
+\end{figure}
+
+Teraz stroimy ostatni regulator. Na razie nie zwiêkszamy jego wzmocnienia. Poprawê jakoœci regulacji osi¹gamy przez dostrojenie cz³onów calkujacego oraz ró¿niczkuj¹cego. Przyjêliœmy nastawy
+\begin{equation}
+K^\mathrm{3}=1, \quad T_\mathrm{i}^\mathrm{3}=10, \quad T_\mathrm{d}^\mathrm{3}=\num{0.1}
+\label{cztery}
+\end{equation}
+Uzyskaliœmy dla nich przebiegi widoczne na rys.~\ref{PIDrecznie4}. WskaŸnik jakoœci poprawi³ siê i wynosi $E=\num{1.5550e+03}$. Wartoœci zadane dla ka¿dego toru s¹ osiagane. Wystêpuj¹ jednak przeregulowania oraz gasn¹ce oscylacje, najbardziej widoczne przy skokach wartoœci zadanych.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_recznie4}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{1.5550e+03}$ }
+	\label{PIDrecznie4}
+\end{figure}
+
+Próbujemy jeszcze polepszyæ jakoœæ regulacji i tym razem zmieniamy wzmocnienie dla trzeciego regulatora. Ustalamy parametry
+\begin{equation}
+K^\mathrm{3}=\num{0.5}, \quad T_\mathrm{i}^\mathrm{3}=5, \quad T_\mathrm{d}^\mathrm{3}=\num{0.5}
+\label{piec}
+\end{equation}
+Wyniki symulacji dla (\ref{piec}) przedstawiono na rys.~\ref{PIDrecznie5}. WskaŸnika jakoœci jest najlepszy z dotychczas otrzymanych i wynosi $E=\num{1.4527e+03}$. Uda³o siê zmiejszyæ wystêpuj¹ce wczeœniej przeregulowania oraz wyeliminowaæ oscylacje.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_recznie5}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{1.4527e+03}$ }
+	\label{PIDrecznie5}
+\end{figure}
+
+
+
+
+
+\section{Druga konfiguracja regulatora}
+W drugiej konfiguracji uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{3}$, a $u_\mathrm{4}$ nie jest sterowane.
+
+Najpierw przeprowadziliœmy symulacjê dla parametrów (\ref{jeden}). Uzyskane wyniki s¹ widoczna na rys.~\ref{PID1recznie1}. Otrzymaliœmy wartoœæ wskaŸnika jakoœci $E=\num{2.1184e+04}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_recznie1}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{2.1184e+04}$ }
+	\label{PID1recznie1}
+\end{figure}
+
+Widzimy, ¿e regulator ma du¿e problemy z osi¹gniêciem wartoœci zadanej. Przystêpujemy zatem do kalibracji regulatora odpowiedzialnego za sygna³ $u_\mathrm{2}$. Zwiêkszamy wzmocnienie oraz wp³yw cz³onu ca³kuj¹cego oraz cz³onu ró¿niczkuj¹cego. Zauwa¿yliœmy, ¿e nastawy
+\begin{equation}
+K^\mathrm{1}=6, \quad T_\mathrm{i}^\mathrm{1}=10, \quad T_\mathrm{d}^\mathrm{1}=\num{0.01}
+\label{1dwa}
+\end{equation}
+pozwoli³y poprawiæ jakoœæ regulacji: wyjœcie $y_\mathrm{1}$ nad¹¿a za wartoœci¹ zadan¹ $y_{\mathrm{1}}^{\mathrm{zad}}$. Wyniki symulacji dla nastaw~(\ref{1dwa}) s¹ zebrane na rys.~\ref{PID1recznie2}. Widzimy, ¿e wskaŸnik jakoœci poprawi³ siê i teraz wynosi $E=\num{1.9968e+04}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_recznie2}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{1.9968e+04}$ }
+	\label{PID1recznie2}
+\end{figure}
+
+W nastêpnym kroku dobieramy parametry drugiego regulatora. Zwiêkszamy wzmocnienie oraz ca³kê i ró¿niczkê. Polepszenie regulacji zaobserwowaliœmy dla nastaw
+\begin{equation}
+K^\mathrm{2}=3, \quad T_\mathrm{i}^\mathrm{2}=1, \quad T_\mathrm{d}^\mathrm{2}=\num{0.01}
+\label{1trzy}
+\end{equation}
+Uzyskaliœmy przebiegi widoczne na rys.~\ref{PID1recznie3}. WskaŸnik jakoœci uleg³ poprawie i przyj¹³ wartoœæ $E=\num{1.6967e+04}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_recznie3}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{1.6967e+04}$ }
+	\label{PID1recznie3}
+\end{figure}
+
+Dobieramy teraz parametry dla ostniego regulatora. Nie zmieniamy na razie wzmocnienia. Zwiêkszamy wp³yw cz³onów ca³kujacego i ró¿niczkuj¹cego. Przyjmujemy nastawy
+\begin{equation}
+K^\mathrm{3}=1, \quad T_\mathrm{i}^\mathrm{3}=10, \quad T_\mathrm{d}^\mathrm{3}=\num{0.01}
+\label{1cztery}
+\end{equation}
+Uzyskaliœmy przebiegi widoczne na rys.~\ref{PID1recznie4}. WskaŸnik jakoœci $E=\num{5.7812e+03}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_recznie4}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{5.7812e+03}$ }
+	\label{PID1recznie4}
+\end{figure}
+
+Widzimy, ¿e wartoœci zadane s¹ osiagane. Jedynie sygna³ $y_\mathrm{3}$ cechuje siê pewn¹ niedok³adnoœci¹ w pod¹¿aniu za wartoœci¹ zadan¹. Spróbowaliœmy zatem na koniec pomanipulowaæ jeszcze niektórymi parametrami. Zmodyfikowaliœmy wspó³czynniki dla pierwszego i trzeciego regulatora. Ostatecznie przyjêliœmy
+\begin{equation}
+K^\mathrm{1}=6, \quad T_\mathrm{i}^\mathrm{1}=5, \quad T_\mathrm{d}^\mathrm{1}=\num{0.01}, \\
+\quad K^\mathrm{2}=3, \quad T_\mathrm{i}^\mathrm{2}=1, \quad T_\mathrm{d}^\mathrm{2}=\num{0.01}, \\
+\quad K^\mathrm{3}=1, \quad T_\mathrm{i}^\mathrm{3}=8, \quad T_\mathrm{d}^\mathrm{3}=1
+\label{1piec}
+\end{equation}
+Odpowiadaj¹ce tej sytuacji przebiegi przedstawiono na rys.~\ref{PID1recznie5}. Uda³o siê trochê zmniejszyæ wystêpuj¹ce przeregulowania. Poprawi³ siê te¿ wskaŸnik jakoœci $E=\num{4.9723e+03}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_recznie5}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{4.9723e+03}$ }
+	\label{PID1recznie5}
+\end{figure}
+
+
+
+
+
+
+
+\section{Trzecia konfiguracja regulatora}
+W trzeciej konfiguracji uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{4}$, a $u_\mathrm{3}$ nie jest sterowane.		
+				
+Najpierw przeprowadziliœmy symulacjê dla parametrów (\ref{jeden}). Uzyskane wyniki s¹ widoczna na rys.~\ref{PID2recznie1}. Otrzymaliœmy wartoœæ wskaŸnika jakoœci $E=\num{9.5380e+03}$.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_recznie1}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{9.5380e+03}$ }
+	\label{PID2recznie1}
+\end{figure}
+
+Widzimy, ¿e regulator ma du¿e problemy z osi¹gniêciem wartoœci zadanej. Przystêpujemy zatem do kalibracji regulatora odpowiedzialnego za sygna³ $u_\mathrm{2}$. Zwiêkszamy wzmocnienie oraz wp³yw cz³onu ca³kuj¹cego oraz cz³onu ró¿niczkuj¹cego. Zauwa¿yliœmy, ¿e nastawy
+\begin{equation}
+K^\mathrm{1}=5, \quad T_\mathrm{i}^\mathrm{1}=10, \quad T_\mathrm{d}^\mathrm{1}=\num{0.01}
+\label{2dwa}
+\end{equation}
+pozwoli³y poprawiæ jakoœæ regulacji: wyjœcie $y_\mathrm{1}$ nad¹¿a za wartoœci¹ zadan¹ $y_{\mathrm{1}}^{\mathrm{zad}}$. Wyniki symulacji dla nastaw~(\ref{2dwa}) s¹ zebrane na rys.~\ref{PID2recznie2}. Widzimy, ¿e wskaŸnik jakoœci poprawi³ siê i teraz wynosi $E=\num{8.8696e+03}$. W uk³adzie pojawi³y siê jednak oscylacje.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_recznie2}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{8.8696e+03}$ }
+	\label{PID2recznie2}
+\end{figure}
+
+Nastêpnie kalibrujemy regulator drugi. Zwiêkszamy jego wzmocnienie oraz w³¹czamy cz³ony ca³kuj¹cy oraz ró¿niczkuj¹cy. Przyjmujemy nastawy 
+\begin{equation}
+K^\mathrm{2}=3, \quad T_\mathrm{i}^\mathrm{2}=10, \quad T_\mathrm{d}^\mathrm{2}=\num{0.01}
+\label{2trzy}
+\end{equation}
+Wyniki symulacji s¹ przedstawione na rys.~\ref{PID2recznie3}. WskaŸnika jakoœci ponownie siê poprawi³ i wynosic teraz $E=\num{8.0685e+03}$. Wyjœcie $y_\mathrm{2}$ nad¹¿a za wartoœci¹ zadan¹ $y_{\mathrm{2}}^{\mathrm{zad}}$. 
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_recznie3}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{8.0685e+03}$ }
+	\label{PID2recznie3}
+\end{figure}
+
+Teraz stroimy ostatni regulator. Na razie nie zwiêkszamy jego wzmocnienia. Poprawê jakoœci regulacji osi¹gamy przez dostrojenie cz³onów calkujacego oraz ró¿niczkuj¹cego. Przyjêliœmy nastawy
+\begin{equation}
+K^\mathrm{3}=1, \quad T_\mathrm{i}^\mathrm{3}=5, \quad T_\mathrm{d}^\mathrm{3}=\num{0.01}
+\label{2cztery}
+\end{equation}
+Uzyskaliœmy dla nich przebiegi widoczne na rys.~\ref{PID2recznie4}. WskaŸnik jakoœci poprawi³ siê i wynosi $E=\num{1.3127e+03}$. Wartoœci zadane dla ka¿dego toru s¹ osiagane. Wystêpuj¹ jednak przeregulowania oraz gasn¹ce oscylacje, najbardziej widoczne przy skokach wartoœci zadanych. Zauwa¿yliœmy tak¿e, ¿e w tym przypadku dostrojenie ostatniego regulatora nie wp³ynê³o negatywnie na dzia³anie wczeœniej skaliborwanych regulatorów.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_recznie4}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{1.3127e+03}$ }
+	\label{PID2recznie4}
+\end{figure}
+
+
+Próbujemy jeszcze polepszyæ jakoœæ regulacji i zmieniamy sta³e ca³kowania dla pierwszych dwóch regulatorów oraz parametry trzeciego regulatora. Ustalamy parametry
+\begin{equation}
+K^\mathrm{1}=5,  T_\mathrm{i}^\mathrm{1}=12,  T_\mathrm{d}^\mathrm{1}=\num{0.01}, \\
+\quad K^\mathrm{2}=3,  T_\mathrm{i}^\mathrm{2}=20,  T_\mathrm{d}^\mathrm{2}=\num{0.01}, \\
+\quad K^\mathrm{3}=\num{0.5},  T_\mathrm{i}^\mathrm{3}=5,  T_\mathrm{d}^\mathrm{3}=\num{0.5}
+\label{2piec}
+\end{equation}
+Wyniki symulacji dla (\ref{2piec}) przedstawiono na rys.~\ref{PID2recznie5}. WskaŸnika jakoœci jest najlepszy z dotychczas otrzymanych i wynosi $E=\num{1.8833e+03}$. Uda³o siê zmiejszyæ wystêpuj¹ce wczeœniej przeregulowania oraz wyeliminowaæ oscylacje.
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_recznie5}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{1.8833e+03}$ }
+	\label{PID2recznie5}
+\end{figure}
+
+
+\section{Wnioski koñcowe}
+Zaobserwowaliœmy, ¿e dla ka¿dej z przetestowanych konfiguracji uda³o nam siê bardzo dobrze skalibrowaæ dwa spoœród trzech regulatorów. Zawsze jeden sygna³ wyjœciowy by³ mniej dok³adny w osi¹ganiu wartoœci zadanej od pozosta³ych i dzia³a³ zdecydowanie wolniej. Patrz¹c jednak ogólnie na jakoœæ regulacji, mo¿na stwierdziæ, ¿e dla ka¿dej konfiguracji uda³o siê odbraæ parametry zapewniaj¹ce satysfakcjonuj¹c¹ pracê uk³adu. Najspokojniejsze przebiegi oraz najlepsz¹ wartoœæ wskaŸnika jakoœci zaobserwowaliœmy dla pierwszej z przetestowanych konfiguracji, czyli dla tej, gdzie uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{4}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{2}$,  uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{1}$, a $u_\mathrm{3}$ nie jest sterowane.
+
+
+
 
 
 

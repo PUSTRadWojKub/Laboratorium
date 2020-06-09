@@ -193,26 +193,46 @@ for k = opoznienie + 1 : T/Tp
         
 end
 e
+
 figure;
-subplot(2,1,1)
-plot(Yplot(:,1));
-hold on;
-plot(yzad1);
-subplot(2,1,2);
+subplot(4,2,1);
 stairs(Uplot(:,1));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,2));
+ylabel('$u_\mathrm{1}(k)$','interpreter','latex');
+grid on;
+subplot(4,2,2);
+plot(yzad1);
 hold on;
-plot(yzad2);
-subplot(2,1,2);
+plot(Yplot(:,1));
+ylabel('$y_\mathrm{1}(k)$, $y_\mathrm{1}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,3);
 stairs(Uplot(:,2));
-
-figure;
-subplot(2,1,1)
-plot(Yplot(:,3));
+ylabel('$u_\mathrm{2}(k)$','interpreter','latex');
+grid on;
+subplot(4,2,4);
+plot(yzad2);
 hold on;
-plot(yzad3);
-subplot(2,1,2);
+plot(Yplot(:,2));
+ylabel('$y_\mathrm{2}(k)$, $y_\mathrm{2}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,5);
 stairs(Uplot(:,3));
+ylabel('$u_\mathrm{3}(k)$','interpreter','latex');
+grid on;
+subplot(4,2,6);
+plot(yzad3);
+hold on;
+plot(Yplot(:,3));
+xlabel('$k$','interpreter','latex');
+ylabel('$y_\mathrm{3}(k)$, $y_\mathrm{3}^\mathrm{zad}(k)$','interpreter','latex');
+grid on;
+
+subplot(4,2,7);
+stairs(Uplot(:,4));
+xlabel('$k$','interpreter','latex');
+ylabel('$u_\mathrm{4}(k)$','interpreter','latex');
+grid on;
+
+% print('..\proj_sprawozdanie\rysunki\zad6_DMC_full','-dpdf');

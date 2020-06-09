@@ -1,0 +1,131 @@
+\chapter{Dobieranie nastaw regulatorów PID oraz DMC w wyniku optymalizacji wskaŸnika $E$}
+
+
+\section{Regulacja PID}
+
+Podobnie jak w poprzednim rozdziale zbadaliœmy trzy ró¿ne konfiguracje regulatora:
+\begin{enumerate}
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{4}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{2}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{1}$, $u_\mathrm{3}$ nie jest sterowane
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{3}$, $u_\mathrm{4}$ nie jest sterowane
+\item uchyb $e_\mathrm{1}$ oddzia³uje na sterowanie $u_\mathrm{2}$, uchyb $e_\mathrm{2}$ oddzia³uje na sterowanie $u_\mathrm{1}$, 
+uchyb $e_\mathrm{3}$ oddzia³uje na sterowanie $u_\mathrm{4}$, $u_\mathrm{3}$ nie jest sterowane
+\end{enumerate}
+
+Tym razem jednak parametry regulatora PID: $K^\mathrm{1}$, $T_\mathrm{i}^\mathrm{1}$, $T_\mathrm{d}^\mathrm{1}$, 
+$K^\mathrm{2}$, $T_\mathrm{i}^\mathrm{2}$, $T_\mathrm{d}^\mathrm{2}$, 
+$K^\mathrm{3}$, $T_\mathrm{i}^\mathrm{3}$, $T_\mathrm{d}^\mathrm{3}$ wyznaczaliœmy w wyniku optymalizacji wskaŸnika jakoœci $E$. U¿yliœmy do tego celu funkcji \verb+ga+
+dostêpnej w Matlabie. Za³o¿yliœmy, ¿e poszukiwane wspó³czynniki musz¹ byc nieujemne. Ponadto okreœliliœmy nastêpuj¹ce parametry algorytmu optymalizacji:
+\begin{center}
+\begin{tabular}{ | c | c | } \hline
+EliteCount & 50 \\ \hline
+MaxGenerations       &  10000  \\ \hline
+PopulationSize       &  1000   \\ \hline
+FunctionTolerance    &  \num{e-4} \\ \hline
+\end{tabular} 
+\end{center}
+
+Dla pierwszej konfiguracji otrzymaliœmy parametry:
+\begin{equation}
+K^\mathrm{1}=\num{1.32},  T_\mathrm{i}^\mathrm{1}=\num{0.33},  T_\mathrm{d}^\mathrm{1}=\num{7.68e-05}
+\end{equation}
+\begin{equation}
+K^\mathrm{2}=\num{6.82},  T_\mathrm{i}^\mathrm{2}=\num{13.23},  T_\mathrm{d}^\mathrm{2}=\num{0.03}
+\end{equation}
+\begin{equation}
+K^\mathrm{3}=\num{0.81},  T_\mathrm{i}^\mathrm{3}=\num{12.64},  T_\mathrm{d}^\mathrm{3}=\num{0.41}
+\end{equation}
+
+Dla drugiej konfiguracji otrzymaliœmy parametry:
+\begin{equation}
+K^\mathrm{1}=\num{7.28},  T_\mathrm{i}^\mathrm{1}=\num{9.68},  T_\mathrm{d}^\mathrm{1}=\num{0.03}
+\end{equation}
+\begin{equation}
+K^\mathrm{2}=\num{2.34},  T_\mathrm{i}^\mathrm{2}=\num{0.42},  T_\mathrm{d}^\mathrm{2}=\num{0.03}
+\end{equation}
+\begin{equation}
+K^\mathrm{3}=\num{1.25},  T_\mathrm{i}^\mathrm{3}=\num{6.24},  T_\mathrm{d}^\mathrm{3}=\num{1.26}
+\end{equation}
+
+Dla trzeciej konfiguracji otrzymaliœmy parametry:
+\begin{equation}
+K^\mathrm{1}=\num{4.32},  T_\mathrm{i}^\mathrm{1}=\num{13.69},  T_\mathrm{d}^\mathrm{1}=\num{0.01}
+\end{equation}
+\begin{equation}
+K^\mathrm{2}=\num{2.78},  T_\mathrm{i}^\mathrm{2}=\num{20.97},  T_\mathrm{d}^\mathrm{2}=\num{0} 
+\end{equation}
+\begin{equation}
+K^\mathrm{3}=\num{0.79},  T_\mathrm{i}^\mathrm{3}=\num{4.06},  T_\mathrm{d}^\mathrm{3}=\num{0.51}
+\end{equation}
+
+Dla otrzymanych parametrów przeprowadziliœmy symulacje. Wyniki dla pierwszej konfiguracji regulatora przedstawiono na rys.~\ref{PID3ga}, dla drugiej na rys.~\ref{PID1ga}, a dla trzeciej na rys.~\ref{PID2ga}.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v3_ga}
+	\caption{Regulacja PID obiektu wielowymiarowego dla pierwszej konfiguracji, $E=\num{1.0767e+03}$ }
+	\label{PID3ga}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v1_ga}
+	\caption{Regulacja PID obiektu wielowymiarowego dla drugiej konfiguracji, $E=\num{4.1080e+03}$ }
+	\label{PID1ga}
+\end{figure}
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad4_PID_v2_ga}
+	\caption{Regulacja PID obiektu wielowymiarowego dla trzeciej konfiguracji, $E=\num{1.2402e+03}$ }
+	\label{PID2ga}
+\end{figure}
+
+Najlepsz¹ jakoœæ regulacji pod wzglêdem iloœciowym jak i jakoœciowym otrzymaliœmy dla pierwszej konfiguracji (podobnie jak przy kalibracji rêcznej).
+
+Porównuj¹c otrzymane wskaŸniki jakoœci regulacji mo¿emy zauwa¿yæ, ¿e dla ka¿dej konfiguracji algorytm optymalizacji wyznaczy³ wspó³czynniki zapewniajace lepsz¹ wartoœæ tego wskaŸnika ni¿ wspó³czynniki, jakie uda³o nam siê dobraæ metod¹ eksperymentaln¹. Regulatory zdefiniowane parametrami otrzymanymi w wyniku optymalizacji s¹ bardziej dynamiczne od tych skalibrowanych przez nas. Dziêki temu uzyskane przebiegi sygna³ów wyjœciowych  lepiej nad¹¿aj¹ za wartoœci¹ zadan¹. Pojawi³y siê jednak pewne oscylacje, które uda³o nam siê wyeliminowaæ przy strojeniu rêcznym. Wartoœæ przeregulowania te¿ okaza³a siê wiêksza dla parametrów otrzymanych w wyniki optymalizacji. 
+
+
+				
+
+
+\section{Regulacja DMC}
+
+Parametry regulatora DMC $\mu_\mathrm{1}$, $\mu_\mathrm{2}$, $\mu_\mathrm{3}$, $\lambda_\mathrm{1}$, $\lambda_\mathrm{2}$, $\lambda_\mathrm{3}$, $\lambda_\mathrm{4}$ wyznaczaliœmy w wyniku optymalizacji wskaŸnika jakoœci $E$. U¿yliœmy do tego celu funkcji \verb+ga+ dostêpnej w Matlabie. Przyjêliœmy sta³e horyzonty predykcji oraz sterowania ($D=150$, $N=25$, $N_\mathrm{u}=10$). Okreœliliœmy nastêpuj¹ce parametry algorytmu optymalizacji:
+\begin{center}
+\begin{tabular}{ | c | c | } \hline
+EliteCount & 50 \\ \hline
+MaxGenerations       &  10000  \\ \hline
+PopulationSize       &  1000   \\ \hline
+FunctionTolerance    &  \num{e-4} \\ \hline
+\end{tabular} 
+\end{center}
+
+Otrzymaliœmy parametry
+\begin{equation}
+\psi_\mathrm{1}= \num{-85.49}, 
+\psi_\mathrm{2}= \num{8.47}, 
+\psi_\mathrm{3}= \num{8.72}, 
+\lambda_\mathrm{1}= \num{-3.21}, 
+\lambda_\mathrm{2}= \num{-9.05}, 
+\lambda_\mathrm{3}= \num{-0.26}, 
+\lambda_\mathrm{4}= \num{4.33}
+\label{dmcparam}
+\end{equation}
+
+Dla parametrów (\ref{dmcparam}) przeprowadziliœmy nastêpnie symulacjê. Otrzymaliœmy przebiegi widoczne na rys.~\ref{DMCga}. Wartoœæ wskaŸnika jakoœci $E=\num{510.1986}$.
+
+\begin{figure}[tb]
+	\centering
+	\includegraphics[scale=1, trim={2cm 8.5cm 2cm 8.5cm}]{rysunki/zad5_DMC_ga}
+	\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{510.1986}$ }
+	\label{DMCga}
+\end{figure}
+				
+Widzimy, ¿e jakoœæ regulacji jest dobra, przeregulowania s¹ minimalne, uk³ad dzia³a bardzo szybko. Jednak sygna³ $y_\mathrm{2}$ w dwóch miejscach nie osi¹ga dok³adnie wartoœci zadanej (gdy $y_\mathrm{2}^\mathrm{zad}=5$ i gdy $y_\mathrm{2}^\mathrm{zad}=8$). Podobnie sygna³ $y_\mathrm{1}$ nie osi¹ga wartoœci zadanej dla pierwszych 200 chwil symulacji.
+
+
+\section{Implementacja}
+Do znalezienia parametrów w wyniku optymalizacji wskaŸnika jakoœci wykorzystaliœmy skrypt \verb+optymalizacja.m+. Wykorzystuje on zdefiniowane przez nas funkcje \verb+coeffOptim.m+ (dla regulatora PID) oraz \verb+coeffOptimDMC.m+ (dla regulatora DMC), które dla danego zestawu parametrów wyznaczaj¹ wartoœæ wskaŸnika jakoœci $E$.
+

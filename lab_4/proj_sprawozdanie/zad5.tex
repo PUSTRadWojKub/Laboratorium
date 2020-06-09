@@ -1,0 +1,92 @@
+\chapter{Strojenie regulatora DMC metod¹ eksperymentaln¹}
+
+Regulatory DMC stroiliœmy metod¹ eksperymentaln¹. Jakoœæ regulacji ocenialiœmy na podstawie wykresów oraz na podstawie poni¿szego wskaŸnika jakoœci
+\begin{equation}
+	E = \sum^{k_\mathrm{konc}}_{k=1}\sum^{3}_{m=1}(y^\mathrm{zad}(k)-y(k))^2
+\end{equation}
+
+Podczas strojenia przyjêliœmy nastêpuj¹c¹ trajektoriê zadan¹
+\begin{equation}
+y^{\mathrm{zad}}_\mathrm{1}(k)=
+\begin{cases}
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
+3 \quad \quad \textrm{ dla } \quad 50 \le k \le 149\\
+-1 \quad \quad \textrm{ dla } \quad 150 \le k \le 600
+\end{cases}
+\end{equation}
+
+\begin{equation}
+y^{\mathrm{zad}}_\mathrm{2}(k)=
+\begin{cases}
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
+5 \quad \quad \textrm{ dla } \quad 50 \le k \le 249\\
+1 \quad \quad \textrm{ dla } \quad 250 \le k \le 600
+\end{cases}
+\end{equation}
+
+\begin{equation}
+y^{\mathrm{zad}}_\mathrm{3}(k)=
+\begin{cases}
+0 \quad \quad \textrm{ dla } \quad 1 \le k \le 49\\
+\num{0.5} \quad \textrm{ dla } \quad 50 \le k \le 349\\
+6 \quad \quad \textrm{ dla } \quad 350 \le k \le 600
+\end{cases}
+\end{equation}
+
+Bior¹c pod uwagê najwolniejsz¹ odpowiedŸ skokow¹ $s^\mathrm{3,3}$ przyjêliœmy horyzont dynamiki $D=150$.
+Strojenie regulatora DMC zaczynamy od najwiêkszych mo¿liwych d³ugoœci horyzontów predykcji oraz sterowania. Wspó³cznniki wagowe s¹ jednostkowe.
+\begin{equation}
+	D = 150,\quad N = 150,\quad N_\mathrm{u} = 150,\quad \lambda=[1, 1, 1, 1]
+\end{equation}
+Uzyskane przebiegi przedstawiono na rys.~\ref{DMC0}. Uzyskana wartoœæ wskaŸnika regulacji $E=\num{434.6277}$.
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_DMC.tex}
+\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{434.6277}$}
+\label{DMC0}
+\end{figure}
+Widzimy, ¿e regulator DMC dzia³a dobrze, wartoœci zadane s¹ osi¹gane. Uk³ad dzia³a szybko. Wystêpuje jednak niestety przeregulowanie. Mo¿na te¿ zauwa¿yæ, ¿e zmiana wartoœci zadanej dla jednego wyjœcia oddzia³uje na wszystkie trzy sygna³y wyjœciowe i powoduje wyst¹pienie przeregulowania.
+
+
+Nastêpnie zmniejszamy stopniowo horyzonty $N$ oraz $N_\mathrm{u}$. Nie zauwa¿amy jednak znacz¹cych zmian w kszta³cie przebiegów. Zaobserwowaliœmy, ¿e mo¿emy zmniejszyæ horyzonty do wartoœci $N=N_\mathrm{u}=20$, nie powoduj¹c pogorszenia wskaŸnika jakoœci $E$. Przebiegi dla nastaw (\ref{test1}) przedstawiono na rys.~\ref{DMC1}. Otrzymana wartoœæ wskaŸnika jakoœci $E=\num{434.5532}$.
+\begin{equation}
+	D = 150,\quad N = 20,\quad N_\mathrm{u} = 20,\quad \lambda=[1, 1, 1, 1]
+	\label{test1}
+\end{equation}
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_DMC1.tex}
+\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{434.5532}$}
+\label{DMC1}
+\end{figure}
+
+Teraz zmniejszamy horyzont sterowania. Obserwujemy, ¿e zmiany wartoœci $N_\mathrm{u}$ nie wp³ywaj¹ istotnie na kszta³ty otrzymywanych przebiegów. Przy wyborze parametru $N_\mathrm{u}$ kierujemy siê zatem g³ównie ocen¹ na podstawie wskaŸnika jakoœci. Dla $N_\mathrm{u}=8$ otrzymaliœmy $E=\num{430.6439}$, czyli uda³o siê nam nieznacznie polepszyæ ten wskaŸnik. Dla mniejszych wartoœci $N_\mathrm{u}$, wartoœci $E$ zaczynaj¹ rosn¹æ, dlatego przyjmujemy nastawy (\ref{test2}). Wyniki symulacji dla tych nastaw s¹ na rys.~\ref{DMC2}.
+\begin{equation}
+	D = 150,\quad N = 20,\quad N_\mathrm{u} = 8,\quad \lambda=[1, 1, 1, 1]
+	\label{test2}
+\end{equation}
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_DMC2.tex}
+\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{430.6439}$}
+\label{DMC2}
+\end{figure}
+
+
+W nastêpnym kroku manipulujemy wspó³czynnikiem $\lambda$. Zwiêkszenie jego wartoœci prowadzi³o za ka¿dym razem do pogorszenia wartoœci wskaŸnika $E$. Jednak dziêki zwiêkszeniu kar za przyrosty sterowania uda³o siê nieco zmniejszyæ wystepuj¹ce przeregulowania. Ostatecznie przyjêliœmy
+\begin{equation}
+	D = 150,\quad N = 20,\quad N_\mathrm{u} = 8,\quad \lambda=[10, 10, 10, 10]
+	\label{test3}
+\end{equation}
+Otrzymaliœmy przebiegi widoczne na rys.~\ref{DMC3}. Wartoœæ wskaŸnika jakoœci $E=\num{620.0785}$.
+
+\begin{figure}[h!]
+\centering
+\input{rysunki/zad3_DMC3.tex}
+\caption{Regulacja DMC obiektu wielowymiarowego, $E=\num{620.0785}$}
+\label{DMC3}
+\end{figure}
+
+
