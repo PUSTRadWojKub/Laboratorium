@@ -1,8 +1,83 @@
-\chapter{Panel operatora}
+\chapter{Panel operatora (podpunkty 4, 5, 10, 12)}
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth, center]{rysunki/HMI.png}
+	\includegraphics[width=\textwidth, center]{rysunki/HMI.jpg}
 	\caption{Panel HMI dla operatora pozwalaj¹cy wprowadzaæ zadane wartoœci na wyjœciach}
 	\label{hmi_panel}
 \end{figure}
+
+\section{Opis}
+
+\subsection{Zawartoœæ}
+
+Na rys.\ref{hmi_panel} zosta³ przedstawiony panel operatorski zaprojektowany w œrodowisku \texttt{GT DESIGNER}. Na pulpicie postanowiliœmy zawrzeæ takie informacje jak sygna³y wejœciowe i wyjœciowe procesów oraz wartoœci zadane. Ca³y ekran jest "podzielony" na lew¹ - odnosz¹c¹ siê do stanowiska grzej¹co-ch³odz¹cego - i praw¹ - odnosz¹c¹ siê do stanowiska ze zbiornikami - czêœæ. W lewym dolnym rogu mo¿emy obserwowaæ czas symulacji wyra¿ony w sekundach. W dolnej czêsci ka¿dej ze stron znajduje siê niewielki rysunek symbolizuj¹cy schemat regulowanego procesu.
+
+\subsection{Funkcjonalnoœci}
+
+Dziêki panelowi operatorskiemu jesteœmy w stanie wprowadzaæ rêcznie wartoœci zadane dla odpowiednich wyjœæ procesów i na bierz¹co obserwowaæ zmiany sygna³ów steruj¹cych oraz wyjœæ.
+
+\section {Automat stanów stanowiska grzej¹co-ch³odz¹cego}
+
+Po przyciœniêciu przycisku \texttt{AUTOMATON} (rys. \ref{hmi_automaton}) nastêpuje przejœcie pracy regulacji stanowiska w tryb automatu. W trybie pracy automatu nastêpuje cykliczne przechodzenie miêdzy 3 stanami w których to po osi¹gniêciu, specyficznych dla danego stanu, wartoœci zadanych na wyjœciach, po up³ywie 30 sekund nastêpuje przejœcie do kolejnego stanu. Graf stanów zosta³ przedstawiony na rys. \ref{hmi_automaton_hc} do którego na panelu hmi mo¿emy siê dostaæ za pomoc¹ przycisku pojawiaj¹cego siê w momencie przejœcia w tryb automatu. Na grafie stan w którym znajduje siê automat jest zaznaczany na zielono.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HMI_AUTO.jpg}
+	\caption{Prze³¹czenie pracy regulacji stanowiska w tryb automatu}
+	\label{hmi_automaton}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HMI_AUTOMATON_HC.jpg}
+	\caption{Graf automatu stanów stanowiska grzej¹co-ch³odz¹cego przedstawiony na panelu HMI}
+	\label{hmi_automaton_hc}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HC_AUTOMATON_CODE.png}
+	\caption{Implementacja automatu stanów stanowiska grzej¹co-ch³odz¹cego}
+	\label{hc_automaton_code}
+\end{figure}
+
+\section {Automat stanów stanowiska ze zbiornikami}
+
+Analogicznie jak w przypadku powy¿szym. Czas 30 sekund w punkcie pracy jest odmierzany (inkrementowany) w kodzie programu regulacji stanowiska grzej¹co-ch³odz¹cego (inkrementacja co 1 sekundê).
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HMI_AUTOMATON_T.jpg}
+	\caption{Graf automatu stanów stanowiska ze zbiornikami przedstawiony na panelu HMI}
+	\label{hmi_automaton_t}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/T_AUTOMATON_CODE.png}
+	\caption{Implementacja automatu stanów stanowiska ze zbiornikami}
+	\label{t_automaton_code}
+\end{figure}
+
+\section{Wizualizacja procesu}
+
+Na rys.\ref{hmi_panel} w dolnej czêœci ka¿dej po³owy pod napisem "Wykresy ..." znajduj¹ siê przyciski otwieraj¹ce okno z wykresami odpowiadaj¹cymi sygna³om zapisanym obok przycisków. Dziêki temu mo¿emy obserwowaæ zmianê sygna³ów od bierz¹cej chwili na wykresie, w oknie 120 sekund pracy regulatora.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HMI_CHART_HC.jpg}
+	\caption{Przebiegi sygna³ów}
+	\label{hmi_panel_chart_1}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth, center]{rysunki/HMI_CHART_T.jpg}
+	\caption{Panel HMI dla operatora pozwalaj¹cy wprowadzaæ zadane wartoœci na wyjœciach}
+	\label{hmi_chart_2}
+\end{figure}
+
+\subsection{Uwagi}
+
+Niestety z powodu ograniczenia liczby sygna³ów na jednym wykresie (do 4 sygna³ów) postanowiliœmy podzieliæ wizualizacjê. Dodatkowo aby przedstawiæ na jednym wykresie sygna³ wyjœciowy i wejœciowy, w celu czytelnoœci pomno¿yliœmy sygna³y wejœciowe przez odpowiednie wspó³czynniki.

@@ -6,7 +6,15 @@
 \contentsline {section}{\numberline {3.1\relax .\enspace }Implementacja DMC}{8}%
 \contentsline {section}{\numberline {3.2\relax .\enspace }Odpowiedzi skokowe}{9}%
 \contentsline {section}{\numberline {3.3\relax .\enspace }Strojenie DMC}{9}%
-\contentsline {chapter}{\numberline {4\relax .\enspace }Panel operatora}{16}%
-\contentsline {chapter}{\numberline {5\relax .\enspace }Mechanizm zabezpieczaj\k acy przed uszkodzeniem stanowiska}{17}%
-\contentsline {chapter}{\numberline {6\relax .\enspace }Implementacja wielop\k etlowego regulatora PID}{18}%
-\contentsline {section}{\numberline {6.1\relax .\enspace }Dobieranie nastaw PID}{18}%
+\contentsline {chapter}{\numberline {4\relax .\enspace }Panel operatora (podpunkty 4, 5, 10, 12)}{16}%
+\contentsline {section}{\numberline {4.1\relax .\enspace }Opis}{16}%
+\contentsline {subsection}{\numberline {4.1.1\relax .\enspace }Zawarto\'s\'c}{16}%
+\contentsline {subsection}{\numberline {4.1.2\relax .\enspace }Funkcjonalno\'sci}{16}%
+\contentsline {section}{\numberline {4.2\relax .\enspace }Automat stan\'ow stanowiska grzej\k aco-ch\IeC {\l }odz\k acego}{17}%
+\contentsline {section}{\numberline {4.3\relax .\enspace }Automat stan\'ow stanowiska ze zbiornikami}{17}%
+\contentsline {section}{\numberline {4.4\relax .\enspace }Wizualizacja procesu}{17}%
+\contentsline {subsection}{\numberline {4.4.1\relax .\enspace }Uwagi}{17}%
+\contentsline {chapter}{\numberline {5\relax .\enspace }Mechanizm zabezpieczaj\k acy przed uszkodzeniem stanowiska}{23}%
+\contentsline {chapter}{\numberline {6\relax .\enspace }Implementacja wielop\k etlowego regulatora PID}{24}%
+\contentsline {section}{\numberline {6.1\relax .\enspace }Dobieranie nastaw PID}{24}%
+\contentsline {subsection}{\numberline {6.1.1\relax .\enspace }Uwagi}{25}%

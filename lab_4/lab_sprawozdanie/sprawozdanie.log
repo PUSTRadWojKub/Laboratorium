@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  9 JUN 2020 23:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7420 64-bit) (preloaded format=pdflatex 2020.5.13)  10 JUN 2020 16:40
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -1198,56 +1198,124 @@ Package pdftex.def Info: rysunki/regulacja2.png  used on input line 163.
 [13 <./rysunki/error.png>] [14 <./rysunki/regulacja1.png>] [15 <./rysunki/regul
 acja2.png>]
 Rozdzia\PlPrIeC {\l } 4.
-<rysunki/HMI.png, id=113, 291.489pt x 211.992pt>
-File: rysunki/HMI.png Graphic file (type png)
-<use rysunki/HMI.png>
-Package pdftex.def Info: rysunki/HMI.png  used on input line 5.
-(pdftex.def)             Requested size: 455.24408pt x 331.10727pt.
-) (zad6.tex [16
+<rysunki/HMI.jpg, id=113, 385.44pt x 231.264pt>
+File: rysunki/HMI.jpg Graphic file (type jpg)
+<use rysunki/HMI.jpg>
+Package pdftex.def Info: rysunki/HMI.jpg  used on input line 5.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
 
- <./rysunki/HMI.png>]
+Overfull \hbox (5.20325pt too wide) in paragraph at lines 14--15
+[]\OT4/cmr/m/n/10.95 Na rys.4.1[] zo-staª przed-sta-wio-ny pa-nel ope-ra-tor-sk
+i za-pro-jek-to-wa-ny w ±ro-do-wi-sku \OT4/cmtt/m/n/10.95 GT DESIGNER\OT4/cmr/m
+/n/10.95 .
+ []
+
+
+Underfull \vbox (badness 1694) has occurred while \output is active []
+
+ [16
+
+ <./rysunki/HMI.jpg>]
+<rysunki/HMI_AUTO.jpg, id=117, 385.44pt x 231.264pt>
+File: rysunki/HMI_AUTO.jpg Graphic file (type jpg)
+<use rysunki/HMI_AUTO.jpg>
+Package pdftex.def Info: rysunki/HMI_AUTO.jpg  used on input line 26.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
+<rysunki/HMI_AUTOMATON_HC.jpg, id=118, 385.44pt x 231.264pt>
+File: rysunki/HMI_AUTOMATON_HC.jpg Graphic file (type jpg)
+<use rysunki/HMI_AUTOMATON_HC.jpg>
+Package pdftex.def Info: rysunki/HMI_AUTOMATON_HC.jpg  used on input line 33.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/HC_AUTOMATON_CODE.png, id=119, 447.17062pt x 452.4403pt>
+File: rysunki/HC_AUTOMATON_CODE.png Graphic file (type png)
+<use rysunki/HC_AUTOMATON_CODE.png>
+Package pdftex.def Info: rysunki/HC_AUTOMATON_CODE.png  used on input line 40.
+(pdftex.def)             Requested size: 455.24408pt x 460.62006pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/HMI_AUTOMATON_T.jpg, id=120, 385.44pt x 231.264pt>
+File: rysunki/HMI_AUTOMATON_T.jpg Graphic file (type jpg)
+<use rysunki/HMI_AUTOMATON_T.jpg>
+Package pdftex.def Info: rysunki/HMI_AUTOMATON_T.jpg  used on input line 51.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/T_AUTOMATON_CODE.png, id=121, 560.0925pt x 453.19313pt>
+File: rysunki/T_AUTOMATON_CODE.png Graphic file (type png)
+<use rysunki/T_AUTOMATON_CODE.png>
+Package pdftex.def Info: rysunki/T_AUTOMATON_CODE.png  used on input line 58.
+(pdftex.def)             Requested size: 455.24408pt x 368.37064pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/HMI_CHART_HC.jpg, id=122, 385.44pt x 231.264pt>
+File: rysunki/HMI_CHART_HC.jpg Graphic file (type jpg)
+<use rysunki/HMI_CHART_HC.jpg>
+Package pdftex.def Info: rysunki/HMI_CHART_HC.jpg  used on input line 69.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<rysunki/HMI_CHART_T.jpg, id=123, 385.44pt x 231.264pt>
+File: rysunki/HMI_CHART_T.jpg Graphic file (type jpg)
+<use rysunki/HMI_CHART_T.jpg>
+Package pdftex.def Info: rysunki/HMI_CHART_T.jpg  used on input line 76.
+(pdftex.def)             Requested size: 455.24408pt x 273.14674pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (zad6.tex [17 <./rysunki/HMI_AUTO.jpg>] [18 <./rysunki/HMI_AUTOMATON_HC.jpg>]
+[19 <./rysunki/HC_AUTOMATON_CODE.png>] [20 <./rysunki/HMI_AUTOMATON_T.jpg>]
+[21 <./rysunki/T_AUTOMATON_CODE.png>] [22 <./rysunki/HMI_CHART_HC.jpg> <./rysun
+ki/HMI_CHART_T.jpg>]
 Rozdzia\PlPrIeC {\l } 5.
-<rysunki/SAFETY_MECHANISM_CODE_T.png, id=118, 350.05782pt x 167.87718pt>
+<rysunki/SAFETY_MECHANISM_CODE_T.png, id=145, 350.05782pt x 167.87718pt>
 File: rysunki/SAFETY_MECHANISM_CODE_T.png Graphic file (type png)
 <use rysunki/SAFETY_MECHANISM_CODE_T.png>
 Package pdftex.def Info: rysunki/SAFETY_MECHANISM_CODE_T.png  used on input lin
 e 7.
 (pdftex.def)             Requested size: 455.24408pt x 218.33508pt.
-<rysunki/SAFETY_MECHANISM_FIGURE_T.png, id=119, 1118.67938pt x 356.0803pt>
+<rysunki/SAFETY_MECHANISM_FIGURE_T.png, id=146, 1118.67938pt x 356.0803pt>
 File: rysunki/SAFETY_MECHANISM_FIGURE_T.png Graphic file (type png)
 <use rysunki/SAFETY_MECHANISM_FIGURE_T.png>
 Package pdftex.def Info: rysunki/SAFETY_MECHANISM_FIGURE_T.png  used on input l
 ine 14.
 (pdftex.def)             Requested size: 455.24408pt x 144.9072pt.
-) (zad8.tex [17
+) (zad8.tex [23
 
  <./rysunki/SAFETY_MECHANISM_CODE_T.png> <./rysunki/SAFETY_MECHANISM_FIGURE_T.p
 ng>]
 Rozdzia\PlPrIeC {\l } 6.
-<rysunki/STROJENIE_PID_1.png, id=125, 1936.23375pt x 1007.26312pt>
+<rysunki/STROJENIE_PID_1.png, id=152, 1936.23375pt x 1007.26312pt>
 File: rysunki/STROJENIE_PID_1.png Graphic file (type png)
 <use rysunki/STROJENIE_PID_1.png>
-Package pdftex.def Info: rysunki/STROJENIE_PID_1.png  used on input line 7.
+Package pdftex.def Info: rysunki/STROJENIE_PID_1.png  used on input line 9.
 (pdftex.def)             Requested size: 455.24408pt x 331.27588pt.
-<rysunki/STROJENIE_PID_2.png, id=127, 1936.23375pt x 1007.26312pt>
+<rysunki/STROJENIE_PID_2.png, id=154, 1936.23375pt x 1007.26312pt>
 File: rysunki/STROJENIE_PID_2.png Graphic file (type png)
 <use rysunki/STROJENIE_PID_2.png>
-Package pdftex.def Info: rysunki/STROJENIE_PID_2.png  used on input line 16.
+Package pdftex.def Info: rysunki/STROJENIE_PID_2.png  used on input line 18.
 (pdftex.def)             Requested size: 455.24408pt x 328.89359pt.
-<rysunki/STROJENIE_PID_3.png, id=129, 1936.23375pt x 1007.26312pt>
+<rysunki/STROJENIE_PID_3.png, id=156, 1936.23375pt x 1007.26312pt>
 File: rysunki/STROJENIE_PID_3.png Graphic file (type png)
 <use rysunki/STROJENIE_PID_3.png>
-Package pdftex.def Info: rysunki/STROJENIE_PID_3.png  used on input line 25.
+Package pdftex.def Info: rysunki/STROJENIE_PID_3.png  used on input line 27.
 (pdftex.def)             Requested size: 455.24408pt x 397.59561pt.
-) [18
+) [24
 
- <./rysunki/STROJENIE_PID_1.png>] [19 <./rysunki/STROJENIE_PID_2.png>]
-[20 <./rysunki/STROJENIE_PID_3.png>] (sprawozdanie.aux) ) 
+ <./rysunki/STROJENIE_PID_1.png>] [25 <./rysunki/STROJENIE_PID_2.png>]
+[26 <./rysunki/STROJENIE_PID_3.png>] (sprawozdanie.aux) ) 
 Here is how much of TeX's memory you used:
- 31022 strings out of 480811
- 776890 string characters out of 2895696
- 1065008 words of memory out of 3000000
- 46431 multiletter control sequences out of 15000+200000
+ 31073 strings out of 480811
+ 778178 string characters out of 2895696
+ 1065085 words of memory out of 3000000
+ 46474 multiletter control sequences out of 15000+200000
  555010 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,15n,98p,747b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1274,9 +1342,9 @@ s/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Nitrox/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Users/Nitrox/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Users/Nitrox/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on sprawozdanie.pdf (21 pages, 1243940 bytes).
+Output written on sprawozdanie.pdf (27 pages, 1821991 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 227 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

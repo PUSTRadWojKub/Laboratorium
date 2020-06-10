@@ -2,6 +2,8 @@
 
 \section{Dobieranie nastaw PID}
 
+Pocz¹tek strojenia zaczêliœmy od doboru odpowiedniego wzmocnienia przy wy³¹czonym cz³onie ca³kuj¹cym i ró¿niczkuj¹cym. Przy w³¹czonym samym cz³onie proporcjonalnym regulacja przebiega³a bardzo wolno, a przy wiêkszym wzmocnieniu regulator wpada³ w oscylacje. Niezbêdne by³o w³¹czenie cz³onu ca³kuj¹cego. Po w³¹czeniu cz³onu ca³kuj¹cego zaczêliœmy manimulowaæ parametrami w okolicach wartoœci $K_1 = -80$ oraz $T_\textrm{i} = 50$ (rys.\ref{strojenie_pid_1}).
+
 \begin{figure}[h!b]
 	\centering
 	\includegraphics[clip, trim = 0 0 550 0, width=\textwidth, center]{rysunki/STROJENIE_PID_1.png}
@@ -9,7 +11,7 @@
 	\label{strojenie_pid_1}
 \end{figure}
 
-ok k1 = -80, ti1 = 50
+Dalsze zwiêkszanie wp³ywu cz³onu ca³kuj¹cego poprzez zmniejszanie parametru $T_\textrm{i}$ polepsza³o szybkoœæ i jakoœæ regulacji. Aby kompensowaæ wp³yw dzia³ania cz³onu ca³kuj¹cego zmniejszaliœmy wzmocnienie $K_1$. Poni¿szy rys.\ref{strojenie_pid_2} obrazuje dobieranie parametrów w okolicach wartoœci $K_1 = -20$ oraz $T_\textrm{i} = 5$.
 
 \begin{figure}[h!b]
 	\centering
@@ -18,7 +20,7 @@ ok k1 = -80, ti1 = 50
 	\label{strojenie_pid_2}
 \end{figure}
 
-ok k1 = -20, ti1 = 5 -> 1
+Przy w³¹czaniu cz³onu ró¿niczkuj¹cego nastêpywa³y od razu oscylacje, a ma³e wartoœci nie mia³y wp³ywu na przebieg regulacji. Poni¿szy rys.\ref{strojenie_pid_2} obrazuje dobieranie parametrów w okolicach wartoœci $K_1 = -20$ oraz $T_\textrm{i} = 1$.
 
 \begin{figure}[h!b]
 	\centering
@@ -27,4 +29,8 @@ ok k1 = -20, ti1 = 5 -> 1
 	\label{strojenie_pid_3}
 \end{figure}
 
-k1 = -20 ti1 = 0.4
+Ostateczne parametry: $K_1 = -20$ oraz $T_\textrm{i} = 1$. Okaza³o siê ¿e takie nastawy dla wszystkich regulatorów zapewniaj¹ prawid³ow¹ i zadowalaj¹c¹ pracê regulacji.
+
+\subsection{Uwagi}
+
+Ujemne wzmocnienie regulatorów PID wynika z tego ¿e aby zwiêkszyæ sygna³ wyjœciowy (wysokoœæ cieczy w zbiorniku) nale¿y zmniejszyæ sygna³ wejœciowy (0 - zamkniêty zawór). W celu zmiany znaku wzmocnienia nale¿a³oby odwróciæ kolejnoœæ operandów w uchybie.

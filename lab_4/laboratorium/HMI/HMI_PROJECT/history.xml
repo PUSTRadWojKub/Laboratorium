@@ -50,11 +50,11 @@
       <iProjectdataID>5</iProjectdataID>
       <szComment />
       <iEditor>0</iEditor>
-      <dtUpdateDate>2020-06-10T14:53:33.5962667+02:00</dtUpdateDate>
+      <dtUpdateDate>2020-06-10T16:16:17.6093198+02:00</dtUpdateDate>
       <dtFileTimeStamp>2020-06-06T15:54:41.176128+02:00</dtFileTimeStamp>
-      <dtFileUpdateDate>2020-06-10T14:53:33.5962667+02:00</dtFileUpdateDate>
-      <iFileSize>126610</iFileSize>
-      <szMD5val>lbxVuVDjTehBTrxL6zpOsw==</szMD5val>
+      <dtFileUpdateDate>2020-06-10T16:16:17.6093198+02:00</dtFileUpdateDate>
+      <iFileSize>133802</iFileSize>
+      <szMD5val>+2F9DALD/nPoxLo0XgWIzw==</szMD5val>
       <szProjectdataName>GTXFILE</szProjectdataName>
     </D_History>
     <D_History diffgr:id="D_History6" msdata:rowOrder="5" diffgr:hasChanges="inserted">
@@ -62,14 +62,14 @@
       <iProjectdataID>6</iProjectdataID>
       <szComment />
       <iEditor>0</iEditor>
-      <dtUpdateDate>2020-06-10T14:53:33.7022784+02:00</dtUpdateDate>
+      <dtUpdateDate>2020-06-10T16:16:17.69032+02:00</dtUpdateDate>
       <dtFileTimeStamp>2020-06-06T15:54:41.2771287+02:00</dtFileTimeStamp>
-      <dtFileUpdateDate>2020-06-10T14:53:33.7022784+02:00</dtFileUpdateDate>
+      <dtFileUpdateDate>2020-06-10T16:16:17.69032+02:00</dtFileUpdateDate>
       <iFileSize>60</iFileSize>
-      <szMD5val>76oTvMI9X5KjIKrSR70Eog==</szMD5val>
+      <szMD5val>+g41imZ3TEcOXPF3zUyWyA==</szMD5val>
       <szProjectdataName>DATAPROFILE</szProjectdataName>
     </D_History>
-    <D_DBVersion diffgr:id="D_DBVersion16" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+    <D_DBVersion diffgr:id="D_DBVersion4" msdata:rowOrder="0" diffgr:hasChanges="inserted">
       <iSupportVersion>1</iSupportVersion>
       <iCreateVersion>1</iCreateVersion>
     </D_DBVersion>
