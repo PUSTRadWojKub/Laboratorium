@@ -1,22 +1,13 @@
-\beamer@sectionintoc {1}{Rozwiązywanie problemów}{4}{0}{1}
-\beamer@subsectionintoc {1}{1}{Problem regulacji układu grzejąco - chłodzącego}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Problem regulacji poziomu cieczy w zbiornikach}{5}{0}{1}
-\beamer@sectionintoc {2}{Tworzenie własnych i modyfikowanie gotowych rozwiązań}{6}{0}{2}
-\beamer@subsectionintoc {2}{1}{Implementacja algorytmów reglacji PID i DMC}{6}{0}{2}
-\beamer@subsectionintoc {2}{2}{Modyfikacja wcześniej zaimplementowanych algorytmów}{7}{0}{2}
-\beamer@sectionintoc {3}{Czytania dokumentacji}{8}{0}{3}
-\beamer@subsectionintoc {3}{1}{Korzystanie z opracowanych dokumentacji}{8}{0}{3}
-\beamer@sectionintoc {4}{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków}{9}{0}{4}
-\beamer@sectionintoc {5}{Testowanie, wykrywanie błędów, wprowadzanie zabezpieczeń}{9}{0}{5}
-\beamer@subsectionintoc {5}{1}{Testowanie}{9}{0}{5}
-\beamer@subsectionintoc {5}{2}{Wykrywanie błędów}{10}{0}{5}
-\beamer@subsectionintoc {5}{3}{Wprowadzanie zabezpieczeń}{11}{0}{5}
-\beamer@sectionintoc {6}{Rozwiązywanie problemów skali i ograniczeń}{12}{0}{6}
-\beamer@subsectionintoc {6}{1}{Odpowiednie skalowanie wykresów}{12}{0}{6}
-\beamer@subsectionintoc {6}{2}{Ograniczenia uwzględniane podczas regulacji}{13}{0}{6}
-\beamer@sectionintoc {7}{Przygotowywanie raportów}{14}{0}{7}
-\beamer@subsectionintoc {7}{1}{Sporządzanie dokumentacji}{14}{0}{7}
-\beamer@sectionintoc {8}{Wygłaszanie prezentacji, zainteresowanie tematyką innych}{15}{0}{8}
-\beamer@subsectionintoc {8}{1}{Aktualna prezentacja}{15}{0}{8}
-\beamer@sectionintoc {9}{Organizacja pracy}{16}{0}{9}
-\beamer@subsectionintoc {9}{1}{Podział zadań w zespole}{16}{0}{9}
+\beamer@sectionintoc {1}{Organizacja pracy}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Podział zadań w zespole}{3}{0}{1}
+\beamer@sectionintoc {2}{Rozwiązywanie problemów - tworzenie własnych i modyfikowanie gotowych algorytmów}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Modyfikacja wcześniej zaimplementowanych algorytmów regulacji}{5}{0}{2}
+\beamer@sectionintoc {3}{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków, wprowadzanie zabezpieczeń}{6}{0}{3}
+\beamer@subsectionintoc {3}{1}{Testowanie rozwiązań}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Symulowanie obiektów o zmiennej dynamice podczas projektów - środowisko MATLAB}{7}{0}{3}
+\beamer@subsectionintoc {3}{3}{Symulacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}{8}{0}{3}
+\beamer@sectionintoc {4}{Czytania dokumentacji}{9}{0}{4}
+\beamer@subsectionintoc {4}{1}{Korzystanie z opracowanych dokumentacji}{9}{0}{4}
+\beamer@sectionintoc {5}{Przygotowywanie raportów}{10}{0}{5}
+\beamer@subsectionintoc {5}{1}{Sporządzanie dokumentacji}{10}{0}{5}
