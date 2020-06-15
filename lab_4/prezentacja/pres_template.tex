@@ -21,73 +21,108 @@
 
 \section{Organizacja pracy}
 
-\subsection{Podział zadań w zespole}
-\begin{frame}{Podział zadań w zespole}
-	\begin{itemize}
-		\item Projekty - zamiennie sprawko, kod
-		\item Laboratorium - strojenie, testy, hmi, kod
-	\end{itemize}
-\end{frame}
+	\subsection{Podział zadań w zespole}
+	\begin{frame}{Podział zadań w zespole}
+		\begin{block}{Podział zadań podczas projektów}
+			\begin{itemize}
+				\item Tworzenie kodu
+				\item Testowanie kodu i przeprowadzanie symulacji
+				\item Optymalizacja
+				\item Tworzenie sprawozdania
+			\end{itemize}
+		\end{block}
+		\begin{block}{Podział zadań podczas laboratorium}
+			\begin{itemize}
+				\item Tworzenie kodu
+				\item Testowanie kodu i przeprowadzanie symulacji
+				\item Tworzenie HMI
+				\item Tworzenie sprawozdania
+			\end{itemize}
+		\end{block}
+	\end{frame}
 
-\section{Rozwiązywanie problemów - tworzenie własnych i modyfikowanie gotowych algorytmów}
+\section{Rozwiązywanie problemów - tworzenie własnych algorytmów i modyfikacja gotowych}
 
-	\subsection{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}
-	\begin{frame}{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}
-		\begin{itemize}
-			\item PID \\
-			opis
-			\item DMC
-		\end{itemize}
-		Rozwiązane problemy:
-		\begin{itemize}
-			\item zz
-			\item DMC
-		\end{itemize}
+	\subsection{Implementacja algorytmów regulacji, wykorzystanie algorytmów optymalizacji}
+	\begin{frame}{Implementacja algorytmów regulacji, wykorzystanie algorytmów optymalizacji}
+		\begin{block}{Implementacja dyskretnych algorytmów PID i DMC}
+			\begin{itemize}
+				\item Implementacja algorytmów regulacji na podstawie wiedzy teorytycznej
+				\item Strojenie regulatorów - metoda inżynierska, metoda Zieglera-Nicholsa
+				\item Implementacja algorytmów optymalizacji w celu dobotu optymalnych parametrów algorytmów
+			\end{itemize}
+		\end{block}
 	\end{frame}
 	
 	\subsection{Modyfikacja wcześniej zaimplementowanych algorytmów regulacji}
 	\begin{frame}{Modyfikacja wcześniej zaimplementowanych algorytmów regulacji}
 		\begin{itemize}
-			\item MIMO 
-			\item Zakłócenia
+			\item Zmiana jednowymiarowych algorytmów sterowania na algorytmy wielowymiarowe - wykorzystanie gotowego kodu z poprzednich projektów do implementacji
+			\item Wykorzystanie gotowych algorytmów regulacji na innej platformie - wykorzystanie kodu z projektów podczas laboratorium w programie GX Works
 		\end{itemize}
 	\end{frame}
 
 \section{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków, wprowadzanie zabezpieczeń}
 
-	\subsection{Testowanie rozwiązań}
-	\begin{frame}{Testowanie rozwiązań}
-		Porównywanie różnych metod regulacji, wybranie najlepszego
-		Symulacja modelu obiektu
-	\end{frame}
-
-	\subsection{Symulowanie obiektów o zmiennej dynamice podczas projektów - środowisko MATLAB}
-	\begin{frame}{Symulowanie obiektów o zmiennej dynamice podczas projektów}
-		+zabezpiecz
+	\subsection{Testowanie i symulacja rozwiązań, wyciąganie wniosków}
+	\begin{frame}{Testowanie i symulacja rozwiązań, wyciąganie wniosków}
+		Podczas wykonywania zadań niezbędne było wielokrotne przeprowadzanie testów zaimplementowanych rowiązań. \textbf{Testy} najczęściej przybierały formę \textbf{symulacji}, \textbf{kompilacji} oraz \textbf{analizy składni kodu}. Pozwalały one na sprawną korektę nieprawidłowości (MATLAB umożliwia wygodny do tego celów tryb \textbf{debugowania}). Szczególnie duża ilość testów była wymagana przy \textbf{strojeniu regulatorów}. W przypadku GxWorksa podczas testów najprzydatniejszy był tryb \textbf{śledzenia zmian wartości} zmiennych na bierząco. Symulator GtSimulator również niekiedy pokazywał problemy dotyczące zajętości \textbf{pamięciowo - obliczeniowych}, jednakże te pojawiały się sporadycznie. Dzięki testom mogliśmy wyciągać wnioski dotyczące:
+		\begin{itemize}
+			\item Dynamiki obiektu
+			\item Poprawności implementacji algorytmu
+			\item Optymalnych wartości nastaw regulatora
+			\item Jakości sterowania
+			\item Odporności na zakłócenia
+			\item Ograniczeń
+			\item Najlepszego algorytmu regulacji przy zakładanych ograniczeniach
+		\end{itemize}
 	\end{frame}
 	
-	\subsection{Symulacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}
-	\begin{frame}{Symulowacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}
-		+zabezpiecz
+	\subsection{Zabezpieczenia}
+	\begin{frame}{Zabezpieczenia}
+		Na podstawie dokumentacji stanowiska oraz podanych przez prowadzącego instrukcji, dla danego stanowiska, byliśmy wstanie zaprojektować zabezpieczenia. W odpowiednich stanach należało wprowadzić takie \textbf{zmiany sygnałów}, żeby nie doprowadzić do \textbf{uszkodzenia urządzenia}, a przede wszystkim nie doprowadzić do nieszczęścia (uszczerbku na \textbf{zdrowiu człowieka}). Wprowadzone zabezpieczenia podczas realizacji laboratorium:
+		\begin{itemize}
+			\item Zabezpieczenie stanowiska grzejąco-chłodzącego - uszkodzenie czujnika (przekroczenie temperatury powyżej $250^\circ$) $\rightarrow$ wyłączenie najbliższej grzałki
+			\item Zabezpieczenie stanowiska ze zbiornikami - limit poziomu wody w zbiorniku (osiągnięcie 20cm wysokości) $\rightarrow$ otworzenie zaworu tego zbiornika
+		\end{itemize}
+		Wprowadzanie zabezpieczeń jest jedym z najistotniejszych elementów pracy inżyniera. Dzięki symulacjom jesteśmy w stanie stwierdzać jakich zabezpieczeń potrzeba oraz jakie skutki są związane z ich niewprowadzeniem.
 	\end{frame}
 
-\section{Czytania dokumentacji}
+\section{Czytanie dokumentacji}
 
-\subsection{Korzystanie z opracowanych dokumentacji}
-\begin{frame}{Korzystanie z opracowanych dokumentacji}
-	\begin{itemize}
-		\item Instrukcje prowadzących
-		\item GxWorks
-		\item GtDesigner
-	\end{itemize}
-\end{frame}
+	\subsection{Korzystanie z opracowanych dokumentacji}
+	\begin{frame}{Korzystanie z opracowanych dokumentacji}
+		\begin{enumerate}
+			\item Instrukcje do projektu/laboratorium
+			\item Materiały wykładowe
+			\item Obsługa stanowisk laboratoryjnych
+			\begin{itemize}
+				\item Stanowisko grzewczo-chłodzące
+				\item Stanowisko INTECO
+			\end{itemize}
+			\item Obsługa oprogramowania Mitsubishi Electric
+			\begin{itemize}
+				\item GX Works
+				\item GT Designer
+				\item GT Simulator
+				\item LogViewer
+			\end{itemize}
+		\end{enumerate}
+	\end{frame}
+
 
 \section{Przygotowywanie raportów}
-
-	\subsection{Sporządzanie dokumentacji}
-	\begin{frame}{Sporządzanie dokumentacji}
-		
-	\end{frame}
+\subsection{Sporządzanie dokumentacji}
+\begin{frame}{Sporządzanie dokumentacji}
+	\begin{itemize}
+		\item{Wstęp teoretyczny}
+		\item{Opis implementacji}
+		\item{Planowane eksperymenty}
+		\item{Przeprowadzone eksperymenty}
+		\item{Uzyskane wyniki}
+		\item{Wnioski}
+	\end{itemize}
+\end{frame}
 
 \end{document}
 

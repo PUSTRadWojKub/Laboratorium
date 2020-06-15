@@ -1,13 +1,12 @@
 \beamer@sectionintoc {1}{Organizacja pracy}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Podział zadań w zespole}{3}{0}{1}
-\beamer@sectionintoc {2}{Rozwiązywanie problemów - tworzenie własnych i modyfikowanie gotowych algorytmów}{4}{0}{2}
-\beamer@subsectionintoc {2}{1}{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}{4}{0}{2}
+\beamer@sectionintoc {2}{Rozwiązywanie problemów - tworzenie własnych algorytmów i modyfikacja gotowych}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Implementacja algorytmów regulacji, wykorzystanie algorytmów optymalizacji}{4}{0}{2}
 \beamer@subsectionintoc {2}{2}{Modyfikacja wcześniej zaimplementowanych algorytmów regulacji}{5}{0}{2}
 \beamer@sectionintoc {3}{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków, wprowadzanie zabezpieczeń}{6}{0}{3}
-\beamer@subsectionintoc {3}{1}{Testowanie rozwiązań}{6}{0}{3}
-\beamer@subsectionintoc {3}{2}{Symulowanie obiektów o zmiennej dynamice podczas projektów - środowisko MATLAB}{7}{0}{3}
-\beamer@subsectionintoc {3}{3}{Symulacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}{8}{0}{3}
-\beamer@sectionintoc {4}{Czytania dokumentacji}{9}{0}{4}
-\beamer@subsectionintoc {4}{1}{Korzystanie z opracowanych dokumentacji}{9}{0}{4}
-\beamer@sectionintoc {5}{Przygotowywanie raportów}{10}{0}{5}
-\beamer@subsectionintoc {5}{1}{Sporządzanie dokumentacji}{10}{0}{5}
+\beamer@subsectionintoc {3}{1}{Testowanie i symulacja rozwiązań, wyciąganie wniosków}{6}{0}{3}
+\beamer@subsectionintoc {3}{2}{Zabezpieczenia}{7}{0}{3}
+\beamer@sectionintoc {4}{Czytanie dokumentacji}{8}{0}{4}
+\beamer@subsectionintoc {4}{1}{Korzystanie z opracowanych dokumentacji}{8}{0}{4}
+\beamer@sectionintoc {5}{Przygotowywanie raportów}{9}{0}{5}
+\beamer@subsectionintoc {5}{1}{Sporządzanie dokumentacji}{9}{0}{5}

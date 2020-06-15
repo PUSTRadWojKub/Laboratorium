@@ -11,10 +11,10 @@
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\beamer@sectionpages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\sectionentry {2}{Rozwiązywanie problemów - tworzenie własnych i modyfikowanie gotowych algorytmów}{4}{Rozwiązywanie problemów - tworzenie własnych i modyfikowanie gotowych algorytmów}{0}}
+\headcommand {\sectionentry {2}{Rozwiązywanie problemów - tworzenie własnych algorytmów i modyfikacja gotowych}{4}{Rozwiązywanie problemów - tworzenie własnych algorytmów i modyfikacja gotowych}{0}}
 \headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}}
-\headcommand {\slideentry {2}{1}{1}{4/4}{Implementacja algorytmów reglacji, wykorzystanie algorytmów optymalizacji}{0}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{Implementacja algorytmów regulacji, wykorzystanie algorytmów optymalizacji}}
+\headcommand {\slideentry {2}{1}{1}{4/4}{Implementacja algorytmów regulacji, wykorzystanie algorytmów optymalizacji}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@subsectionpages {4}{4}}
 \headcommand {\beamer@subsectionentry {0}{2}{2}{5}{Modyfikacja wcześniej zaimplementowanych algorytmów regulacji}}
@@ -24,33 +24,29 @@
 \headcommand {\beamer@subsectionpages {5}{5}}
 \headcommand {\sectionentry {3}{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków, wprowadzanie zabezpieczeń}{6}{Przeprowadzanie eksperymentów/symulacji i wyciąganie wniosków, wprowadzanie zabezpieczeń}{0}}
 \headcommand {\beamer@subsectionpages {6}{5}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Testowanie rozwiązań}}
-\headcommand {\slideentry {3}{1}{1}{6/6}{Testowanie rozwiązań}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Testowanie i symulacja rozwiązań, wyciąganie wniosków}}
+\headcommand {\slideentry {3}{1}{1}{6/6}{Testowanie i symulacja rozwiązań, wyciąganie wniosków}{0}}
 \headcommand {\beamer@framepages {6}{6}}
 \headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{7}{Symulowanie obiektów o zmiennej dynamice podczas projektów - środowisko MATLAB}}
-\headcommand {\slideentry {3}{2}{1}{7/7}{Symulowanie obiektów o zmiennej dynamice podczas projektów - środowisko MATLAB}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{7}{Zabezpieczenia}}
+\headcommand {\slideentry {3}{2}{1}{7/7}{Zabezpieczenia}{0}}
 \headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@sectionpages {6}{7}}
 \headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{8}{Symulacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}}
-\headcommand {\slideentry {3}{3}{1}{8/8}{Symulacja regulacji stanowisk za pomocą PLC - środowisko GxWorks}{0}}
+\headcommand {\sectionentry {4}{Czytanie dokumentacji}{8}{Czytanie dokumentacji}{0}}
+\headcommand {\beamer@subsectionpages {8}{7}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{8}{Korzystanie z opracowanych dokumentacji}}
+\headcommand {\slideentry {4}{1}{1}{8/8}{Korzystanie z opracowanych dokumentacji}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {6}{8}}
+\headcommand {\beamer@sectionpages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\sectionentry {4}{Czytania dokumentacji}{9}{Czytania dokumentacji}{0}}
+\headcommand {\sectionentry {5}{Przygotowywanie raportów}{9}{Przygotowywanie raportów}{0}}
 \headcommand {\beamer@subsectionpages {9}{8}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{9}{Korzystanie z opracowanych dokumentacji}}
-\headcommand {\slideentry {4}{1}{1}{9/9}{Korzystanie z opracowanych dokumentacji}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{9}{Sporządzanie dokumentacji}}
+\headcommand {\slideentry {5}{1}{1}{9/9}{Sporządzanie dokumentacji}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@partpages {1}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\sectionentry {5}{Przygotowywanie raportów}{10}{Przygotowywanie raportów}{0}}
-\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{10}{Sporządzanie dokumentacji}}
-\headcommand {\slideentry {5}{1}{1}{10/10}{Sporządzanie dokumentacji}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@sectionpages {10}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\beamer@sectionpages {9}{9}}
+\headcommand {\beamer@documentpages {9}}
+\headcommand {\gdef \inserttotalframenumber {9}}
