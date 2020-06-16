@@ -66,26 +66,47 @@
 
 	\subsection{Testowanie i symulacja rozwiązań, wyciąganie wniosków}
 	\begin{frame}{Testowanie i symulacja rozwiązań, wyciąganie wniosków}
-		Podczas wykonywania zadań niezbędne było wielokrotne przeprowadzanie testów zaimplementowanych rowiązań. \textbf{Testy} najczęściej przybierały formę \textbf{symulacji}, \textbf{kompilacji} oraz \textbf{analizy składni kodu}. Pozwalały one na sprawną korektę nieprawidłowości (MATLAB umożliwia wygodny do tego celów tryb \textbf{debugowania}). Szczególnie duża ilość testów była wymagana przy \textbf{strojeniu regulatorów}. W przypadku GxWorksa podczas testów najprzydatniejszy był tryb \textbf{śledzenia zmian wartości} zmiennych na bierząco. Symulator GtSimulator również niekiedy pokazywał problemy dotyczące zajętości \textbf{pamięciowo - obliczeniowych}, jednakże te pojawiały się sporadycznie. Dzięki testom mogliśmy wyciągać wnioski dotyczące:
-		\begin{itemize}
-			\item Dynamiki obiektu
-			\item Poprawności implementacji algorytmu
-			\item Optymalnych wartości nastaw regulatora
-			\item Jakości sterowania
-			\item Odporności na zakłócenia
-			\item Ograniczeń
-			\item Najlepszego algorytmu regulacji przy zakładanych ograniczeniach
-		\end{itemize}
+		\begin{columns}
+			\begin{column}{0.45\textwidth}
+				\begin{enumerate}
+					\item Analiza składni
+					\item Kompilacja
+					\item Symulacja
+					\item Debugowanie
+					\item Śledzenie zmian wartości
+					\item Pamięć i złożoność obliczeniowa
+				\end{enumerate}
+			\end{column}
+			\begin{column}{0.45\textwidth}
+				\begin{block}{Dzięki testom mogliśmy wyciągać wnioski dotyczące:}
+					\begin{itemize}
+						\item Dynamiki obiektu
+						\item Poprawności implementacji algorytmu
+						\item Optymalnych wartości nastaw regulatora
+						\item Jakości sterowania
+						\item Odporności na zakłócenia
+						\item Ograniczeń
+						\item Najlepszego algorytmu regulacji przy zakładanych ograniczeniach
+					\end{itemize}
+				\end{block}
+			\end{column}
+		\end{columns}
 	\end{frame}
 	
 	\subsection{Zabezpieczenia}
 	\begin{frame}{Zabezpieczenia}
-		Na podstawie dokumentacji stanowiska oraz podanych przez prowadzącego instrukcji, dla danego stanowiska, byliśmy wstanie zaprojektować zabezpieczenia. W odpowiednich stanach należało wprowadzić takie \textbf{zmiany sygnałów}, żeby nie doprowadzić do \textbf{uszkodzenia urządzenia}, a przede wszystkim nie doprowadzić do nieszczęścia (uszczerbku na \textbf{zdrowiu człowieka}). Wprowadzone zabezpieczenia podczas realizacji laboratorium:
 		\begin{itemize}
-			\item Zabezpieczenie stanowiska grzejąco-chłodzącego - uszkodzenie czujnika (przekroczenie temperatury powyżej $250^\circ$) $\rightarrow$ wyłączenie najbliższej grzałki
-			\item Zabezpieczenie stanowiska ze zbiornikami - limit poziomu wody w zbiorniku (osiągnięcie 20cm wysokości) $\rightarrow$ otworzenie zaworu tego zbiornika
+			\item Ochrona zdrowia człowieka
+			\item Ochrona środowiska
+			\item Zabezpieczenie przed uszkodzeniem urządzenia
+			\item Zabezpieczenie i odporność na sytuacje nadzwyczajne
 		\end{itemize}
-		Wprowadzanie zabezpieczeń jest jedym z najistotniejszych elementów pracy inżyniera. Dzięki symulacjom jesteśmy w stanie stwierdzać jakich zabezpieczeń potrzeba oraz jakie skutki są związane z ich niewprowadzeniem.
+		\begin{block}{Wprowadzone zabezpieczenia}
+			\begin{itemize}
+				\item Zabezpieczenie stanowiska grzejąco-chłodzącego - uszkodzenie czujnika (przekroczenie temperatury powyżej $250^\circ$) $\rightarrow$ wyłączenie najbliższej grzałki
+				\item Zabezpieczenie stanowiska ze zbiornikami - limit poziomu wody w zbiorniku (osiągnięcie 20cm wysokości) $\rightarrow$ otworzenie zaworu tego zbiornika
+			\end{itemize}
+		\end{block}
 	\end{frame}
 
 \section{Czytanie dokumentacji}
